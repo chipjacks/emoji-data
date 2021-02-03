@@ -1,0 +1,22 @@
+{
+  "name": "emoji-data",
+  "scripts": {
+    "start": "elm-live src/Main.elm -u -- --output=elm.js",
+    "make": "elm make --optimize --output=elm.js src/Main.elm",
+    "load-json" : "node load_json.js > src/Json.elm"
+  },
+  "version": "1.0.0",
+  "description": "Emoji data for Elm.",
+  "main": "index.js",
+  "repository": "https://github.com/chipjacks/emoji-data",
+  "author": "Chip Jackson",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "elm-live": "^4.0.2",
+    "node-fetch": "^2.6.1"
+  },
+  "dependencies": {
+    "elm": "^0.19.1-5"
+  }
+}
