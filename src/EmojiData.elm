@@ -6,6 +6,7 @@ import Json.Decode as Decode
 
 type alias EmojiData =
     { name : String
+    , char : String
     , category : String
     , keywords : List String
     , x : Int
@@ -34,8 +35,9 @@ search str =
 
 emojiDecoder : Decode.Decoder EmojiData
 emojiDecoder =
-    Decode.map5 EmojiData
+    Decode.map6 EmojiData
         (Decode.field "name" Decode.string)
+        (Decode.field "char" Decode.string)
         (Decode.field "category" Decode.string)
         (Decode.field "keywords" (Decode.list Decode.string))
         (Decode.field "x" Decode.int)

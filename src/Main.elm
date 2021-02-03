@@ -9,6 +9,7 @@ import Element.Font as Font
 import Element.Input as Input
 import EmojiData exposing (EmojiData)
 import Html exposing (Html)
+import Html.Attributes exposing (style)
 
 
 
@@ -54,7 +55,7 @@ view model =
         , Font.family [ Font.typeface "Open Sans", Font.sansSerif ]
         ]
     <|
-        column []
+        column [ width (fill |> maximum 1000) ]
             ([ Input.text []
                 { onChange = SearchInput
                 , text = model.search
@@ -62,7 +63,35 @@ view model =
                 , label = Input.labelAbove [] (text "Search")
                 }
              ]
-                ++ (model.results
-                        |> List.map (\emoji -> el [] (text emoji.name))
-                   )
+                ++ List.map viewEmoji model.results
             )
+
+
+viewEmoji : EmojiData -> Element Msg
+viewEmoji emoji =
+    row [ spaceEvenly, width fill ]
+        [ el [ width (shrink |> minimum 200) ] (text emoji.name)
+        , el [] (text (String.fromInt emoji.x))
+        , el [] (text (String.fromInt emoji.y))
+        , el [] (text emoji.char)
+        , el (width (px 22) :: (twemoji emoji |> List.map htmlAttribute)) none
+        ]
+
+
+twemoji : EmojiData -> List (Html.Attribute msg)
+twemoji emoji =
+    [ style "display" "inline-block"
+    , style "height" "22px"
+    , style "width" "22px"
+    , style "background-image" "url(https://cdn.jsdelivr.net/npm/emoji-datasource-twitter@5.0.1/img/twitter/sheets/64.png)"
+    , style "background-repeat" "no-repeat"
+    , style "background-size" "1254px"
+    , style "background-position"
+        (String.concat
+            [ String.fromInt <| (emoji.x * -22)
+            , "px "
+            , String.fromInt <| (emoji.y * -22)
+            , "px"
+            ]
+        )
+    ]
