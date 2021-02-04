@@ -33,7 +33,7 @@ search str =
     let
         isMatch emoji =
             (String.join " " emoji.keywords |> String.contains str)
-                || (str == emoji.char)
+                || String.contains emoji.char str
     in
     List.filter isMatch list
 
