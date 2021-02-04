@@ -38,13 +38,17 @@ init _ =
 
 type Msg
     = SearchInput String
+    | SelectCategory EmojiData.Category
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         SearchInput str ->
-            ( { model | search = str, results = EmojiData.search str }, Cmd.none )
+            ( { model | search = str, results = EmojiData.search str |> List.take 100 }, Cmd.none )
+
+        SelectCategory category ->
+            ( { model | results = EmojiData.listCategory category }, Cmd.none )
 
 
 view : Model -> Html Msg
@@ -55,32 +59,51 @@ view model =
         , Font.family [ Font.typeface "Open Sans", Font.sansSerif ]
         ]
     <|
-        column [ width (fill |> maximum 1000) ]
-            [ row []
-                [ Input.text []
+        column [ width (fill |> maximum 1030), centerX ]
+            [ row [ padding 5, width fill ]
+                [ Input.text [ width (shrink |> minimum 200) ]
                     { onChange = SearchInput
                     , text = model.search
-                    , placeholder = Nothing
-                    , label = Input.labelAbove [] (text "Search")
+                    , placeholder = Just (Input.placeholder [] (text "Search"))
+                    , label = Input.labelHidden "Search"
                     }
+                , row [ centerX, Font.bold, Font.size 20 ] [ el [] (text "Emoji Data") ]
+                , row [ alignRight, spacing 20 ]
+                    [ el [] (text "Elm Docs")
+                    , el [] (text "Github")
+                    ]
                 ]
-            , if model.search == "" then
-                viewCategories
-
-              else
-                viewEmojis model.results
+            , viewCategories
+            , viewEmojis model.results
             ]
 
 
 viewCategories : Element Msg
 viewCategories =
-    row [ width fill ]
-        (List.map (\( str, _ ) -> text str) EmojiData.category.list)
+    let
+        viewCategory ( name, category ) =
+            Input.button
+                [ Background.color (rgb255 132 142 147)
+                , Element.focused
+                    [ alpha 0.5 ]
+                , padding 10
+                , Border.solid
+                , Border.color (rgb255 255 255 255)
+                , Border.width 2
+                , Border.rounded 4
+                , Font.color (rgb255 255 255 255)
+                ]
+                { onPress = Just (SelectCategory category)
+                , label = text name
+                }
+    in
+    wrappedRow [ width fill ]
+        (List.map viewCategory (EmojiData.category.list |> List.take 9))
 
 
 viewEmojis : List EmojiData -> Element Msg
 viewEmojis emojis =
-    row [ width fill ] [ column [ width fill ] (List.map viewEmoji (List.take 100 emojis)) ]
+    row [ width fill ] [ column [ width fill ] (List.map viewEmoji emojis) ]
 
 
 viewEmoji : EmojiData -> Element Msg

@@ -1,4 +1,4 @@
-module EmojiData exposing (Category(..), EmojiData, category, list, search)
+module EmojiData exposing (Category(..), EmojiData, category, list, listCategory, search)
 
 import Enum exposing (Enum)
 import Json
@@ -49,7 +49,16 @@ search str =
             (String.join " " emoji.keywords |> String.contains str)
                 || String.contains emoji.char str
     in
-    List.filter isMatch list
+    if str == "" then
+        []
+
+    else
+        List.filter isMatch list
+
+
+listCategory : Category -> List EmojiData
+listCategory c =
+    List.filter (\e -> e.category == c) list
 
 
 emojiDecoder : Decode.Decoder EmojiData
