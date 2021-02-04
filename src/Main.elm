@@ -68,7 +68,7 @@ view model =
                 viewCategories
 
               else
-                row [] [ column [] (List.map viewEmoji model.results) ]
+                viewEmojis model.results
             ]
 
 
@@ -76,6 +76,11 @@ viewCategories : Element Msg
 viewCategories =
     row [ width fill ]
         (List.map (\( str, _ ) -> text str) EmojiData.category.list)
+
+
+viewEmojis : List EmojiData -> Element Msg
+viewEmojis emojis =
+    row [ width fill ] [ column [ width fill ] (List.map viewEmoji (List.take 100 emojis)) ]
 
 
 viewEmoji : EmojiData -> Element Msg
