@@ -56,15 +56,26 @@ view model =
         ]
     <|
         column [ width (fill |> maximum 1000) ]
-            ([ Input.text []
-                { onChange = SearchInput
-                , text = model.search
-                , placeholder = Nothing
-                , label = Input.labelAbove [] (text "Search")
-                }
-             ]
-                ++ List.map viewEmoji model.results
-            )
+            [ row []
+                [ Input.text []
+                    { onChange = SearchInput
+                    , text = model.search
+                    , placeholder = Nothing
+                    , label = Input.labelAbove [] (text "Search")
+                    }
+                ]
+            , if model.search == "" then
+                viewCategories
+
+              else
+                row [] [ column [] (List.map viewEmoji model.results) ]
+            ]
+
+
+viewCategories : Element Msg
+viewCategories =
+    row [ width fill ]
+        (List.map (\( str, _ ) -> text str) EmojiData.category.list)
 
 
 viewEmoji : EmojiData -> Element Msg
