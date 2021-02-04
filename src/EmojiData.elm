@@ -1,6 +1,6 @@
-module EmojiData exposing (Category(..), EmojiData, category, list, listCategory, search)
+module EmojiData exposing (EmojiData, list, listCategory, search)
 
-import Enum exposing (Enum)
+import Category exposing (Category)
 import Json
 import Json.Decode as Decode
 
@@ -13,19 +13,6 @@ type alias EmojiData =
     , x : Int
     , y : Int
     }
-
-
-type Category
-    = SmileysAndEmotion
-    | PeopleAndBody
-    | AnimalsAndNature
-    | FoodAndDrink
-    | TravelAndPlaces
-    | Activities
-    | Objects
-    | Symbols
-    | Flags
-    | SkinTones
 
 
 list : List EmojiData
@@ -42,6 +29,11 @@ list =
             []
 
 
+listCategory : Category -> List EmojiData
+listCategory c =
+    List.filter (\e -> e.category == c) list
+
+
 search : String -> List EmojiData
 search str =
     let
@@ -56,65 +48,12 @@ search str =
         List.filter isMatch list
 
 
-listCategory : Category -> List EmojiData
-listCategory c =
-    List.filter (\e -> e.category == c) list
-
-
 emojiDecoder : Decode.Decoder EmojiData
 emojiDecoder =
     Decode.map6 EmojiData
         (Decode.field "name" Decode.string)
         (Decode.field "char" Decode.string)
-        (Decode.field "category" category.decoder)
+        (Decode.field "category" Category.enum.decoder)
         (Decode.field "keywords" (Decode.list Decode.string))
         (Decode.field "x" Decode.int)
         (Decode.field "y" Decode.int)
-
-
-category : Enum Category
-category =
-    Enum.create
-        [ SmileysAndEmotion
-        , PeopleAndBody
-        , AnimalsAndNature
-        , FoodAndDrink
-        , TravelAndPlaces
-        , Activities
-        , Objects
-        , Symbols
-        , Flags
-        , SkinTones
-        ]
-        (\c ->
-            case c of
-                SmileysAndEmotion ->
-                    "Smileys & Emotion"
-
-                PeopleAndBody ->
-                    "People & Body"
-
-                AnimalsAndNature ->
-                    "Animals & Nature"
-
-                FoodAndDrink ->
-                    "Food & Drink"
-
-                TravelAndPlaces ->
-                    "Travel & Places"
-
-                Activities ->
-                    "Activities"
-
-                Objects ->
-                    "Objects"
-
-                Symbols ->
-                    "Symbols"
-
-                Flags ->
-                    "Flags"
-
-                SkinTones ->
-                    "Skin Tones"
-        )

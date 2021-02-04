@@ -1,6 +1,7 @@
 module Main exposing (main)
 
 import Browser
+import Category exposing (Category)
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
@@ -38,7 +39,7 @@ init _ =
 
 type Msg
     = SearchInput String
-    | SelectCategory EmojiData.Category
+    | SelectCategory Category
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -98,7 +99,7 @@ viewCategories =
                 }
     in
     wrappedRow [ width fill ]
-        (List.map viewCategory (EmojiData.category.list |> List.take 9))
+        (List.map viewCategory (Category.list |> List.take 9))
 
 
 viewEmojis : List EmojiData -> Element Msg
