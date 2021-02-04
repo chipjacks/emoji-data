@@ -30,7 +30,12 @@ list =
 
 search : String -> List EmojiData
 search str =
-    List.filter (\e -> String.join " " e.keywords |> String.contains str) list
+    let
+        isMatch emoji =
+            (String.join " " emoji.keywords |> String.contains str)
+                || (str == emoji.char)
+    in
+    List.filter isMatch list
 
 
 emojiDecoder : Decode.Decoder EmojiData

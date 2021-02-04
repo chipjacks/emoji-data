@@ -4,6 +4,10 @@ async function fetch_json(url) {
   return fetch(url).then((url) => url.json());
 }
 
+function removeDashes(str) {
+  return str.replaceAll(/[\-_]/gi, " ");
+}
+
 const results = [];
 
 Promise.all([
@@ -26,11 +30,12 @@ Promise.all([
     )[0];
 
     const keywords = [
-      ...new Set(
-        [...(keywords_table[unicode] || []), ...emoji["short_names"]].map((w) =>
-          w.replaceAll(/[\-_]/gi, " ")
-        )
-      ),
+      ...new Set([
+        ...(keywords_table[unicode] || []).map(removeDashes),
+        ...emoji["short_names"].map(removeDashes),
+        ...(emoji["text"] ? [emoji["text"]] : []),
+        //...(emoji["texts"] ? emoji["texts"] : []),
+      ]),
     ];
 
     const result = {
@@ -47,9 +52,11 @@ Promise.all([
 
   const elm = [
     "module Json exposing (list)",
+    "",
+    "",
     "list =",
     '    """',
-    JSON.stringify(results, null, 0),
+    JSON.stringify(results, null, 2),
     '"""',
   ].join("\n");
   console.log(elm);
