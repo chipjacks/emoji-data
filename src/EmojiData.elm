@@ -1,7 +1,7 @@
 module EmojiData exposing (EmojiData, list, listCategory, search)
 
-import Category exposing (Category)
-import Json
+import EmojiData.Category exposing (Category)
+import EmojiData.Json
 import Json.Decode as Decode
 
 
@@ -19,7 +19,7 @@ list : List EmojiData
 list =
     let
         decoded =
-            Decode.decodeString (Decode.list emojiDecoder) Json.list
+            Decode.decodeString (Decode.list emojiDecoder) EmojiData.Json.list
     in
     case decoded of
         Ok data ->
@@ -53,7 +53,7 @@ emojiDecoder =
     Decode.map6 EmojiData
         (Decode.field "name" Decode.string)
         (Decode.field "char" Decode.string)
-        (Decode.field "category" Category.enum.decoder)
+        (Decode.field "category" EmojiData.Category.decoder)
         (Decode.field "keywords" (Decode.list Decode.string))
         (Decode.field "x" Decode.int)
         (Decode.field "y" Decode.int)

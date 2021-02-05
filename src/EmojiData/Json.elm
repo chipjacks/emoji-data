@@ -1,4 +1,4 @@
-module Json exposing (list)
+module EmojiData.Json exposing (list)
 
 
 list =
@@ -5527,7 +5527,7 @@ list =
   },
   {
     "name": "hotdog",
-    "char": "🌭",
+    "char": "\u{1F32D}",
     "category": "Food & Drink",
     "keywords": [
       "hot dog",
@@ -5540,7 +5540,7 @@ list =
   },
   {
     "name": "taco",
-    "char": "🌮",
+    "char": "\u{1F32E}",
     "category": "Food & Drink",
     "keywords": [
       "taco",
@@ -5552,7 +5552,7 @@ list =
   },
   {
     "name": "burrito",
-    "char": "🌯",
+    "char": "\u{1F32F}",
     "category": "Food & Drink",
     "keywords": [
       "burrito",
@@ -6671,7 +6671,7 @@ list =
   },
   {
     "name": "champagne",
-    "char": "🍾",
+    "char": "\u{1F37E}",
     "category": "Food & Drink",
     "keywords": [
       "bottle with popping cork",
@@ -6686,7 +6686,7 @@ list =
   },
   {
     "name": "popcorn",
-    "char": "🍿",
+    "char": "\u{1F37F}",
     "category": "Food & Drink",
     "keywords": [
       "popcorn",
@@ -7568,7 +7568,7 @@ list =
   },
   {
     "name": "woman-running",
-    "char": "🏃‍♀️",
+    "char": "🏃\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman running",
@@ -7584,7 +7584,7 @@ list =
   },
   {
     "name": "man-running",
-    "char": "🏃‍♂️",
+    "char": "🏃\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man running",
@@ -7612,7 +7612,7 @@ list =
   },
   {
     "name": "woman-surfing",
-    "char": "🏄‍♀️",
+    "char": "🏄\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman surfing",
@@ -7629,7 +7629,7 @@ list =
   },
   {
     "name": "man-surfing",
-    "char": "🏄‍♂️",
+    "char": "🏄\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man surfing",
@@ -7726,7 +7726,7 @@ list =
   },
   {
     "name": "woman-swimming",
-    "char": "🏊‍♀️",
+    "char": "🏊\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman swimming",
@@ -7744,7 +7744,7 @@ list =
   },
   {
     "name": "man-swimming",
-    "char": "🏊‍♂️",
+    "char": "🏊\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man swimming",
@@ -7773,7 +7773,7 @@ list =
   },
   {
     "name": "woman-lifting-weights",
-    "char": "🏋️‍♀️",
+    "char": "🏋️\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman lifting weights",
@@ -7788,7 +7788,7 @@ list =
   },
   {
     "name": "man-lifting-weights",
-    "char": "🏋️‍♂️",
+    "char": "🏋️\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man lifting weights",
@@ -7813,7 +7813,7 @@ list =
   },
   {
     "name": "woman-golfing",
-    "char": "🏌️‍♀️",
+    "char": "🏌️\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman golfing",
@@ -7827,7 +7827,7 @@ list =
   },
   {
     "name": "man-golfing",
-    "char": "🏌️‍♂️",
+    "char": "🏌️\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man golfing",
@@ -7880,7 +7880,7 @@ list =
   },
   {
     "name": "cricket_bat_and_ball",
-    "char": "🏏",
+    "char": "\u{1F3CF}",
     "category": "Activities",
     "keywords": [
       "cricket game",
@@ -7892,7 +7892,7 @@ list =
   },
   {
     "name": "volleyball",
-    "char": "🏐",
+    "char": "\u{1F3D0}",
     "category": "Activities",
     "keywords": [
       "volleyball",
@@ -7904,7 +7904,7 @@ list =
   },
   {
     "name": "field_hockey_stick_and_ball",
-    "char": "🏑",
+    "char": "\u{1F3D1}",
     "category": "Activities",
     "keywords": [
       "field hockey",
@@ -7916,7 +7916,7 @@ list =
   },
   {
     "name": "ice_hockey_stick_and_puck",
-    "char": "🏒",
+    "char": "\u{1F3D2}",
     "category": "Activities",
     "keywords": [
       "ice hockey",
@@ -7928,7 +7928,7 @@ list =
   },
   {
     "name": "table_tennis_paddle_and_ball",
-    "char": "🏓",
+    "char": "\u{1F3D3}",
     "category": "Activities",
     "keywords": [
       "ping pong",
@@ -8341,7 +8341,7 @@ list =
   },
   {
     "name": "rainbow-flag",
-    "char": "🏳️‍🌈",
+    "char": "🏳️\u{200D}🌈",
     "category": "Flags",
     "keywords": [
       "rainbow flag",
@@ -8362,7 +8362,7 @@ list =
   },
   {
     "name": "transgender_flag",
-    "char": "🏳️‍⚧️",
+    "char": "🏳️\u{200D}⚧️",
     "category": "Flags",
     "keywords": [
       "transgender flag",
@@ -8390,7 +8390,7 @@ list =
   },
   {
     "name": "pirate_flag",
-    "char": "🏴‍☠️",
+    "char": "🏴\u{200D}☠️",
     "category": "Flags",
     "keywords": [
       "pirate flag",
@@ -8404,7 +8404,7 @@ list =
   },
   {
     "name": "flag-england",
-    "char": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "char": "🏴\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}",
     "category": "Flags",
     "keywords": [
       "flag england",
@@ -8416,7 +8416,7 @@ list =
   },
   {
     "name": "flag-scotland",
-    "char": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "char": "🏴\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}",
     "category": "Flags",
     "keywords": [
       "flag scotland",
@@ -8428,7 +8428,7 @@ list =
   },
   {
     "name": "flag-wales",
-    "char": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "char": "🏴\u{E0067}\u{E0062}\u{E0077}\u{E006C}\u{E0073}\u{E007F}",
     "category": "Flags",
     "keywords": [
       "flag wales",
@@ -8477,7 +8477,7 @@ list =
   },
   {
     "name": "badminton_racquet_and_shuttlecock",
-    "char": "🏸",
+    "char": "\u{1F3F8}",
     "category": "Activities",
     "keywords": [
       "badminton",
@@ -8489,7 +8489,7 @@ list =
   },
   {
     "name": "bow_and_arrow",
-    "char": "🏹",
+    "char": "\u{1F3F9}",
     "category": "Objects",
     "keywords": [
       "bow and arrow",
@@ -8500,7 +8500,7 @@ list =
   },
   {
     "name": "amphora",
-    "char": "🏺",
+    "char": "\u{1F3FA}",
     "category": "Food & Drink",
     "keywords": [
       "amphora",
@@ -8512,7 +8512,7 @@ list =
   },
   {
     "name": "skin-tone-2",
-    "char": "🏻",
+    "char": "\u{1F3FB}",
     "category": "Skin Tones",
     "keywords": [
       "skin tone 2"
@@ -8522,7 +8522,7 @@ list =
   },
   {
     "name": "skin-tone-3",
-    "char": "🏼",
+    "char": "\u{1F3FC}",
     "category": "Skin Tones",
     "keywords": [
       "skin tone 3"
@@ -8532,7 +8532,7 @@ list =
   },
   {
     "name": "skin-tone-4",
-    "char": "🏽",
+    "char": "\u{1F3FD}",
     "category": "Skin Tones",
     "keywords": [
       "skin tone 4"
@@ -8542,7 +8542,7 @@ list =
   },
   {
     "name": "skin-tone-5",
-    "char": "🏾",
+    "char": "\u{1F3FE}",
     "category": "Skin Tones",
     "keywords": [
       "skin tone 5"
@@ -8552,7 +8552,7 @@ list =
   },
   {
     "name": "skin-tone-6",
-    "char": "🏿",
+    "char": "\u{1F3FF}",
     "category": "Skin Tones",
     "keywords": [
       "skin tone 6"
@@ -8675,7 +8675,7 @@ list =
   },
   {
     "name": "black_cat",
-    "char": "🐈‍⬛",
+    "char": "🐈\u{200D}⬛",
     "category": "Animals & Nature",
     "keywords": [
       "black cat",
@@ -8870,7 +8870,7 @@ list =
   },
   {
     "name": "service_dog",
-    "char": "🐕‍🦺",
+    "char": "🐕\u{200D}\u{1F9BA}",
     "category": "Animals & Nature",
     "keywords": [
       "service dog",
@@ -9442,7 +9442,7 @@ list =
   },
   {
     "name": "polar_bear",
-    "char": "🐻‍❄️",
+    "char": "🐻\u{200D}❄️",
     "category": "Animals & Nature",
     "keywords": [
       "polar bear",
@@ -9538,7 +9538,7 @@ list =
   },
   {
     "name": "eye-in-speech-bubble",
-    "char": "👁️‍🗨️",
+    "char": "👁️\u{200D}🗨️",
     "category": "Smileys & Emotion",
     "keywords": [
       "eye in speech bubble",
@@ -10125,7 +10125,7 @@ list =
   },
   {
     "name": "male-farmer",
-    "char": "👨‍🌾",
+    "char": "👨\u{200D}🌾",
     "category": "People & Body",
     "keywords": [
       "man farmer",
@@ -10140,7 +10140,7 @@ list =
   },
   {
     "name": "male-cook",
-    "char": "👨‍🍳",
+    "char": "👨\u{200D}🍳",
     "category": "People & Body",
     "keywords": [
       "man cook",
@@ -10154,7 +10154,7 @@ list =
   },
   {
     "name": "man_feeding_baby",
-    "char": "👨‍🍼",
+    "char": "👨\u{200D}🍼",
     "category": "People & Body",
     "keywords": [
       "man feeding baby",
@@ -10166,7 +10166,7 @@ list =
   },
   {
     "name": "male-student",
-    "char": "👨‍🎓",
+    "char": "👨\u{200D}🎓",
     "category": "People & Body",
     "keywords": [
       "man student",
@@ -10180,7 +10180,7 @@ list =
   },
   {
     "name": "male-singer",
-    "char": "👨‍🎤",
+    "char": "👨\u{200D}🎤",
     "category": "People & Body",
     "keywords": [
       "man singer",
@@ -10195,7 +10195,7 @@ list =
   },
   {
     "name": "male-artist",
-    "char": "👨‍🎨",
+    "char": "👨\u{200D}🎨",
     "category": "People & Body",
     "keywords": [
       "man artist",
@@ -10209,7 +10209,7 @@ list =
   },
   {
     "name": "male-teacher",
-    "char": "👨‍🏫",
+    "char": "👨\u{200D}🏫",
     "category": "People & Body",
     "keywords": [
       "man teacher",
@@ -10224,7 +10224,7 @@ list =
   },
   {
     "name": "male-factory-worker",
-    "char": "👨‍🏭",
+    "char": "👨\u{200D}🏭",
     "category": "People & Body",
     "keywords": [
       "man factory worker",
@@ -10239,7 +10239,7 @@ list =
   },
   {
     "name": "man-boy-boy",
-    "char": "👨‍👦‍👦",
+    "char": "👨\u{200D}👦\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man boy boy",
@@ -10255,7 +10255,7 @@ list =
   },
   {
     "name": "man-boy",
-    "char": "👨‍👦",
+    "char": "👨\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man boy",
@@ -10271,7 +10271,7 @@ list =
   },
   {
     "name": "man-girl-boy",
-    "char": "👨‍👧‍👦",
+    "char": "👨\u{200D}👧\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man girl boy",
@@ -10287,7 +10287,7 @@ list =
   },
   {
     "name": "man-girl-girl",
-    "char": "👨‍👧‍👧",
+    "char": "👨\u{200D}👧\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man girl girl",
@@ -10303,7 +10303,7 @@ list =
   },
   {
     "name": "man-girl",
-    "char": "👨‍👧",
+    "char": "👨\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man girl",
@@ -10319,7 +10319,7 @@ list =
   },
   {
     "name": "man-man-boy",
-    "char": "👨‍👨‍👦",
+    "char": "👨\u{200D}👨\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man man boy",
@@ -10335,7 +10335,7 @@ list =
   },
   {
     "name": "man-man-boy-boy",
-    "char": "👨‍👨‍👦‍👦",
+    "char": "👨\u{200D}👨\u{200D}👦\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man man boy boy",
@@ -10351,7 +10351,7 @@ list =
   },
   {
     "name": "man-man-girl",
-    "char": "👨‍👨‍👧",
+    "char": "👨\u{200D}👨\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man man girl",
@@ -10367,7 +10367,7 @@ list =
   },
   {
     "name": "man-man-girl-boy",
-    "char": "👨‍👨‍👧‍👦",
+    "char": "👨\u{200D}👨\u{200D}👧\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man man girl boy",
@@ -10383,7 +10383,7 @@ list =
   },
   {
     "name": "man-man-girl-girl",
-    "char": "👨‍👨‍👧‍👧",
+    "char": "👨\u{200D}👨\u{200D}👧\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man man girl girl",
@@ -10399,7 +10399,7 @@ list =
   },
   {
     "name": "man-woman-boy",
-    "char": "👨‍👩‍👦",
+    "char": "👨\u{200D}👩\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man woman boy",
@@ -10411,7 +10411,7 @@ list =
   },
   {
     "name": "man-woman-boy-boy",
-    "char": "👨‍👩‍👦‍👦",
+    "char": "👨\u{200D}👩\u{200D}👦\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man woman boy boy",
@@ -10427,7 +10427,7 @@ list =
   },
   {
     "name": "man-woman-girl",
-    "char": "👨‍👩‍👧",
+    "char": "👨\u{200D}👩\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man woman girl",
@@ -10443,7 +10443,7 @@ list =
   },
   {
     "name": "man-woman-girl-boy",
-    "char": "👨‍👩‍👧‍👦",
+    "char": "👨\u{200D}👩\u{200D}👧\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family man woman girl boy",
@@ -10459,7 +10459,7 @@ list =
   },
   {
     "name": "man-woman-girl-girl",
-    "char": "👨‍👩‍👧‍👧",
+    "char": "👨\u{200D}👩\u{200D}👧\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family man woman girl girl",
@@ -10475,7 +10475,7 @@ list =
   },
   {
     "name": "male-technologist",
-    "char": "👨‍💻",
+    "char": "👨\u{200D}💻",
     "category": "People & Body",
     "keywords": [
       "man technologist",
@@ -10495,7 +10495,7 @@ list =
   },
   {
     "name": "male-office-worker",
-    "char": "👨‍💼",
+    "char": "👨\u{200D}💼",
     "category": "People & Body",
     "keywords": [
       "man office worker",
@@ -10510,7 +10510,7 @@ list =
   },
   {
     "name": "male-mechanic",
-    "char": "👨‍🔧",
+    "char": "👨\u{200D}🔧",
     "category": "People & Body",
     "keywords": [
       "man mechanic",
@@ -10525,7 +10525,7 @@ list =
   },
   {
     "name": "male-scientist",
-    "char": "👨‍🔬",
+    "char": "👨\u{200D}🔬",
     "category": "People & Body",
     "keywords": [
       "man scientist",
@@ -10542,7 +10542,7 @@ list =
   },
   {
     "name": "male-astronaut",
-    "char": "👨‍🚀",
+    "char": "👨\u{200D}🚀",
     "category": "People & Body",
     "keywords": [
       "man astronaut",
@@ -10557,7 +10557,7 @@ list =
   },
   {
     "name": "male-firefighter",
-    "char": "👨‍🚒",
+    "char": "👨\u{200D}🚒",
     "category": "People & Body",
     "keywords": [
       "man firefighter",
@@ -10571,7 +10571,7 @@ list =
   },
   {
     "name": "man_with_probing_cane",
-    "char": "👨‍🦯",
+    "char": "👨\u{200D}\u{1F9AF}",
     "category": "People & Body",
     "keywords": [
       "man with probing cane",
@@ -10582,7 +10582,7 @@ list =
   },
   {
     "name": "red_haired_man",
-    "char": "👨‍🦰",
+    "char": "👨\u{200D}\u{1F9B0}",
     "category": "People & Body",
     "keywords": [
       "man red hair",
@@ -10594,7 +10594,7 @@ list =
   },
   {
     "name": "curly_haired_man",
-    "char": "👨‍🦱",
+    "char": "👨\u{200D}\u{1F9B1}",
     "category": "People & Body",
     "keywords": [
       "man curly hair",
@@ -10606,7 +10606,7 @@ list =
   },
   {
     "name": "bald_man",
-    "char": "👨‍🦲",
+    "char": "👨\u{200D}\u{1F9B2}",
     "category": "People & Body",
     "keywords": [
       "man bald",
@@ -10618,7 +10618,7 @@ list =
   },
   {
     "name": "white_haired_man",
-    "char": "👨‍🦳",
+    "char": "👨\u{200D}\u{1F9B3}",
     "category": "People & Body",
     "keywords": [
       "man white hair",
@@ -10631,7 +10631,7 @@ list =
   },
   {
     "name": "man_in_motorized_wheelchair",
-    "char": "👨‍🦼",
+    "char": "👨\u{200D}\u{1F9BC}",
     "category": "People & Body",
     "keywords": [
       "man in motorized wheelchair",
@@ -10643,7 +10643,7 @@ list =
   },
   {
     "name": "man_in_manual_wheelchair",
-    "char": "👨‍🦽",
+    "char": "👨\u{200D}\u{1F9BD}",
     "category": "People & Body",
     "keywords": [
       "man in manual wheelchair",
@@ -10655,7 +10655,7 @@ list =
   },
   {
     "name": "male-doctor",
-    "char": "👨‍⚕️",
+    "char": "👨\u{200D}⚕️",
     "category": "People & Body",
     "keywords": [
       "man health worker",
@@ -10672,7 +10672,7 @@ list =
   },
   {
     "name": "male-judge",
-    "char": "👨‍⚖️",
+    "char": "👨\u{200D}⚖️",
     "category": "People & Body",
     "keywords": [
       "man judge",
@@ -10687,7 +10687,7 @@ list =
   },
   {
     "name": "male-pilot",
-    "char": "👨‍✈️",
+    "char": "👨\u{200D}✈️",
     "category": "People & Body",
     "keywords": [
       "man pilot",
@@ -10702,7 +10702,7 @@ list =
   },
   {
     "name": "man-heart-man",
-    "char": "👨‍❤️‍👨",
+    "char": "👨\u{200D}❤️\u{200D}👨",
     "category": "People & Body",
     "keywords": [
       "couple with heart man man",
@@ -10721,7 +10721,7 @@ list =
   },
   {
     "name": "man-kiss-man",
-    "char": "👨‍❤️‍💋‍👨",
+    "char": "👨\u{200D}❤️\u{200D}💋\u{200D}👨",
     "category": "People & Body",
     "keywords": [
       "kiss man man",
@@ -10755,7 +10755,7 @@ list =
   },
   {
     "name": "female-farmer",
-    "char": "👩‍🌾",
+    "char": "👩\u{200D}🌾",
     "category": "People & Body",
     "keywords": [
       "woman farmer",
@@ -10770,7 +10770,7 @@ list =
   },
   {
     "name": "female-cook",
-    "char": "👩‍🍳",
+    "char": "👩\u{200D}🍳",
     "category": "People & Body",
     "keywords": [
       "woman cook",
@@ -10784,7 +10784,7 @@ list =
   },
   {
     "name": "woman_feeding_baby",
-    "char": "👩‍🍼",
+    "char": "👩\u{200D}🍼",
     "category": "People & Body",
     "keywords": [
       "woman feeding baby",
@@ -10796,7 +10796,7 @@ list =
   },
   {
     "name": "female-student",
-    "char": "👩‍🎓",
+    "char": "👩\u{200D}🎓",
     "category": "People & Body",
     "keywords": [
       "woman student",
@@ -10810,7 +10810,7 @@ list =
   },
   {
     "name": "female-singer",
-    "char": "👩‍🎤",
+    "char": "👩\u{200D}🎤",
     "category": "People & Body",
     "keywords": [
       "woman singer",
@@ -10825,7 +10825,7 @@ list =
   },
   {
     "name": "female-artist",
-    "char": "👩‍🎨",
+    "char": "👩\u{200D}🎨",
     "category": "People & Body",
     "keywords": [
       "woman artist",
@@ -10839,7 +10839,7 @@ list =
   },
   {
     "name": "female-teacher",
-    "char": "👩‍🏫",
+    "char": "👩\u{200D}🏫",
     "category": "People & Body",
     "keywords": [
       "woman teacher",
@@ -10854,7 +10854,7 @@ list =
   },
   {
     "name": "female-factory-worker",
-    "char": "👩‍🏭",
+    "char": "👩\u{200D}🏭",
     "category": "People & Body",
     "keywords": [
       "woman factory worker",
@@ -10869,7 +10869,7 @@ list =
   },
   {
     "name": "woman-boy-boy",
-    "char": "👩‍👦‍👦",
+    "char": "👩\u{200D}👦\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman boy boy",
@@ -10885,7 +10885,7 @@ list =
   },
   {
     "name": "woman-boy",
-    "char": "👩‍👦",
+    "char": "👩\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman boy",
@@ -10901,7 +10901,7 @@ list =
   },
   {
     "name": "woman-girl-boy",
-    "char": "👩‍👧‍👦",
+    "char": "👩\u{200D}👧\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman girl boy",
@@ -10917,7 +10917,7 @@ list =
   },
   {
     "name": "woman-girl-girl",
-    "char": "👩‍👧‍👧",
+    "char": "👩\u{200D}👧\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family woman girl girl",
@@ -10933,7 +10933,7 @@ list =
   },
   {
     "name": "woman-girl",
-    "char": "👩‍👧",
+    "char": "👩\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family woman girl",
@@ -10949,7 +10949,7 @@ list =
   },
   {
     "name": "woman-woman-boy",
-    "char": "👩‍👩‍👦",
+    "char": "👩\u{200D}👩\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman woman boy",
@@ -10965,7 +10965,7 @@ list =
   },
   {
     "name": "woman-woman-boy-boy",
-    "char": "👩‍👩‍👦‍👦",
+    "char": "👩\u{200D}👩\u{200D}👦\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman woman boy boy",
@@ -10981,7 +10981,7 @@ list =
   },
   {
     "name": "woman-woman-girl",
-    "char": "👩‍👩‍👧",
+    "char": "👩\u{200D}👩\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family woman woman girl",
@@ -10997,7 +10997,7 @@ list =
   },
   {
     "name": "woman-woman-girl-boy",
-    "char": "👩‍👩‍👧‍👦",
+    "char": "👩\u{200D}👩\u{200D}👧\u{200D}👦",
     "category": "People & Body",
     "keywords": [
       "family woman woman girl boy",
@@ -11013,7 +11013,7 @@ list =
   },
   {
     "name": "woman-woman-girl-girl",
-    "char": "👩‍👩‍👧‍👧",
+    "char": "👩\u{200D}👩\u{200D}👧\u{200D}👧",
     "category": "People & Body",
     "keywords": [
       "family woman woman girl girl",
@@ -11029,7 +11029,7 @@ list =
   },
   {
     "name": "female-technologist",
-    "char": "👩‍💻",
+    "char": "👩\u{200D}💻",
     "category": "People & Body",
     "keywords": [
       "woman technologist",
@@ -11049,7 +11049,7 @@ list =
   },
   {
     "name": "female-office-worker",
-    "char": "👩‍💼",
+    "char": "👩\u{200D}💼",
     "category": "People & Body",
     "keywords": [
       "woman office worker",
@@ -11064,7 +11064,7 @@ list =
   },
   {
     "name": "female-mechanic",
-    "char": "👩‍🔧",
+    "char": "👩\u{200D}🔧",
     "category": "People & Body",
     "keywords": [
       "woman mechanic",
@@ -11079,7 +11079,7 @@ list =
   },
   {
     "name": "female-scientist",
-    "char": "👩‍🔬",
+    "char": "👩\u{200D}🔬",
     "category": "People & Body",
     "keywords": [
       "woman scientist",
@@ -11096,7 +11096,7 @@ list =
   },
   {
     "name": "female-astronaut",
-    "char": "👩‍🚀",
+    "char": "👩\u{200D}🚀",
     "category": "People & Body",
     "keywords": [
       "woman astronaut",
@@ -11111,7 +11111,7 @@ list =
   },
   {
     "name": "female-firefighter",
-    "char": "👩‍🚒",
+    "char": "👩\u{200D}🚒",
     "category": "People & Body",
     "keywords": [
       "woman firefighter",
@@ -11125,7 +11125,7 @@ list =
   },
   {
     "name": "woman_with_probing_cane",
-    "char": "👩‍🦯",
+    "char": "👩\u{200D}\u{1F9AF}",
     "category": "People & Body",
     "keywords": [
       "woman with probing cane",
@@ -11136,7 +11136,7 @@ list =
   },
   {
     "name": "red_haired_woman",
-    "char": "👩‍🦰",
+    "char": "👩\u{200D}\u{1F9B0}",
     "category": "People & Body",
     "keywords": [
       "woman red hair",
@@ -11148,7 +11148,7 @@ list =
   },
   {
     "name": "curly_haired_woman",
-    "char": "👩‍🦱",
+    "char": "👩\u{200D}\u{1F9B1}",
     "category": "People & Body",
     "keywords": [
       "woman curly hair",
@@ -11160,7 +11160,7 @@ list =
   },
   {
     "name": "bald_woman",
-    "char": "👩‍🦲",
+    "char": "👩\u{200D}\u{1F9B2}",
     "category": "People & Body",
     "keywords": [
       "woman bald",
@@ -11172,7 +11172,7 @@ list =
   },
   {
     "name": "white_haired_woman",
-    "char": "👩‍🦳",
+    "char": "👩\u{200D}\u{1F9B3}",
     "category": "People & Body",
     "keywords": [
       "woman white hair",
@@ -11185,7 +11185,7 @@ list =
   },
   {
     "name": "woman_in_motorized_wheelchair",
-    "char": "👩‍🦼",
+    "char": "👩\u{200D}\u{1F9BC}",
     "category": "People & Body",
     "keywords": [
       "woman in motorized wheelchair",
@@ -11197,7 +11197,7 @@ list =
   },
   {
     "name": "woman_in_manual_wheelchair",
-    "char": "👩‍🦽",
+    "char": "👩\u{200D}\u{1F9BD}",
     "category": "People & Body",
     "keywords": [
       "woman in manual wheelchair",
@@ -11209,7 +11209,7 @@ list =
   },
   {
     "name": "female-doctor",
-    "char": "👩‍⚕️",
+    "char": "👩\u{200D}⚕️",
     "category": "People & Body",
     "keywords": [
       "woman health worker",
@@ -11226,7 +11226,7 @@ list =
   },
   {
     "name": "female-judge",
-    "char": "👩‍⚖️",
+    "char": "👩\u{200D}⚖️",
     "category": "People & Body",
     "keywords": [
       "woman judge",
@@ -11241,7 +11241,7 @@ list =
   },
   {
     "name": "female-pilot",
-    "char": "👩‍✈️",
+    "char": "👩\u{200D}✈️",
     "category": "People & Body",
     "keywords": [
       "woman pilot",
@@ -11256,7 +11256,7 @@ list =
   },
   {
     "name": "woman-heart-man",
-    "char": "👩‍❤️‍👨",
+    "char": "👩\u{200D}❤️\u{200D}👨",
     "category": "People & Body",
     "keywords": [
       "couple with heart woman man",
@@ -11268,7 +11268,7 @@ list =
   },
   {
     "name": "woman-heart-woman",
-    "char": "👩‍❤️‍👩",
+    "char": "👩\u{200D}❤️\u{200D}👩",
     "category": "People & Body",
     "keywords": [
       "couple with heart woman woman",
@@ -11287,7 +11287,7 @@ list =
   },
   {
     "name": "woman-kiss-man",
-    "char": "👩‍❤️‍💋‍👨",
+    "char": "👩\u{200D}❤️\u{200D}💋\u{200D}👨",
     "category": "People & Body",
     "keywords": [
       "kiss woman man",
@@ -11299,7 +11299,7 @@ list =
   },
   {
     "name": "woman-kiss-woman",
-    "char": "👩‍❤️‍💋‍👩",
+    "char": "👩\u{200D}❤️\u{200D}💋\u{200D}👩",
     "category": "People & Body",
     "keywords": [
       "kiss woman woman",
@@ -11408,7 +11408,7 @@ list =
   },
   {
     "name": "female-police-officer",
-    "char": "👮‍♀️",
+    "char": "👮\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman police officer",
@@ -11427,7 +11427,7 @@ list =
   },
   {
     "name": "male-police-officer",
-    "char": "👮‍♂️",
+    "char": "👮\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man police officer",
@@ -11456,7 +11456,7 @@ list =
   },
   {
     "name": "woman-with-bunny-ears-partying",
-    "char": "👯‍♀️",
+    "char": "👯\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "women with bunny ears",
@@ -11471,7 +11471,7 @@ list =
   },
   {
     "name": "man-with-bunny-ears-partying",
-    "char": "👯‍♂️",
+    "char": "👯\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "men with bunny ears",
@@ -11499,7 +11499,7 @@ list =
   },
   {
     "name": "woman_with_veil",
-    "char": "👰‍♀️",
+    "char": "👰\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman with veil",
@@ -11511,7 +11511,7 @@ list =
   },
   {
     "name": "man_with_veil",
-    "char": "👰‍♂️",
+    "char": "👰\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man with veil",
@@ -11538,7 +11538,7 @@ list =
   },
   {
     "name": "blond-haired-woman",
-    "char": "👱‍♀️",
+    "char": "👱\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman blond hair",
@@ -11554,7 +11554,7 @@ list =
   },
   {
     "name": "blond-haired-man",
-    "char": "👱‍♂️",
+    "char": "👱\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man blond hair",
@@ -11597,7 +11597,7 @@ list =
   },
   {
     "name": "woman-wearing-turban",
-    "char": "👳‍♀️",
+    "char": "👳\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman wearing turban",
@@ -11612,7 +11612,7 @@ list =
   },
   {
     "name": "man-wearing-turban",
-    "char": "👳‍♂️",
+    "char": "👳\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man wearing turban",
@@ -11687,7 +11687,7 @@ list =
   },
   {
     "name": "female-construction-worker",
-    "char": "👷‍♀️",
+    "char": "👷\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman construction worker",
@@ -11706,7 +11706,7 @@ list =
   },
   {
     "name": "male-construction-worker",
-    "char": "👷‍♂️",
+    "char": "👷\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man construction worker",
@@ -11875,7 +11875,7 @@ list =
   },
   {
     "name": "woman-tipping-hand",
-    "char": "💁‍♀️",
+    "char": "💁\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman tipping hand",
@@ -11890,7 +11890,7 @@ list =
   },
   {
     "name": "man-tipping-hand",
-    "char": "💁‍♂️",
+    "char": "💁\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man tipping hand",
@@ -11917,7 +11917,7 @@ list =
   },
   {
     "name": "female-guard",
-    "char": "💂‍♀️",
+    "char": "💂\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman guard",
@@ -11934,7 +11934,7 @@ list =
   },
   {
     "name": "male-guard",
-    "char": "💂‍♂️",
+    "char": "💂\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man guard",
@@ -12008,7 +12008,7 @@ list =
   },
   {
     "name": "woman-getting-massage",
-    "char": "💆‍♀️",
+    "char": "💆\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman getting massage",
@@ -12022,7 +12022,7 @@ list =
   },
   {
     "name": "man-getting-massage",
-    "char": "💆‍♂️",
+    "char": "💆\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man getting massage",
@@ -12048,7 +12048,7 @@ list =
   },
   {
     "name": "woman-getting-haircut",
-    "char": "💇‍♀️",
+    "char": "💇\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman getting haircut",
@@ -12061,7 +12061,7 @@ list =
   },
   {
     "name": "man-getting-haircut",
-    "char": "💇‍♂️",
+    "char": "💇\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man getting haircut",
@@ -13808,7 +13808,7 @@ list =
   },
   {
     "name": "prayer_beads",
-    "char": "📿",
+    "char": "\u{1F4FF}",
     "category": "Objects",
     "keywords": [
       "prayer beads",
@@ -14713,7 +14713,7 @@ list =
   },
   {
     "name": "kaaba",
-    "char": "🕋",
+    "char": "\u{1F54B}",
     "category": "Travel & Places",
     "keywords": [
       "kaaba",
@@ -14726,7 +14726,7 @@ list =
   },
   {
     "name": "mosque",
-    "char": "🕌",
+    "char": "\u{1F54C}",
     "category": "Travel & Places",
     "keywords": [
       "mosque",
@@ -14739,7 +14739,7 @@ list =
   },
   {
     "name": "synagogue",
-    "char": "🕍",
+    "char": "\u{1F54D}",
     "category": "Travel & Places",
     "keywords": [
       "synagogue",
@@ -14753,7 +14753,7 @@ list =
   },
   {
     "name": "menorah_with_nine_branches",
-    "char": "🕎",
+    "char": "\u{1F54E}",
     "category": "Symbols",
     "keywords": [
       "menorah",
@@ -15182,7 +15182,7 @@ list =
   },
   {
     "name": "female-detective",
-    "char": "🕵️‍♀️",
+    "char": "🕵️\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman detective",
@@ -15198,7 +15198,7 @@ list =
   },
   {
     "name": "male-detective",
-    "char": "🕵️‍♂️",
+    "char": "🕵️\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man detective",
@@ -15275,7 +15275,7 @@ list =
   },
   {
     "name": "man_dancing",
-    "char": "🕺",
+    "char": "\u{1F57A}",
     "category": "People & Body",
     "keywords": [
       "man dancing",
@@ -15401,7 +15401,7 @@ list =
   },
   {
     "name": "black_heart",
-    "char": "🖤",
+    "char": "\u{1F5A4}",
     "category": "Smileys & Emotion",
     "keywords": [
       "black heart",
@@ -16821,7 +16821,7 @@ list =
   },
   {
     "name": "upside_down_face",
-    "char": "🙃",
+    "char": "\u{1F643}",
     "category": "Smileys & Emotion",
     "keywords": [
       "upside down face",
@@ -16835,7 +16835,7 @@ list =
   },
   {
     "name": "face_with_rolling_eyes",
-    "char": "🙄",
+    "char": "\u{1F644}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with rolling eyes",
@@ -16848,7 +16848,7 @@ list =
   },
   {
     "name": "woman-gesturing-no",
-    "char": "🙅‍♀️",
+    "char": "🙅\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman gesturing no",
@@ -16862,7 +16862,7 @@ list =
   },
   {
     "name": "man-gesturing-no",
-    "char": "🙅‍♂️",
+    "char": "🙅\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man gesturing no",
@@ -16888,7 +16888,7 @@ list =
   },
   {
     "name": "woman-gesturing-ok",
-    "char": "🙆‍♀️",
+    "char": "🙆\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman gesturing ok",
@@ -16904,7 +16904,7 @@ list =
   },
   {
     "name": "man-gesturing-ok",
-    "char": "🙆‍♂️",
+    "char": "🙆\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man gesturing ok",
@@ -16932,7 +16932,7 @@ list =
   },
   {
     "name": "woman-bowing",
-    "char": "🙇‍♀️",
+    "char": "🙇\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman bowing",
@@ -16945,7 +16945,7 @@ list =
   },
   {
     "name": "man-bowing",
-    "char": "🙇‍♂️",
+    "char": "🙇\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man bowing",
@@ -17014,7 +17014,7 @@ list =
   },
   {
     "name": "woman-raising-hand",
-    "char": "🙋‍♀️",
+    "char": "🙋\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman raising hand",
@@ -17027,7 +17027,7 @@ list =
   },
   {
     "name": "man-raising-hand",
-    "char": "🙋‍♂️",
+    "char": "🙋\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man raising hand",
@@ -17068,7 +17068,7 @@ list =
   },
   {
     "name": "woman-frowning",
-    "char": "🙍‍♀️",
+    "char": "🙍\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman frowning",
@@ -17085,7 +17085,7 @@ list =
   },
   {
     "name": "man-frowning",
-    "char": "🙍‍♂️",
+    "char": "🙍\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man frowning",
@@ -17113,7 +17113,7 @@ list =
   },
   {
     "name": "woman-pouting",
-    "char": "🙎‍♀️",
+    "char": "🙎\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman pouting",
@@ -17126,7 +17126,7 @@ list =
   },
   {
     "name": "man-pouting",
-    "char": "🙎‍♂️",
+    "char": "🙎\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man pouting",
@@ -17638,7 +17638,7 @@ list =
   },
   {
     "name": "woman-rowing-boat",
-    "char": "🚣‍♀️",
+    "char": "🚣\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman rowing boat",
@@ -17654,7 +17654,7 @@ list =
   },
   {
     "name": "man-rowing-boat",
-    "char": "🚣‍♂️",
+    "char": "🚣\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man rowing boat",
@@ -17913,7 +17913,7 @@ list =
   },
   {
     "name": "woman-biking",
-    "char": "🚴‍♀️",
+    "char": "🚴\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman biking",
@@ -17929,7 +17929,7 @@ list =
   },
   {
     "name": "man-biking",
-    "char": "🚴‍♂️",
+    "char": "🚴\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man biking",
@@ -17956,7 +17956,7 @@ list =
   },
   {
     "name": "woman-mountain-biking",
-    "char": "🚵‍♀️",
+    "char": "🚵\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman mountain biking",
@@ -17973,7 +17973,7 @@ list =
   },
   {
     "name": "man-mountain-biking",
-    "char": "🚵‍♂️",
+    "char": "🚵\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man mountain biking",
@@ -18001,7 +18001,7 @@ list =
   },
   {
     "name": "woman-walking",
-    "char": "🚶‍♀️",
+    "char": "🚶\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman walking",
@@ -18016,7 +18016,7 @@ list =
   },
   {
     "name": "man-walking",
-    "char": "🚶‍♂️",
+    "char": "🚶\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man walking",
@@ -18313,7 +18313,7 @@ list =
   },
   {
     "name": "place_of_worship",
-    "char": "🛐",
+    "char": "\u{1F6D0}",
     "category": "Symbols",
     "keywords": [
       "place of worship",
@@ -18327,7 +18327,7 @@ list =
   },
   {
     "name": "octagonal_sign",
-    "char": "🛑",
+    "char": "\u{1F6D1}",
     "category": "Travel & Places",
     "keywords": [
       "stop sign",
@@ -18339,7 +18339,7 @@ list =
   },
   {
     "name": "shopping_trolley",
-    "char": "🛒",
+    "char": "\u{1F6D2}",
     "category": "Objects",
     "keywords": [
       "shopping cart",
@@ -18351,7 +18351,7 @@ list =
   },
   {
     "name": "hindu_temple",
-    "char": "🛕",
+    "char": "\u{1F6D5}",
     "category": "Travel & Places",
     "keywords": [
       "hindu temple",
@@ -18362,7 +18362,7 @@ list =
   },
   {
     "name": "hut",
-    "char": "🛖",
+    "char": "\u{1F6D6}",
     "category": "Travel & Places",
     "keywords": [
       "hut",
@@ -18374,7 +18374,7 @@ list =
   },
   {
     "name": "elevator",
-    "char": "🛗",
+    "char": "\u{1F6D7}",
     "category": "Objects",
     "keywords": [
       "elevator",
@@ -18528,7 +18528,7 @@ list =
   },
   {
     "name": "scooter",
-    "char": "🛴",
+    "char": "\u{1F6F4}",
     "category": "Travel & Places",
     "keywords": [
       "kick scooter",
@@ -18542,7 +18542,7 @@ list =
   },
   {
     "name": "motor_scooter",
-    "char": "🛵",
+    "char": "\u{1F6F5}",
     "category": "Travel & Places",
     "keywords": [
       "motor scooter",
@@ -18555,7 +18555,7 @@ list =
   },
   {
     "name": "canoe",
-    "char": "🛶",
+    "char": "\u{1F6F6}",
     "category": "Travel & Places",
     "keywords": [
       "canoe",
@@ -18569,7 +18569,7 @@ list =
   },
   {
     "name": "sled",
-    "char": "🛷",
+    "char": "\u{1F6F7}",
     "category": "Activities",
     "keywords": [
       "sled",
@@ -18582,7 +18582,7 @@ list =
   },
   {
     "name": "flying_saucer",
-    "char": "🛸",
+    "char": "\u{1F6F8}",
     "category": "Travel & Places",
     "keywords": [
       "flying saucer",
@@ -18595,7 +18595,7 @@ list =
   },
   {
     "name": "skateboard",
-    "char": "🛹",
+    "char": "\u{1F6F9}",
     "category": "Travel & Places",
     "keywords": [
       "skateboard",
@@ -18606,7 +18606,7 @@ list =
   },
   {
     "name": "auto_rickshaw",
-    "char": "🛺",
+    "char": "\u{1F6FA}",
     "category": "Travel & Places",
     "keywords": [
       "auto rickshaw",
@@ -18618,7 +18618,7 @@ list =
   },
   {
     "name": "pickup_truck",
-    "char": "🛻",
+    "char": "\u{1F6FB}",
     "category": "Travel & Places",
     "keywords": [
       "pickup truck",
@@ -18630,7 +18630,7 @@ list =
   },
   {
     "name": "roller_skate",
-    "char": "🛼",
+    "char": "\u{1F6FC}",
     "category": "Travel & Places",
     "keywords": [
       "roller skate",
@@ -18642,7 +18642,7 @@ list =
   },
   {
     "name": "large_orange_circle",
-    "char": "🟠",
+    "char": "\u{1F7E0}",
     "category": "Symbols",
     "keywords": [
       "orange circle",
@@ -18654,7 +18654,7 @@ list =
   },
   {
     "name": "large_yellow_circle",
-    "char": "🟡",
+    "char": "\u{1F7E1}",
     "category": "Symbols",
     "keywords": [
       "yellow circle",
@@ -18666,7 +18666,7 @@ list =
   },
   {
     "name": "large_green_circle",
-    "char": "🟢",
+    "char": "\u{1F7E2}",
     "category": "Symbols",
     "keywords": [
       "green circle",
@@ -18678,7 +18678,7 @@ list =
   },
   {
     "name": "large_purple_circle",
-    "char": "🟣",
+    "char": "\u{1F7E3}",
     "category": "Symbols",
     "keywords": [
       "purple circle",
@@ -18690,7 +18690,7 @@ list =
   },
   {
     "name": "large_brown_circle",
-    "char": "🟤",
+    "char": "\u{1F7E4}",
     "category": "Symbols",
     "keywords": [
       "brown circle",
@@ -18702,7 +18702,7 @@ list =
   },
   {
     "name": "large_red_square",
-    "char": "🟥",
+    "char": "\u{1F7E5}",
     "category": "Symbols",
     "keywords": [
       "red square",
@@ -18713,7 +18713,7 @@ list =
   },
   {
     "name": "large_blue_square",
-    "char": "🟦",
+    "char": "\u{1F7E6}",
     "category": "Symbols",
     "keywords": [
       "blue square",
@@ -18724,7 +18724,7 @@ list =
   },
   {
     "name": "large_orange_square",
-    "char": "🟧",
+    "char": "\u{1F7E7}",
     "category": "Symbols",
     "keywords": [
       "orange square",
@@ -18735,7 +18735,7 @@ list =
   },
   {
     "name": "large_yellow_square",
-    "char": "🟨",
+    "char": "\u{1F7E8}",
     "category": "Symbols",
     "keywords": [
       "yellow square",
@@ -18746,7 +18746,7 @@ list =
   },
   {
     "name": "large_green_square",
-    "char": "🟩",
+    "char": "\u{1F7E9}",
     "category": "Symbols",
     "keywords": [
       "green square",
@@ -18757,7 +18757,7 @@ list =
   },
   {
     "name": "large_purple_square",
-    "char": "🟪",
+    "char": "\u{1F7EA}",
     "category": "Symbols",
     "keywords": [
       "purple square",
@@ -18768,7 +18768,7 @@ list =
   },
   {
     "name": "large_brown_square",
-    "char": "🟫",
+    "char": "\u{1F7EB}",
     "category": "Symbols",
     "keywords": [
       "brown square",
@@ -18779,7 +18779,7 @@ list =
   },
   {
     "name": "pinched_fingers",
-    "char": "🤌",
+    "char": "\u{1F90C}",
     "category": "People & Body",
     "keywords": [
       "pinched fingers",
@@ -18792,7 +18792,7 @@ list =
   },
   {
     "name": "white_heart",
-    "char": "🤍",
+    "char": "\u{1F90D}",
     "category": "Smileys & Emotion",
     "keywords": [
       "white heart",
@@ -18803,7 +18803,7 @@ list =
   },
   {
     "name": "brown_heart",
-    "char": "🤎",
+    "char": "\u{1F90E}",
     "category": "Smileys & Emotion",
     "keywords": [
       "brown heart",
@@ -18814,7 +18814,7 @@ list =
   },
   {
     "name": "pinching_hand",
-    "char": "🤏",
+    "char": "\u{1F90F}",
     "category": "People & Body",
     "keywords": [
       "pinching hand",
@@ -18827,7 +18827,7 @@ list =
   },
   {
     "name": "zipper_mouth_face",
-    "char": "🤐",
+    "char": "\u{1F910}",
     "category": "Smileys & Emotion",
     "keywords": [
       "zipper mouth face",
@@ -18841,7 +18841,7 @@ list =
   },
   {
     "name": "money_mouth_face",
-    "char": "🤑",
+    "char": "\u{1F911}",
     "category": "Smileys & Emotion",
     "keywords": [
       "money mouth face",
@@ -18855,7 +18855,7 @@ list =
   },
   {
     "name": "face_with_thermometer",
-    "char": "🤒",
+    "char": "\u{1F912}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with thermometer",
@@ -18870,7 +18870,7 @@ list =
   },
   {
     "name": "nerd_face",
-    "char": "🤓",
+    "char": "\u{1F913}",
     "category": "Smileys & Emotion",
     "keywords": [
       "nerd face",
@@ -18884,7 +18884,7 @@ list =
   },
   {
     "name": "thinking_face",
-    "char": "🤔",
+    "char": "\u{1F914}",
     "category": "Smileys & Emotion",
     "keywords": [
       "thinking face",
@@ -18898,7 +18898,7 @@ list =
   },
   {
     "name": "face_with_head_bandage",
-    "char": "🤕",
+    "char": "\u{1F915}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with head bandage",
@@ -18912,7 +18912,7 @@ list =
   },
   {
     "name": "robot_face",
-    "char": "🤖",
+    "char": "\u{1F916}",
     "category": "Smileys & Emotion",
     "keywords": [
       "robot",
@@ -18926,7 +18926,7 @@ list =
   },
   {
     "name": "hugging_face",
-    "char": "🤗",
+    "char": "\u{1F917}",
     "category": "Smileys & Emotion",
     "keywords": [
       "hugging face",
@@ -18939,7 +18939,7 @@ list =
   },
   {
     "name": "the_horns",
-    "char": "🤘",
+    "char": "\u{1F918}",
     "category": "People & Body",
     "keywords": [
       "sign of the horns",
@@ -18955,7 +18955,7 @@ list =
   },
   {
     "name": "call_me_hand",
-    "char": "🤙",
+    "char": "\u{1F919}",
     "category": "People & Body",
     "keywords": [
       "call me hand",
@@ -18967,7 +18967,7 @@ list =
   },
   {
     "name": "raised_back_of_hand",
-    "char": "🤚",
+    "char": "\u{1F91A}",
     "category": "People & Body",
     "keywords": [
       "raised back of hand",
@@ -18980,7 +18980,7 @@ list =
   },
   {
     "name": "left-facing_fist",
-    "char": "🤛",
+    "char": "\u{1F91B}",
     "category": "People & Body",
     "keywords": [
       "left facing fist",
@@ -18992,7 +18992,7 @@ list =
   },
   {
     "name": "right-facing_fist",
-    "char": "🤜",
+    "char": "\u{1F91C}",
     "category": "People & Body",
     "keywords": [
       "right facing fist",
@@ -19004,7 +19004,7 @@ list =
   },
   {
     "name": "handshake",
-    "char": "🤝",
+    "char": "\u{1F91D}",
     "category": "People & Body",
     "keywords": [
       "handshake",
@@ -19016,7 +19016,7 @@ list =
   },
   {
     "name": "crossed_fingers",
-    "char": "🤞",
+    "char": "\u{1F91E}",
     "category": "People & Body",
     "keywords": [
       "crossed fingers",
@@ -19029,7 +19029,7 @@ list =
   },
   {
     "name": "i_love_you_hand_sign",
-    "char": "🤟",
+    "char": "\u{1F91F}",
     "category": "People & Body",
     "keywords": [
       "love you gesture",
@@ -19043,7 +19043,7 @@ list =
   },
   {
     "name": "face_with_cowboy_hat",
-    "char": "🤠",
+    "char": "\u{1F920}",
     "category": "Smileys & Emotion",
     "keywords": [
       "cowboy hat face",
@@ -19057,7 +19057,7 @@ list =
   },
   {
     "name": "clown_face",
-    "char": "🤡",
+    "char": "\u{1F921}",
     "category": "Smileys & Emotion",
     "keywords": [
       "clown face",
@@ -19068,7 +19068,7 @@ list =
   },
   {
     "name": "nauseated_face",
-    "char": "🤢",
+    "char": "\u{1F922}",
     "category": "Smileys & Emotion",
     "keywords": [
       "nauseated face",
@@ -19085,7 +19085,7 @@ list =
   },
   {
     "name": "rolling_on_the_floor_laughing",
-    "char": "🤣",
+    "char": "\u{1F923}",
     "category": "Smileys & Emotion",
     "keywords": [
       "rolling on the floor laughing",
@@ -19101,7 +19101,7 @@ list =
   },
   {
     "name": "drooling_face",
-    "char": "🤤",
+    "char": "\u{1F924}",
     "category": "Smileys & Emotion",
     "keywords": [
       "drooling face",
@@ -19112,7 +19112,7 @@ list =
   },
   {
     "name": "lying_face",
-    "char": "🤥",
+    "char": "\u{1F925}",
     "category": "Smileys & Emotion",
     "keywords": [
       "lying face",
@@ -19125,7 +19125,7 @@ list =
   },
   {
     "name": "woman-facepalming",
-    "char": "🤦‍♀️",
+    "char": "\u{1F926}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman facepalming",
@@ -19139,7 +19139,7 @@ list =
   },
   {
     "name": "man-facepalming",
-    "char": "🤦‍♂️",
+    "char": "\u{1F926}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man facepalming",
@@ -19153,7 +19153,7 @@ list =
   },
   {
     "name": "face_palm",
-    "char": "🤦",
+    "char": "\u{1F926}",
     "category": "People & Body",
     "keywords": [
       "person facepalming",
@@ -19165,7 +19165,7 @@ list =
   },
   {
     "name": "sneezing_face",
-    "char": "🤧",
+    "char": "\u{1F927}",
     "category": "Smileys & Emotion",
     "keywords": [
       "sneezing face",
@@ -19180,7 +19180,7 @@ list =
   },
   {
     "name": "face_with_raised_eyebrow",
-    "char": "🤨",
+    "char": "\u{1F928}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with raised eyebrow",
@@ -19197,7 +19197,7 @@ list =
   },
   {
     "name": "star-struck",
-    "char": "🤩",
+    "char": "\u{1F929}",
     "category": "Smileys & Emotion",
     "keywords": [
       "star struck",
@@ -19213,7 +19213,7 @@ list =
   },
   {
     "name": "zany_face",
-    "char": "🤪",
+    "char": "\u{1F92A}",
     "category": "Smileys & Emotion",
     "keywords": [
       "zany face",
@@ -19227,7 +19227,7 @@ list =
   },
   {
     "name": "shushing_face",
-    "char": "🤫",
+    "char": "\u{1F92B}",
     "category": "Smileys & Emotion",
     "keywords": [
       "shushing face",
@@ -19241,7 +19241,7 @@ list =
   },
   {
     "name": "face_with_symbols_on_mouth",
-    "char": "🤬",
+    "char": "\u{1F92C}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with symbols on mouth",
@@ -19258,7 +19258,7 @@ list =
   },
   {
     "name": "face_with_hand_over_mouth",
-    "char": "🤭",
+    "char": "\u{1F92D}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with hand over mouth",
@@ -19273,7 +19273,7 @@ list =
   },
   {
     "name": "face_vomiting",
-    "char": "🤮",
+    "char": "\u{1F92E}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face vomiting",
@@ -19286,7 +19286,7 @@ list =
   },
   {
     "name": "exploding_head",
-    "char": "🤯",
+    "char": "\u{1F92F}",
     "category": "Smileys & Emotion",
     "keywords": [
       "exploding head",
@@ -19301,7 +19301,7 @@ list =
   },
   {
     "name": "pregnant_woman",
-    "char": "🤰",
+    "char": "\u{1F930}",
     "category": "People & Body",
     "keywords": [
       "pregnant woman",
@@ -19312,7 +19312,7 @@ list =
   },
   {
     "name": "breast-feeding",
-    "char": "🤱",
+    "char": "\u{1F931}",
     "category": "People & Body",
     "keywords": [
       "breast feeding",
@@ -19324,7 +19324,7 @@ list =
   },
   {
     "name": "palms_up_together",
-    "char": "🤲",
+    "char": "\u{1F932}",
     "category": "People & Body",
     "keywords": [
       "palms up together",
@@ -19338,7 +19338,7 @@ list =
   },
   {
     "name": "selfie",
-    "char": "🤳",
+    "char": "\u{1F933}",
     "category": "People & Body",
     "keywords": [
       "selfie",
@@ -19350,7 +19350,7 @@ list =
   },
   {
     "name": "prince",
-    "char": "🤴",
+    "char": "\u{1F934}",
     "category": "People & Body",
     "keywords": [
       "prince",
@@ -19366,7 +19366,7 @@ list =
   },
   {
     "name": "woman_in_tuxedo",
-    "char": "🤵‍♀️",
+    "char": "\u{1F935}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman in tuxedo",
@@ -19378,7 +19378,7 @@ list =
   },
   {
     "name": "man_in_tuxedo",
-    "char": "🤵‍♂️",
+    "char": "\u{1F935}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man in tuxedo",
@@ -19390,7 +19390,7 @@ list =
   },
   {
     "name": "person_in_tuxedo",
-    "char": "🤵",
+    "char": "\u{1F935}",
     "category": "People & Body",
     "keywords": [
       "man in tuxedo",
@@ -19405,7 +19405,7 @@ list =
   },
   {
     "name": "mrs_claus",
-    "char": "🤶",
+    "char": "\u{1F936}",
     "category": "People & Body",
     "keywords": [
       "mrs claus",
@@ -19419,7 +19419,7 @@ list =
   },
   {
     "name": "woman-shrugging",
-    "char": "🤷‍♀️",
+    "char": "\u{1F937}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman shrugging",
@@ -19435,7 +19435,7 @@ list =
   },
   {
     "name": "man-shrugging",
-    "char": "🤷‍♂️",
+    "char": "\u{1F937}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man shrugging",
@@ -19451,7 +19451,7 @@ list =
   },
   {
     "name": "shrug",
-    "char": "🤷",
+    "char": "\u{1F937}",
     "category": "People & Body",
     "keywords": [
       "person shrugging",
@@ -19463,7 +19463,7 @@ list =
   },
   {
     "name": "woman-cartwheeling",
-    "char": "🤸‍♀️",
+    "char": "\u{1F938}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman cartwheeling",
@@ -19474,7 +19474,7 @@ list =
   },
   {
     "name": "man-cartwheeling",
-    "char": "🤸‍♂️",
+    "char": "\u{1F938}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man cartwheeling",
@@ -19485,7 +19485,7 @@ list =
   },
   {
     "name": "person_doing_cartwheel",
-    "char": "🤸",
+    "char": "\u{1F938}",
     "category": "People & Body",
     "keywords": [
       "person cartwheeling",
@@ -19498,7 +19498,7 @@ list =
   },
   {
     "name": "woman-juggling",
-    "char": "🤹‍♀️",
+    "char": "\u{1F939}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman juggling",
@@ -19512,7 +19512,7 @@ list =
   },
   {
     "name": "man-juggling",
-    "char": "🤹‍♂️",
+    "char": "\u{1F939}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man juggling",
@@ -19526,7 +19526,7 @@ list =
   },
   {
     "name": "juggling",
-    "char": "🤹",
+    "char": "\u{1F939}",
     "category": "People & Body",
     "keywords": [
       "person juggling",
@@ -19539,7 +19539,7 @@ list =
   },
   {
     "name": "fencer",
-    "char": "🤺",
+    "char": "\u{1F93A}",
     "category": "People & Body",
     "keywords": [
       "person fencing",
@@ -19553,7 +19553,7 @@ list =
   },
   {
     "name": "woman-wrestling",
-    "char": "🤼‍♀️",
+    "char": "\u{1F93C}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "women wrestling",
@@ -19566,7 +19566,7 @@ list =
   },
   {
     "name": "man-wrestling",
-    "char": "🤼‍♂️",
+    "char": "\u{1F93C}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "men wrestling",
@@ -19579,7 +19579,7 @@ list =
   },
   {
     "name": "wrestlers",
-    "char": "🤼",
+    "char": "\u{1F93C}",
     "category": "People & Body",
     "keywords": [
       "people wrestling",
@@ -19591,7 +19591,7 @@ list =
   },
   {
     "name": "woman-playing-water-polo",
-    "char": "🤽‍♀️",
+    "char": "\u{1F93D}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman playing water polo",
@@ -19603,7 +19603,7 @@ list =
   },
   {
     "name": "man-playing-water-polo",
-    "char": "🤽‍♂️",
+    "char": "\u{1F93D}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man playing water polo",
@@ -19615,7 +19615,7 @@ list =
   },
   {
     "name": "water_polo",
-    "char": "🤽",
+    "char": "\u{1F93D}",
     "category": "People & Body",
     "keywords": [
       "person playing water polo",
@@ -19627,7 +19627,7 @@ list =
   },
   {
     "name": "woman-playing-handball",
-    "char": "🤾‍♀️",
+    "char": "\u{1F93E}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman playing handball",
@@ -19638,7 +19638,7 @@ list =
   },
   {
     "name": "man-playing-handball",
-    "char": "🤾‍♂️",
+    "char": "\u{1F93E}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man playing handball",
@@ -19649,7 +19649,7 @@ list =
   },
   {
     "name": "handball",
-    "char": "🤾",
+    "char": "\u{1F93E}",
     "category": "People & Body",
     "keywords": [
       "person playing handball",
@@ -19661,7 +19661,7 @@ list =
   },
   {
     "name": "diving_mask",
-    "char": "🤿",
+    "char": "\u{1F93F}",
     "category": "Activities",
     "keywords": [
       "diving mask",
@@ -19673,7 +19673,7 @@ list =
   },
   {
     "name": "wilted_flower",
-    "char": "🥀",
+    "char": "\u{1F940}",
     "category": "Animals & Nature",
     "keywords": [
       "wilted flower",
@@ -19686,7 +19686,7 @@ list =
   },
   {
     "name": "drum_with_drumsticks",
-    "char": "🥁",
+    "char": "\u{1F941}",
     "category": "Objects",
     "keywords": [
       "drum",
@@ -19701,7 +19701,7 @@ list =
   },
   {
     "name": "clinking_glasses",
-    "char": "🥂",
+    "char": "\u{1F942}",
     "category": "Food & Drink",
     "keywords": [
       "clinking glasses",
@@ -19720,7 +19720,7 @@ list =
   },
   {
     "name": "tumbler_glass",
-    "char": "🥃",
+    "char": "\u{1F943}",
     "category": "Food & Drink",
     "keywords": [
       "tumbler glass",
@@ -19741,7 +19741,7 @@ list =
   },
   {
     "name": "spoon",
-    "char": "🥄",
+    "char": "\u{1F944}",
     "category": "Food & Drink",
     "keywords": [
       "spoon",
@@ -19754,7 +19754,7 @@ list =
   },
   {
     "name": "goal_net",
-    "char": "🥅",
+    "char": "\u{1F945}",
     "category": "Activities",
     "keywords": [
       "goal net",
@@ -19765,7 +19765,7 @@ list =
   },
   {
     "name": "first_place_medal",
-    "char": "🥇",
+    "char": "\u{1F947}",
     "category": "Activities",
     "keywords": [
       "1st place medal",
@@ -19779,7 +19779,7 @@ list =
   },
   {
     "name": "second_place_medal",
-    "char": "🥈",
+    "char": "\u{1F948}",
     "category": "Activities",
     "keywords": [
       "2nd place medal",
@@ -19792,7 +19792,7 @@ list =
   },
   {
     "name": "third_place_medal",
-    "char": "🥉",
+    "char": "\u{1F949}",
     "category": "Activities",
     "keywords": [
       "3rd place medal",
@@ -19805,7 +19805,7 @@ list =
   },
   {
     "name": "boxing_glove",
-    "char": "🥊",
+    "char": "\u{1F94A}",
     "category": "Activities",
     "keywords": [
       "boxing glove",
@@ -19817,7 +19817,7 @@ list =
   },
   {
     "name": "martial_arts_uniform",
-    "char": "🥋",
+    "char": "\u{1F94B}",
     "category": "Activities",
     "keywords": [
       "martial arts uniform",
@@ -19830,7 +19830,7 @@ list =
   },
   {
     "name": "curling_stone",
-    "char": "🥌",
+    "char": "\u{1F94C}",
     "category": "Activities",
     "keywords": [
       "curling stone",
@@ -19841,7 +19841,7 @@ list =
   },
   {
     "name": "lacrosse",
-    "char": "🥍",
+    "char": "\u{1F94D}",
     "category": "Activities",
     "keywords": [
       "lacrosse",
@@ -19854,7 +19854,7 @@ list =
   },
   {
     "name": "softball",
-    "char": "🥎",
+    "char": "\u{1F94E}",
     "category": "Activities",
     "keywords": [
       "softball",
@@ -19866,7 +19866,7 @@ list =
   },
   {
     "name": "flying_disc",
-    "char": "🥏",
+    "char": "\u{1F94F}",
     "category": "Activities",
     "keywords": [
       "flying disc",
@@ -19879,7 +19879,7 @@ list =
   },
   {
     "name": "croissant",
-    "char": "🥐",
+    "char": "\u{1F950}",
     "category": "Food & Drink",
     "keywords": [
       "croissant",
@@ -19892,7 +19892,7 @@ list =
   },
   {
     "name": "avocado",
-    "char": "🥑",
+    "char": "\u{1F951}",
     "category": "Food & Drink",
     "keywords": [
       "avocado",
@@ -19904,7 +19904,7 @@ list =
   },
   {
     "name": "cucumber",
-    "char": "🥒",
+    "char": "\u{1F952}",
     "category": "Food & Drink",
     "keywords": [
       "cucumber",
@@ -19917,7 +19917,7 @@ list =
   },
   {
     "name": "bacon",
-    "char": "🥓",
+    "char": "\u{1F953}",
     "category": "Food & Drink",
     "keywords": [
       "bacon",
@@ -19932,7 +19932,7 @@ list =
   },
   {
     "name": "potato",
-    "char": "🥔",
+    "char": "\u{1F954}",
     "category": "Food & Drink",
     "keywords": [
       "potato",
@@ -19946,7 +19946,7 @@ list =
   },
   {
     "name": "carrot",
-    "char": "🥕",
+    "char": "\u{1F955}",
     "category": "Food & Drink",
     "keywords": [
       "carrot",
@@ -19959,7 +19959,7 @@ list =
   },
   {
     "name": "baguette_bread",
-    "char": "🥖",
+    "char": "\u{1F956}",
     "category": "Food & Drink",
     "keywords": [
       "baguette bread",
@@ -19972,7 +19972,7 @@ list =
   },
   {
     "name": "green_salad",
-    "char": "🥗",
+    "char": "\u{1F957}",
     "category": "Food & Drink",
     "keywords": [
       "green salad",
@@ -19985,7 +19985,7 @@ list =
   },
   {
     "name": "shallow_pan_of_food",
-    "char": "🥘",
+    "char": "\u{1F958}",
     "category": "Food & Drink",
     "keywords": [
       "shallow pan of food",
@@ -19999,7 +19999,7 @@ list =
   },
   {
     "name": "stuffed_flatbread",
-    "char": "🥙",
+    "char": "\u{1F959}",
     "category": "Food & Drink",
     "keywords": [
       "stuffed flatbread",
@@ -20013,7 +20013,7 @@ list =
   },
   {
     "name": "egg",
-    "char": "🥚",
+    "char": "\u{1F95A}",
     "category": "Food & Drink",
     "keywords": [
       "egg",
@@ -20026,7 +20026,7 @@ list =
   },
   {
     "name": "glass_of_milk",
-    "char": "🥛",
+    "char": "\u{1F95B}",
     "category": "Food & Drink",
     "keywords": [
       "glass of milk",
@@ -20039,7 +20039,7 @@ list =
   },
   {
     "name": "peanuts",
-    "char": "🥜",
+    "char": "\u{1F95C}",
     "category": "Food & Drink",
     "keywords": [
       "peanuts",
@@ -20051,7 +20051,7 @@ list =
   },
   {
     "name": "kiwifruit",
-    "char": "🥝",
+    "char": "\u{1F95D}",
     "category": "Food & Drink",
     "keywords": [
       "kiwi fruit",
@@ -20064,7 +20064,7 @@ list =
   },
   {
     "name": "pancakes",
-    "char": "🥞",
+    "char": "\u{1F95E}",
     "category": "Food & Drink",
     "keywords": [
       "pancakes",
@@ -20078,7 +20078,7 @@ list =
   },
   {
     "name": "dumpling",
-    "char": "🥟",
+    "char": "\u{1F95F}",
     "category": "Food & Drink",
     "keywords": [
       "dumpling",
@@ -20092,7 +20092,7 @@ list =
   },
   {
     "name": "fortune_cookie",
-    "char": "🥠",
+    "char": "\u{1F960}",
     "category": "Food & Drink",
     "keywords": [
       "fortune cookie",
@@ -20104,7 +20104,7 @@ list =
   },
   {
     "name": "takeout_box",
-    "char": "🥡",
+    "char": "\u{1F961}",
     "category": "Food & Drink",
     "keywords": [
       "takeout box",
@@ -20116,7 +20116,7 @@ list =
   },
   {
     "name": "chopsticks",
-    "char": "🥢",
+    "char": "\u{1F962}",
     "category": "Food & Drink",
     "keywords": [
       "chopsticks",
@@ -20127,7 +20127,7 @@ list =
   },
   {
     "name": "bowl_with_spoon",
-    "char": "🥣",
+    "char": "\u{1F963}",
     "category": "Food & Drink",
     "keywords": [
       "bowl with spoon",
@@ -20142,7 +20142,7 @@ list =
   },
   {
     "name": "cup_with_straw",
-    "char": "🥤",
+    "char": "\u{1F964}",
     "category": "Food & Drink",
     "keywords": [
       "cup with straw",
@@ -20154,7 +20154,7 @@ list =
   },
   {
     "name": "coconut",
-    "char": "🥥",
+    "char": "\u{1F965}",
     "category": "Food & Drink",
     "keywords": [
       "coconut",
@@ -20168,7 +20168,7 @@ list =
   },
   {
     "name": "broccoli",
-    "char": "🥦",
+    "char": "\u{1F966}",
     "category": "Food & Drink",
     "keywords": [
       "broccoli",
@@ -20181,7 +20181,7 @@ list =
   },
   {
     "name": "pie",
-    "char": "🥧",
+    "char": "\u{1F967}",
     "category": "Food & Drink",
     "keywords": [
       "pie",
@@ -20194,7 +20194,7 @@ list =
   },
   {
     "name": "pretzel",
-    "char": "🥨",
+    "char": "\u{1F968}",
     "category": "Food & Drink",
     "keywords": [
       "pretzel",
@@ -20207,7 +20207,7 @@ list =
   },
   {
     "name": "cut_of_meat",
-    "char": "🥩",
+    "char": "\u{1F969}",
     "category": "Food & Drink",
     "keywords": [
       "cut of meat",
@@ -20224,7 +20224,7 @@ list =
   },
   {
     "name": "sandwich",
-    "char": "🥪",
+    "char": "\u{1F96A}",
     "category": "Food & Drink",
     "keywords": [
       "sandwich",
@@ -20237,7 +20237,7 @@ list =
   },
   {
     "name": "canned_food",
-    "char": "🥫",
+    "char": "\u{1F96B}",
     "category": "Food & Drink",
     "keywords": [
       "canned food",
@@ -20249,7 +20249,7 @@ list =
   },
   {
     "name": "leafy_green",
-    "char": "🥬",
+    "char": "\u{1F96C}",
     "category": "Food & Drink",
     "keywords": [
       "leafy green",
@@ -20266,7 +20266,7 @@ list =
   },
   {
     "name": "mango",
-    "char": "🥭",
+    "char": "\u{1F96D}",
     "category": "Food & Drink",
     "keywords": [
       "mango",
@@ -20279,7 +20279,7 @@ list =
   },
   {
     "name": "moon_cake",
-    "char": "🥮",
+    "char": "\u{1F96E}",
     "category": "Food & Drink",
     "keywords": [
       "moon cake",
@@ -20291,7 +20291,7 @@ list =
   },
   {
     "name": "bagel",
-    "char": "🥯",
+    "char": "\u{1F96F}",
     "category": "Food & Drink",
     "keywords": [
       "bagel",
@@ -20305,7 +20305,7 @@ list =
   },
   {
     "name": "smiling_face_with_3_hearts",
-    "char": "🥰",
+    "char": "\u{1F970}",
     "category": "Smileys & Emotion",
     "keywords": [
       "smiling face with hearts",
@@ -20325,7 +20325,7 @@ list =
   },
   {
     "name": "yawning_face",
-    "char": "🥱",
+    "char": "\u{1F971}",
     "category": "Smileys & Emotion",
     "keywords": [
       "yawning face",
@@ -20338,7 +20338,7 @@ list =
   },
   {
     "name": "smiling_face_with_tear",
-    "char": "🥲",
+    "char": "\u{1F972}",
     "category": "Smileys & Emotion",
     "keywords": [
       "smiling face with tear",
@@ -20351,7 +20351,7 @@ list =
   },
   {
     "name": "partying_face",
-    "char": "🥳",
+    "char": "\u{1F973}",
     "category": "Smileys & Emotion",
     "keywords": [
       "partying face",
@@ -20364,7 +20364,7 @@ list =
   },
   {
     "name": "woozy_face",
-    "char": "🥴",
+    "char": "\u{1F974}",
     "category": "Smileys & Emotion",
     "keywords": [
       "woozy face",
@@ -20379,7 +20379,7 @@ list =
   },
   {
     "name": "hot_face",
-    "char": "🥵",
+    "char": "\u{1F975}",
     "category": "Smileys & Emotion",
     "keywords": [
       "hot face",
@@ -20394,7 +20394,7 @@ list =
   },
   {
     "name": "cold_face",
-    "char": "🥶",
+    "char": "\u{1F976}",
     "category": "Smileys & Emotion",
     "keywords": [
       "cold face",
@@ -20410,7 +20410,7 @@ list =
   },
   {
     "name": "ninja",
-    "char": "🥷",
+    "char": "\u{1F977}",
     "category": "People & Body",
     "keywords": [
       "ninja",
@@ -20423,7 +20423,7 @@ list =
   },
   {
     "name": "disguised_face",
-    "char": "🥸",
+    "char": "\u{1F978}",
     "category": "Smileys & Emotion",
     "keywords": [
       "disguised face",
@@ -20437,7 +20437,7 @@ list =
   },
   {
     "name": "pleading_face",
-    "char": "🥺",
+    "char": "\u{1F97A}",
     "category": "Smileys & Emotion",
     "keywords": [
       "pleading face",
@@ -20450,7 +20450,7 @@ list =
   },
   {
     "name": "sari",
-    "char": "🥻",
+    "char": "\u{1F97B}",
     "category": "Objects",
     "keywords": [
       "sari",
@@ -20461,7 +20461,7 @@ list =
   },
   {
     "name": "lab_coat",
-    "char": "🥼",
+    "char": "\u{1F97C}",
     "category": "Objects",
     "keywords": [
       "lab coat",
@@ -20475,7 +20475,7 @@ list =
   },
   {
     "name": "goggles",
-    "char": "🥽",
+    "char": "\u{1F97D}",
     "category": "Objects",
     "keywords": [
       "goggles",
@@ -20488,7 +20488,7 @@ list =
   },
   {
     "name": "hiking_boot",
-    "char": "🥾",
+    "char": "\u{1F97E}",
     "category": "Objects",
     "keywords": [
       "hiking boot",
@@ -20501,7 +20501,7 @@ list =
   },
   {
     "name": "womans_flat_shoe",
-    "char": "🥿",
+    "char": "\u{1F97F}",
     "category": "Objects",
     "keywords": [
       "flat shoe",
@@ -20515,7 +20515,7 @@ list =
   },
   {
     "name": "crab",
-    "char": "🦀",
+    "char": "\u{1F980}",
     "category": "Food & Drink",
     "keywords": [
       "crab",
@@ -20527,7 +20527,7 @@ list =
   },
   {
     "name": "lion_face",
-    "char": "🦁",
+    "char": "\u{1F981}",
     "category": "Animals & Nature",
     "keywords": [
       "lion",
@@ -20540,7 +20540,7 @@ list =
   },
   {
     "name": "scorpion",
-    "char": "🦂",
+    "char": "\u{1F982}",
     "category": "Animals & Nature",
     "keywords": [
       "scorpion",
@@ -20552,7 +20552,7 @@ list =
   },
   {
     "name": "turkey",
-    "char": "🦃",
+    "char": "\u{1F983}",
     "category": "Animals & Nature",
     "keywords": [
       "turkey",
@@ -20564,7 +20564,7 @@ list =
   },
   {
     "name": "unicorn_face",
-    "char": "🦄",
+    "char": "\u{1F984}",
     "category": "Animals & Nature",
     "keywords": [
       "unicorn",
@@ -20578,7 +20578,7 @@ list =
   },
   {
     "name": "eagle",
-    "char": "🦅",
+    "char": "\u{1F985}",
     "category": "Animals & Nature",
     "keywords": [
       "eagle",
@@ -20591,7 +20591,7 @@ list =
   },
   {
     "name": "duck",
-    "char": "🦆",
+    "char": "\u{1F986}",
     "category": "Animals & Nature",
     "keywords": [
       "duck",
@@ -20605,7 +20605,7 @@ list =
   },
   {
     "name": "bat",
-    "char": "🦇",
+    "char": "\u{1F987}",
     "category": "Animals & Nature",
     "keywords": [
       "bat",
@@ -20619,7 +20619,7 @@ list =
   },
   {
     "name": "shark",
-    "char": "🦈",
+    "char": "\u{1F988}",
     "category": "Animals & Nature",
     "keywords": [
       "shark",
@@ -20637,7 +20637,7 @@ list =
   },
   {
     "name": "owl",
-    "char": "🦉",
+    "char": "\u{1F989}",
     "category": "Animals & Nature",
     "keywords": [
       "owl",
@@ -20651,7 +20651,7 @@ list =
   },
   {
     "name": "fox_face",
-    "char": "🦊",
+    "char": "\u{1F98A}",
     "category": "Animals & Nature",
     "keywords": [
       "fox",
@@ -20665,7 +20665,7 @@ list =
   },
   {
     "name": "butterfly",
-    "char": "🦋",
+    "char": "\u{1F98B}",
     "category": "Animals & Nature",
     "keywords": [
       "butterfly",
@@ -20679,7 +20679,7 @@ list =
   },
   {
     "name": "deer",
-    "char": "🦌",
+    "char": "\u{1F98C}",
     "category": "Animals & Nature",
     "keywords": [
       "deer",
@@ -20693,7 +20693,7 @@ list =
   },
   {
     "name": "gorilla",
-    "char": "🦍",
+    "char": "\u{1F98D}",
     "category": "Animals & Nature",
     "keywords": [
       "gorilla",
@@ -20706,7 +20706,7 @@ list =
   },
   {
     "name": "lizard",
-    "char": "🦎",
+    "char": "\u{1F98E}",
     "category": "Animals & Nature",
     "keywords": [
       "lizard",
@@ -20719,7 +20719,7 @@ list =
   },
   {
     "name": "rhinoceros",
-    "char": "🦏",
+    "char": "\u{1F98F}",
     "category": "Animals & Nature",
     "keywords": [
       "rhinoceros",
@@ -20732,7 +20732,7 @@ list =
   },
   {
     "name": "shrimp",
-    "char": "🦐",
+    "char": "\u{1F990}",
     "category": "Food & Drink",
     "keywords": [
       "shrimp",
@@ -20746,7 +20746,7 @@ list =
   },
   {
     "name": "squid",
-    "char": "🦑",
+    "char": "\u{1F991}",
     "category": "Food & Drink",
     "keywords": [
       "squid",
@@ -20760,7 +20760,7 @@ list =
   },
   {
     "name": "giraffe_face",
-    "char": "🦒",
+    "char": "\u{1F992}",
     "category": "Animals & Nature",
     "keywords": [
       "giraffe",
@@ -20775,7 +20775,7 @@ list =
   },
   {
     "name": "zebra_face",
-    "char": "🦓",
+    "char": "\u{1F993}",
     "category": "Animals & Nature",
     "keywords": [
       "zebra",
@@ -20790,7 +20790,7 @@ list =
   },
   {
     "name": "hedgehog",
-    "char": "🦔",
+    "char": "\u{1F994}",
     "category": "Animals & Nature",
     "keywords": [
       "hedgehog",
@@ -20803,7 +20803,7 @@ list =
   },
   {
     "name": "sauropod",
-    "char": "🦕",
+    "char": "\u{1F995}",
     "category": "Animals & Nature",
     "keywords": [
       "sauropod",
@@ -20820,7 +20820,7 @@ list =
   },
   {
     "name": "t-rex",
-    "char": "🦖",
+    "char": "\u{1F996}",
     "category": "Animals & Nature",
     "keywords": [
       "t rex",
@@ -20835,7 +20835,7 @@ list =
   },
   {
     "name": "cricket",
-    "char": "🦗",
+    "char": "\u{1F997}",
     "category": "Animals & Nature",
     "keywords": [
       "cricket",
@@ -20847,7 +20847,7 @@ list =
   },
   {
     "name": "kangaroo",
-    "char": "🦘",
+    "char": "\u{1F998}",
     "category": "Animals & Nature",
     "keywords": [
       "kangaroo",
@@ -20863,7 +20863,7 @@ list =
   },
   {
     "name": "llama",
-    "char": "🦙",
+    "char": "\u{1F999}",
     "category": "Animals & Nature",
     "keywords": [
       "llama",
@@ -20876,7 +20876,7 @@ list =
   },
   {
     "name": "peacock",
-    "char": "🦚",
+    "char": "\u{1F99A}",
     "category": "Animals & Nature",
     "keywords": [
       "peacock",
@@ -20890,7 +20890,7 @@ list =
   },
   {
     "name": "hippopotamus",
-    "char": "🦛",
+    "char": "\u{1F99B}",
     "category": "Animals & Nature",
     "keywords": [
       "hippopotamus",
@@ -20902,7 +20902,7 @@ list =
   },
   {
     "name": "parrot",
-    "char": "🦜",
+    "char": "\u{1F99C}",
     "category": "Animals & Nature",
     "keywords": [
       "parrot",
@@ -20917,7 +20917,7 @@ list =
   },
   {
     "name": "raccoon",
-    "char": "🦝",
+    "char": "\u{1F99D}",
     "category": "Animals & Nature",
     "keywords": [
       "raccoon",
@@ -20929,7 +20929,7 @@ list =
   },
   {
     "name": "lobster",
-    "char": "🦞",
+    "char": "\u{1F99E}",
     "category": "Food & Drink",
     "keywords": [
       "lobster",
@@ -20944,7 +20944,7 @@ list =
   },
   {
     "name": "mosquito",
-    "char": "🦟",
+    "char": "\u{1F99F}",
     "category": "Animals & Nature",
     "keywords": [
       "mosquito",
@@ -20958,7 +20958,7 @@ list =
   },
   {
     "name": "microbe",
-    "char": "🦠",
+    "char": "\u{1F9A0}",
     "category": "Animals & Nature",
     "keywords": [
       "microbe",
@@ -20971,7 +20971,7 @@ list =
   },
   {
     "name": "badger",
-    "char": "🦡",
+    "char": "\u{1F9A1}",
     "category": "Animals & Nature",
     "keywords": [
       "badger",
@@ -20984,7 +20984,7 @@ list =
   },
   {
     "name": "swan",
-    "char": "🦢",
+    "char": "\u{1F9A2}",
     "category": "Animals & Nature",
     "keywords": [
       "swan",
@@ -20997,7 +20997,7 @@ list =
   },
   {
     "name": "mammoth",
-    "char": "🦣",
+    "char": "\u{1F9A3}",
     "category": "Animals & Nature",
     "keywords": [
       "mammoth",
@@ -21009,7 +21009,7 @@ list =
   },
   {
     "name": "dodo",
-    "char": "🦤",
+    "char": "\u{1F9A4}",
     "category": "Animals & Nature",
     "keywords": [
       "dodo",
@@ -21021,7 +21021,7 @@ list =
   },
   {
     "name": "sloth",
-    "char": "🦥",
+    "char": "\u{1F9A5}",
     "category": "Animals & Nature",
     "keywords": [
       "sloth",
@@ -21032,7 +21032,7 @@ list =
   },
   {
     "name": "otter",
-    "char": "🦦",
+    "char": "\u{1F9A6}",
     "category": "Animals & Nature",
     "keywords": [
       "otter",
@@ -21043,7 +21043,7 @@ list =
   },
   {
     "name": "orangutan",
-    "char": "🦧",
+    "char": "\u{1F9A7}",
     "category": "Animals & Nature",
     "keywords": [
       "orangutan",
@@ -21054,7 +21054,7 @@ list =
   },
   {
     "name": "skunk",
-    "char": "🦨",
+    "char": "\u{1F9A8}",
     "category": "Animals & Nature",
     "keywords": [
       "skunk",
@@ -21065,7 +21065,7 @@ list =
   },
   {
     "name": "flamingo",
-    "char": "🦩",
+    "char": "\u{1F9A9}",
     "category": "Animals & Nature",
     "keywords": [
       "flamingo",
@@ -21076,7 +21076,7 @@ list =
   },
   {
     "name": "oyster",
-    "char": "🦪",
+    "char": "\u{1F9AA}",
     "category": "Food & Drink",
     "keywords": [
       "oyster",
@@ -21087,7 +21087,7 @@ list =
   },
   {
     "name": "beaver",
-    "char": "🦫",
+    "char": "\u{1F9AB}",
     "category": "Animals & Nature",
     "keywords": [
       "beaver",
@@ -21099,7 +21099,7 @@ list =
   },
   {
     "name": "bison",
-    "char": "🦬",
+    "char": "\u{1F9AC}",
     "category": "Animals & Nature",
     "keywords": [
       "bison",
@@ -21110,7 +21110,7 @@ list =
   },
   {
     "name": "seal",
-    "char": "🦭",
+    "char": "\u{1F9AD}",
     "category": "Animals & Nature",
     "keywords": [
       "seal",
@@ -21123,7 +21123,7 @@ list =
   },
   {
     "name": "guide_dog",
-    "char": "🦮",
+    "char": "\u{1F9AE}",
     "category": "Animals & Nature",
     "keywords": [
       "guide dog",
@@ -21135,7 +21135,7 @@ list =
   },
   {
     "name": "probing_cane",
-    "char": "🦯",
+    "char": "\u{1F9AF}",
     "category": "Objects",
     "keywords": [
       "probing cane",
@@ -21146,7 +21146,7 @@ list =
   },
   {
     "name": "bone",
-    "char": "🦴",
+    "char": "\u{1F9B4}",
     "category": "People & Body",
     "keywords": [
       "bone",
@@ -21157,7 +21157,7 @@ list =
   },
   {
     "name": "leg",
-    "char": "🦵",
+    "char": "\u{1F9B5}",
     "category": "People & Body",
     "keywords": [
       "leg",
@@ -21169,7 +21169,7 @@ list =
   },
   {
     "name": "foot",
-    "char": "🦶",
+    "char": "\u{1F9B6}",
     "category": "People & Body",
     "keywords": [
       "foot",
@@ -21181,7 +21181,7 @@ list =
   },
   {
     "name": "tooth",
-    "char": "🦷",
+    "char": "\u{1F9B7}",
     "category": "People & Body",
     "keywords": [
       "tooth",
@@ -21193,7 +21193,7 @@ list =
   },
   {
     "name": "female_superhero",
-    "char": "🦸‍♀️",
+    "char": "\u{1F9B8}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman superhero",
@@ -21209,7 +21209,7 @@ list =
   },
   {
     "name": "male_superhero",
-    "char": "🦸‍♂️",
+    "char": "\u{1F9B8}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man superhero",
@@ -21225,7 +21225,7 @@ list =
   },
   {
     "name": "superhero",
-    "char": "🦸",
+    "char": "\u{1F9B8}",
     "category": "People & Body",
     "keywords": [
       "superhero",
@@ -21236,7 +21236,7 @@ list =
   },
   {
     "name": "female_supervillain",
-    "char": "🦹‍♀️",
+    "char": "\u{1F9B9}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman supervillain",
@@ -21254,7 +21254,7 @@ list =
   },
   {
     "name": "male_supervillain",
-    "char": "🦹‍♂️",
+    "char": "\u{1F9B9}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man supervillain",
@@ -21272,7 +21272,7 @@ list =
   },
   {
     "name": "supervillain",
-    "char": "🦹",
+    "char": "\u{1F9B9}",
     "category": "People & Body",
     "keywords": [
       "supervillain",
@@ -21283,7 +21283,7 @@ list =
   },
   {
     "name": "safety_vest",
-    "char": "🦺",
+    "char": "\u{1F9BA}",
     "category": "Objects",
     "keywords": [
       "safety vest",
@@ -21294,7 +21294,7 @@ list =
   },
   {
     "name": "ear_with_hearing_aid",
-    "char": "🦻",
+    "char": "\u{1F9BB}",
     "category": "People & Body",
     "keywords": [
       "ear with hearing aid",
@@ -21305,7 +21305,7 @@ list =
   },
   {
     "name": "motorized_wheelchair",
-    "char": "🦼",
+    "char": "\u{1F9BC}",
     "category": "Travel & Places",
     "keywords": [
       "motorized wheelchair",
@@ -21316,7 +21316,7 @@ list =
   },
   {
     "name": "manual_wheelchair",
-    "char": "🦽",
+    "char": "\u{1F9BD}",
     "category": "Travel & Places",
     "keywords": [
       "manual wheelchair",
@@ -21327,7 +21327,7 @@ list =
   },
   {
     "name": "mechanical_arm",
-    "char": "🦾",
+    "char": "\u{1F9BE}",
     "category": "People & Body",
     "keywords": [
       "mechanical arm",
@@ -21338,7 +21338,7 @@ list =
   },
   {
     "name": "mechanical_leg",
-    "char": "🦿",
+    "char": "\u{1F9BF}",
     "category": "People & Body",
     "keywords": [
       "mechanical leg",
@@ -21349,7 +21349,7 @@ list =
   },
   {
     "name": "cheese_wedge",
-    "char": "🧀",
+    "char": "\u{1F9C0}",
     "category": "Food & Drink",
     "keywords": [
       "cheese wedge",
@@ -21361,7 +21361,7 @@ list =
   },
   {
     "name": "cupcake",
-    "char": "🧁",
+    "char": "\u{1F9C1}",
     "category": "Food & Drink",
     "keywords": [
       "cupcake",
@@ -21375,7 +21375,7 @@ list =
   },
   {
     "name": "salt",
-    "char": "🧂",
+    "char": "\u{1F9C2}",
     "category": "Food & Drink",
     "keywords": [
       "salt",
@@ -21387,7 +21387,7 @@ list =
   },
   {
     "name": "beverage_box",
-    "char": "🧃",
+    "char": "\u{1F9C3}",
     "category": "Food & Drink",
     "keywords": [
       "beverage box",
@@ -21398,7 +21398,7 @@ list =
   },
   {
     "name": "garlic",
-    "char": "🧄",
+    "char": "\u{1F9C4}",
     "category": "Food & Drink",
     "keywords": [
       "garlic",
@@ -21411,7 +21411,7 @@ list =
   },
   {
     "name": "onion",
-    "char": "🧅",
+    "char": "\u{1F9C5}",
     "category": "Food & Drink",
     "keywords": [
       "onion",
@@ -21424,7 +21424,7 @@ list =
   },
   {
     "name": "falafel",
-    "char": "🧆",
+    "char": "\u{1F9C6}",
     "category": "Food & Drink",
     "keywords": [
       "falafel",
@@ -21435,7 +21435,7 @@ list =
   },
   {
     "name": "waffle",
-    "char": "🧇",
+    "char": "\u{1F9C7}",
     "category": "Food & Drink",
     "keywords": [
       "waffle",
@@ -21447,7 +21447,7 @@ list =
   },
   {
     "name": "butter",
-    "char": "🧈",
+    "char": "\u{1F9C8}",
     "category": "Food & Drink",
     "keywords": [
       "butter",
@@ -21459,7 +21459,7 @@ list =
   },
   {
     "name": "mate_drink",
-    "char": "🧉",
+    "char": "\u{1F9C9}",
     "category": "Food & Drink",
     "keywords": [
       "mate",
@@ -21473,7 +21473,7 @@ list =
   },
   {
     "name": "ice_cube",
-    "char": "🧊",
+    "char": "\u{1F9CA}",
     "category": "Food & Drink",
     "keywords": [
       "ice",
@@ -21486,7 +21486,7 @@ list =
   },
   {
     "name": "bubble_tea",
-    "char": "🧋",
+    "char": "\u{1F9CB}",
     "category": "Food & Drink",
     "keywords": [
       "bubble tea",
@@ -21500,7 +21500,7 @@ list =
   },
   {
     "name": "woman_standing",
-    "char": "🧍‍♀️",
+    "char": "\u{1F9CD}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman standing",
@@ -21511,7 +21511,7 @@ list =
   },
   {
     "name": "man_standing",
-    "char": "🧍‍♂️",
+    "char": "\u{1F9CD}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man standing",
@@ -21522,7 +21522,7 @@ list =
   },
   {
     "name": "standing_person",
-    "char": "🧍",
+    "char": "\u{1F9CD}",
     "category": "People & Body",
     "keywords": [
       "person standing",
@@ -21534,7 +21534,7 @@ list =
   },
   {
     "name": "woman_kneeling",
-    "char": "🧎‍♀️",
+    "char": "\u{1F9CE}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman kneeling",
@@ -21546,7 +21546,7 @@ list =
   },
   {
     "name": "man_kneeling",
-    "char": "🧎‍♂️",
+    "char": "\u{1F9CE}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man kneeling",
@@ -21558,7 +21558,7 @@ list =
   },
   {
     "name": "kneeling_person",
-    "char": "🧎",
+    "char": "\u{1F9CE}",
     "category": "People & Body",
     "keywords": [
       "person kneeling",
@@ -21571,7 +21571,7 @@ list =
   },
   {
     "name": "deaf_woman",
-    "char": "🧏‍♀️",
+    "char": "\u{1F9CF}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "deaf woman",
@@ -21582,7 +21582,7 @@ list =
   },
   {
     "name": "deaf_man",
-    "char": "🧏‍♂️",
+    "char": "\u{1F9CF}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "deaf man",
@@ -21593,7 +21593,7 @@ list =
   },
   {
     "name": "deaf_person",
-    "char": "🧏",
+    "char": "\u{1F9CF}",
     "category": "People & Body",
     "keywords": [
       "deaf person",
@@ -21604,7 +21604,7 @@ list =
   },
   {
     "name": "face_with_monocle",
-    "char": "🧐",
+    "char": "\u{1F9D0}",
     "category": "Smileys & Emotion",
     "keywords": [
       "face with monocle",
@@ -21617,7 +21617,7 @@ list =
   },
   {
     "name": "farmer",
-    "char": "🧑‍🌾",
+    "char": "\u{1F9D1}\u{200D}🌾",
     "category": "People & Body",
     "keywords": [
       "farmer",
@@ -21628,7 +21628,7 @@ list =
   },
   {
     "name": "cook",
-    "char": "🧑‍🍳",
+    "char": "\u{1F9D1}\u{200D}🍳",
     "category": "People & Body",
     "keywords": [
       "cook",
@@ -21641,7 +21641,7 @@ list =
   },
   {
     "name": "person_feeding_baby",
-    "char": "🧑‍🍼",
+    "char": "\u{1F9D1}\u{200D}🍼",
     "category": "People & Body",
     "keywords": [
       "person feeding baby",
@@ -21653,7 +21653,7 @@ list =
   },
   {
     "name": "mx_claus",
-    "char": "🧑‍🎄",
+    "char": "\u{1F9D1}\u{200D}🎄",
     "category": "People & Body",
     "keywords": [
       "mx claus",
@@ -21664,7 +21664,7 @@ list =
   },
   {
     "name": "student",
-    "char": "🧑‍🎓",
+    "char": "\u{1F9D1}\u{200D}🎓",
     "category": "People & Body",
     "keywords": [
       "student",
@@ -21675,7 +21675,7 @@ list =
   },
   {
     "name": "singer",
-    "char": "🧑‍🎤",
+    "char": "\u{1F9D1}\u{200D}🎤",
     "category": "People & Body",
     "keywords": [
       "singer",
@@ -21688,7 +21688,7 @@ list =
   },
   {
     "name": "artist",
-    "char": "🧑‍🎨",
+    "char": "\u{1F9D1}\u{200D}🎨",
     "category": "People & Body",
     "keywords": [
       "artist",
@@ -21701,7 +21701,7 @@ list =
   },
   {
     "name": "teacher",
-    "char": "🧑‍🏫",
+    "char": "\u{1F9D1}\u{200D}🏫",
     "category": "People & Body",
     "keywords": [
       "teacher",
@@ -21712,7 +21712,7 @@ list =
   },
   {
     "name": "factory_worker",
-    "char": "🧑‍🏭",
+    "char": "\u{1F9D1}\u{200D}🏭",
     "category": "People & Body",
     "keywords": [
       "factory worker",
@@ -21723,7 +21723,7 @@ list =
   },
   {
     "name": "technologist",
-    "char": "🧑‍💻",
+    "char": "\u{1F9D1}\u{200D}💻",
     "category": "People & Body",
     "keywords": [
       "technologist",
@@ -21734,7 +21734,7 @@ list =
   },
   {
     "name": "office_worker",
-    "char": "🧑‍💼",
+    "char": "\u{1F9D1}\u{200D}💼",
     "category": "People & Body",
     "keywords": [
       "office worker",
@@ -21745,7 +21745,7 @@ list =
   },
   {
     "name": "mechanic",
-    "char": "🧑‍🔧",
+    "char": "\u{1F9D1}\u{200D}🔧",
     "category": "People & Body",
     "keywords": [
       "mechanic",
@@ -21757,7 +21757,7 @@ list =
   },
   {
     "name": "scientist",
-    "char": "🧑‍🔬",
+    "char": "\u{1F9D1}\u{200D}🔬",
     "category": "People & Body",
     "keywords": [
       "scientist",
@@ -21768,7 +21768,7 @@ list =
   },
   {
     "name": "astronaut",
-    "char": "🧑‍🚀",
+    "char": "\u{1F9D1}\u{200D}🚀",
     "category": "People & Body",
     "keywords": [
       "astronaut",
@@ -21779,7 +21779,7 @@ list =
   },
   {
     "name": "firefighter",
-    "char": "🧑‍🚒",
+    "char": "\u{1F9D1}\u{200D}🚒",
     "category": "People & Body",
     "keywords": [
       "firefighter",
@@ -21790,7 +21790,7 @@ list =
   },
   {
     "name": "people_holding_hands",
-    "char": "🧑‍🤝‍🧑",
+    "char": "\u{1F9D1}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}",
     "category": "People & Body",
     "keywords": [
       "people holding hands",
@@ -21801,7 +21801,7 @@ list =
   },
   {
     "name": "person_with_probing_cane",
-    "char": "🧑‍🦯",
+    "char": "\u{1F9D1}\u{200D}\u{1F9AF}",
     "category": "People & Body",
     "keywords": [
       "person with probing cane",
@@ -21812,7 +21812,7 @@ list =
   },
   {
     "name": "red_haired_person",
-    "char": "🧑‍🦰",
+    "char": "\u{1F9D1}\u{200D}\u{1F9B0}",
     "category": "People & Body",
     "keywords": [
       "person red hair",
@@ -21824,7 +21824,7 @@ list =
   },
   {
     "name": "curly_haired_person",
-    "char": "🧑‍🦱",
+    "char": "\u{1F9D1}\u{200D}\u{1F9B1}",
     "category": "People & Body",
     "keywords": [
       "person curly hair",
@@ -21836,7 +21836,7 @@ list =
   },
   {
     "name": "bald_person",
-    "char": "🧑‍🦲",
+    "char": "\u{1F9D1}\u{200D}\u{1F9B2}",
     "category": "People & Body",
     "keywords": [
       "person bald",
@@ -21848,7 +21848,7 @@ list =
   },
   {
     "name": "white_haired_person",
-    "char": "🧑‍🦳",
+    "char": "\u{1F9D1}\u{200D}\u{1F9B3}",
     "category": "People & Body",
     "keywords": [
       "person white hair",
@@ -21861,7 +21861,7 @@ list =
   },
   {
     "name": "person_in_motorized_wheelchair",
-    "char": "🧑‍🦼",
+    "char": "\u{1F9D1}\u{200D}\u{1F9BC}",
     "category": "People & Body",
     "keywords": [
       "person in motorized wheelchair",
@@ -21873,7 +21873,7 @@ list =
   },
   {
     "name": "person_in_manual_wheelchair",
-    "char": "🧑‍🦽",
+    "char": "\u{1F9D1}\u{200D}\u{1F9BD}",
     "category": "People & Body",
     "keywords": [
       "person in manual wheelchair",
@@ -21885,7 +21885,7 @@ list =
   },
   {
     "name": "health_worker",
-    "char": "🧑‍⚕️",
+    "char": "\u{1F9D1}\u{200D}⚕️",
     "category": "People & Body",
     "keywords": [
       "health worker",
@@ -21896,7 +21896,7 @@ list =
   },
   {
     "name": "judge",
-    "char": "🧑‍⚖️",
+    "char": "\u{1F9D1}\u{200D}⚖️",
     "category": "People & Body",
     "keywords": [
       "judge",
@@ -21907,7 +21907,7 @@ list =
   },
   {
     "name": "pilot",
-    "char": "🧑‍✈️",
+    "char": "\u{1F9D1}\u{200D}✈️",
     "category": "People & Body",
     "keywords": [
       "pilot",
@@ -21920,7 +21920,7 @@ list =
   },
   {
     "name": "adult",
-    "char": "🧑",
+    "char": "\u{1F9D1}",
     "category": "People & Body",
     "keywords": [
       "person",
@@ -21932,7 +21932,7 @@ list =
   },
   {
     "name": "child",
-    "char": "🧒",
+    "char": "\u{1F9D2}",
     "category": "People & Body",
     "keywords": [
       "child",
@@ -21944,7 +21944,7 @@ list =
   },
   {
     "name": "older_adult",
-    "char": "🧓",
+    "char": "\u{1F9D3}",
     "category": "People & Body",
     "keywords": [
       "older person",
@@ -21959,7 +21959,7 @@ list =
   },
   {
     "name": "bearded_person",
-    "char": "🧔",
+    "char": "\u{1F9D4}",
     "category": "People & Body",
     "keywords": [
       "man beard",
@@ -21972,7 +21972,7 @@ list =
   },
   {
     "name": "person_with_headscarf",
-    "char": "🧕",
+    "char": "\u{1F9D5}",
     "category": "People & Body",
     "keywords": [
       "woman with headscarf",
@@ -21987,7 +21987,7 @@ list =
   },
   {
     "name": "woman_in_steamy_room",
-    "char": "🧖‍♀️",
+    "char": "\u{1F9D6}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman in steamy room",
@@ -22002,7 +22002,7 @@ list =
   },
   {
     "name": "man_in_steamy_room",
-    "char": "🧖‍♂️",
+    "char": "\u{1F9D6}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man in steamy room",
@@ -22017,7 +22017,7 @@ list =
   },
   {
     "name": "person_in_steamy_room",
-    "char": "🧖",
+    "char": "\u{1F9D6}",
     "category": "People & Body",
     "keywords": [
       "person in steamy room",
@@ -22029,7 +22029,7 @@ list =
   },
   {
     "name": "woman_climbing",
-    "char": "🧗‍♀️",
+    "char": "\u{1F9D7}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman climbing",
@@ -22044,7 +22044,7 @@ list =
   },
   {
     "name": "man_climbing",
-    "char": "🧗‍♂️",
+    "char": "\u{1F9D7}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man climbing",
@@ -22059,7 +22059,7 @@ list =
   },
   {
     "name": "person_climbing",
-    "char": "🧗",
+    "char": "\u{1F9D7}",
     "category": "People & Body",
     "keywords": [
       "person climbing",
@@ -22070,7 +22070,7 @@ list =
   },
   {
     "name": "woman_in_lotus_position",
-    "char": "🧘‍♀️",
+    "char": "\u{1F9D8}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman in lotus position",
@@ -22087,7 +22087,7 @@ list =
   },
   {
     "name": "man_in_lotus_position",
-    "char": "🧘‍♂️",
+    "char": "\u{1F9D8}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man in lotus position",
@@ -22104,7 +22104,7 @@ list =
   },
   {
     "name": "person_in_lotus_position",
-    "char": "🧘",
+    "char": "\u{1F9D8}",
     "category": "People & Body",
     "keywords": [
       "person in lotus position",
@@ -22115,7 +22115,7 @@ list =
   },
   {
     "name": "female_mage",
-    "char": "🧙‍♀️",
+    "char": "\u{1F9D9}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman mage",
@@ -22130,7 +22130,7 @@ list =
   },
   {
     "name": "male_mage",
-    "char": "🧙‍♂️",
+    "char": "\u{1F9D9}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man mage",
@@ -22145,7 +22145,7 @@ list =
   },
   {
     "name": "mage",
-    "char": "🧙",
+    "char": "\u{1F9D9}",
     "category": "People & Body",
     "keywords": [
       "mage",
@@ -22156,7 +22156,7 @@ list =
   },
   {
     "name": "female_fairy",
-    "char": "🧚‍♀️",
+    "char": "\u{1F9DA}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman fairy",
@@ -22169,7 +22169,7 @@ list =
   },
   {
     "name": "male_fairy",
-    "char": "🧚‍♂️",
+    "char": "\u{1F9DA}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man fairy",
@@ -22182,7 +22182,7 @@ list =
   },
   {
     "name": "fairy",
-    "char": "🧚",
+    "char": "\u{1F9DA}",
     "category": "People & Body",
     "keywords": [
       "fairy",
@@ -22194,7 +22194,7 @@ list =
   },
   {
     "name": "female_vampire",
-    "char": "🧛‍♀️",
+    "char": "\u{1F9DB}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman vampire",
@@ -22207,7 +22207,7 @@ list =
   },
   {
     "name": "male_vampire",
-    "char": "🧛‍♂️",
+    "char": "\u{1F9DB}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man vampire",
@@ -22221,7 +22221,7 @@ list =
   },
   {
     "name": "vampire",
-    "char": "🧛",
+    "char": "\u{1F9DB}",
     "category": "People & Body",
     "keywords": [
       "vampire",
@@ -22233,7 +22233,7 @@ list =
   },
   {
     "name": "mermaid",
-    "char": "🧜‍♀️",
+    "char": "\u{1F9DC}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "mermaid",
@@ -22247,7 +22247,7 @@ list =
   },
   {
     "name": "merman",
-    "char": "🧜‍♂️",
+    "char": "\u{1F9DC}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "merman",
@@ -22260,7 +22260,7 @@ list =
   },
   {
     "name": "merperson",
-    "char": "🧜",
+    "char": "\u{1F9DC}",
     "category": "People & Body",
     "keywords": [
       "merperson",
@@ -22271,7 +22271,7 @@ list =
   },
   {
     "name": "female_elf",
-    "char": "🧝‍♀️",
+    "char": "\u{1F9DD}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman elf",
@@ -22284,7 +22284,7 @@ list =
   },
   {
     "name": "male_elf",
-    "char": "🧝‍♂️",
+    "char": "\u{1F9DD}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man elf",
@@ -22297,7 +22297,7 @@ list =
   },
   {
     "name": "elf",
-    "char": "🧝",
+    "char": "\u{1F9DD}",
     "category": "People & Body",
     "keywords": [
       "elf",
@@ -22308,7 +22308,7 @@ list =
   },
   {
     "name": "female_genie",
-    "char": "🧞‍♀️",
+    "char": "\u{1F9DE}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman genie",
@@ -22321,7 +22321,7 @@ list =
   },
   {
     "name": "male_genie",
-    "char": "🧞‍♂️",
+    "char": "\u{1F9DE}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man genie",
@@ -22334,7 +22334,7 @@ list =
   },
   {
     "name": "genie",
-    "char": "🧞",
+    "char": "\u{1F9DE}",
     "category": "People & Body",
     "keywords": [
       "genie",
@@ -22346,7 +22346,7 @@ list =
   },
   {
     "name": "female_zombie",
-    "char": "🧟‍♀️",
+    "char": "\u{1F9DF}\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman zombie",
@@ -22361,7 +22361,7 @@ list =
   },
   {
     "name": "male_zombie",
-    "char": "🧟‍♂️",
+    "char": "\u{1F9DF}\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man zombie",
@@ -22377,7 +22377,7 @@ list =
   },
   {
     "name": "zombie",
-    "char": "🧟",
+    "char": "\u{1F9DF}",
     "category": "People & Body",
     "keywords": [
       "zombie",
@@ -22388,7 +22388,7 @@ list =
   },
   {
     "name": "brain",
-    "char": "🧠",
+    "char": "\u{1F9E0}",
     "category": "People & Body",
     "keywords": [
       "brain",
@@ -22400,7 +22400,7 @@ list =
   },
   {
     "name": "orange_heart",
-    "char": "🧡",
+    "char": "\u{1F9E1}",
     "category": "Smileys & Emotion",
     "keywords": [
       "orange heart",
@@ -22414,7 +22414,7 @@ list =
   },
   {
     "name": "billed_cap",
-    "char": "🧢",
+    "char": "\u{1F9E2}",
     "category": "Objects",
     "keywords": [
       "billed cap",
@@ -22426,7 +22426,7 @@ list =
   },
   {
     "name": "scarf",
-    "char": "🧣",
+    "char": "\u{1F9E3}",
     "category": "Objects",
     "keywords": [
       "scarf",
@@ -22439,7 +22439,7 @@ list =
   },
   {
     "name": "gloves",
-    "char": "🧤",
+    "char": "\u{1F9E4}",
     "category": "Objects",
     "keywords": [
       "gloves",
@@ -22452,7 +22452,7 @@ list =
   },
   {
     "name": "coat",
-    "char": "🧥",
+    "char": "\u{1F9E5}",
     "category": "Objects",
     "keywords": [
       "coat",
@@ -22463,7 +22463,7 @@ list =
   },
   {
     "name": "socks",
-    "char": "🧦",
+    "char": "\u{1F9E6}",
     "category": "Objects",
     "keywords": [
       "socks",
@@ -22475,7 +22475,7 @@ list =
   },
   {
     "name": "red_envelope",
-    "char": "🧧",
+    "char": "\u{1F9E7}",
     "category": "Activities",
     "keywords": [
       "red envelope",
@@ -22486,7 +22486,7 @@ list =
   },
   {
     "name": "firecracker",
-    "char": "🧨",
+    "char": "\u{1F9E8}",
     "category": "Activities",
     "keywords": [
       "firecracker",
@@ -22501,7 +22501,7 @@ list =
   },
   {
     "name": "jigsaw",
-    "char": "🧩",
+    "char": "\u{1F9E9}",
     "category": "Activities",
     "keywords": [
       "puzzle piece",
@@ -22515,7 +22515,7 @@ list =
   },
   {
     "name": "test_tube",
-    "char": "🧪",
+    "char": "\u{1F9EA}",
     "category": "Objects",
     "keywords": [
       "test tube",
@@ -22529,7 +22529,7 @@ list =
   },
   {
     "name": "petri_dish",
-    "char": "🧫",
+    "char": "\u{1F9EB}",
     "category": "Objects",
     "keywords": [
       "petri dish",
@@ -22543,7 +22543,7 @@ list =
   },
   {
     "name": "dna",
-    "char": "🧬",
+    "char": "\u{1F9EC}",
     "category": "Objects",
     "keywords": [
       "dna",
@@ -22556,7 +22556,7 @@ list =
   },
   {
     "name": "compass",
-    "char": "🧭",
+    "char": "\u{1F9ED}",
     "category": "Travel & Places",
     "keywords": [
       "compass",
@@ -22569,7 +22569,7 @@ list =
   },
   {
     "name": "abacus",
-    "char": "🧮",
+    "char": "\u{1F9EE}",
     "category": "Objects",
     "keywords": [
       "abacus",
@@ -22580,7 +22580,7 @@ list =
   },
   {
     "name": "fire_extinguisher",
-    "char": "🧯",
+    "char": "\u{1F9EF}",
     "category": "Objects",
     "keywords": [
       "fire extinguisher",
@@ -22591,7 +22591,7 @@ list =
   },
   {
     "name": "toolbox",
-    "char": "🧰",
+    "char": "\u{1F9F0}",
     "category": "Objects",
     "keywords": [
       "toolbox",
@@ -22606,7 +22606,7 @@ list =
   },
   {
     "name": "bricks",
-    "char": "🧱",
+    "char": "\u{1F9F1}",
     "category": "Travel & Places",
     "keywords": [
       "brick",
@@ -22617,7 +22617,7 @@ list =
   },
   {
     "name": "magnet",
-    "char": "🧲",
+    "char": "\u{1F9F2}",
     "category": "Objects",
     "keywords": [
       "magnet",
@@ -22629,7 +22629,7 @@ list =
   },
   {
     "name": "luggage",
-    "char": "🧳",
+    "char": "\u{1F9F3}",
     "category": "Travel & Places",
     "keywords": [
       "luggage",
@@ -22641,7 +22641,7 @@ list =
   },
   {
     "name": "lotion_bottle",
-    "char": "🧴",
+    "char": "\u{1F9F4}",
     "category": "Objects",
     "keywords": [
       "lotion bottle",
@@ -22653,7 +22653,7 @@ list =
   },
   {
     "name": "thread",
-    "char": "🧵",
+    "char": "\u{1F9F5}",
     "category": "Activities",
     "keywords": [
       "thread",
@@ -22667,7 +22667,7 @@ list =
   },
   {
     "name": "yarn",
-    "char": "🧶",
+    "char": "\u{1F9F6}",
     "category": "Activities",
     "keywords": [
       "yarn",
@@ -22680,7 +22680,7 @@ list =
   },
   {
     "name": "safety_pin",
-    "char": "🧷",
+    "char": "\u{1F9F7}",
     "category": "Objects",
     "keywords": [
       "safety pin",
@@ -22691,7 +22691,7 @@ list =
   },
   {
     "name": "teddy_bear",
-    "char": "🧸",
+    "char": "\u{1F9F8}",
     "category": "Activities",
     "keywords": [
       "teddy bear",
@@ -22703,7 +22703,7 @@ list =
   },
   {
     "name": "broom",
-    "char": "🧹",
+    "char": "\u{1F9F9}",
     "category": "Objects",
     "keywords": [
       "broom",
@@ -22716,7 +22716,7 @@ list =
   },
   {
     "name": "basket",
-    "char": "🧺",
+    "char": "\u{1F9FA}",
     "category": "Objects",
     "keywords": [
       "basket",
@@ -22727,7 +22727,7 @@ list =
   },
   {
     "name": "roll_of_paper",
-    "char": "🧻",
+    "char": "\u{1F9FB}",
     "category": "Objects",
     "keywords": [
       "roll of paper",
@@ -22738,7 +22738,7 @@ list =
   },
   {
     "name": "soap",
-    "char": "🧼",
+    "char": "\u{1F9FC}",
     "category": "Objects",
     "keywords": [
       "soap",
@@ -22752,7 +22752,7 @@ list =
   },
   {
     "name": "sponge",
-    "char": "🧽",
+    "char": "\u{1F9FD}",
     "category": "Objects",
     "keywords": [
       "sponge",
@@ -22765,7 +22765,7 @@ list =
   },
   {
     "name": "receipt",
-    "char": "🧾",
+    "char": "\u{1F9FE}",
     "category": "Objects",
     "keywords": [
       "receipt",
@@ -22777,7 +22777,7 @@ list =
   },
   {
     "name": "nazar_amulet",
-    "char": "🧿",
+    "char": "\u{1F9FF}",
     "category": "Activities",
     "keywords": [
       "nazar amulet",
@@ -22789,7 +22789,7 @@ list =
   },
   {
     "name": "ballet_shoes",
-    "char": "🩰",
+    "char": "\u{1FA70}",
     "category": "Objects",
     "keywords": [
       "ballet shoes",
@@ -22800,7 +22800,7 @@ list =
   },
   {
     "name": "one-piece_swimsuit",
-    "char": "🩱",
+    "char": "\u{1FA71}",
     "category": "Objects",
     "keywords": [
       "one piece swimsuit",
@@ -22811,7 +22811,7 @@ list =
   },
   {
     "name": "briefs",
-    "char": "🩲",
+    "char": "\u{1FA72}",
     "category": "Objects",
     "keywords": [
       "briefs",
@@ -22822,7 +22822,7 @@ list =
   },
   {
     "name": "shorts",
-    "char": "🩳",
+    "char": "\u{1FA73}",
     "category": "Objects",
     "keywords": [
       "shorts",
@@ -22833,7 +22833,7 @@ list =
   },
   {
     "name": "thong_sandal",
-    "char": "🩴",
+    "char": "\u{1FA74}",
     "category": "Objects",
     "keywords": [
       "thong sandal",
@@ -22845,7 +22845,7 @@ list =
   },
   {
     "name": "drop_of_blood",
-    "char": "🩸",
+    "char": "\u{1FA78}",
     "category": "Objects",
     "keywords": [
       "drop of blood",
@@ -22859,7 +22859,7 @@ list =
   },
   {
     "name": "adhesive_bandage",
-    "char": "🩹",
+    "char": "\u{1FA79}",
     "category": "Objects",
     "keywords": [
       "adhesive bandage",
@@ -22870,7 +22870,7 @@ list =
   },
   {
     "name": "stethoscope",
-    "char": "🩺",
+    "char": "\u{1FA7A}",
     "category": "Objects",
     "keywords": [
       "stethoscope",
@@ -22881,7 +22881,7 @@ list =
   },
   {
     "name": "yo-yo",
-    "char": "🪀",
+    "char": "\u{1FA80}",
     "category": "Activities",
     "keywords": [
       "yo yo",
@@ -22892,7 +22892,7 @@ list =
   },
   {
     "name": "kite",
-    "char": "🪁",
+    "char": "\u{1FA81}",
     "category": "Activities",
     "keywords": [
       "kite",
@@ -22904,7 +22904,7 @@ list =
   },
   {
     "name": "parachute",
-    "char": "🪂",
+    "char": "\u{1FA82}",
     "category": "Travel & Places",
     "keywords": [
       "parachute",
@@ -22916,7 +22916,7 @@ list =
   },
   {
     "name": "boomerang",
-    "char": "🪃",
+    "char": "\u{1FA83}",
     "category": "Objects",
     "keywords": [
       "boomerang",
@@ -22927,7 +22927,7 @@ list =
   },
   {
     "name": "magic_wand",
-    "char": "🪄",
+    "char": "\u{1FA84}",
     "category": "Activities",
     "keywords": [
       "magic wand",
@@ -22939,7 +22939,7 @@ list =
   },
   {
     "name": "pinata",
-    "char": "🪅",
+    "char": "\u{1FA85}",
     "category": "Activities",
     "keywords": [
       "pinata",
@@ -22952,7 +22952,7 @@ list =
   },
   {
     "name": "nesting_dolls",
-    "char": "🪆",
+    "char": "\u{1FA86}",
     "category": "Activities",
     "keywords": [
       "nesting dolls",
@@ -22964,7 +22964,7 @@ list =
   },
   {
     "name": "ringed_planet",
-    "char": "🪐",
+    "char": "\u{1FA90}",
     "category": "Travel & Places",
     "keywords": [
       "ringed planet",
@@ -22975,7 +22975,7 @@ list =
   },
   {
     "name": "chair",
-    "char": "🪑",
+    "char": "\u{1FA91}",
     "category": "Objects",
     "keywords": [
       "chair",
@@ -22987,7 +22987,7 @@ list =
   },
   {
     "name": "razor",
-    "char": "🪒",
+    "char": "\u{1FA92}",
     "category": "Objects",
     "keywords": [
       "razor",
@@ -22998,7 +22998,7 @@ list =
   },
   {
     "name": "axe",
-    "char": "🪓",
+    "char": "\u{1FA93}",
     "category": "Objects",
     "keywords": [
       "axe",
@@ -23011,7 +23011,7 @@ list =
   },
   {
     "name": "diya_lamp",
-    "char": "🪔",
+    "char": "\u{1FA94}",
     "category": "Objects",
     "keywords": [
       "diya lamp",
@@ -23022,7 +23022,7 @@ list =
   },
   {
     "name": "banjo",
-    "char": "🪕",
+    "char": "\u{1FA95}",
     "category": "Objects",
     "keywords": [
       "banjo",
@@ -23034,7 +23034,7 @@ list =
   },
   {
     "name": "military_helmet",
-    "char": "🪖",
+    "char": "\u{1FA96}",
     "category": "Objects",
     "keywords": [
       "military helmet",
@@ -23046,7 +23046,7 @@ list =
   },
   {
     "name": "accordion",
-    "char": "🪗",
+    "char": "\u{1FA97}",
     "category": "Objects",
     "keywords": [
       "accordion",
@@ -23057,7 +23057,7 @@ list =
   },
   {
     "name": "long_drum",
-    "char": "🪘",
+    "char": "\u{1FA98}",
     "category": "Objects",
     "keywords": [
       "long drum",
@@ -23068,7 +23068,7 @@ list =
   },
   {
     "name": "coin",
-    "char": "🪙",
+    "char": "\u{1FA99}",
     "category": "Objects",
     "keywords": [
       "coin",
@@ -23080,7 +23080,7 @@ list =
   },
   {
     "name": "carpentry_saw",
-    "char": "🪚",
+    "char": "\u{1FA9A}",
     "category": "Objects",
     "keywords": [
       "carpentry saw",
@@ -23092,7 +23092,7 @@ list =
   },
   {
     "name": "screwdriver",
-    "char": "🪛",
+    "char": "\u{1FA9B}",
     "category": "Objects",
     "keywords": [
       "screwdriver",
@@ -23103,7 +23103,7 @@ list =
   },
   {
     "name": "ladder",
-    "char": "🪜",
+    "char": "\u{1FA9C}",
     "category": "Objects",
     "keywords": [
       "ladder",
@@ -23114,7 +23114,7 @@ list =
   },
   {
     "name": "hook",
-    "char": "🪝",
+    "char": "\u{1FA9D}",
     "category": "Objects",
     "keywords": [
       "hook",
@@ -23125,7 +23125,7 @@ list =
   },
   {
     "name": "mirror",
-    "char": "🪞",
+    "char": "\u{1FA9E}",
     "category": "Objects",
     "keywords": [
       "mirror",
@@ -23136,7 +23136,7 @@ list =
   },
   {
     "name": "window",
-    "char": "🪟",
+    "char": "\u{1FA9F}",
     "category": "Objects",
     "keywords": [
       "window",
@@ -23147,7 +23147,7 @@ list =
   },
   {
     "name": "plunger",
-    "char": "🪠",
+    "char": "\u{1FAA0}",
     "category": "Objects",
     "keywords": [
       "plunger",
@@ -23158,7 +23158,7 @@ list =
   },
   {
     "name": "sewing_needle",
-    "char": "🪡",
+    "char": "\u{1FAA1}",
     "category": "Activities",
     "keywords": [
       "sewing needle",
@@ -23169,7 +23169,7 @@ list =
   },
   {
     "name": "knot",
-    "char": "🪢",
+    "char": "\u{1FAA2}",
     "category": "Activities",
     "keywords": [
       "knot",
@@ -23181,7 +23181,7 @@ list =
   },
   {
     "name": "bucket",
-    "char": "🪣",
+    "char": "\u{1FAA3}",
     "category": "Objects",
     "keywords": [
       "bucket",
@@ -23193,7 +23193,7 @@ list =
   },
   {
     "name": "mouse_trap",
-    "char": "🪤",
+    "char": "\u{1FAA4}",
     "category": "Objects",
     "keywords": [
       "mouse trap",
@@ -23204,7 +23204,7 @@ list =
   },
   {
     "name": "toothbrush",
-    "char": "🪥",
+    "char": "\u{1FAA5}",
     "category": "Objects",
     "keywords": [
       "toothbrush",
@@ -23216,7 +23216,7 @@ list =
   },
   {
     "name": "headstone",
-    "char": "🪦",
+    "char": "\u{1FAA6}",
     "category": "Objects",
     "keywords": [
       "headstone",
@@ -23229,7 +23229,7 @@ list =
   },
   {
     "name": "placard",
-    "char": "🪧",
+    "char": "\u{1FAA7}",
     "category": "Objects",
     "keywords": [
       "placard",
@@ -23240,7 +23240,7 @@ list =
   },
   {
     "name": "rock",
-    "char": "🪨",
+    "char": "\u{1FAA8}",
     "category": "Travel & Places",
     "keywords": [
       "rock",
@@ -23251,7 +23251,7 @@ list =
   },
   {
     "name": "fly",
-    "char": "🪰",
+    "char": "\u{1FAB0}",
     "category": "Animals & Nature",
     "keywords": [
       "fly",
@@ -23262,7 +23262,7 @@ list =
   },
   {
     "name": "worm",
-    "char": "🪱",
+    "char": "\u{1FAB1}",
     "category": "Animals & Nature",
     "keywords": [
       "worm",
@@ -23273,7 +23273,7 @@ list =
   },
   {
     "name": "beetle",
-    "char": "🪲",
+    "char": "\u{1FAB2}",
     "category": "Animals & Nature",
     "keywords": [
       "beetle",
@@ -23284,7 +23284,7 @@ list =
   },
   {
     "name": "cockroach",
-    "char": "🪳",
+    "char": "\u{1FAB3}",
     "category": "Animals & Nature",
     "keywords": [
       "cockroach",
@@ -23296,7 +23296,7 @@ list =
   },
   {
     "name": "potted_plant",
-    "char": "🪴",
+    "char": "\u{1FAB4}",
     "category": "Animals & Nature",
     "keywords": [
       "potted plant",
@@ -23308,7 +23308,7 @@ list =
   },
   {
     "name": "wood",
-    "char": "🪵",
+    "char": "\u{1FAB5}",
     "category": "Travel & Places",
     "keywords": [
       "wood",
@@ -23321,7 +23321,7 @@ list =
   },
   {
     "name": "feather",
-    "char": "🪶",
+    "char": "\u{1FAB6}",
     "category": "Animals & Nature",
     "keywords": [
       "feather",
@@ -23333,7 +23333,7 @@ list =
   },
   {
     "name": "anatomical_heart",
-    "char": "🫀",
+    "char": "\u{1FAC0}",
     "category": "People & Body",
     "keywords": [
       "anatomical heart",
@@ -23345,7 +23345,7 @@ list =
   },
   {
     "name": "lungs",
-    "char": "🫁",
+    "char": "\u{1FAC1}",
     "category": "People & Body",
     "keywords": [
       "lungs",
@@ -23356,7 +23356,7 @@ list =
   },
   {
     "name": "people_hugging",
-    "char": "🫂",
+    "char": "\u{1FAC2}",
     "category": "People & Body",
     "keywords": [
       "people hugging",
@@ -23367,7 +23367,7 @@ list =
   },
   {
     "name": "blueberries",
-    "char": "🫐",
+    "char": "\u{1FAD0}",
     "category": "Food & Drink",
     "keywords": [
       "blueberries",
@@ -23378,7 +23378,7 @@ list =
   },
   {
     "name": "bell_pepper",
-    "char": "🫑",
+    "char": "\u{1FAD1}",
     "category": "Food & Drink",
     "keywords": [
       "bell pepper",
@@ -23390,7 +23390,7 @@ list =
   },
   {
     "name": "olive",
-    "char": "🫒",
+    "char": "\u{1FAD2}",
     "category": "Food & Drink",
     "keywords": [
       "olive",
@@ -23401,7 +23401,7 @@ list =
   },
   {
     "name": "flatbread",
-    "char": "🫓",
+    "char": "\u{1FAD3}",
     "category": "Food & Drink",
     "keywords": [
       "flatbread",
@@ -23413,7 +23413,7 @@ list =
   },
   {
     "name": "tamale",
-    "char": "🫔",
+    "char": "\u{1FAD4}",
     "category": "Food & Drink",
     "keywords": [
       "tamale",
@@ -23425,7 +23425,7 @@ list =
   },
   {
     "name": "fondue",
-    "char": "🫕",
+    "char": "\u{1FAD5}",
     "category": "Food & Drink",
     "keywords": [
       "fondue",
@@ -23438,7 +23438,7 @@ list =
   },
   {
     "name": "teapot",
-    "char": "🫖",
+    "char": "\u{1FAD6}",
     "category": "Food & Drink",
     "keywords": [
       "teapot",
@@ -25091,7 +25091,7 @@ list =
   },
   {
     "name": "woman-bouncing-ball",
-    "char": "⛹️‍♀️",
+    "char": "⛹️\u{200D}♀️",
     "category": "People & Body",
     "keywords": [
       "woman bouncing ball",
@@ -25105,7 +25105,7 @@ list =
   },
   {
     "name": "man-bouncing-ball",
-    "char": "⛹️‍♂️",
+    "char": "⛹️\u{200D}♂️",
     "category": "People & Body",
     "keywords": [
       "man bouncing ball",

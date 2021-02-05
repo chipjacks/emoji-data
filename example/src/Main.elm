@@ -1,7 +1,6 @@
 module Main exposing (main)
 
 import Browser
-import Category exposing (Category)
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
@@ -9,8 +8,9 @@ import Element.Events as Events
 import Element.Font as Font
 import Element.Input as Input
 import EmojiData exposing (EmojiData)
+import EmojiData.Category as Category exposing (Category)
+import EmojiData.View exposing (EmojiSource(..))
 import Html exposing (Html)
-import View exposing (EmojiSource(..))
 
 
 
@@ -112,8 +112,8 @@ viewEmoji emoji =
     row [ spaceEvenly, width fill ]
         [ el [ width (shrink |> minimum 200) ] (text emoji.name)
         , el [] (text emoji.char)
-        , html (View.emoji Apple 32 emoji)
-        , html (View.emoji Google 32 emoji)
-        , html (View.emoji Facebook 32 emoji)
-        , html (View.emoji Twitter 32 emoji)
+        , html (EmojiData.View.emoji Apple 32 emoji)
+        , html (EmojiData.View.emoji Google 32 emoji)
+        , html (EmojiData.View.emoji Facebook 32 emoji)
+        , html (EmojiData.View.emoji Twitter 32 emoji)
         ]

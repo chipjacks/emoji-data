@@ -1,4 +1,4 @@
-module View exposing (EmojiSource(..), emoji)
+module EmojiData.View exposing (EmojiSource(..), emoji)
 
 import EmojiData exposing (EmojiData)
 import Html exposing (Html)
