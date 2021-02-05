@@ -1,10 +1,20 @@
 module EmojiData exposing (EmojiData, list, listCategory, search)
 
+{-|
+
+
+# Emoji Data
+
+@docs EmojiData, list, listCategory, search
+
+-}
+
 import EmojiData.Category exposing (Category)
 import EmojiData.Json
 import Json.Decode as Decode
 
 
+{-| -}
 type alias EmojiData =
     { name : String
     , char : String
@@ -15,6 +25,7 @@ type alias EmojiData =
     }
 
 
+{-| -}
 list : List EmojiData
 list =
     let
@@ -29,11 +40,13 @@ list =
             []
 
 
+{-| -}
 listCategory : Category -> List EmojiData
 listCategory c =
     List.filter (\e -> e.category == c) list
 
 
+{-| -}
 search : String -> List EmojiData
 search str =
     let

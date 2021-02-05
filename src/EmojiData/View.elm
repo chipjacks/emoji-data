@@ -1,18 +1,29 @@
-module EmojiData.View exposing (EmojiSource(..), emoji)
+module EmojiData.View exposing (Source(..), emoji)
+
+{-|
+
+
+# Emoji View
+
+@docs Source, emoji
+
+-}
 
 import EmojiData exposing (EmojiData)
 import Html exposing (Html)
 import Html.Attributes exposing (style)
 
 
-type EmojiSource
+{-| -}
+type Source
     = Apple
     | Google
     | Twitter
     | Facebook
 
 
-emoji : EmojiSource -> Int -> EmojiData -> Html msg
+{-| -}
+emoji : Source -> Int -> EmojiData -> Html msg
 emoji source size data =
     let
         sheetRows =
