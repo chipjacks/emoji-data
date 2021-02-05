@@ -15,20 +15,13 @@ Promise.all([
     "https://raw.githubusercontent.com/iamcal/emoji-data/master/emoji.json"
   ),
   fetch_json(
-    "https://raw.githubusercontent.com/iamcal/emoji-data/master/categories.json"
-  ),
-  fetch_json(
     "https://raw.githubusercontent.com/muan/emojilib/main/dist/emoji-en-US.json"
   ),
-]).then(([emojis, categories, keywords_table]) => {
+]).then(([emojis, keywords_table]) => {
   for (const emoji of emojis) {
     const unicode = String.fromCodePoint(
       ...emoji.unified.split("-").map((u) => parseInt(u, 16))
     );
-    const category = Object.entries(categories).find(([k, v]) =>
-      v.includes(emoji["short_name"])
-    )[0];
-
     const keywords = [
       ...new Set([
         ...(keywords_table[unicode] || []).map(removeDashes),
@@ -41,7 +34,7 @@ Promise.all([
     const result = {
       name: emoji["short_name"],
       char: unicode,
-      category,
+      category: emoji["category"],
       keywords,
       x: emoji["sheet_x"],
       y: emoji["sheet_y"],
