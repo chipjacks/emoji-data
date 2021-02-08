@@ -1,4 +1,4 @@
-module EmojiData.Import exposing (emojis)
+module EmojiData.List exposing (emojis)
 
 {-|
 

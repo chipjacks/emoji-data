@@ -17,7 +17,7 @@ import Task exposing (Task)
 
 
 {-| Make two CDN requests to load emoji data JSON. This is an alternative to
-using `EmojiData.Import.emojis` that reduces bundle size by about 300KB.
+using `EmojiData.List.emojis` that reduces bundle size by about 300KB.
 
     type alias Model =
         { emojis : List EmojiData
