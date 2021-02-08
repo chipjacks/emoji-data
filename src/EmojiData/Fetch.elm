@@ -51,7 +51,9 @@ emojiLibDecoder =
 
 joinKeywords : Dict String (List String) -> List EmojiData -> List EmojiData
 joinKeywords keywords emojis =
-    emojis
+    List.map
+        (\e -> { e | keywords = e.name :: (Dict.get e.char keywords |> Maybe.withDefault []) })
+        emojis
 
 
 unicodeHexDecoder : Decode.Decoder String

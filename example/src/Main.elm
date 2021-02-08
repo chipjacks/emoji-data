@@ -13,6 +13,7 @@ import EmojiData.Fetch exposing (fetchEmojiData)
 import EmojiData.View exposing (Source(..))
 import Html exposing (Html)
 import Http
+import Process
 import Task
 
 
@@ -56,7 +57,7 @@ update msg model =
                     ( { model | emojis = emojis }, Cmd.none )
 
                 Err err ->
-                    ( { model | emojis = [] }, Task.attempt FetchedEmojiData fetchEmojiData )
+                    ( { model | emojis = [] }, Task.attempt FetchedEmojiData (Process.sleep 1000 |> Task.andThen (\_ -> fetchEmojiData)) )
 
         SearchInput str ->
             ( { model | search = str, results = EmojiData.search model.emojis str |> List.take 100 }, Cmd.none )
