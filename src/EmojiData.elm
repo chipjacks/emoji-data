@@ -25,7 +25,7 @@ type alias EmojiData =
 
 {-| -}
 search : List EmojiData -> String -> List EmojiData
-search list str =
+search emojis str =
     let
         isMatch emoji =
             (String.join " " emoji.keywords |> String.contains str)
@@ -35,4 +35,4 @@ search list str =
         []
 
     else
-        List.filter isMatch list
+        List.filter isMatch emojis

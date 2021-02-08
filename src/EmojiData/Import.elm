@@ -1,11 +1,21 @@
-module EmojiData.Import exposing (list)
+module EmojiData.Import exposing (emojis)
+
+{-|
+
+
+# Emoji Import
+
+@docs emojis
+
+-}
 
 import EmojiData exposing (EmojiData)
 import EmojiData.Category exposing (Category(..))
 
 
-list : List EmojiData
-list =
+{-| -}
+emojis : List EmojiData
+emojis =
     [ { category = Symbols, char = "#️⃣", keywords = [ "hash", "keycap ", "symbol", "blue square", "twitter" ], name = "hash", x = 0, y = 0 }
     , { category = Symbols, char = "*️⃣", keywords = [ "keycap star", "keycap ", "star", "keycap" ], name = "keycap_star", x = 0, y = 1 }
     , { category = Symbols, char = "0️⃣", keywords = [ "zero", "keycap 0", "0", "numbers", "blue square", "null" ], name = "zero", x = 0, y = 2 }

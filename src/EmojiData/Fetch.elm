@@ -1,5 +1,15 @@
 module EmojiData.Fetch exposing (task)
 
+{-|
+
+
+# Emoji Fetch
+
+@docs task
+
+-}
+
+
 import Dict exposing (Dict)
 import EmojiData exposing (EmojiData)
 import EmojiData.Category exposing (Category)
@@ -9,7 +19,7 @@ import Http.Tasks exposing (get, resolveJson)
 import Json.Decode as Decode
 import Task exposing (Task)
 
-
+{-| -}
 task : Task Http.Error (List EmojiData)
 task =
     Task.map2 joinKeywords
