@@ -1,15 +1,13 @@
-module EmojiData exposing (EmojiData, category, search)
+module EmojiData exposing (EmojiData, search)
 
 {-|
 
 
 # Emoji Data
 
-@docs EmojiData, all, category, search
+@docs EmojiData, search
 
 -}
-
-import EmojiData.Category exposing (Category)
 
 
 {-| -}
@@ -21,12 +19,6 @@ type alias EmojiData =
     , y : Int
     , keywords : List String
     }
-
-
-{-| -}
-category : List EmojiData -> Category -> List EmojiData
-category list c =
-    List.filter (\e -> e.category == c) list
 
 
 {-| -}

@@ -10,7 +10,6 @@ import Element.Input as Input
 import EmojiData exposing (EmojiData)
 import EmojiData.Category as Category exposing (Category)
 import EmojiData.Fetch
-import EmojiData.Import
 import EmojiData.View exposing (Source(..))
 import Html exposing (Html)
 import Http
@@ -40,7 +39,7 @@ type alias Model =
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    ( Model EmojiData.Import.all "" [], Cmd.none )
+    ( Model [] "" [], Task.attempt FetchedEmojiData EmojiData.Fetch.task )
 
 
 type Msg
