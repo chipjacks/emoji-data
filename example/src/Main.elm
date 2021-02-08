@@ -9,7 +9,7 @@ import Element.Font as Font
 import Element.Input as Input
 import EmojiData exposing (EmojiData)
 import EmojiData.Category as Category exposing (Category)
-import EmojiData.Fetch exposing (fetchEmojiData)
+import EmojiData.Fetch
 import EmojiData.View exposing (Source(..))
 import Html exposing (Html)
 import Http
@@ -39,7 +39,7 @@ type alias Model =
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    ( Model [] "" [], Task.attempt FetchedEmojiData fetchEmojiData )
+    ( Model [] "" [], Task.attempt FetchedEmojiData EmojiData.Fetch.task )
 
 
 type Msg
@@ -57,7 +57,7 @@ update msg model =
                     ( { model | emojis = emojis }, Cmd.none )
 
                 Err err ->
-                    ( { model | emojis = [] }, Task.attempt FetchedEmojiData (Process.sleep 1000 |> Task.andThen (\_ -> fetchEmojiData)) )
+                    ( { model | emojis = [] }, Task.attempt FetchedEmojiData (Process.sleep 1000 |> Task.andThen (\_ -> EmojiData.Fetch.task)) )
 
         SearchInput str ->
             ( { model | search = str, results = EmojiData.search model.emojis str |> List.take 100 }, Cmd.none )

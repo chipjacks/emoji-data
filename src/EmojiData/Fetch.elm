@@ -1,4 +1,4 @@
-module EmojiData.Fetch exposing (fetchEmojiData)
+module EmojiData.Fetch exposing (task)
 
 import Dict exposing (Dict)
 import EmojiData exposing (EmojiData)
@@ -18,8 +18,8 @@ emojiDataCDN =
     "https://cdn.jsdelivr.net/npm/emoji-datasource@6.0.0/emoji.json"
 
 
-fetchEmojiData : Task Http.Error (List EmojiData)
-fetchEmojiData =
+task : Task Http.Error (List EmojiData)
+task =
     Task.map2 joinKeywords
         (get
             { url = emojiLibCDN
