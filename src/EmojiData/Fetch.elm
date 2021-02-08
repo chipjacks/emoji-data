@@ -9,7 +9,6 @@ module EmojiData.Fetch exposing (task)
 
 -}
 
-
 import Dict exposing (Dict)
 import EmojiData exposing (EmojiData)
 import EmojiData.Category exposing (Category)
@@ -18,6 +17,7 @@ import Http
 import Http.Tasks exposing (get, resolveJson)
 import Json.Decode as Decode
 import Task exposing (Task)
+
 
 {-| -}
 task : Task Http.Error (List EmojiData)
@@ -41,12 +41,14 @@ emojiDataCDN =
 
 emojiDataDecoder : Decode.Decoder EmojiData
 emojiDataDecoder =
-    Decode.map6 EmojiData
+    Decode.map5 EmojiData
         (Decode.field "short_name" Decode.string)
         (Decode.field "unified" unicodeHexDecoder)
         (Decode.field "category" categoryDecoder)
-        (Decode.field "sheet_x" Decode.int)
-        (Decode.field "sheet_y" Decode.int)
+        (Decode.map2 Tuple.pair
+            (Decode.field "sheet_x" Decode.int)
+            (Decode.field "sheet_y" Decode.int)
+        )
         (Decode.succeed [])
 
 
@@ -65,8 +67,7 @@ joinKeywords keywords emojis =
         (\e ->
             { e
                 | keywords =
-                    e.name
-                        :: (Dict.get e.char keywords |> Maybe.withDefault [])
+                    (Dict.get e.char keywords |> Maybe.withDefault [])
                         |> List.map (String.replace "-" " ")
                         |> List.map (String.replace "_" " ")
             }

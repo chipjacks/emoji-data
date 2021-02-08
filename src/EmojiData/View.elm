@@ -23,8 +23,8 @@ type Source
 
 
 {-| -}
-emoji : Source -> Int -> EmojiData -> Html msg
-emoji source size data =
+emoji : Source -> Int -> ( Int, Int ) -> Html msg
+emoji source size ( x, y ) =
     let
         sheetRows =
             58
@@ -65,9 +65,9 @@ emoji source size data =
         , style "background-size" (String.fromInt (size * sheetRows) ++ "px")
         , style "background-position"
             (String.concat
-                [ String.fromInt <| (data.x * (0 - size))
+                [ String.fromInt <| (x * (0 - size))
                 , "px "
-                , String.fromInt <| (data.y * (0 - size))
+                , String.fromInt <| (y * (0 - size))
                 , "px"
                 ]
             )

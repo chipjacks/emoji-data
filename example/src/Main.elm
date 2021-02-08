@@ -126,8 +126,8 @@ viewEmoji emoji =
     row [ spaceEvenly, width fill ]
         [ el [ width (shrink |> minimum 200) ] (text emoji.name)
         , el [] (text emoji.char)
-        , html (EmojiData.View.emoji Apple 32 emoji)
-        , html (EmojiData.View.emoji Google 32 emoji)
-        , html (EmojiData.View.emoji Facebook 32 emoji)
-        , html (EmojiData.View.emoji Twitter 32 emoji)
+        , html (EmojiData.View.emoji Apple 32 emoji.sprite)
+        , html (EmojiData.View.emoji Google 32 emoji.sprite)
+        , html (EmojiData.View.emoji Facebook 32 emoji.sprite)
+        , html (EmojiData.View.emoji Twitter 32 emoji.sprite)
         ]
