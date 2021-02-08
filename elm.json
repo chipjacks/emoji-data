@@ -17,7 +17,8 @@
         "elm/html": "1.0.0 <= v < 2.0.0",
         "elm/http": "2.0.0 <= v < 3.0.0",
         "elm/json": "1.0.0 <= v < 2.0.0",
-        "prikhi/http-tasks": "1.0.0 <= v < 2.0.0"
+        "prikhi/http-tasks": "1.0.0 <= v < 2.0.0",
+        "rtfeldman/elm-hex": "1.0.0 <= v < 2.0.0"
     },
     "test-dependencies": {}
 }

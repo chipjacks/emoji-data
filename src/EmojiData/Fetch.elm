@@ -3,6 +3,7 @@ module EmojiData.Fetch exposing (fetchEmojiData)
 import Dict exposing (Dict)
 import EmojiData exposing (EmojiData)
 import EmojiData.Category
+import Hex
 import Http
 import Http.Tasks exposing (get, resolveJson)
 import Json.Decode as Decode
@@ -36,7 +37,7 @@ emojiDataDecoder : Decode.Decoder EmojiData
 emojiDataDecoder =
     Decode.map6 EmojiData
         (Decode.field "short_name" Decode.string)
-        (Decode.field "unified" Decode.string)
+        (Decode.field "unified" unicodeHexDecoder)
         (Decode.field "category" EmojiData.Category.decoder)
         (Decode.field "sheet_x" Decode.int)
         (Decode.field "sheet_y" Decode.int)
@@ -51,3 +52,20 @@ emojiLibDecoder =
 joinKeywords : Dict String (List String) -> List EmojiData -> List EmojiData
 joinKeywords keywords emojis =
     emojis
+
+
+unicodeHexDecoder : Decode.Decoder String
+unicodeHexDecoder =
+    let
+        replacemantCharacterCodepoint =
+            65533
+
+        hexToUnicode str =
+            String.toLower str
+                |> String.split "-"
+                |> List.map (Hex.fromString >> Result.withDefault replacemantCharacterCodepoint)
+                |> List.map Char.fromCode
+                |> String.fromList
+    in
+    Decode.string
+        |> Decode.map hexToUnicode
