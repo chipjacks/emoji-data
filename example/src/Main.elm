@@ -9,8 +9,11 @@ import Element.Font as Font
 import Element.Input as Input
 import EmojiData exposing (EmojiData)
 import EmojiData.Category as Category exposing (Category)
-import EmojiData.View exposing (EmojiSource(..))
+import EmojiData.Fetch exposing (fetchEmojiData)
+import EmojiData.View exposing (Source(..))
 import Html exposing (Html)
+import Http
+import Task
 
 
 
@@ -27,29 +30,39 @@ main =
 
 
 type alias Model =
-    { search : String
+    { emojis : List EmojiData
+    , search : String
     , results : List EmojiData
     }
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    ( Model "" [], Cmd.none )
+    ( Model [] "" [], Task.attempt FetchedEmojiData fetchEmojiData )
 
 
 type Msg
-    = SearchInput String
+    = FetchedEmojiData (Result Http.Error (List EmojiData))
+    | SearchInput String
     | SelectCategory Category
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        FetchedEmojiData result ->
+            case result of
+                Ok emojis ->
+                    ( { model | emojis = emojis }, Cmd.none )
+
+                Err err ->
+                    ( { model | emojis = [] }, Task.attempt FetchedEmojiData fetchEmojiData )
+
         SearchInput str ->
-            ( { model | search = str, results = EmojiData.search str |> List.take 100 }, Cmd.none )
+            ( { model | search = str, results = EmojiData.search model.emojis str |> List.take 100 }, Cmd.none )
 
         SelectCategory category ->
-            ( { model | results = EmojiData.listCategory category }, Cmd.none )
+            ( { model | results = EmojiData.category model.emojis category }, Cmd.none )
 
 
 view : Model -> Html Msg

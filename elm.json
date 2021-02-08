@@ -7,14 +7,17 @@
     "exposed-modules": [
         "EmojiData",
         "EmojiData.Category",
-        "EmojiData.View"
+        "EmojiData.View",
+        "EmojiData.Fetch"
     ],
     "elm-version": "0.19.0 <= v < 0.20.0",
     "dependencies": {
         "Herteby/enum": "1.0.1 <= v < 2.0.0",
         "elm/core": "1.0.0 <= v < 2.0.0",
         "elm/html": "1.0.0 <= v < 2.0.0",
-        "elm/json": "1.0.0 <= v < 2.0.0"
+        "elm/http": "2.0.0 <= v < 3.0.0",
+        "elm/json": "1.0.0 <= v < 2.0.0",
+        "prikhi/http-tasks": "1.0.0 <= v < 2.0.0"
     },
     "test-dependencies": {}
 }

@@ -1,11 +1,11 @@
-module EmojiData exposing (EmojiData, list, listCategory, search)
+module EmojiData exposing (EmojiData, category, search)
 
 {-|
 
 
 # Emoji Data
 
-@docs EmojiData, list, listCategory, search
+@docs EmojiData, all, category, search
 
 -}
 
@@ -19,36 +19,21 @@ type alias EmojiData =
     { name : String
     , char : String
     , category : Category
-    , keywords : List String
     , x : Int
     , y : Int
+    , keywords : List String
     }
 
 
 {-| -}
-list : List EmojiData
-list =
-    let
-        decoded =
-            Decode.decodeString (Decode.list emojiDecoder) EmojiData.Json.list
-    in
-    case decoded of
-        Ok data ->
-            data
-
-        Err err ->
-            []
-
-
-{-| -}
-listCategory : Category -> List EmojiData
-listCategory c =
+category : List EmojiData -> Category -> List EmojiData
+category list c =
     List.filter (\e -> e.category == c) list
 
 
 {-| -}
-search : String -> List EmojiData
-search str =
+search : List EmojiData -> String -> List EmojiData
+search list str =
     let
         isMatch emoji =
             (String.join " " emoji.keywords |> String.contains str)
@@ -67,6 +52,6 @@ emojiDecoder =
         (Decode.field "name" Decode.string)
         (Decode.field "char" Decode.string)
         (Decode.field "category" EmojiData.Category.decoder)
-        (Decode.field "keywords" (Decode.list Decode.string))
         (Decode.field "x" Decode.int)
         (Decode.field "y" Decode.int)
+        (Decode.field "keywords" (Decode.list Decode.string))

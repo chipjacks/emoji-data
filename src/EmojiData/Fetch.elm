@@ -1,0 +1,53 @@
+module EmojiData.Fetch exposing (fetchEmojiData)
+
+import Dict exposing (Dict)
+import EmojiData exposing (EmojiData)
+import EmojiData.Category
+import Http
+import Http.Tasks exposing (get, resolveJson)
+import Json.Decode as Decode
+import Task exposing (Task)
+
+
+emojiLibCDN =
+    "https://unpkg.com/emojilib@3.0.0/dist/emoji-en-US.json"
+
+
+emojiDataCDN =
+    "https://cdn.jsdelivr.net/npm/emoji-datasource@6.0.0/emoji.json"
+
+
+fetchEmojiData : Task Http.Error (List EmojiData)
+fetchEmojiData =
+    Task.map2 joinKeywords
+        (get
+            { url = emojiLibCDN
+            , resolver = resolveJson emojiLibDecoder
+            }
+        )
+        (get
+            { url = emojiDataCDN
+            , resolver = resolveJson (Decode.list emojiDataDecoder)
+            }
+        )
+
+
+emojiDataDecoder : Decode.Decoder EmojiData
+emojiDataDecoder =
+    Decode.map6 EmojiData
+        (Decode.field "short_name" Decode.string)
+        (Decode.field "unified" Decode.string)
+        (Decode.field "category" EmojiData.Category.decoder)
+        (Decode.field "sheet_x" Decode.int)
+        (Decode.field "sheet_y" Decode.int)
+        (Decode.succeed [])
+
+
+emojiLibDecoder : Decode.Decoder (Dict String (List String))
+emojiLibDecoder =
+    Decode.dict (Decode.list Decode.string)
+
+
+joinKeywords : Dict String (List String) -> List EmojiData -> List EmojiData
+joinKeywords keywords emojis =
+    emojis
