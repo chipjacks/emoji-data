@@ -10,8 +10,6 @@ module EmojiData exposing (EmojiData, category, search)
 -}
 
 import EmojiData.Category exposing (Category)
-import EmojiData.Json
-import Json.Decode as Decode
 
 
 {-| -}
@@ -44,14 +42,3 @@ search list str =
 
     else
         List.filter isMatch list
-
-
-emojiDecoder : Decode.Decoder EmojiData
-emojiDecoder =
-    Decode.map6 EmojiData
-        (Decode.field "name" Decode.string)
-        (Decode.field "char" Decode.string)
-        (Decode.field "category" EmojiData.Category.decoder)
-        (Decode.field "x" Decode.int)
-        (Decode.field "y" Decode.int)
-        (Decode.field "keywords" (Decode.list Decode.string))

@@ -52,7 +52,15 @@ emojiLibDecoder =
 joinKeywords : Dict String (List String) -> List EmojiData -> List EmojiData
 joinKeywords keywords emojis =
     List.map
-        (\e -> { e | keywords = e.name :: (Dict.get e.char keywords |> Maybe.withDefault []) })
+        (\e ->
+            { e
+                | keywords =
+                    e.name
+                        :: (Dict.get e.char keywords |> Maybe.withDefault [])
+                        |> List.map (String.replace "-" " ")
+                        |> List.map (String.replace "_" " ")
+            }
+        )
         emojis
 
 
