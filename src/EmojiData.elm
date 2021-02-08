@@ -2,9 +2,6 @@ module EmojiData exposing (EmojiData, search)
 
 {-|
 
-
-# Emoji Data
-
 @docs EmojiData, search
 
 -}
@@ -22,7 +19,7 @@ type alias EmojiData =
     }
 
 
-{-|
+{-| Search for emojis by keyword.
 
     import EmojiData.Import exposing (emojis)
 

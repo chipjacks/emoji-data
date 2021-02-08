@@ -2,9 +2,6 @@ module EmojiData.Import exposing (emojis)
 
 {-|
 
-
-# Emoji Import
-
 @docs emojis
 
 -}
@@ -13,7 +10,9 @@ import EmojiData exposing (EmojiData)
 import EmojiData.Category exposing (Category(..))
 
 
-{-| -}
+{-| Staticly import the list of emojis. This adds about 300KB to your bundle
+size compared to using `EmojiData.Fetch`.
+-}
 emojis : List EmojiData
 emojis =
     [ { category = Symbols, char = "#️⃣", keywords = [ "keycap ", "symbol", "blue square", "twitter" ], name = "hash", sprite = ( 0, 0 ) }

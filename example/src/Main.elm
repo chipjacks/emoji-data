@@ -84,8 +84,14 @@ view model =
                     }
                 , row [ centerX, Font.bold, Font.size 20 ] [ el [] (text "Emoji Data") ]
                 , row [ alignRight, spacing 20 ]
-                    [ el [] (text "Elm Docs")
-                    , el [] (text "Github")
+                    [ link [ Font.color (rgb255 0 0 255) ]
+                        { url = "https://package.elm-lang.org/packages/chipjacks/emoji-data/latest/"
+                        , label = text "Elm Docs"
+                        }
+                    , link [ Font.color (rgb255 0 0 255) ]
+                        { url = "https://github.com/chipjacks/emoji-data"
+                        , label = text "Github"
+                        }
                     ]
                 ]
             , viewCategories

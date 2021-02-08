@@ -2,9 +2,6 @@ module EmojiData.View exposing (Source(..), emoji)
 
 {-|
 
-
-# Emoji View
-
 @docs Source, emoji
 
 -}
@@ -14,7 +11,9 @@ import Html exposing (Html)
 import Html.Attributes exposing (style)
 
 
-{-| -}
+{-| Not all emoji sources are licensed for commercial use. See
+[here](https://github.com/iamcal/emoji-data#image-sources) for details.
+-}
 type Source
     = Apple
     | Google
@@ -22,7 +21,8 @@ type Source
     | Facebook
 
 
-{-| -}
+{-| Creates a `div` containing the emoji from a spritesheet.
+-}
 emoji : Source -> Int -> ( Int, Int ) -> Html msg
 emoji source size ( x, y ) =
     let

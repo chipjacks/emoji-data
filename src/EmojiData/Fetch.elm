@@ -2,9 +2,6 @@ module EmojiData.Fetch exposing (task)
 
 {-|
 
-
-# Emoji Fetch
-
 @docs task
 
 -}
@@ -19,7 +16,37 @@ import Json.Decode as Decode
 import Task exposing (Task)
 
 
-{-| -}
+{-| Make two CDN requests to load emoji data JSON. This is an alternative to
+using `EmojiData.Import.emojis` that reduces bundle size by about 300KB.
+
+    type alias Model =
+        { emojis : List EmojiData
+        }
+
+    init : () -> ( Model, Cmd Msg )
+    init _ =
+        ( Model [], Task.attempt FetchedEmojiData EmojiData.Fetch.task )
+
+    type Msg
+        = FetchedEmojiData (Result Http.Error (List EmojiData))
+
+    update : Msg -> Model -> ( Model, Cmd Msg )
+    update msg model =
+        case msg of
+            FetchedEmojiData result ->
+                case result of
+                    Ok emojis ->
+                        ( { model | emojis = emojis }, Cmd.none )
+
+                    Err err ->
+                        ( model
+                        , Task.attempt FetchedEmojiData
+                            (Process.sleep 1000
+                                |> Task.andThen (\_ -> EmojiData.Fetch.task)
+                            )
+                        )
+
+-}
 task : Task Http.Error (List EmojiData)
 task =
     Task.map2 joinKeywords

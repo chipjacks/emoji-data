@@ -2,9 +2,6 @@ module EmojiData.Category exposing (Category(..), list, toString, fromString)
 
 {-|
 
-
-# Emoji Categories
-
 @docs Category, list, toString, fromString
 
 -}

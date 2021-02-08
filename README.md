@@ -2,6 +2,7 @@
 
 A searchable list of Emojis for your Elm application.
 
+## [Demo](https://chipjacks.com/emoji-data/)
 
 ## Credits
 
