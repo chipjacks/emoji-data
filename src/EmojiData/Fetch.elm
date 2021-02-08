@@ -2,20 +2,12 @@ module EmojiData.Fetch exposing (task)
 
 import Dict exposing (Dict)
 import EmojiData exposing (EmojiData)
-import EmojiData.Category
+import EmojiData.Category exposing (Category)
 import Hex
 import Http
 import Http.Tasks exposing (get, resolveJson)
 import Json.Decode as Decode
 import Task exposing (Task)
-
-
-emojiLibCDN =
-    "https://unpkg.com/emojilib@3.0.0/dist/emoji-en-US.json"
-
-
-emojiDataCDN =
-    "https://cdn.jsdelivr.net/npm/emoji-datasource@6.0.0/emoji.json"
 
 
 task : Task Http.Error (List EmojiData)
@@ -33,15 +25,23 @@ task =
         )
 
 
+emojiDataCDN =
+    "https://cdn.jsdelivr.net/npm/emoji-datasource@6.0.0/emoji.json"
+
+
 emojiDataDecoder : Decode.Decoder EmojiData
 emojiDataDecoder =
     Decode.map6 EmojiData
         (Decode.field "short_name" Decode.string)
         (Decode.field "unified" unicodeHexDecoder)
-        (Decode.field "category" EmojiData.Category.decoder)
+        (Decode.field "category" categoryDecoder)
         (Decode.field "sheet_x" Decode.int)
         (Decode.field "sheet_y" Decode.int)
         (Decode.succeed [])
+
+
+emojiLibCDN =
+    "https://unpkg.com/emojilib@3.0.0/dist/emoji-en-US.json"
 
 
 emojiLibDecoder : Decode.Decoder (Dict String (List String))
@@ -79,3 +79,18 @@ unicodeHexDecoder =
     in
     Decode.string
         |> Decode.map hexToUnicode
+
+
+categoryDecoder : Decode.Decoder Category
+categoryDecoder =
+    Decode.string
+        |> Decode.map EmojiData.Category.fromString
+        |> Decode.andThen
+            (\categoryM ->
+                case categoryM of
+                    Just category ->
+                        Decode.succeed category
+
+                    Nothing ->
+                        Decode.fail "Category missing"
+            )

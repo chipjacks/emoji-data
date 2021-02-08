@@ -9,6 +9,8 @@ module EmojiData exposing (EmojiData, search)
 
 -}
 
+import EmojiData.Category exposing (Category)
+
 
 {-| -}
 type alias EmojiData =

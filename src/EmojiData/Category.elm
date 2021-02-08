@@ -1,11 +1,11 @@
-module EmojiData.Category exposing (Category(..), list, toString, fromString, encode, decoder)
+module EmojiData.Category exposing (Category(..), list, toString, fromString)
 
 {-|
 
 
 # Emoji Categories
 
-@docs Category, list, toString, fromString, encode, decoder
+@docs Category, list, toString, fromString
 
 -}
 
@@ -44,18 +44,6 @@ toString category =
 fromString : String -> Maybe Category
 fromString str =
     enum.fromString str
-
-
-{-| -}
-encode : Category -> Json.Encode.Value
-encode =
-    enum.encode
-
-
-{-| -}
-decoder : Json.Decode.Decoder Category
-decoder =
-    enum.decoder
 
 
 enum : Enum Category

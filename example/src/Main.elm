@@ -63,7 +63,7 @@ update msg model =
             ( { model | search = str, results = EmojiData.search model.emojis str |> List.take 100 }, Cmd.none )
 
         SelectCategory category ->
-            ( { model | results = EmojiData.category model.emojis category }, Cmd.none )
+            ( { model | results = List.filter (\e -> e.category == category) model.emojis }, Cmd.none )
 
 
 view : Model -> Html Msg
