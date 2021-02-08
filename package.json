@@ -2,6 +2,7 @@
   "name": "emoji-data",
   "scripts": {
     "start": "cd example && elm-live src/Main.elm -u -- --output=elm.js",
+    "docs": "elm make --docs docs.json",
     "make": "cd example && elm make --optimize --output=elm.js src/Main.elm && mv elm.js .."
   },
   "version": "1.0.0",
