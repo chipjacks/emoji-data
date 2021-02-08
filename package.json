@@ -10,7 +10,7 @@
   "main": "index.js",
   "repository": "https://github.com/chipjacks/emoji-data",
   "author": "Chip Jackson",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "private": false,
   "devDependencies": {
     "elm-live": "^4.0.2",
