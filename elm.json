@@ -3,7 +3,7 @@
     "name": "chipjacks/emoji-data",
     "summary": "Searchable list of emojis.",
     "license": "BSD-3-Clause",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "exposed-modules": [
         "EmojiData",
         "EmojiData.Category",
