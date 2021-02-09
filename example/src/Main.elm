@@ -10,6 +10,7 @@ import Element.Input as Input
 import EmojiData exposing (EmojiData)
 import EmojiData.Category as Category exposing (Category)
 import EmojiData.Fetch
+import EmojiData.List
 import EmojiData.View exposing (Source(..))
 import Html exposing (Html)
 import Http
@@ -84,7 +85,12 @@ view model =
                     }
                 , row [ centerX, Font.bold, Font.size 20 ] [ el [] (text "Emoji Data") ]
                 , row [ alignRight, spacing 20 ]
-                    [ link [ Font.color (rgb255 0 0 255) ]
+                    [ if model.emojis /= [] && model.emojis /= EmojiData.List.emojis then
+                        text "⚠️"
+
+                      else
+                        none
+                    , link [ Font.color (rgb255 0 0 255) ]
                         { url = "https://package.elm-lang.org/packages/chipjacks/emoji-data/latest/"
                         , label = text "Elm Docs"
                         }
