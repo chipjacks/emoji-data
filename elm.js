@@ -5355,7 +5355,7 @@ var $author$project$Main$FetchedEmojiData = function (a) {
 };
 var $author$project$Main$Model = F3(
 	function (emojis, search, results) {
-		return {_: emojis, as: results, aK: search};
+		return {J: emojis, as: results, aK: search};
 	});
 var $elm$core$Basics$composeL = F3(
 	function (g, f, x) {
@@ -6613,14 +6613,14 @@ var $author$project$Main$update = F2(
 					return _Utils_Tuple2(
 						_Utils_update(
 							model,
-							{_: emojis}),
+							{J: emojis}),
 						$elm$core$Platform$Cmd$none);
 				} else {
 					var err = result.a;
 					return _Utils_Tuple2(
 						_Utils_update(
 							model,
-							{_: _List_Nil}),
+							{J: _List_Nil}),
 						A2(
 							$elm$core$Task$attempt,
 							$author$project$Main$FetchedEmojiData,
@@ -6640,7 +6640,7 @@ var $author$project$Main$update = F2(
 							as: A2(
 								$elm$core$List$take,
 								100,
-								A2($author$project$EmojiData$search, model._, str)),
+								A2($author$project$EmojiData$search, model.J, str)),
 							aK: str
 						}),
 					$elm$core$Platform$Cmd$none);
@@ -6655,7 +6655,7 @@ var $author$project$Main$update = F2(
 								function (e) {
 									return _Utils_eq(e.cg, category);
 								},
-								model._)
+								model.J)
 						}),
 					$elm$core$Platform$Cmd$none);
 		}
@@ -6672,7 +6672,7 @@ var $mdgriffith$elm_ui$Internal$Model$Class = F2(
 	function (a, b) {
 		return {$: 3, a: a, b: b};
 	});
-var $mdgriffith$elm_ui$Internal$Style$classes = {bQ: 'a', av: 'atv', bS: 'ab', bT: 'cx', bU: 'cy', bV: 'acb', bW: 'accx', bX: 'accy', bY: 'acr', aT: 'al', aU: 'ar', bZ: 'at', aw: 'ah', ax: 'av', b0: 's', b4: 'bh', b5: 'b', b7: 'w7', b9: 'bd', ca: 'bdt', ag: 'bn', cb: 'bs', ah: 'cpe', ci: 'cp', cj: 'cpx', ck: 'cpy', A: 'c', aj: 'ctr', ak: 'cb', al: 'ccx', B: 'ccy', Z: 'cl', am: 'cr', cm: 'ct', cn: 'cptr', co: 'ctxt', cv: 'fcs', a0: 'focus-within', cx: 'fs', cy: 'g', aC: 'hbh', aD: 'hc', a6: 'he', aE: 'hf', a7: 'hfp', cA: 'hv', cC: 'ic', cE: 'fr', aq: 'lbl', cG: 'iml', cH: 'imlf', cI: 'imlp', cJ: 'implw', cK: 'it', cL: 'i', bd: 'lnk', U: 'nb', bh: 'notxt', cS: 'ol', cU: 'or', M: 'oq', cY: 'oh', bl: 'pg', bm: 'p', cZ: 'ppe', c2: 'ui', s: 'r', c4: 'sb', c5: 'sbx', c6: 'sby', c7: 'sbt', da: 'e', db: 'cap', dc: 'sev', dl: 'sk', $7: 't', dp: 'tc', dq: 'w8', dr: 'w2', ds: 'w9', dt: 'tj', au: 'tja', du: 'tl', dv: 'w3', dw: 'w5', dx: 'w4', dy: 'tr', dz: 'w6', dA: 'w1', dB: 'tun', bF: 'ts', P: 'clr', dJ: 'u', aP: 'wc', bL: 'we', aQ: 'wf', bM: 'wfp', aR: 'wrp'};
+var $mdgriffith$elm_ui$Internal$Style$classes = {bQ: 'a', av: 'atv', bS: 'ab', bT: 'cx', bU: 'cy', bV: 'acb', bW: 'accx', bX: 'accy', bY: 'acr', aT: 'al', aU: 'ar', bZ: 'at', aw: 'ah', ax: 'av', b0: 's', b4: 'bh', b5: 'b', b7: 'w7', b9: 'bd', ca: 'bdt', ag: 'bn', cb: 'bs', ah: 'cpe', ci: 'cp', cj: 'cpx', ck: 'cpy', A: 'c', aj: 'ctr', ak: 'cb', al: 'ccx', B: 'ccy', _: 'cl', am: 'cr', cm: 'ct', cn: 'cptr', co: 'ctxt', cv: 'fcs', a0: 'focus-within', cx: 'fs', cy: 'g', aC: 'hbh', aD: 'hc', a6: 'he', aE: 'hf', a7: 'hfp', cA: 'hv', cC: 'ic', cE: 'fr', aq: 'lbl', cG: 'iml', cH: 'imlf', cI: 'imlp', cJ: 'implw', cK: 'it', cL: 'i', bd: 'lnk', V: 'nb', bh: 'notxt', cS: 'ol', cU: 'or', N: 'oq', cY: 'oh', bl: 'pg', bm: 'p', cZ: 'ppe', c2: 'ui', s: 'r', c4: 'sb', c5: 'sbx', c6: 'sby', c7: 'sbt', da: 'e', db: 'cap', dc: 'sev', dl: 'sk', $7: 't', dp: 'tc', dq: 'w8', dr: 'w2', ds: 'w9', dt: 'tj', au: 'tja', du: 'tl', dv: 'w3', dw: 'w5', dx: 'w4', dy: 'tr', dz: 'w6', dA: 'w1', dB: 'tun', bF: 'ts', Q: 'clr', dJ: 'u', aP: 'wc', bL: 'we', aQ: 'wf', bM: 'wfp', aR: 'wrp'};
 var $mdgriffith$elm_ui$Internal$Flag$Flag = function (a) {
 	return {$: 0, a: a};
 };
@@ -7068,11 +7068,11 @@ var $mdgriffith$elm_ui$Internal$Model$formatBoxShadow = function (shadow) {
 					$elm$core$Maybe$Just(
 					$elm$core$String$fromFloat(shadow.bi.b) + 'px'),
 					$elm$core$Maybe$Just(
-					$elm$core$String$fromFloat(shadow.R) + 'px'),
+					$elm$core$String$fromFloat(shadow.S) + 'px'),
 					$elm$core$Maybe$Just(
 					$elm$core$String$fromFloat(shadow.bA) + 'px'),
 					$elm$core$Maybe$Just(
-					$mdgriffith$elm_ui$Internal$Model$formatColor(shadow.S))
+					$mdgriffith$elm_ui$Internal$Model$formatColor(shadow.T))
 				])));
 };
 var $elm$core$Maybe$map = F2(
@@ -7138,8 +7138,8 @@ var $mdgriffith$elm_ui$Internal$Model$renderFocusStyle = function (focus) {
 								'box-shadow',
 								$mdgriffith$elm_ui$Internal$Model$formatBoxShadow(
 									{
-										R: shadow.R,
 										S: shadow.S,
+										T: shadow.T,
 										ba: false,
 										bi: A2(
 											$elm$core$Tuple$mapSecond,
@@ -7186,8 +7186,8 @@ var $mdgriffith$elm_ui$Internal$Model$renderFocusStyle = function (focus) {
 								'box-shadow',
 								$mdgriffith$elm_ui$Internal$Model$formatBoxShadow(
 									{
-										R: shadow.R,
 										S: shadow.S,
+										T: shadow.T,
 										ba: false,
 										bi: A2(
 											$elm$core$Tuple$mapSecond,
@@ -7279,7 +7279,7 @@ var $mdgriffith$elm_ui$Internal$Style$contentName = function (desc) {
 			return $mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.am);
 		case 3:
 			var _v4 = desc;
-			return $mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.Z);
+			return $mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes._);
 		case 4:
 			var _v5 = desc;
 			return $mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.al);
@@ -7627,7 +7627,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 					[
 						A2(
 						$mdgriffith$elm_ui$Internal$Style$Descriptor,
-						$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.U),
+						$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.V),
 						_List_fromArray(
 							[
 								A2($mdgriffith$elm_ui$Internal$Style$Prop, 'position', 'fixed'),
@@ -7637,7 +7637,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 			])),
 		A2(
 		$mdgriffith$elm_ui$Internal$Style$Class,
-		$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.U),
+		$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.V),
 		_List_fromArray(
 			[
 				A2($mdgriffith$elm_ui$Internal$Style$Prop, 'position', 'relative'),
@@ -7879,14 +7879,14 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 					])),
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
-				$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.P),
+				$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.Q),
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '0')
 					])),
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
-				$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.M),
+				$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.N),
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '1')
@@ -7894,7 +7894,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cA, $mdgriffith$elm_ui$Internal$Style$classes.P)) + ':hover',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cA, $mdgriffith$elm_ui$Internal$Style$classes.Q)) + ':hover',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '0')
@@ -7902,7 +7902,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cA, $mdgriffith$elm_ui$Internal$Style$classes.M)) + ':hover',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cA, $mdgriffith$elm_ui$Internal$Style$classes.N)) + ':hover',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '1')
@@ -7910,7 +7910,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cv, $mdgriffith$elm_ui$Internal$Style$classes.P)) + ':focus',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cv, $mdgriffith$elm_ui$Internal$Style$classes.Q)) + ':focus',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '0')
@@ -7918,7 +7918,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cv, $mdgriffith$elm_ui$Internal$Style$classes.M)) + ':focus',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.cv, $mdgriffith$elm_ui$Internal$Style$classes.N)) + ':focus',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '1')
@@ -7926,7 +7926,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.av, $mdgriffith$elm_ui$Internal$Style$classes.P)) + ':active',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.av, $mdgriffith$elm_ui$Internal$Style$classes.Q)) + ':active',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '0')
@@ -7934,7 +7934,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.av, $mdgriffith$elm_ui$Internal$Style$classes.M)) + ':active',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.av, $mdgriffith$elm_ui$Internal$Style$classes.N)) + ':active',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '1')
@@ -10651,8 +10651,8 @@ var $mdgriffith$elm_ui$Internal$Model$createElement = F3(
 				return $mdgriffith$elm_ui$Internal$Model$Unstyled(
 					A5(
 						$mdgriffith$elm_ui$Internal$Model$finalizeNode,
-						rendered.K,
 						rendered.L,
+						rendered.M,
 						rendered.G,
 						$mdgriffith$elm_ui$Internal$Model$Keyed(
 							A3($mdgriffith$elm_ui$Internal$Model$addKeyedChildren, 'nearby-element-pls', keyed, rendered.H)),
@@ -10663,8 +10663,8 @@ var $mdgriffith$elm_ui$Internal$Model$createElement = F3(
 					{
 						cB: A4(
 							$mdgriffith$elm_ui$Internal$Model$finalizeNode,
-							rendered.K,
 							rendered.L,
+							rendered.M,
 							rendered.G,
 							$mdgriffith$elm_ui$Internal$Model$Keyed(
 								A3($mdgriffith$elm_ui$Internal$Model$addKeyedChildren, 'nearby-element-pls', keyed, rendered.H))),
@@ -10685,8 +10685,8 @@ var $mdgriffith$elm_ui$Internal$Model$createElement = F3(
 				return $mdgriffith$elm_ui$Internal$Model$Unstyled(
 					A5(
 						$mdgriffith$elm_ui$Internal$Model$finalizeNode,
-						rendered.K,
 						rendered.L,
+						rendered.M,
 						rendered.G,
 						$mdgriffith$elm_ui$Internal$Model$Unkeyed(
 							A2($mdgriffith$elm_ui$Internal$Model$addChildren, unkeyed, rendered.H)),
@@ -10697,8 +10697,8 @@ var $mdgriffith$elm_ui$Internal$Model$createElement = F3(
 					{
 						cB: A4(
 							$mdgriffith$elm_ui$Internal$Model$finalizeNode,
-							rendered.K,
 							rendered.L,
+							rendered.M,
 							rendered.G,
 							$mdgriffith$elm_ui$Internal$Model$Unkeyed(
 								A2($mdgriffith$elm_ui$Internal$Model$addChildren, unkeyed, rendered.H))),
@@ -10755,37 +10755,37 @@ var $mdgriffith$elm_ui$Internal$Model$nearbyElement = F2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.bQ]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.bQ]));
 							case 1:
 								return A2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.b5]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.b5]));
 							case 2:
 								return A2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cU]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cU]));
 							case 3:
 								return A2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cS]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cS]));
 							case 4:
 								return A2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cE]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.cE]));
 							default:
 								return A2(
 									$elm$core$String$join,
 									' ',
 									_List_fromArray(
-										[$mdgriffith$elm_ui$Internal$Style$classes.U, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.b4]));
+										[$mdgriffith$elm_ui$Internal$Style$classes.V, $mdgriffith$elm_ui$Internal$Style$classes.da, $mdgriffith$elm_ui$Internal$Style$classes.b4]));
 						}
 					}())
 				]),
@@ -11257,8 +11257,8 @@ var $mdgriffith$elm_ui$Internal$Model$gatherAttrRecursive = F8(
 							$elm$html$Html$Attributes$class(classes),
 							attrs),
 						H: children,
-						K: has,
-						L: node,
+						L: has,
+						M: node,
 						dm: styles
 					};
 				} else {
@@ -11269,8 +11269,8 @@ var $mdgriffith$elm_ui$Internal$Model$gatherAttrRecursive = F8(
 							$elm$html$Html$Attributes$class(classes + (' ' + _class)),
 							attrs),
 						H: children,
-						K: has,
-						L: node,
+						L: has,
+						M: node,
 						dm: A2(
 							$elm$core$List$cons,
 							$mdgriffith$elm_ui$Internal$Model$Transform(transform),
@@ -12156,7 +12156,7 @@ var $mdgriffith$elm_ui$Element$column = F2(
 			$mdgriffith$elm_ui$Internal$Model$div,
 			A2(
 				$elm$core$List$cons,
-				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.cm + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.Z)),
+				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.cm + (' ' + $mdgriffith$elm_ui$Internal$Style$classes._)),
 				A2(
 					$elm$core$List$cons,
 					$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$shrink),
@@ -12183,6 +12183,14484 @@ var $mdgriffith$elm_ui$Element$el = F2(
 				_List_fromArray(
 					[child])));
 	});
+var $author$project$EmojiData$List$emojis = _List_fromArray(
+	[
+		{
+		cg: 7,
+		aW: '#️⃣',
+		bc: _List_fromArray(
+			['keycap ', 'symbol', 'blue square', 'twitter']),
+		bg: 'hash',
+		df: _Utils_Tuple2(0, 0)
+	},
+		{
+		cg: 7,
+		aW: '*️⃣',
+		bc: _List_fromArray(
+			['keycap ', 'star', 'keycap']),
+		bg: 'keycap_star',
+		df: _Utils_Tuple2(0, 1)
+	},
+		{
+		cg: 7,
+		aW: '0️⃣',
+		bc: _List_fromArray(
+			['keycap 0', '0', 'numbers', 'blue square', 'null']),
+		bg: 'zero',
+		df: _Utils_Tuple2(0, 2)
+	},
+		{
+		cg: 7,
+		aW: '1️⃣',
+		bc: _List_fromArray(
+			['keycap 1', 'blue square', 'numbers', '1']),
+		bg: 'one',
+		df: _Utils_Tuple2(0, 3)
+	},
+		{
+		cg: 7,
+		aW: '2️⃣',
+		bc: _List_fromArray(
+			['keycap 2', 'numbers', '2', 'prime', 'blue square']),
+		bg: 'two',
+		df: _Utils_Tuple2(0, 4)
+	},
+		{
+		cg: 7,
+		aW: '3️⃣',
+		bc: _List_fromArray(
+			['keycap 3', '3', 'numbers', 'prime', 'blue square']),
+		bg: 'three',
+		df: _Utils_Tuple2(0, 5)
+	},
+		{
+		cg: 7,
+		aW: '4️⃣',
+		bc: _List_fromArray(
+			['keycap 4', '4', 'numbers', 'blue square']),
+		bg: 'four',
+		df: _Utils_Tuple2(0, 6)
+	},
+		{
+		cg: 7,
+		aW: '5️⃣',
+		bc: _List_fromArray(
+			['keycap 5', '5', 'numbers', 'blue square', 'prime']),
+		bg: 'five',
+		df: _Utils_Tuple2(0, 7)
+	},
+		{
+		cg: 7,
+		aW: '6️⃣',
+		bc: _List_fromArray(
+			['keycap 6', '6', 'numbers', 'blue square']),
+		bg: 'six',
+		df: _Utils_Tuple2(0, 8)
+	},
+		{
+		cg: 7,
+		aW: '7️⃣',
+		bc: _List_fromArray(
+			['keycap 7', '7', 'numbers', 'blue square', 'prime']),
+		bg: 'seven',
+		df: _Utils_Tuple2(0, 9)
+	},
+		{
+		cg: 7,
+		aW: '8️⃣',
+		bc: _List_fromArray(
+			['keycap 8', '8', 'blue square', 'numbers']),
+		bg: 'eight',
+		df: _Utils_Tuple2(0, 10)
+	},
+		{
+		cg: 7,
+		aW: '9️⃣',
+		bc: _List_fromArray(
+			['keycap 9', 'blue square', 'numbers', '9']),
+		bg: 'nine',
+		df: _Utils_Tuple2(0, 11)
+	},
+		{
+		cg: 7,
+		aW: '©️',
+		bc: _List_fromArray(
+			['copyright', 'ip', 'license', 'circle', 'law', 'legal']),
+		bg: 'copyright',
+		df: _Utils_Tuple2(0, 12)
+	},
+		{
+		cg: 7,
+		aW: '®️',
+		bc: _List_fromArray(
+			['registered', 'alphabet', 'circle']),
+		bg: 'registered',
+		df: _Utils_Tuple2(0, 13)
+	},
+		{
+		cg: 5,
+		aW: '🀄',
+		bc: _List_fromArray(
+			['mahjong red dragon', 'game', 'play', 'chinese', 'kanji']),
+		bg: 'mahjong',
+		df: _Utils_Tuple2(0, 14)
+	},
+		{
+		cg: 5,
+		aW: '🃏',
+		bc: _List_fromArray(
+			['joker', 'poker', 'cards', 'game', 'play', 'magic']),
+		bg: 'black_joker',
+		df: _Utils_Tuple2(0, 15)
+	},
+		{
+		cg: 7,
+		aW: '🅰️',
+		bc: _List_fromArray(
+			['a button', 'red square', 'alphabet', 'letter']),
+		bg: 'a',
+		df: _Utils_Tuple2(0, 16)
+	},
+		{
+		cg: 7,
+		aW: '🅱️',
+		bc: _List_fromArray(
+			['b button', 'red square', 'alphabet', 'letter']),
+		bg: 'b',
+		df: _Utils_Tuple2(0, 17)
+	},
+		{
+		cg: 7,
+		aW: '🅾️',
+		bc: _List_fromArray(
+			['o button', 'alphabet', 'red square', 'letter']),
+		bg: 'o2',
+		df: _Utils_Tuple2(0, 18)
+	},
+		{
+		cg: 7,
+		aW: '🅿️',
+		bc: _List_fromArray(
+			['p button', 'cars', 'blue square', 'alphabet', 'letter']),
+		bg: 'parking',
+		df: _Utils_Tuple2(0, 19)
+	},
+		{
+		cg: 7,
+		aW: '🆎',
+		bc: _List_fromArray(
+			['ab button', 'red square', 'alphabet']),
+		bg: 'ab',
+		df: _Utils_Tuple2(0, 20)
+	},
+		{
+		cg: 7,
+		aW: '🆑',
+		bc: _List_fromArray(
+			['cl button', 'alphabet', 'words', 'red square']),
+		bg: 'cl',
+		df: _Utils_Tuple2(0, 21)
+	},
+		{
+		cg: 7,
+		aW: '🆒',
+		bc: _List_fromArray(
+			['cool button', 'words', 'blue square']),
+		bg: 'cool',
+		df: _Utils_Tuple2(0, 22)
+	},
+		{
+		cg: 7,
+		aW: '🆓',
+		bc: _List_fromArray(
+			['free button', 'blue square', 'words']),
+		bg: 'free',
+		df: _Utils_Tuple2(0, 23)
+	},
+		{
+		cg: 7,
+		aW: '🆔',
+		bc: _List_fromArray(
+			['id button', 'purple square', 'words']),
+		bg: 'id',
+		df: _Utils_Tuple2(0, 24)
+	},
+		{
+		cg: 7,
+		aW: '🆕',
+		bc: _List_fromArray(
+			['new button', 'blue square', 'words', 'start']),
+		bg: 'new',
+		df: _Utils_Tuple2(0, 25)
+	},
+		{
+		cg: 7,
+		aW: '🆖',
+		bc: _List_fromArray(
+			['ng button', 'blue square', 'words', 'shape', 'icon']),
+		bg: 'ng',
+		df: _Utils_Tuple2(0, 26)
+	},
+		{
+		cg: 7,
+		aW: '🆗',
+		bc: _List_fromArray(
+			['ok button', 'good', 'agree', 'yes', 'blue square']),
+		bg: 'ok',
+		df: _Utils_Tuple2(0, 27)
+	},
+		{
+		cg: 7,
+		aW: '🆘',
+		bc: _List_fromArray(
+			['sos button', 'help', 'red square', 'words', 'emergency', '911']),
+		bg: 'sos',
+		df: _Utils_Tuple2(0, 28)
+	},
+		{
+		cg: 7,
+		aW: '🆙',
+		bc: _List_fromArray(
+			['up button', 'blue square', 'above', 'high']),
+		bg: 'up',
+		df: _Utils_Tuple2(0, 29)
+	},
+		{
+		cg: 7,
+		aW: '🆚',
+		bc: _List_fromArray(
+			['vs button', 'words', 'orange square']),
+		bg: 'vs',
+		df: _Utils_Tuple2(0, 30)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇨',
+		bc: _List_fromArray(
+			['flag ascension island']),
+		bg: 'flag-ac',
+		df: _Utils_Tuple2(0, 31)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇩',
+		bc: _List_fromArray(
+			['flag andorra', 'ad', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ad',
+		df: _Utils_Tuple2(0, 32)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇪',
+		bc: _List_fromArray(
+			['flag united arab emirates', 'united', 'arab', 'emirates', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ae',
+		df: _Utils_Tuple2(0, 33)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇫',
+		bc: _List_fromArray(
+			['flag afghanistan', 'af', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-af',
+		df: _Utils_Tuple2(0, 34)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇬',
+		bc: _List_fromArray(
+			['flag antigua barbuda', 'antigua', 'barbuda', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ag',
+		df: _Utils_Tuple2(0, 35)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇮',
+		bc: _List_fromArray(
+			['flag anguilla', 'ai', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ai',
+		df: _Utils_Tuple2(0, 36)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇱',
+		bc: _List_fromArray(
+			['flag albania', 'al', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-al',
+		df: _Utils_Tuple2(0, 37)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇲',
+		bc: _List_fromArray(
+			['flag armenia', 'am', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-am',
+		df: _Utils_Tuple2(0, 38)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇴',
+		bc: _List_fromArray(
+			['flag angola', 'ao', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ao',
+		df: _Utils_Tuple2(0, 39)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇶',
+		bc: _List_fromArray(
+			['flag antarctica', 'aq', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-aq',
+		df: _Utils_Tuple2(0, 40)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇷',
+		bc: _List_fromArray(
+			['flag argentina', 'ar', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ar',
+		df: _Utils_Tuple2(0, 41)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇸',
+		bc: _List_fromArray(
+			['flag american samoa', 'american', 'ws', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-as',
+		df: _Utils_Tuple2(0, 42)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇹',
+		bc: _List_fromArray(
+			['flag austria', 'at', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-at',
+		df: _Utils_Tuple2(0, 43)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇺',
+		bc: _List_fromArray(
+			['flag australia', 'au', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-au',
+		df: _Utils_Tuple2(0, 44)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇼',
+		bc: _List_fromArray(
+			['flag aruba', 'aw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-aw',
+		df: _Utils_Tuple2(0, 45)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇽',
+		bc: _List_fromArray(
+			['flag aland islands', 'Åland', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ax',
+		df: _Utils_Tuple2(0, 46)
+	},
+		{
+		cg: 8,
+		aW: '🇦🇿',
+		bc: _List_fromArray(
+			['flag azerbaijan', 'az', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-az',
+		df: _Utils_Tuple2(0, 47)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇦',
+		bc: _List_fromArray(
+			['flag bosnia herzegovina', 'bosnia', 'herzegovina', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ba',
+		df: _Utils_Tuple2(0, 48)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇧',
+		bc: _List_fromArray(
+			['flag barbados', 'bb', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bb',
+		df: _Utils_Tuple2(0, 49)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇩',
+		bc: _List_fromArray(
+			['flag bangladesh', 'bd', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bd',
+		df: _Utils_Tuple2(0, 50)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇪',
+		bc: _List_fromArray(
+			['flag belgium', 'be', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-be',
+		df: _Utils_Tuple2(0, 51)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇫',
+		bc: _List_fromArray(
+			['flag burkina faso', 'burkina', 'faso', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bf',
+		df: _Utils_Tuple2(0, 52)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇬',
+		bc: _List_fromArray(
+			['flag bulgaria', 'bg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bg',
+		df: _Utils_Tuple2(0, 53)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇭',
+		bc: _List_fromArray(
+			['flag bahrain', 'bh', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bh',
+		df: _Utils_Tuple2(0, 54)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇮',
+		bc: _List_fromArray(
+			['flag burundi', 'bi', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bi',
+		df: _Utils_Tuple2(0, 55)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇯',
+		bc: _List_fromArray(
+			['flag benin', 'bj', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bj',
+		df: _Utils_Tuple2(0, 56)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇱',
+		bc: _List_fromArray(
+			['flag st barthelemy', 'saint', 'barthélemy', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bl',
+		df: _Utils_Tuple2(0, 57)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇲',
+		bc: _List_fromArray(
+			['flag bermuda', 'bm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bm',
+		df: _Utils_Tuple2(1, 0)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇳',
+		bc: _List_fromArray(
+			['flag brunei', 'bn', 'darussalam', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bn',
+		df: _Utils_Tuple2(1, 1)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇴',
+		bc: _List_fromArray(
+			['flag bolivia', 'bo', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bo',
+		df: _Utils_Tuple2(1, 2)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇶',
+		bc: _List_fromArray(
+			['flag caribbean netherlands', 'bonaire', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bq',
+		df: _Utils_Tuple2(1, 3)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇷',
+		bc: _List_fromArray(
+			['flag brazil', 'br', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-br',
+		df: _Utils_Tuple2(1, 4)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇸',
+		bc: _List_fromArray(
+			['flag bahamas', 'bs', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bs',
+		df: _Utils_Tuple2(1, 5)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇹',
+		bc: _List_fromArray(
+			['flag bhutan', 'bt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bt',
+		df: _Utils_Tuple2(1, 6)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇻',
+		bc: _List_fromArray(
+			['flag bouvet island']),
+		bg: 'flag-bv',
+		df: _Utils_Tuple2(1, 7)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇼',
+		bc: _List_fromArray(
+			['flag botswana', 'bw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bw',
+		df: _Utils_Tuple2(1, 8)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇾',
+		bc: _List_fromArray(
+			['flag belarus', 'by', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-by',
+		df: _Utils_Tuple2(1, 9)
+	},
+		{
+		cg: 8,
+		aW: '🇧🇿',
+		bc: _List_fromArray(
+			['flag belize', 'bz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-bz',
+		df: _Utils_Tuple2(1, 10)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇦',
+		bc: _List_fromArray(
+			['flag canada', 'ca', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ca',
+		df: _Utils_Tuple2(1, 11)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇨',
+		bc: _List_fromArray(
+			['flag cocos islands', 'cocos', 'keeling', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cc',
+		df: _Utils_Tuple2(1, 12)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇩',
+		bc: _List_fromArray(
+			['flag congo kinshasa', 'congo', 'democratic', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cd',
+		df: _Utils_Tuple2(1, 13)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇫',
+		bc: _List_fromArray(
+			['flag central african republic', 'central', 'african', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cf',
+		df: _Utils_Tuple2(1, 14)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇬',
+		bc: _List_fromArray(
+			['flag congo brazzaville', 'congo', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cg',
+		df: _Utils_Tuple2(1, 15)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇭',
+		bc: _List_fromArray(
+			['flag switzerland', 'ch', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ch',
+		df: _Utils_Tuple2(1, 16)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇮',
+		bc: _List_fromArray(
+			['flag cote d ivoire', 'ivory', 'coast', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ci',
+		df: _Utils_Tuple2(1, 17)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇰',
+		bc: _List_fromArray(
+			['flag cook islands', 'cook', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ck',
+		df: _Utils_Tuple2(1, 18)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇱',
+		bc: _List_fromArray(
+			['flag chile', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cl',
+		df: _Utils_Tuple2(1, 19)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇲',
+		bc: _List_fromArray(
+			['flag cameroon', 'cm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cm',
+		df: _Utils_Tuple2(1, 20)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇳',
+		bc: _List_fromArray(
+			['flag china', 'china', 'chinese', 'prc', 'flag', 'country', 'nation', 'banner']),
+		bg: 'cn',
+		df: _Utils_Tuple2(1, 21)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇴',
+		bc: _List_fromArray(
+			['flag colombia', 'co', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-co',
+		df: _Utils_Tuple2(1, 22)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇵',
+		bc: _List_fromArray(
+			['flag clipperton island']),
+		bg: 'flag-cp',
+		df: _Utils_Tuple2(1, 23)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇷',
+		bc: _List_fromArray(
+			['flag costa rica', 'costa', 'rica', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cr',
+		df: _Utils_Tuple2(1, 24)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇺',
+		bc: _List_fromArray(
+			['flag cuba', 'cu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cu',
+		df: _Utils_Tuple2(1, 25)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇻',
+		bc: _List_fromArray(
+			['flag cape verde', 'cabo', 'verde', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cv',
+		df: _Utils_Tuple2(1, 26)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇼',
+		bc: _List_fromArray(
+			['flag curacao', 'curaçao', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cw',
+		df: _Utils_Tuple2(1, 27)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇽',
+		bc: _List_fromArray(
+			['flag christmas island', 'christmas', 'island', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cx',
+		df: _Utils_Tuple2(1, 28)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇾',
+		bc: _List_fromArray(
+			['flag cyprus', 'cy', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cy',
+		df: _Utils_Tuple2(1, 29)
+	},
+		{
+		cg: 8,
+		aW: '🇨🇿',
+		bc: _List_fromArray(
+			['flag czechia', 'cz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-cz',
+		df: _Utils_Tuple2(1, 30)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇪',
+		bc: _List_fromArray(
+			['flag germany', 'german', 'nation', 'flag', 'country', 'banner']),
+		bg: 'de',
+		df: _Utils_Tuple2(1, 31)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇬',
+		bc: _List_fromArray(
+			['flag diego garcia']),
+		bg: 'flag-dg',
+		df: _Utils_Tuple2(1, 32)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇯',
+		bc: _List_fromArray(
+			['flag djibouti', 'dj', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-dj',
+		df: _Utils_Tuple2(1, 33)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇰',
+		bc: _List_fromArray(
+			['flag denmark', 'dk', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-dk',
+		df: _Utils_Tuple2(1, 34)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇲',
+		bc: _List_fromArray(
+			['flag dominica', 'dm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-dm',
+		df: _Utils_Tuple2(1, 35)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇴',
+		bc: _List_fromArray(
+			['flag dominican republic', 'dominican', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-do',
+		df: _Utils_Tuple2(1, 36)
+	},
+		{
+		cg: 8,
+		aW: '🇩🇿',
+		bc: _List_fromArray(
+			['flag algeria', 'dz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-dz',
+		df: _Utils_Tuple2(1, 37)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇦',
+		bc: _List_fromArray(
+			['flag ceuta melilla']),
+		bg: 'flag-ea',
+		df: _Utils_Tuple2(1, 38)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇨',
+		bc: _List_fromArray(
+			['flag ecuador', 'ec', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ec',
+		df: _Utils_Tuple2(1, 39)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇪',
+		bc: _List_fromArray(
+			['flag estonia', 'ee', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ee',
+		df: _Utils_Tuple2(1, 40)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇬',
+		bc: _List_fromArray(
+			['flag egypt', 'eg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-eg',
+		df: _Utils_Tuple2(1, 41)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇭',
+		bc: _List_fromArray(
+			['flag western sahara', 'western', 'sahara', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-eh',
+		df: _Utils_Tuple2(1, 42)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇷',
+		bc: _List_fromArray(
+			['flag eritrea', 'er', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-er',
+		df: _Utils_Tuple2(1, 43)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇸',
+		bc: _List_fromArray(
+			['flag spain', 'spain', 'flag', 'nation', 'country', 'banner']),
+		bg: 'es',
+		df: _Utils_Tuple2(1, 44)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇹',
+		bc: _List_fromArray(
+			['flag ethiopia', 'et', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-et',
+		df: _Utils_Tuple2(1, 45)
+	},
+		{
+		cg: 8,
+		aW: '🇪🇺',
+		bc: _List_fromArray(
+			['flag european union', 'european', 'union', 'flag', 'banner']),
+		bg: 'flag-eu',
+		df: _Utils_Tuple2(1, 46)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇮',
+		bc: _List_fromArray(
+			['flag finland', 'fi', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-fi',
+		df: _Utils_Tuple2(1, 47)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇯',
+		bc: _List_fromArray(
+			['flag fiji', 'fj', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-fj',
+		df: _Utils_Tuple2(1, 48)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇰',
+		bc: _List_fromArray(
+			['flag falkland islands', 'falkland', 'islands', 'malvinas', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-fk',
+		df: _Utils_Tuple2(1, 49)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇲',
+		bc: _List_fromArray(
+			['flag micronesia', 'micronesia,', 'federated', 'states', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-fm',
+		df: _Utils_Tuple2(1, 50)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇴',
+		bc: _List_fromArray(
+			['flag faroe islands', 'faroe', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-fo',
+		df: _Utils_Tuple2(1, 51)
+	},
+		{
+		cg: 8,
+		aW: '🇫🇷',
+		bc: _List_fromArray(
+			['flag france', 'banner', 'flag', 'nation', 'france', 'french', 'country']),
+		bg: 'fr',
+		df: _Utils_Tuple2(1, 52)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇦',
+		bc: _List_fromArray(
+			['flag gabon', 'ga', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ga',
+		df: _Utils_Tuple2(1, 53)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇧',
+		bc: _List_fromArray(
+			['flag united kingdom', 'united', 'kingdom', 'great', 'britain', 'northern', 'ireland', 'flag', 'nation', 'country', 'banner', 'british', 'UK', 'english', 'england', 'union jack']),
+		bg: 'gb',
+		df: _Utils_Tuple2(1, 54)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇩',
+		bc: _List_fromArray(
+			['flag grenada', 'gd', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gd',
+		df: _Utils_Tuple2(1, 55)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇪',
+		bc: _List_fromArray(
+			['flag georgia', 'ge', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ge',
+		df: _Utils_Tuple2(1, 56)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇫',
+		bc: _List_fromArray(
+			['flag french guiana', 'french', 'guiana', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gf',
+		df: _Utils_Tuple2(1, 57)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇬',
+		bc: _List_fromArray(
+			['flag guernsey', 'gg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gg',
+		df: _Utils_Tuple2(2, 0)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇭',
+		bc: _List_fromArray(
+			['flag ghana', 'gh', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gh',
+		df: _Utils_Tuple2(2, 1)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇮',
+		bc: _List_fromArray(
+			['flag gibraltar', 'gi', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gi',
+		df: _Utils_Tuple2(2, 2)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇱',
+		bc: _List_fromArray(
+			['flag greenland', 'gl', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gl',
+		df: _Utils_Tuple2(2, 3)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇲',
+		bc: _List_fromArray(
+			['flag gambia', 'gm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gm',
+		df: _Utils_Tuple2(2, 4)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇳',
+		bc: _List_fromArray(
+			['flag guinea', 'gn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gn',
+		df: _Utils_Tuple2(2, 5)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇵',
+		bc: _List_fromArray(
+			['flag guadeloupe', 'gp', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gp',
+		df: _Utils_Tuple2(2, 6)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇶',
+		bc: _List_fromArray(
+			['flag equatorial guinea', 'equatorial', 'gn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gq',
+		df: _Utils_Tuple2(2, 7)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇷',
+		bc: _List_fromArray(
+			['flag greece', 'gr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gr',
+		df: _Utils_Tuple2(2, 8)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇸',
+		bc: _List_fromArray(
+			['flag south georgia south sandwich islands', 'south', 'georgia', 'sandwich', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gs',
+		df: _Utils_Tuple2(2, 9)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇹',
+		bc: _List_fromArray(
+			['flag guatemala', 'gt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gt',
+		df: _Utils_Tuple2(2, 10)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇺',
+		bc: _List_fromArray(
+			['flag guam', 'gu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gu',
+		df: _Utils_Tuple2(2, 11)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇼',
+		bc: _List_fromArray(
+			['flag guinea bissau', 'gw', 'bissau', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gw',
+		df: _Utils_Tuple2(2, 12)
+	},
+		{
+		cg: 8,
+		aW: '🇬🇾',
+		bc: _List_fromArray(
+			['flag guyana', 'gy', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-gy',
+		df: _Utils_Tuple2(2, 13)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇰',
+		bc: _List_fromArray(
+			['flag hong kong sar china', 'hong', 'kong', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-hk',
+		df: _Utils_Tuple2(2, 14)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇲',
+		bc: _List_fromArray(
+			['flag heard mcdonald islands']),
+		bg: 'flag-hm',
+		df: _Utils_Tuple2(2, 15)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇳',
+		bc: _List_fromArray(
+			['flag honduras', 'hn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-hn',
+		df: _Utils_Tuple2(2, 16)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇷',
+		bc: _List_fromArray(
+			['flag croatia', 'hr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-hr',
+		df: _Utils_Tuple2(2, 17)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇹',
+		bc: _List_fromArray(
+			['flag haiti', 'ht', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ht',
+		df: _Utils_Tuple2(2, 18)
+	},
+		{
+		cg: 8,
+		aW: '🇭🇺',
+		bc: _List_fromArray(
+			['flag hungary', 'hu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-hu',
+		df: _Utils_Tuple2(2, 19)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇨',
+		bc: _List_fromArray(
+			['flag canary islands', 'canary', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ic',
+		df: _Utils_Tuple2(2, 20)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇩',
+		bc: _List_fromArray(
+			['flag indonesia', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-id',
+		df: _Utils_Tuple2(2, 21)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇪',
+		bc: _List_fromArray(
+			['flag ireland', 'ie', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ie',
+		df: _Utils_Tuple2(2, 22)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇱',
+		bc: _List_fromArray(
+			['flag israel', 'il', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-il',
+		df: _Utils_Tuple2(2, 23)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇲',
+		bc: _List_fromArray(
+			['flag isle of man', 'isle', 'man', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-im',
+		df: _Utils_Tuple2(2, 24)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇳',
+		bc: _List_fromArray(
+			['flag india', 'in', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-in',
+		df: _Utils_Tuple2(2, 25)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇴',
+		bc: _List_fromArray(
+			['flag british indian ocean territory', 'british', 'indian', 'ocean', 'territory', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-io',
+		df: _Utils_Tuple2(2, 26)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇶',
+		bc: _List_fromArray(
+			['flag iraq', 'iq', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-iq',
+		df: _Utils_Tuple2(2, 27)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇷',
+		bc: _List_fromArray(
+			['flag iran', 'iran,', 'islamic', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ir',
+		df: _Utils_Tuple2(2, 28)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇸',
+		bc: _List_fromArray(
+			['flag iceland', 'is', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-is',
+		df: _Utils_Tuple2(2, 29)
+	},
+		{
+		cg: 8,
+		aW: '🇮🇹',
+		bc: _List_fromArray(
+			['flag italy', 'italy', 'flag', 'nation', 'country', 'banner']),
+		bg: 'it',
+		df: _Utils_Tuple2(2, 30)
+	},
+		{
+		cg: 8,
+		aW: '🇯🇪',
+		bc: _List_fromArray(
+			['flag jersey', 'je', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-je',
+		df: _Utils_Tuple2(2, 31)
+	},
+		{
+		cg: 8,
+		aW: '🇯🇲',
+		bc: _List_fromArray(
+			['flag jamaica', 'jm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-jm',
+		df: _Utils_Tuple2(2, 32)
+	},
+		{
+		cg: 8,
+		aW: '🇯🇴',
+		bc: _List_fromArray(
+			['flag jordan', 'jo', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-jo',
+		df: _Utils_Tuple2(2, 33)
+	},
+		{
+		cg: 8,
+		aW: '🇯🇵',
+		bc: _List_fromArray(
+			['flag japan', 'japanese', 'nation', 'flag', 'country', 'banner']),
+		bg: 'jp',
+		df: _Utils_Tuple2(2, 34)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇪',
+		bc: _List_fromArray(
+			['flag kenya', 'ke', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ke',
+		df: _Utils_Tuple2(2, 35)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇬',
+		bc: _List_fromArray(
+			['flag kyrgyzstan', 'kg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-kg',
+		df: _Utils_Tuple2(2, 36)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇭',
+		bc: _List_fromArray(
+			['flag cambodia', 'kh', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-kh',
+		df: _Utils_Tuple2(2, 37)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇮',
+		bc: _List_fromArray(
+			['flag kiribati', 'ki', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ki',
+		df: _Utils_Tuple2(2, 38)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇲',
+		bc: _List_fromArray(
+			['flag comoros', 'km', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-km',
+		df: _Utils_Tuple2(2, 39)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇳',
+		bc: _List_fromArray(
+			['flag st kitts nevis', 'saint', 'kitts', 'nevis', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-kn',
+		df: _Utils_Tuple2(2, 40)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇵',
+		bc: _List_fromArray(
+			['flag north korea', 'north', 'korea', 'nation', 'flag', 'country', 'banner']),
+		bg: 'flag-kp',
+		df: _Utils_Tuple2(2, 41)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇷',
+		bc: _List_fromArray(
+			['flag south korea', 'south', 'korea', 'nation', 'flag', 'country', 'banner']),
+		bg: 'kr',
+		df: _Utils_Tuple2(2, 42)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇼',
+		bc: _List_fromArray(
+			['flag kuwait', 'kw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-kw',
+		df: _Utils_Tuple2(2, 43)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇾',
+		bc: _List_fromArray(
+			['flag cayman islands', 'cayman', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ky',
+		df: _Utils_Tuple2(2, 44)
+	},
+		{
+		cg: 8,
+		aW: '🇰🇿',
+		bc: _List_fromArray(
+			['flag kazakhstan', 'kz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-kz',
+		df: _Utils_Tuple2(2, 45)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇦',
+		bc: _List_fromArray(
+			['flag laos', 'lao', 'democratic', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-la',
+		df: _Utils_Tuple2(2, 46)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇧',
+		bc: _List_fromArray(
+			['flag lebanon', 'lb', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lb',
+		df: _Utils_Tuple2(2, 47)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇨',
+		bc: _List_fromArray(
+			['flag st lucia', 'saint', 'lucia', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lc',
+		df: _Utils_Tuple2(2, 48)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇮',
+		bc: _List_fromArray(
+			['flag liechtenstein', 'li', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-li',
+		df: _Utils_Tuple2(2, 49)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇰',
+		bc: _List_fromArray(
+			['flag sri lanka', 'sri', 'lanka', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lk',
+		df: _Utils_Tuple2(2, 50)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇷',
+		bc: _List_fromArray(
+			['flag liberia', 'lr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lr',
+		df: _Utils_Tuple2(2, 51)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇸',
+		bc: _List_fromArray(
+			['flag lesotho', 'ls', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ls',
+		df: _Utils_Tuple2(2, 52)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇹',
+		bc: _List_fromArray(
+			['flag lithuania', 'lt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lt',
+		df: _Utils_Tuple2(2, 53)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇺',
+		bc: _List_fromArray(
+			['flag luxembourg', 'lu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lu',
+		df: _Utils_Tuple2(2, 54)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇻',
+		bc: _List_fromArray(
+			['flag latvia', 'lv', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-lv',
+		df: _Utils_Tuple2(2, 55)
+	},
+		{
+		cg: 8,
+		aW: '🇱🇾',
+		bc: _List_fromArray(
+			['flag libya', 'ly', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ly',
+		df: _Utils_Tuple2(2, 56)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇦',
+		bc: _List_fromArray(
+			['flag morocco', 'ma', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ma',
+		df: _Utils_Tuple2(2, 57)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇨',
+		bc: _List_fromArray(
+			['flag monaco', 'mc', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mc',
+		df: _Utils_Tuple2(3, 0)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇩',
+		bc: _List_fromArray(
+			['flag moldova', 'moldova,', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-md',
+		df: _Utils_Tuple2(3, 1)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇪',
+		bc: _List_fromArray(
+			['flag montenegro', 'me', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-me',
+		df: _Utils_Tuple2(3, 2)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇫',
+		bc: _List_fromArray(
+			['flag st martin']),
+		bg: 'flag-mf',
+		df: _Utils_Tuple2(3, 3)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇬',
+		bc: _List_fromArray(
+			['flag madagascar', 'mg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mg',
+		df: _Utils_Tuple2(3, 4)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇭',
+		bc: _List_fromArray(
+			['flag marshall islands', 'marshall', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mh',
+		df: _Utils_Tuple2(3, 5)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇰',
+		bc: _List_fromArray(
+			['flag north macedonia', 'macedonia,', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mk',
+		df: _Utils_Tuple2(3, 6)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇱',
+		bc: _List_fromArray(
+			['flag mali', 'ml', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ml',
+		df: _Utils_Tuple2(3, 7)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇲',
+		bc: _List_fromArray(
+			['flag myanmar', 'mm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mm',
+		df: _Utils_Tuple2(3, 8)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇳',
+		bc: _List_fromArray(
+			['flag mongolia', 'mn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mn',
+		df: _Utils_Tuple2(3, 9)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇴',
+		bc: _List_fromArray(
+			['flag macao sar china', 'macao', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mo',
+		df: _Utils_Tuple2(3, 10)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇵',
+		bc: _List_fromArray(
+			['flag northern mariana islands', 'northern', 'mariana', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mp',
+		df: _Utils_Tuple2(3, 11)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇶',
+		bc: _List_fromArray(
+			['flag martinique', 'mq', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mq',
+		df: _Utils_Tuple2(3, 12)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇷',
+		bc: _List_fromArray(
+			['flag mauritania', 'mr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mr',
+		df: _Utils_Tuple2(3, 13)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇸',
+		bc: _List_fromArray(
+			['flag montserrat', 'ms', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ms',
+		df: _Utils_Tuple2(3, 14)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇹',
+		bc: _List_fromArray(
+			['flag malta', 'mt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mt',
+		df: _Utils_Tuple2(3, 15)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇺',
+		bc: _List_fromArray(
+			['flag mauritius', 'mu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mu',
+		df: _Utils_Tuple2(3, 16)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇻',
+		bc: _List_fromArray(
+			['flag maldives', 'mv', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mv',
+		df: _Utils_Tuple2(3, 17)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇼',
+		bc: _List_fromArray(
+			['flag malawi', 'mw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mw',
+		df: _Utils_Tuple2(3, 18)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇽',
+		bc: _List_fromArray(
+			['flag mexico', 'mx', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mx',
+		df: _Utils_Tuple2(3, 19)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇾',
+		bc: _List_fromArray(
+			['flag malaysia', 'my', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-my',
+		df: _Utils_Tuple2(3, 20)
+	},
+		{
+		cg: 8,
+		aW: '🇲🇿',
+		bc: _List_fromArray(
+			['flag mozambique', 'mz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-mz',
+		df: _Utils_Tuple2(3, 21)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇦',
+		bc: _List_fromArray(
+			['flag namibia', 'na', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-na',
+		df: _Utils_Tuple2(3, 22)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇨',
+		bc: _List_fromArray(
+			['flag new caledonia', 'new', 'caledonia', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nc',
+		df: _Utils_Tuple2(3, 23)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇪',
+		bc: _List_fromArray(
+			['flag niger', 'ne', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ne',
+		df: _Utils_Tuple2(3, 24)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇫',
+		bc: _List_fromArray(
+			['flag norfolk island', 'norfolk', 'island', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nf',
+		df: _Utils_Tuple2(3, 25)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇬',
+		bc: _List_fromArray(
+			['flag nigeria', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ng',
+		df: _Utils_Tuple2(3, 26)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇮',
+		bc: _List_fromArray(
+			['flag nicaragua', 'ni', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ni',
+		df: _Utils_Tuple2(3, 27)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇱',
+		bc: _List_fromArray(
+			['flag netherlands', 'nl', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nl',
+		df: _Utils_Tuple2(3, 28)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇴',
+		bc: _List_fromArray(
+			['flag norway', 'no', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-no',
+		df: _Utils_Tuple2(3, 29)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇵',
+		bc: _List_fromArray(
+			['flag nepal', 'np', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-np',
+		df: _Utils_Tuple2(3, 30)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇷',
+		bc: _List_fromArray(
+			['flag nauru', 'nr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nr',
+		df: _Utils_Tuple2(3, 31)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇺',
+		bc: _List_fromArray(
+			['flag niue', 'nu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nu',
+		df: _Utils_Tuple2(3, 32)
+	},
+		{
+		cg: 8,
+		aW: '🇳🇿',
+		bc: _List_fromArray(
+			['flag new zealand', 'new', 'zealand', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-nz',
+		df: _Utils_Tuple2(3, 33)
+	},
+		{
+		cg: 8,
+		aW: '🇴🇲',
+		bc: _List_fromArray(
+			['flag oman', 'om symbol', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-om',
+		df: _Utils_Tuple2(3, 34)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇦',
+		bc: _List_fromArray(
+			['flag panama', 'pa', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pa',
+		df: _Utils_Tuple2(3, 35)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇪',
+		bc: _List_fromArray(
+			['flag peru', 'pe', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pe',
+		df: _Utils_Tuple2(3, 36)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇫',
+		bc: _List_fromArray(
+			['flag french polynesia', 'french', 'polynesia', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pf',
+		df: _Utils_Tuple2(3, 37)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇬',
+		bc: _List_fromArray(
+			['flag papua new guinea', 'papua', 'new', 'guinea', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pg',
+		df: _Utils_Tuple2(3, 38)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇭',
+		bc: _List_fromArray(
+			['flag philippines', 'ph', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ph',
+		df: _Utils_Tuple2(3, 39)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇰',
+		bc: _List_fromArray(
+			['flag pakistan', 'pk', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pk',
+		df: _Utils_Tuple2(3, 40)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇱',
+		bc: _List_fromArray(
+			['flag poland', 'pl', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pl',
+		df: _Utils_Tuple2(3, 41)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇲',
+		bc: _List_fromArray(
+			['flag st pierre miquelon', 'saint', 'pierre', 'miquelon', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pm',
+		df: _Utils_Tuple2(3, 42)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇳',
+		bc: _List_fromArray(
+			['flag pitcairn islands', 'pitcairn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pn',
+		df: _Utils_Tuple2(3, 43)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇷',
+		bc: _List_fromArray(
+			['flag puerto rico', 'puerto', 'rico', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pr',
+		df: _Utils_Tuple2(3, 44)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇸',
+		bc: _List_fromArray(
+			['flag palestinian territories', 'palestine', 'palestinian', 'territories', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ps',
+		df: _Utils_Tuple2(3, 45)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇹',
+		bc: _List_fromArray(
+			['flag portugal', 'pt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pt',
+		df: _Utils_Tuple2(3, 46)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇼',
+		bc: _List_fromArray(
+			['flag palau', 'pw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-pw',
+		df: _Utils_Tuple2(3, 47)
+	},
+		{
+		cg: 8,
+		aW: '🇵🇾',
+		bc: _List_fromArray(
+			['flag paraguay', 'py', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-py',
+		df: _Utils_Tuple2(3, 48)
+	},
+		{
+		cg: 8,
+		aW: '🇶🇦',
+		bc: _List_fromArray(
+			['flag qatar', 'qa', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-qa',
+		df: _Utils_Tuple2(3, 49)
+	},
+		{
+		cg: 8,
+		aW: '🇷🇪',
+		bc: _List_fromArray(
+			['flag reunion', 'réunion', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-re',
+		df: _Utils_Tuple2(3, 50)
+	},
+		{
+		cg: 8,
+		aW: '🇷🇴',
+		bc: _List_fromArray(
+			['flag romania', 'ro', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ro',
+		df: _Utils_Tuple2(3, 51)
+	},
+		{
+		cg: 8,
+		aW: '🇷🇸',
+		bc: _List_fromArray(
+			['flag serbia', 'rs', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-rs',
+		df: _Utils_Tuple2(3, 52)
+	},
+		{
+		cg: 8,
+		aW: '🇷🇺',
+		bc: _List_fromArray(
+			['flag russia', 'russian', 'federation', 'flag', 'nation', 'country', 'banner']),
+		bg: 'ru',
+		df: _Utils_Tuple2(3, 53)
+	},
+		{
+		cg: 8,
+		aW: '🇷🇼',
+		bc: _List_fromArray(
+			['flag rwanda', 'rw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-rw',
+		df: _Utils_Tuple2(3, 54)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇦',
+		bc: _List_fromArray(
+			['flag saudi arabia', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sa',
+		df: _Utils_Tuple2(3, 55)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇧',
+		bc: _List_fromArray(
+			['flag solomon islands', 'solomon', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sb',
+		df: _Utils_Tuple2(3, 56)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇨',
+		bc: _List_fromArray(
+			['flag seychelles', 'sc', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sc',
+		df: _Utils_Tuple2(3, 57)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇩',
+		bc: _List_fromArray(
+			['flag sudan', 'sd', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sd',
+		df: _Utils_Tuple2(4, 0)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇪',
+		bc: _List_fromArray(
+			['flag sweden', 'se', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-se',
+		df: _Utils_Tuple2(4, 1)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇬',
+		bc: _List_fromArray(
+			['flag singapore', 'sg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sg',
+		df: _Utils_Tuple2(4, 2)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇭',
+		bc: _List_fromArray(
+			['flag st helena', 'saint', 'helena', 'ascension', 'tristan', 'cunha', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sh',
+		df: _Utils_Tuple2(4, 3)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇮',
+		bc: _List_fromArray(
+			['flag slovenia', 'si', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-si',
+		df: _Utils_Tuple2(4, 4)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇯',
+		bc: _List_fromArray(
+			['flag svalbard jan mayen']),
+		bg: 'flag-sj',
+		df: _Utils_Tuple2(4, 5)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇰',
+		bc: _List_fromArray(
+			['flag slovakia', 'sk', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sk',
+		df: _Utils_Tuple2(4, 6)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇱',
+		bc: _List_fromArray(
+			['flag sierra leone', 'sierra', 'leone', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sl',
+		df: _Utils_Tuple2(4, 7)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇲',
+		bc: _List_fromArray(
+			['flag san marino', 'san', 'marino', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sm',
+		df: _Utils_Tuple2(4, 8)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇳',
+		bc: _List_fromArray(
+			['flag senegal', 'sn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sn',
+		df: _Utils_Tuple2(4, 9)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇴',
+		bc: _List_fromArray(
+			['flag somalia', 'so', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-so',
+		df: _Utils_Tuple2(4, 10)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇷',
+		bc: _List_fromArray(
+			['flag suriname', 'sr', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sr',
+		df: _Utils_Tuple2(4, 11)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇸',
+		bc: _List_fromArray(
+			['flag south sudan', 'south', 'sd', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ss',
+		df: _Utils_Tuple2(4, 12)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇹',
+		bc: _List_fromArray(
+			['flag sao tome principe', 'sao', 'tome', 'principe', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-st',
+		df: _Utils_Tuple2(4, 13)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇻',
+		bc: _List_fromArray(
+			['flag el salvador', 'el', 'salvador', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sv',
+		df: _Utils_Tuple2(4, 14)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇽',
+		bc: _List_fromArray(
+			['flag sint maarten', 'sint', 'maarten', 'dutch', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sx',
+		df: _Utils_Tuple2(4, 15)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇾',
+		bc: _List_fromArray(
+			['flag syria', 'syrian', 'arab', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sy',
+		df: _Utils_Tuple2(4, 16)
+	},
+		{
+		cg: 8,
+		aW: '🇸🇿',
+		bc: _List_fromArray(
+			['flag eswatini', 'sz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-sz',
+		df: _Utils_Tuple2(4, 17)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇦',
+		bc: _List_fromArray(
+			['flag tristan da cunha']),
+		bg: 'flag-ta',
+		df: _Utils_Tuple2(4, 18)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇨',
+		bc: _List_fromArray(
+			['flag turks caicos islands', 'turks', 'caicos', 'islands', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tc',
+		df: _Utils_Tuple2(4, 19)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇩',
+		bc: _List_fromArray(
+			['flag chad', 'td', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-td',
+		df: _Utils_Tuple2(4, 20)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇫',
+		bc: _List_fromArray(
+			['flag french southern territories', 'french', 'southern', 'territories', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tf',
+		df: _Utils_Tuple2(4, 21)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇬',
+		bc: _List_fromArray(
+			['flag togo', 'tg', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tg',
+		df: _Utils_Tuple2(4, 22)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇭',
+		bc: _List_fromArray(
+			['flag thailand', 'th', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-th',
+		df: _Utils_Tuple2(4, 23)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇯',
+		bc: _List_fromArray(
+			['flag tajikistan', 'tj', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tj',
+		df: _Utils_Tuple2(4, 24)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇰',
+		bc: _List_fromArray(
+			['flag tokelau', 'tk', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tk',
+		df: _Utils_Tuple2(4, 25)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇱',
+		bc: _List_fromArray(
+			['flag timor leste', 'timor', 'leste', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tl',
+		df: _Utils_Tuple2(4, 26)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇲',
+		bc: _List_fromArray(
+			['flag turkmenistan', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tm',
+		df: _Utils_Tuple2(4, 27)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇳',
+		bc: _List_fromArray(
+			['flag tunisia', 'tn', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tn',
+		df: _Utils_Tuple2(4, 28)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇴',
+		bc: _List_fromArray(
+			['flag tonga', 'to', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-to',
+		df: _Utils_Tuple2(4, 29)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇷',
+		bc: _List_fromArray(
+			['flag turkey', 'turkey', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tr',
+		df: _Utils_Tuple2(4, 30)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇹',
+		bc: _List_fromArray(
+			['flag trinidad tobago', 'trinidad', 'tobago', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tt',
+		df: _Utils_Tuple2(4, 31)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇻',
+		bc: _List_fromArray(
+			['flag tuvalu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tv',
+		df: _Utils_Tuple2(4, 32)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇼',
+		bc: _List_fromArray(
+			['flag taiwan', 'tw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tw',
+		df: _Utils_Tuple2(4, 33)
+	},
+		{
+		cg: 8,
+		aW: '🇹🇿',
+		bc: _List_fromArray(
+			['flag tanzania', 'tanzania,', 'united', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-tz',
+		df: _Utils_Tuple2(4, 34)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇦',
+		bc: _List_fromArray(
+			['flag ukraine', 'ua', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ua',
+		df: _Utils_Tuple2(4, 35)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇬',
+		bc: _List_fromArray(
+			['flag uganda', 'ug', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ug',
+		df: _Utils_Tuple2(4, 36)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇲',
+		bc: _List_fromArray(
+			['flag u s outlying islands']),
+		bg: 'flag-um',
+		df: _Utils_Tuple2(4, 37)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇳',
+		bc: _List_fromArray(
+			['flag united nations', 'un', 'flag', 'banner']),
+		bg: 'flag-un',
+		df: _Utils_Tuple2(4, 38)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇸',
+		bc: _List_fromArray(
+			['flag united states', 'united', 'states', 'america', 'flag', 'nation', 'country', 'banner']),
+		bg: 'us',
+		df: _Utils_Tuple2(4, 39)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇾',
+		bc: _List_fromArray(
+			['flag uruguay', 'uy', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-uy',
+		df: _Utils_Tuple2(4, 40)
+	},
+		{
+		cg: 8,
+		aW: '🇺🇿',
+		bc: _List_fromArray(
+			['flag uzbekistan', 'uz', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-uz',
+		df: _Utils_Tuple2(4, 41)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇦',
+		bc: _List_fromArray(
+			['flag vatican city', 'vatican', 'city', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-va',
+		df: _Utils_Tuple2(4, 42)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇨',
+		bc: _List_fromArray(
+			['flag st vincent grenadines', 'saint', 'vincent', 'grenadines', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-vc',
+		df: _Utils_Tuple2(4, 43)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇪',
+		bc: _List_fromArray(
+			['flag venezuela', 've', 'bolivarian', 'republic', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ve',
+		df: _Utils_Tuple2(4, 44)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇬',
+		bc: _List_fromArray(
+			['flag british virgin islands', 'british', 'virgin', 'islands', 'bvi', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-vg',
+		df: _Utils_Tuple2(4, 45)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇮',
+		bc: _List_fromArray(
+			['flag u s virgin islands', 'virgin', 'islands', 'us', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-vi',
+		df: _Utils_Tuple2(4, 46)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇳',
+		bc: _List_fromArray(
+			['flag vietnam', 'viet', 'nam', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-vn',
+		df: _Utils_Tuple2(4, 47)
+	},
+		{
+		cg: 8,
+		aW: '🇻🇺',
+		bc: _List_fromArray(
+			['flag vanuatu', 'vu', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-vu',
+		df: _Utils_Tuple2(4, 48)
+	},
+		{
+		cg: 8,
+		aW: '🇼🇫',
+		bc: _List_fromArray(
+			['flag wallis futuna', 'wallis', 'futuna', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-wf',
+		df: _Utils_Tuple2(4, 49)
+	},
+		{
+		cg: 8,
+		aW: '🇼🇸',
+		bc: _List_fromArray(
+			['flag samoa', 'ws', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ws',
+		df: _Utils_Tuple2(4, 50)
+	},
+		{
+		cg: 8,
+		aW: '🇽🇰',
+		bc: _List_fromArray(
+			['flag kosovo', 'xk', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-xk',
+		df: _Utils_Tuple2(4, 51)
+	},
+		{
+		cg: 8,
+		aW: '🇾🇪',
+		bc: _List_fromArray(
+			['flag yemen', 'ye', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-ye',
+		df: _Utils_Tuple2(4, 52)
+	},
+		{
+		cg: 8,
+		aW: '🇾🇹',
+		bc: _List_fromArray(
+			['flag mayotte', 'yt', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-yt',
+		df: _Utils_Tuple2(4, 53)
+	},
+		{
+		cg: 8,
+		aW: '🇿🇦',
+		bc: _List_fromArray(
+			['flag south africa', 'south', 'africa', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-za',
+		df: _Utils_Tuple2(4, 54)
+	},
+		{
+		cg: 8,
+		aW: '🇿🇲',
+		bc: _List_fromArray(
+			['flag zambia', 'zm', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-zm',
+		df: _Utils_Tuple2(4, 55)
+	},
+		{
+		cg: 8,
+		aW: '🇿🇼',
+		bc: _List_fromArray(
+			['flag zimbabwe', 'zw', 'flag', 'nation', 'country', 'banner']),
+		bg: 'flag-zw',
+		df: _Utils_Tuple2(4, 56)
+	},
+		{
+		cg: 7,
+		aW: '🈁',
+		bc: _List_fromArray(
+			['japanese here button', 'blue square', 'here', 'katakana', 'japanese', 'destination']),
+		bg: 'koko',
+		df: _Utils_Tuple2(4, 57)
+	},
+		{
+		cg: 7,
+		aW: '🈂️',
+		bc: _List_fromArray(
+			['japanese service charge button', 'japanese', 'blue square', 'katakana']),
+		bg: 'sa',
+		df: _Utils_Tuple2(5, 0)
+	},
+		{
+		cg: 7,
+		aW: '🈚',
+		bc: _List_fromArray(
+			['japanese free of charge button', 'nothing', 'chinese', 'kanji', 'japanese', 'orange square']),
+		bg: 'u7121',
+		df: _Utils_Tuple2(5, 1)
+	},
+		{
+		cg: 7,
+		aW: '🈯',
+		bc: _List_fromArray(
+			['japanese reserved button', 'chinese', 'point', 'green square', 'kanji']),
+		bg: 'u6307',
+		df: _Utils_Tuple2(5, 2)
+	},
+		{
+		cg: 7,
+		aW: '🈲',
+		bc: _List_fromArray(
+			['japanese prohibited button', 'kanji', 'japanese', 'chinese', 'forbidden', 'limit', 'restricted', 'red square']),
+		bg: 'u7981',
+		df: _Utils_Tuple2(5, 3)
+	},
+		{
+		cg: 7,
+		aW: '🈳',
+		bc: _List_fromArray(
+			['japanese vacancy button', 'kanji', 'japanese', 'chinese', 'empty', 'sky', 'blue square']),
+		bg: 'u7a7a',
+		df: _Utils_Tuple2(5, 4)
+	},
+		{
+		cg: 7,
+		aW: '🈴',
+		bc: _List_fromArray(
+			['japanese passing grade button', 'japanese', 'chinese', 'join', 'kanji', 'red square']),
+		bg: 'u5408',
+		df: _Utils_Tuple2(5, 5)
+	},
+		{
+		cg: 7,
+		aW: '🈵',
+		bc: _List_fromArray(
+			['japanese no vacancy button', 'full', 'chinese', 'japanese', 'red square', 'kanji']),
+		bg: 'u6e80',
+		df: _Utils_Tuple2(5, 6)
+	},
+		{
+		cg: 7,
+		aW: '🈶',
+		bc: _List_fromArray(
+			['japanese not free of charge button', 'orange square', 'chinese', 'have', 'kanji']),
+		bg: 'u6709',
+		df: _Utils_Tuple2(5, 7)
+	},
+		{
+		cg: 7,
+		aW: '🈷️',
+		bc: _List_fromArray(
+			['japanese monthly amount button', 'chinese', 'month', 'moon', 'japanese', 'orange square', 'kanji']),
+		bg: 'u6708',
+		df: _Utils_Tuple2(5, 8)
+	},
+		{
+		cg: 7,
+		aW: '🈸',
+		bc: _List_fromArray(
+			['japanese application button', 'chinese', 'japanese', 'kanji', 'orange square']),
+		bg: 'u7533',
+		df: _Utils_Tuple2(5, 9)
+	},
+		{
+		cg: 7,
+		aW: '🈹',
+		bc: _List_fromArray(
+			['japanese discount button', 'cut', 'divide', 'chinese', 'kanji', 'pink square']),
+		bg: 'u5272',
+		df: _Utils_Tuple2(5, 10)
+	},
+		{
+		cg: 7,
+		aW: '🈺',
+		bc: _List_fromArray(
+			['japanese open for business button', 'japanese', 'opening hours', 'orange square']),
+		bg: 'u55b6',
+		df: _Utils_Tuple2(5, 11)
+	},
+		{
+		cg: 7,
+		aW: '🉐',
+		bc: _List_fromArray(
+			['japanese bargain button', 'chinese', 'kanji', 'obtain', 'get', 'circle']),
+		bg: 'ideograph_advantage',
+		df: _Utils_Tuple2(5, 12)
+	},
+		{
+		cg: 7,
+		aW: '🉑',
+		bc: _List_fromArray(
+			['japanese acceptable button', 'ok', 'good', 'chinese', 'kanji', 'agree', 'yes', 'orange circle']),
+		bg: 'accept',
+		df: _Utils_Tuple2(5, 13)
+	},
+		{
+		cg: 4,
+		aW: '🌀',
+		bc: _List_fromArray(
+			['cyclone', 'weather', 'swirl', 'blue', 'cloud', 'vortex', 'spiral', 'whirlpool', 'spin', 'tornado', 'hurricane', 'typhoon']),
+		bg: 'cyclone',
+		df: _Utils_Tuple2(5, 14)
+	},
+		{
+		cg: 4,
+		aW: '🌁',
+		bc: _List_fromArray(
+			['foggy', 'photo', 'mountain']),
+		bg: 'foggy',
+		df: _Utils_Tuple2(5, 15)
+	},
+		{
+		cg: 4,
+		aW: '🌂',
+		bc: _List_fromArray(
+			['closed umbrella', 'weather', 'rain', 'drizzle']),
+		bg: 'closed_umbrella',
+		df: _Utils_Tuple2(5, 16)
+	},
+		{
+		cg: 4,
+		aW: '🌃',
+		bc: _List_fromArray(
+			['night with stars', 'evening', 'city', 'downtown']),
+		bg: 'night_with_stars',
+		df: _Utils_Tuple2(5, 17)
+	},
+		{
+		cg: 4,
+		aW: '🌄',
+		bc: _List_fromArray(
+			['sunrise over mountains', 'view', 'vacation', 'photo']),
+		bg: 'sunrise_over_mountains',
+		df: _Utils_Tuple2(5, 18)
+	},
+		{
+		cg: 4,
+		aW: '🌅',
+		bc: _List_fromArray(
+			['sunrise', 'morning', 'view', 'vacation', 'photo']),
+		bg: 'sunrise',
+		df: _Utils_Tuple2(5, 19)
+	},
+		{
+		cg: 4,
+		aW: '🌆',
+		bc: _List_fromArray(
+			['cityscape at dusk', 'photo', 'evening', 'sky', 'buildings']),
+		bg: 'city_sunset',
+		df: _Utils_Tuple2(5, 20)
+	},
+		{
+		cg: 4,
+		aW: '🌇',
+		bc: _List_fromArray(
+			['sunset', 'photo', 'good morning', 'dawn']),
+		bg: 'city_sunrise',
+		df: _Utils_Tuple2(5, 21)
+	},
+		{
+		cg: 4,
+		aW: '🌈',
+		bc: _List_fromArray(
+			['rainbow', 'nature', 'happy', 'unicorn face', 'photo', 'sky', 'spring']),
+		bg: 'rainbow',
+		df: _Utils_Tuple2(5, 22)
+	},
+		{
+		cg: 4,
+		aW: '🌉',
+		bc: _List_fromArray(
+			['bridge at night', 'photo', 'sanfrancisco']),
+		bg: 'bridge_at_night',
+		df: _Utils_Tuple2(5, 23)
+	},
+		{
+		cg: 4,
+		aW: '🌊',
+		bc: _List_fromArray(
+			['water wave', 'sea', 'water', 'wave', 'nature', 'tsunami', 'disaster']),
+		bg: 'ocean',
+		df: _Utils_Tuple2(5, 24)
+	},
+		{
+		cg: 4,
+		aW: '🌋',
+		bc: _List_fromArray(
+			['volcano', 'photo', 'nature', 'disaster']),
+		bg: 'volcano',
+		df: _Utils_Tuple2(5, 25)
+	},
+		{
+		cg: 4,
+		aW: '🌌',
+		bc: _List_fromArray(
+			['milky way', 'photo', 'space', 'stars']),
+		bg: 'milky_way',
+		df: _Utils_Tuple2(5, 26)
+	},
+		{
+		cg: 4,
+		aW: '🌍',
+		bc: _List_fromArray(
+			['globe showing europe africa', 'globe', 'world', 'international']),
+		bg: 'earth_africa',
+		df: _Utils_Tuple2(5, 27)
+	},
+		{
+		cg: 4,
+		aW: '🌎',
+		bc: _List_fromArray(
+			['globe showing americas', 'globe', 'world', 'USA', 'international']),
+		bg: 'earth_americas',
+		df: _Utils_Tuple2(5, 28)
+	},
+		{
+		cg: 4,
+		aW: '🌏',
+		bc: _List_fromArray(
+			['globe showing asia australia', 'globe', 'world', 'east', 'international']),
+		bg: 'earth_asia',
+		df: _Utils_Tuple2(5, 29)
+	},
+		{
+		cg: 4,
+		aW: '🌐',
+		bc: _List_fromArray(
+			['globe with meridians', 'earth', 'international', 'world', 'internet', 'interweb', 'i18n']),
+		bg: 'globe_with_meridians',
+		df: _Utils_Tuple2(5, 30)
+	},
+		{
+		cg: 4,
+		aW: '🌑',
+		bc: _List_fromArray(
+			['new moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'new_moon',
+		df: _Utils_Tuple2(5, 31)
+	},
+		{
+		cg: 4,
+		aW: '🌒',
+		bc: _List_fromArray(
+			['waxing crescent moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'waxing_crescent_moon',
+		df: _Utils_Tuple2(5, 32)
+	},
+		{
+		cg: 4,
+		aW: '🌓',
+		bc: _List_fromArray(
+			['first quarter moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'first_quarter_moon',
+		df: _Utils_Tuple2(5, 33)
+	},
+		{
+		cg: 4,
+		aW: '🌔',
+		bc: _List_fromArray(
+			['waxing gibbous moon', 'nature', 'night', 'sky', 'gray', 'twilight', 'planet', 'space', 'evening', 'sleep']),
+		bg: 'moon',
+		df: _Utils_Tuple2(5, 34)
+	},
+		{
+		cg: 4,
+		aW: '🌕',
+		bc: _List_fromArray(
+			['full moon', 'nature', 'yellow', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'full_moon',
+		df: _Utils_Tuple2(5, 35)
+	},
+		{
+		cg: 4,
+		aW: '🌖',
+		bc: _List_fromArray(
+			['waning gibbous moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep', 'waxing gibbous moon']),
+		bg: 'waning_gibbous_moon',
+		df: _Utils_Tuple2(5, 36)
+	},
+		{
+		cg: 4,
+		aW: '🌗',
+		bc: _List_fromArray(
+			['last quarter moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'last_quarter_moon',
+		df: _Utils_Tuple2(5, 37)
+	},
+		{
+		cg: 4,
+		aW: '🌘',
+		bc: _List_fromArray(
+			['waning crescent moon', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'waning_crescent_moon',
+		df: _Utils_Tuple2(5, 38)
+	},
+		{
+		cg: 4,
+		aW: '🌙',
+		bc: _List_fromArray(
+			['crescent moon', 'night', 'sleep', 'sky', 'evening', 'magic']),
+		bg: 'crescent_moon',
+		df: _Utils_Tuple2(5, 39)
+	},
+		{
+		cg: 4,
+		aW: '🌚',
+		bc: _List_fromArray(
+			['new moon face', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'new_moon_with_face',
+		df: _Utils_Tuple2(5, 40)
+	},
+		{
+		cg: 4,
+		aW: '🌛',
+		bc: _List_fromArray(
+			['first quarter moon face', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'first_quarter_moon_with_face',
+		df: _Utils_Tuple2(5, 41)
+	},
+		{
+		cg: 4,
+		aW: '🌜',
+		bc: _List_fromArray(
+			['last quarter moon face', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'last_quarter_moon_with_face',
+		df: _Utils_Tuple2(5, 42)
+	},
+		{
+		cg: 4,
+		aW: '🌝',
+		bc: _List_fromArray(
+			['full moon face', 'nature', 'twilight', 'planet', 'space', 'night', 'evening', 'sleep']),
+		bg: 'full_moon_with_face',
+		df: _Utils_Tuple2(5, 43)
+	},
+		{
+		cg: 4,
+		aW: '🌞',
+		bc: _List_fromArray(
+			['sun with face', 'nature', 'morning', 'sky']),
+		bg: 'sun_with_face',
+		df: _Utils_Tuple2(5, 44)
+	},
+		{
+		cg: 4,
+		aW: '🌟',
+		bc: _List_fromArray(
+			['glowing star', 'night', 'sparkle', 'awesome', 'good', 'magic']),
+		bg: 'star2',
+		df: _Utils_Tuple2(5, 45)
+	},
+		{
+		cg: 4,
+		aW: '🌠',
+		bc: _List_fromArray(
+			['shooting star', 'night', 'photo']),
+		bg: 'stars',
+		df: _Utils_Tuple2(5, 46)
+	},
+		{
+		cg: 4,
+		aW: '🌡️',
+		bc: _List_fromArray(
+			['thermometer', 'weather', 'temperature', 'hot', 'cold']),
+		bg: 'thermometer',
+		df: _Utils_Tuple2(5, 47)
+	},
+		{
+		cg: 4,
+		aW: '🌤️',
+		bc: _List_fromArray(
+			['sun behind small cloud', 'weather']),
+		bg: 'mostly_sunny',
+		df: _Utils_Tuple2(5, 48)
+	},
+		{
+		cg: 4,
+		aW: '🌥️',
+		bc: _List_fromArray(
+			['sun behind large cloud', 'weather']),
+		bg: 'barely_sunny',
+		df: _Utils_Tuple2(5, 49)
+	},
+		{
+		cg: 4,
+		aW: '🌦️',
+		bc: _List_fromArray(
+			['sun behind rain cloud', 'weather']),
+		bg: 'partly_sunny_rain',
+		df: _Utils_Tuple2(5, 50)
+	},
+		{
+		cg: 4,
+		aW: '🌧️',
+		bc: _List_fromArray(
+			['cloud with rain', 'weather']),
+		bg: 'rain_cloud',
+		df: _Utils_Tuple2(5, 51)
+	},
+		{
+		cg: 4,
+		aW: '🌨️',
+		bc: _List_fromArray(
+			['cloud with snow', 'weather']),
+		bg: 'snow_cloud',
+		df: _Utils_Tuple2(5, 52)
+	},
+		{
+		cg: 4,
+		aW: '🌩️',
+		bc: _List_fromArray(
+			['cloud with lightning', 'weather', 'thunder']),
+		bg: 'lightning',
+		df: _Utils_Tuple2(5, 53)
+	},
+		{
+		cg: 4,
+		aW: '🌪️',
+		bc: _List_fromArray(
+			['tornado', 'weather', 'cyclone', 'twister']),
+		bg: 'tornado',
+		df: _Utils_Tuple2(5, 54)
+	},
+		{
+		cg: 4,
+		aW: '🌫️',
+		bc: _List_fromArray(
+			['fog', 'weather']),
+		bg: 'fog',
+		df: _Utils_Tuple2(5, 55)
+	},
+		{
+		cg: 4,
+		aW: '🌬️',
+		bc: _List_fromArray(
+			['wind face', 'gust', 'air']),
+		bg: 'wind_blowing_face',
+		df: _Utils_Tuple2(5, 56)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDF2D',
+		bc: _List_fromArray(
+			['hot dog', 'food', 'frankfurter']),
+		bg: 'hotdog',
+		df: _Utils_Tuple2(5, 57)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDF2E',
+		bc: _List_fromArray(
+			['taco', 'food', 'mexican']),
+		bg: 'taco',
+		df: _Utils_Tuple2(6, 0)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDF2F',
+		bc: _List_fromArray(
+			['burrito', 'food', 'mexican']),
+		bg: 'burrito',
+		df: _Utils_Tuple2(6, 1)
+	},
+		{
+		cg: 3,
+		aW: '🌰',
+		bc: _List_fromArray(
+			['chestnut', 'food', 'squirrel']),
+		bg: 'chestnut',
+		df: _Utils_Tuple2(6, 2)
+	},
+		{
+		cg: 2,
+		aW: '🌱',
+		bc: _List_fromArray(
+			['seedling', 'plant', 'nature', 'grass', 'lawn', 'spring']),
+		bg: 'seedling',
+		df: _Utils_Tuple2(6, 3)
+	},
+		{
+		cg: 2,
+		aW: '🌲',
+		bc: _List_fromArray(
+			['evergreen tree', 'plant', 'nature']),
+		bg: 'evergreen_tree',
+		df: _Utils_Tuple2(6, 4)
+	},
+		{
+		cg: 2,
+		aW: '🌳',
+		bc: _List_fromArray(
+			['deciduous tree', 'plant', 'nature']),
+		bg: 'deciduous_tree',
+		df: _Utils_Tuple2(6, 5)
+	},
+		{
+		cg: 2,
+		aW: '🌴',
+		bc: _List_fromArray(
+			['palm tree', 'plant', 'vegetable', 'nature', 'summer', 'beach', 'mojito', 'tropical']),
+		bg: 'palm_tree',
+		df: _Utils_Tuple2(6, 6)
+	},
+		{
+		cg: 2,
+		aW: '🌵',
+		bc: _List_fromArray(
+			['cactus', 'vegetable', 'plant', 'nature']),
+		bg: 'cactus',
+		df: _Utils_Tuple2(6, 7)
+	},
+		{
+		cg: 3,
+		aW: '🌶️',
+		bc: _List_fromArray(
+			['hot pepper', 'food', 'spicy', 'chilli', 'chili']),
+		bg: 'hot_pepper',
+		df: _Utils_Tuple2(6, 8)
+	},
+		{
+		cg: 2,
+		aW: '🌷',
+		bc: _List_fromArray(
+			['tulip', 'flowers', 'plant', 'nature', 'summer', 'spring']),
+		bg: 'tulip',
+		df: _Utils_Tuple2(6, 9)
+	},
+		{
+		cg: 2,
+		aW: '🌸',
+		bc: _List_fromArray(
+			['cherry blossom', 'nature', 'plant', 'spring', 'flower']),
+		bg: 'cherry_blossom',
+		df: _Utils_Tuple2(6, 10)
+	},
+		{
+		cg: 2,
+		aW: '🌹',
+		bc: _List_fromArray(
+			['rose', 'flowers', 'valentines', 'love', 'spring']),
+		bg: 'rose',
+		df: _Utils_Tuple2(6, 11)
+	},
+		{
+		cg: 2,
+		aW: '🌺',
+		bc: _List_fromArray(
+			['hibiscus', 'plant', 'vegetable', 'flowers', 'beach']),
+		bg: 'hibiscus',
+		df: _Utils_Tuple2(6, 12)
+	},
+		{
+		cg: 2,
+		aW: '🌻',
+		bc: _List_fromArray(
+			['sunflower', 'nature', 'plant', 'fall']),
+		bg: 'sunflower',
+		df: _Utils_Tuple2(6, 13)
+	},
+		{
+		cg: 2,
+		aW: '🌼',
+		bc: _List_fromArray(
+			['blossom', 'nature', 'flowers', 'yellow']),
+		bg: 'blossom',
+		df: _Utils_Tuple2(6, 14)
+	},
+		{
+		cg: 3,
+		aW: '🌽',
+		bc: _List_fromArray(
+			['ear of corn', 'food', 'vegetable', 'plant']),
+		bg: 'corn',
+		df: _Utils_Tuple2(6, 15)
+	},
+		{
+		cg: 2,
+		aW: '🌾',
+		bc: _List_fromArray(
+			['sheaf of rice', 'nature', 'plant']),
+		bg: 'ear_of_rice',
+		df: _Utils_Tuple2(6, 16)
+	},
+		{
+		cg: 2,
+		aW: '🌿',
+		bc: _List_fromArray(
+			['herb', 'vegetable', 'plant', 'medicine', 'weed', 'grass', 'lawn']),
+		bg: 'herb',
+		df: _Utils_Tuple2(6, 17)
+	},
+		{
+		cg: 2,
+		aW: '🍀',
+		bc: _List_fromArray(
+			['four leaf clover', 'vegetable', 'plant', 'nature', 'lucky', 'irish']),
+		bg: 'four_leaf_clover',
+		df: _Utils_Tuple2(6, 18)
+	},
+		{
+		cg: 2,
+		aW: '🍁',
+		bc: _List_fromArray(
+			['maple leaf', 'nature', 'plant', 'vegetable', 'ca', 'fall']),
+		bg: 'maple_leaf',
+		df: _Utils_Tuple2(6, 19)
+	},
+		{
+		cg: 2,
+		aW: '🍂',
+		bc: _List_fromArray(
+			['fallen leaf', 'nature', 'plant', 'vegetable', 'leaves']),
+		bg: 'fallen_leaf',
+		df: _Utils_Tuple2(6, 20)
+	},
+		{
+		cg: 2,
+		aW: '🍃',
+		bc: _List_fromArray(
+			['leaf fluttering in wind', 'nature', 'plant', 'tree', 'vegetable', 'grass', 'lawn', 'spring']),
+		bg: 'leaves',
+		df: _Utils_Tuple2(6, 21)
+	},
+		{
+		cg: 3,
+		aW: '🍄',
+		bc: _List_fromArray(
+			['mushroom', 'plant', 'vegetable']),
+		bg: 'mushroom',
+		df: _Utils_Tuple2(6, 22)
+	},
+		{
+		cg: 3,
+		aW: '🍅',
+		bc: _List_fromArray(
+			['tomato', 'fruit', 'vegetable', 'nature', 'food']),
+		bg: 'tomato',
+		df: _Utils_Tuple2(6, 23)
+	},
+		{
+		cg: 3,
+		aW: '🍆',
+		bc: _List_fromArray(
+			['eggplant', 'vegetable', 'nature', 'food', 'aubergine']),
+		bg: 'eggplant',
+		df: _Utils_Tuple2(6, 24)
+	},
+		{
+		cg: 3,
+		aW: '🍇',
+		bc: _List_fromArray(
+			['grapes', 'fruit', 'food', 'wine']),
+		bg: 'grapes',
+		df: _Utils_Tuple2(6, 25)
+	},
+		{
+		cg: 3,
+		aW: '🍈',
+		bc: _List_fromArray(
+			['melon', 'fruit', 'nature', 'food']),
+		bg: 'melon',
+		df: _Utils_Tuple2(6, 26)
+	},
+		{
+		cg: 3,
+		aW: '🍉',
+		bc: _List_fromArray(
+			['watermelon', 'fruit', 'food', 'picnic', 'summer']),
+		bg: 'watermelon',
+		df: _Utils_Tuple2(6, 27)
+	},
+		{
+		cg: 3,
+		aW: '🍊',
+		bc: _List_fromArray(
+			['tangerine', 'food', 'fruit', 'nature', 'orange']),
+		bg: 'tangerine',
+		df: _Utils_Tuple2(6, 28)
+	},
+		{
+		cg: 3,
+		aW: '🍋',
+		bc: _List_fromArray(
+			['lemon', 'fruit', 'nature']),
+		bg: 'lemon',
+		df: _Utils_Tuple2(6, 29)
+	},
+		{
+		cg: 3,
+		aW: '🍌',
+		bc: _List_fromArray(
+			['banana', 'fruit', 'food', 'monkey']),
+		bg: 'banana',
+		df: _Utils_Tuple2(6, 30)
+	},
+		{
+		cg: 3,
+		aW: '🍍',
+		bc: _List_fromArray(
+			['pineapple', 'fruit', 'nature', 'food']),
+		bg: 'pineapple',
+		df: _Utils_Tuple2(6, 31)
+	},
+		{
+		cg: 3,
+		aW: '🍎',
+		bc: _List_fromArray(
+			['red apple', 'fruit', 'mac', 'school']),
+		bg: 'apple',
+		df: _Utils_Tuple2(6, 32)
+	},
+		{
+		cg: 3,
+		aW: '🍏',
+		bc: _List_fromArray(
+			['green apple', 'fruit', 'nature']),
+		bg: 'green_apple',
+		df: _Utils_Tuple2(6, 33)
+	},
+		{
+		cg: 3,
+		aW: '🍐',
+		bc: _List_fromArray(
+			['pear', 'fruit', 'nature', 'food']),
+		bg: 'pear',
+		df: _Utils_Tuple2(6, 34)
+	},
+		{
+		cg: 3,
+		aW: '🍑',
+		bc: _List_fromArray(
+			['peach', 'fruit', 'nature', 'food']),
+		bg: 'peach',
+		df: _Utils_Tuple2(6, 35)
+	},
+		{
+		cg: 3,
+		aW: '🍒',
+		bc: _List_fromArray(
+			['cherries', 'food', 'fruit']),
+		bg: 'cherries',
+		df: _Utils_Tuple2(6, 36)
+	},
+		{
+		cg: 3,
+		aW: '🍓',
+		bc: _List_fromArray(
+			['strawberry', 'fruit', 'food', 'nature']),
+		bg: 'strawberry',
+		df: _Utils_Tuple2(6, 37)
+	},
+		{
+		cg: 3,
+		aW: '🍔',
+		bc: _List_fromArray(
+			['hamburger', 'meat', 'fast food', 'beef', 'cheeseburger', 'mcdonalds', 'burger king']),
+		bg: 'hamburger',
+		df: _Utils_Tuple2(6, 38)
+	},
+		{
+		cg: 3,
+		aW: '🍕',
+		bc: _List_fromArray(
+			['pizza', 'food', 'party']),
+		bg: 'pizza',
+		df: _Utils_Tuple2(6, 39)
+	},
+		{
+		cg: 3,
+		aW: '🍖',
+		bc: _List_fromArray(
+			['meat on bone', 'good', 'food', 'drumstick']),
+		bg: 'meat_on_bone',
+		df: _Utils_Tuple2(6, 40)
+	},
+		{
+		cg: 3,
+		aW: '🍗',
+		bc: _List_fromArray(
+			['poultry leg', 'food', 'meat', 'drumstick', 'bird', 'chicken', 'turkey']),
+		bg: 'poultry_leg',
+		df: _Utils_Tuple2(6, 41)
+	},
+		{
+		cg: 3,
+		aW: '🍘',
+		bc: _List_fromArray(
+			['rice cracker', 'food', 'japanese']),
+		bg: 'rice_cracker',
+		df: _Utils_Tuple2(6, 42)
+	},
+		{
+		cg: 3,
+		aW: '🍙',
+		bc: _List_fromArray(
+			['rice ball', 'food', 'japanese']),
+		bg: 'rice_ball',
+		df: _Utils_Tuple2(6, 43)
+	},
+		{
+		cg: 3,
+		aW: '🍚',
+		bc: _List_fromArray(
+			['cooked rice', 'food', 'china', 'asian']),
+		bg: 'rice',
+		df: _Utils_Tuple2(6, 44)
+	},
+		{
+		cg: 3,
+		aW: '🍛',
+		bc: _List_fromArray(
+			['curry rice', 'food', 'spicy', 'hot', 'indian']),
+		bg: 'curry',
+		df: _Utils_Tuple2(6, 45)
+	},
+		{
+		cg: 3,
+		aW: '🍜',
+		bc: _List_fromArray(
+			['steaming bowl', 'food', 'japanese', 'noodle', 'chopsticks']),
+		bg: 'ramen',
+		df: _Utils_Tuple2(6, 46)
+	},
+		{
+		cg: 3,
+		aW: '🍝',
+		bc: _List_fromArray(
+			['spaghetti', 'food', 'italian', 'noodle']),
+		bg: 'spaghetti',
+		df: _Utils_Tuple2(6, 47)
+	},
+		{
+		cg: 3,
+		aW: '🍞',
+		bc: _List_fromArray(
+			['bread', 'food', 'wheat', 'breakfast', 'toast']),
+		bg: 'bread',
+		df: _Utils_Tuple2(6, 48)
+	},
+		{
+		cg: 3,
+		aW: '🍟',
+		bc: _List_fromArray(
+			['french fries', 'chips', 'snack', 'fast food']),
+		bg: 'fries',
+		df: _Utils_Tuple2(6, 49)
+	},
+		{
+		cg: 3,
+		aW: '🍠',
+		bc: _List_fromArray(
+			['roasted sweet potato', 'food', 'nature']),
+		bg: 'sweet_potato',
+		df: _Utils_Tuple2(6, 50)
+	},
+		{
+		cg: 3,
+		aW: '🍡',
+		bc: _List_fromArray(
+			['dango', 'food', 'dessert', 'sweet', 'japanese', 'barbecue', 'meat']),
+		bg: 'dango',
+		df: _Utils_Tuple2(6, 51)
+	},
+		{
+		cg: 3,
+		aW: '🍢',
+		bc: _List_fromArray(
+			['oden', 'food', 'japanese']),
+		bg: 'oden',
+		df: _Utils_Tuple2(6, 52)
+	},
+		{
+		cg: 3,
+		aW: '🍣',
+		bc: _List_fromArray(
+			['sushi', 'food', 'fish', 'japanese', 'rice']),
+		bg: 'sushi',
+		df: _Utils_Tuple2(6, 53)
+	},
+		{
+		cg: 3,
+		aW: '🍤',
+		bc: _List_fromArray(
+			['fried shrimp', 'food', 'animal', 'appetizer', 'summer']),
+		bg: 'fried_shrimp',
+		df: _Utils_Tuple2(6, 54)
+	},
+		{
+		cg: 3,
+		aW: '🍥',
+		bc: _List_fromArray(
+			['fish cake with swirl', 'food', 'japan', 'sea', 'beach', 'narutomaki', 'pink', 'swirl', 'kamaboko', 'surimi', 'ramen']),
+		bg: 'fish_cake',
+		df: _Utils_Tuple2(6, 55)
+	},
+		{
+		cg: 3,
+		aW: '🍦',
+		bc: _List_fromArray(
+			['soft ice cream', 'food', 'hot', 'dessert', 'summer']),
+		bg: 'icecream',
+		df: _Utils_Tuple2(6, 56)
+	},
+		{
+		cg: 3,
+		aW: '🍧',
+		bc: _List_fromArray(
+			['shaved ice', 'hot', 'dessert', 'summer']),
+		bg: 'shaved_ice',
+		df: _Utils_Tuple2(6, 57)
+	},
+		{
+		cg: 3,
+		aW: '🍨',
+		bc: _List_fromArray(
+			['ice cream', 'food', 'hot', 'dessert']),
+		bg: 'ice_cream',
+		df: _Utils_Tuple2(7, 0)
+	},
+		{
+		cg: 3,
+		aW: '🍩',
+		bc: _List_fromArray(
+			['doughnut', 'food', 'dessert', 'snack', 'sweet', 'donut']),
+		bg: 'doughnut',
+		df: _Utils_Tuple2(7, 1)
+	},
+		{
+		cg: 3,
+		aW: '🍪',
+		bc: _List_fromArray(
+			['cookie', 'food', 'snack', 'oreo', 'chocolate', 'sweet', 'dessert']),
+		bg: 'cookie',
+		df: _Utils_Tuple2(7, 2)
+	},
+		{
+		cg: 3,
+		aW: '🍫',
+		bc: _List_fromArray(
+			['chocolate bar', 'food', 'snack', 'dessert', 'sweet']),
+		bg: 'chocolate_bar',
+		df: _Utils_Tuple2(7, 3)
+	},
+		{
+		cg: 3,
+		aW: '🍬',
+		bc: _List_fromArray(
+			['candy', 'snack', 'dessert', 'sweet', 'lolly']),
+		bg: 'candy',
+		df: _Utils_Tuple2(7, 4)
+	},
+		{
+		cg: 3,
+		aW: '🍭',
+		bc: _List_fromArray(
+			['lollipop', 'food', 'snack', 'candy', 'sweet']),
+		bg: 'lollipop',
+		df: _Utils_Tuple2(7, 5)
+	},
+		{
+		cg: 3,
+		aW: '🍮',
+		bc: _List_fromArray(
+			['custard', 'dessert', 'food']),
+		bg: 'custard',
+		df: _Utils_Tuple2(7, 6)
+	},
+		{
+		cg: 3,
+		aW: '🍯',
+		bc: _List_fromArray(
+			['honey pot', 'bees', 'sweet', 'kitchen']),
+		bg: 'honey_pot',
+		df: _Utils_Tuple2(7, 7)
+	},
+		{
+		cg: 3,
+		aW: '🍰',
+		bc: _List_fromArray(
+			['shortcake', 'food', 'dessert']),
+		bg: 'cake',
+		df: _Utils_Tuple2(7, 8)
+	},
+		{
+		cg: 3,
+		aW: '🍱',
+		bc: _List_fromArray(
+			['bento box', 'food', 'japanese', 'box']),
+		bg: 'bento',
+		df: _Utils_Tuple2(7, 9)
+	},
+		{
+		cg: 3,
+		aW: '🍲',
+		bc: _List_fromArray(
+			['pot of food', 'food', 'meat', 'soup']),
+		bg: 'stew',
+		df: _Utils_Tuple2(7, 10)
+	},
+		{
+		cg: 3,
+		aW: '🍳',
+		bc: _List_fromArray(
+			['cooking', 'food', 'breakfast', 'kitchen', 'egg']),
+		bg: 'fried_egg',
+		df: _Utils_Tuple2(7, 11)
+	},
+		{
+		cg: 3,
+		aW: '🍴',
+		bc: _List_fromArray(
+			['fork and knife', 'cutlery', 'kitchen']),
+		bg: 'fork_and_knife',
+		df: _Utils_Tuple2(7, 12)
+	},
+		{
+		cg: 3,
+		aW: '🍵',
+		bc: _List_fromArray(
+			['teacup without handle', 'drink', 'bowl', 'breakfast', 'green', 'british']),
+		bg: 'tea',
+		df: _Utils_Tuple2(7, 13)
+	},
+		{
+		cg: 3,
+		aW: '🍶',
+		bc: _List_fromArray(
+			['sake', 'wine', 'drink', 'drunk', 'beverage', 'japanese', 'alcohol', 'booze']),
+		bg: 'sake',
+		df: _Utils_Tuple2(7, 14)
+	},
+		{
+		cg: 3,
+		aW: '🍷',
+		bc: _List_fromArray(
+			['wine glass', 'drink', 'beverage', 'drunk', 'alcohol', 'booze']),
+		bg: 'wine_glass',
+		df: _Utils_Tuple2(7, 15)
+	},
+		{
+		cg: 3,
+		aW: '🍸',
+		bc: _List_fromArray(
+			['cocktail glass', 'drink', 'drunk', 'alcohol', 'beverage', 'booze', 'mojito']),
+		bg: 'cocktail',
+		df: _Utils_Tuple2(7, 16)
+	},
+		{
+		cg: 3,
+		aW: '🍹',
+		bc: _List_fromArray(
+			['tropical drink', 'beverage', 'cocktail', 'summer', 'beach', 'alcohol', 'booze', 'mojito']),
+		bg: 'tropical_drink',
+		df: _Utils_Tuple2(7, 17)
+	},
+		{
+		cg: 3,
+		aW: '🍺',
+		bc: _List_fromArray(
+			['beer mug', 'relax', 'beverage', 'drink', 'drunk', 'party', 'pub', 'summer', 'alcohol', 'booze']),
+		bg: 'beer',
+		df: _Utils_Tuple2(7, 18)
+	},
+		{
+		cg: 3,
+		aW: '🍻',
+		bc: _List_fromArray(
+			['clinking beer mugs', 'relax', 'beverage', 'drink', 'drunk', 'party', 'pub', 'summer', 'alcohol', 'booze']),
+		bg: 'beers',
+		df: _Utils_Tuple2(7, 19)
+	},
+		{
+		cg: 3,
+		aW: '🍼',
+		bc: _List_fromArray(
+			['baby bottle', 'food', 'container', 'milk']),
+		bg: 'baby_bottle',
+		df: _Utils_Tuple2(7, 20)
+	},
+		{
+		cg: 3,
+		aW: '🍽️',
+		bc: _List_fromArray(
+			['fork and knife with plate', 'food', 'eat', 'meal', 'lunch', 'dinner', 'restaurant']),
+		bg: 'knife_fork_plate',
+		df: _Utils_Tuple2(7, 21)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDF7E',
+		bc: _List_fromArray(
+			['bottle with popping cork', 'drink', 'wine', 'bottle', 'celebration']),
+		bg: 'champagne',
+		df: _Utils_Tuple2(7, 22)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDF7F',
+		bc: _List_fromArray(
+			['popcorn', 'food', 'movie theater', 'films', 'snack']),
+		bg: 'popcorn',
+		df: _Utils_Tuple2(7, 23)
+	},
+		{
+		cg: 5,
+		aW: '🎀',
+		bc: _List_fromArray(
+			['ribbon', 'decoration', 'pink', 'girl', 'bowtie']),
+		bg: 'ribbon',
+		df: _Utils_Tuple2(7, 24)
+	},
+		{
+		cg: 5,
+		aW: '🎁',
+		bc: _List_fromArray(
+			['wrapped gift', 'present', 'birthday', 'christmas', 'xmas']),
+		bg: 'gift',
+		df: _Utils_Tuple2(7, 25)
+	},
+		{
+		cg: 3,
+		aW: '🎂',
+		bc: _List_fromArray(
+			['birthday cake', 'food', 'dessert', 'cake']),
+		bg: 'birthday',
+		df: _Utils_Tuple2(7, 26)
+	},
+		{
+		cg: 5,
+		aW: '🎃',
+		bc: _List_fromArray(
+			['jack o lantern', 'halloween', 'light', 'pumpkin', 'creepy', 'fall']),
+		bg: 'jack_o_lantern',
+		df: _Utils_Tuple2(7, 27)
+	},
+		{
+		cg: 5,
+		aW: '🎄',
+		bc: _List_fromArray(
+			['christmas tree', 'festival', 'vacation', 'december', 'xmas', 'celebration']),
+		bg: 'christmas_tree',
+		df: _Utils_Tuple2(7, 28)
+	},
+		{
+		cg: 1,
+		aW: '🎅',
+		bc: _List_fromArray(
+			['santa claus', 'festival', 'man', 'male', 'xmas', 'father christmas']),
+		bg: 'santa',
+		df: _Utils_Tuple2(7, 29)
+	},
+		{
+		cg: 5,
+		aW: '🎆',
+		bc: _List_fromArray(
+			['fireworks', 'photo', 'festival', 'carnival', 'congratulations']),
+		bg: 'fireworks',
+		df: _Utils_Tuple2(7, 35)
+	},
+		{
+		cg: 5,
+		aW: '🎇',
+		bc: _List_fromArray(
+			['sparkler', 'stars', 'night', 'shine']),
+		bg: 'sparkler',
+		df: _Utils_Tuple2(7, 36)
+	},
+		{
+		cg: 5,
+		aW: '🎈',
+		bc: _List_fromArray(
+			['balloon', 'party', 'celebration', 'birthday', 'circus']),
+		bg: 'balloon',
+		df: _Utils_Tuple2(7, 37)
+	},
+		{
+		cg: 5,
+		aW: '🎉',
+		bc: _List_fromArray(
+			['party popper', 'party', 'congratulations', 'birthday', 'magic', 'circus', 'celebration']),
+		bg: 'tada',
+		df: _Utils_Tuple2(7, 38)
+	},
+		{
+		cg: 5,
+		aW: '🎊',
+		bc: _List_fromArray(
+			['confetti ball', 'festival', 'party', 'birthday', 'circus']),
+		bg: 'confetti_ball',
+		df: _Utils_Tuple2(7, 39)
+	},
+		{
+		cg: 5,
+		aW: '🎋',
+		bc: _List_fromArray(
+			['tanabata tree', 'plant', 'nature', 'branch', 'summer']),
+		bg: 'tanabata_tree',
+		df: _Utils_Tuple2(7, 40)
+	},
+		{
+		cg: 8,
+		aW: '🎌',
+		bc: _List_fromArray(
+			['crossed flags', 'japanese', 'nation', 'country', 'border']),
+		bg: 'crossed_flags',
+		df: _Utils_Tuple2(7, 41)
+	},
+		{
+		cg: 5,
+		aW: '🎍',
+		bc: _List_fromArray(
+			['pine decoration', 'plant', 'nature', 'vegetable', 'panda', 'pine decoration']),
+		bg: 'bamboo',
+		df: _Utils_Tuple2(7, 42)
+	},
+		{
+		cg: 5,
+		aW: '🎎',
+		bc: _List_fromArray(
+			['japanese dolls', 'japanese', 'toy', 'kimono']),
+		bg: 'dolls',
+		df: _Utils_Tuple2(7, 43)
+	},
+		{
+		cg: 5,
+		aW: '🎏',
+		bc: _List_fromArray(
+			['carp streamer', 'fish', 'japanese', 'koinobori', 'carp', 'banner']),
+		bg: 'flags',
+		df: _Utils_Tuple2(7, 44)
+	},
+		{
+		cg: 5,
+		aW: '🎐',
+		bc: _List_fromArray(
+			['wind chime', 'nature', 'ding', 'spring', 'bell']),
+		bg: 'wind_chime',
+		df: _Utils_Tuple2(7, 45)
+	},
+		{
+		cg: 5,
+		aW: '🎑',
+		bc: _List_fromArray(
+			['moon viewing ceremony', 'photo', 'japan', 'asia', 'tsukimi']),
+		bg: 'rice_scene',
+		df: _Utils_Tuple2(7, 46)
+	},
+		{
+		cg: 6,
+		aW: '🎒',
+		bc: _List_fromArray(
+			['backpack', 'student', 'education', 'bag', 'backpack']),
+		bg: 'school_satchel',
+		df: _Utils_Tuple2(7, 47)
+	},
+		{
+		cg: 6,
+		aW: '🎓',
+		bc: _List_fromArray(
+			['graduation cap', 'school', 'college', 'degree', 'university', 'graduation', 'cap', 'hat', 'legal', 'learn', 'education']),
+		bg: 'mortar_board',
+		df: _Utils_Tuple2(7, 48)
+	},
+		{
+		cg: 5,
+		aW: '🎖️',
+		bc: _List_fromArray(
+			['military medal', 'award', 'winning', 'army']),
+		bg: 'medal',
+		df: _Utils_Tuple2(7, 49)
+	},
+		{
+		cg: 5,
+		aW: '🎗️',
+		bc: _List_fromArray(
+			['reminder ribbon', 'sports', 'cause', 'support', 'awareness']),
+		bg: 'reminder_ribbon',
+		df: _Utils_Tuple2(7, 50)
+	},
+		{
+		cg: 6,
+		aW: '🎙️',
+		bc: _List_fromArray(
+			['studio microphone', 'sing', 'recording', 'artist', 'talkshow']),
+		bg: 'studio_microphone',
+		df: _Utils_Tuple2(7, 51)
+	},
+		{
+		cg: 6,
+		aW: '🎚️',
+		bc: _List_fromArray(
+			['level slider', 'scale']),
+		bg: 'level_slider',
+		df: _Utils_Tuple2(7, 52)
+	},
+		{
+		cg: 6,
+		aW: '🎛️',
+		bc: _List_fromArray(
+			['control knobs', 'dial']),
+		bg: 'control_knobs',
+		df: _Utils_Tuple2(7, 53)
+	},
+		{
+		cg: 6,
+		aW: '🎞️',
+		bc: _List_fromArray(
+			['film frames', 'movie']),
+		bg: 'film_frames',
+		df: _Utils_Tuple2(7, 54)
+	},
+		{
+		cg: 5,
+		aW: '🎟️',
+		bc: _List_fromArray(
+			['admission tickets', 'sports', 'concert', 'entrance']),
+		bg: 'admission_tickets',
+		df: _Utils_Tuple2(7, 55)
+	},
+		{
+		cg: 4,
+		aW: '🎠',
+		bc: _List_fromArray(
+			['carousel horse', 'photo', 'carnival']),
+		bg: 'carousel_horse',
+		df: _Utils_Tuple2(7, 56)
+	},
+		{
+		cg: 4,
+		aW: '🎡',
+		bc: _List_fromArray(
+			['ferris wheel', 'photo', 'carnival', 'londoneye']),
+		bg: 'ferris_wheel',
+		df: _Utils_Tuple2(7, 57)
+	},
+		{
+		cg: 4,
+		aW: '🎢',
+		bc: _List_fromArray(
+			['roller coaster', 'carnival', 'playground', 'photo', 'fun']),
+		bg: 'roller_coaster',
+		df: _Utils_Tuple2(8, 0)
+	},
+		{
+		cg: 5,
+		aW: '🎣',
+		bc: _List_fromArray(
+			['fishing pole', 'food', 'hobby', 'summer']),
+		bg: 'fishing_pole_and_fish',
+		df: _Utils_Tuple2(8, 1)
+	},
+		{
+		cg: 6,
+		aW: '🎤',
+		bc: _List_fromArray(
+			['microphone', 'sound', 'music', 'PA', 'sing', 'talkshow']),
+		bg: 'microphone',
+		df: _Utils_Tuple2(8, 2)
+	},
+		{
+		cg: 6,
+		aW: '🎥',
+		bc: _List_fromArray(
+			['movie camera', 'film', 'record']),
+		bg: 'movie_camera',
+		df: _Utils_Tuple2(8, 3)
+	},
+		{
+		cg: 7,
+		aW: '🎦',
+		bc: _List_fromArray(
+			['cinema', 'blue square', 'record', 'film', 'movie', 'curtain', 'stage', 'theater']),
+		bg: 'cinema',
+		df: _Utils_Tuple2(8, 4)
+	},
+		{
+		cg: 6,
+		aW: '🎧',
+		bc: _List_fromArray(
+			['headphone', 'music', 'score', 'gadgets']),
+		bg: 'headphones',
+		df: _Utils_Tuple2(8, 5)
+	},
+		{
+		cg: 5,
+		aW: '🎨',
+		bc: _List_fromArray(
+			['artist palette', 'design', 'paint', 'draw', 'colors']),
+		bg: 'art',
+		df: _Utils_Tuple2(8, 6)
+	},
+		{
+		cg: 6,
+		aW: '🎩',
+		bc: _List_fromArray(
+			['top hat', 'magic', 'gentleman', 'classy', 'circus']),
+		bg: 'tophat',
+		df: _Utils_Tuple2(8, 7)
+	},
+		{
+		cg: 4,
+		aW: '🎪',
+		bc: _List_fromArray(
+			['circus tent', 'festival', 'carnival', 'party']),
+		bg: 'circus_tent',
+		df: _Utils_Tuple2(8, 8)
+	},
+		{
+		cg: 5,
+		aW: '🎫',
+		bc: _List_fromArray(
+			['ticket', 'event', 'concert', 'pass']),
+		bg: 'ticket',
+		df: _Utils_Tuple2(8, 9)
+	},
+		{
+		cg: 6,
+		aW: '🎬',
+		bc: _List_fromArray(
+			['clapper board', 'movie', 'film', 'record']),
+		bg: 'clapper',
+		df: _Utils_Tuple2(8, 10)
+	},
+		{
+		cg: 5,
+		aW: '🎭',
+		bc: _List_fromArray(
+			['performing arts', 'acting', 'theater', 'drama']),
+		bg: 'performing_arts',
+		df: _Utils_Tuple2(8, 11)
+	},
+		{
+		cg: 5,
+		aW: '🎮',
+		bc: _List_fromArray(
+			['video game', 'play', 'console', 'PS4', 'controller']),
+		bg: 'video_game',
+		df: _Utils_Tuple2(8, 12)
+	},
+		{
+		cg: 5,
+		aW: '🎯',
+		bc: _List_fromArray(
+			['direct hit', 'game', 'play', 'bar', 'target', 'bullseye']),
+		bg: 'dart',
+		df: _Utils_Tuple2(8, 13)
+	},
+		{
+		cg: 5,
+		aW: '🎰',
+		bc: _List_fromArray(
+			['slot machine', 'bet', 'gamble', 'vegas', 'fruit machine', 'luck', 'casino']),
+		bg: 'slot_machine',
+		df: _Utils_Tuple2(8, 14)
+	},
+		{
+		cg: 5,
+		aW: '🎱',
+		bc: _List_fromArray(
+			['pool 8 ball', 'pool', 'hobby', 'game', 'luck', 'magic']),
+		bg: '8ball',
+		df: _Utils_Tuple2(8, 15)
+	},
+		{
+		cg: 5,
+		aW: '🎲',
+		bc: _List_fromArray(
+			['game die', 'dice', 'random', 'tabletop', 'play', 'luck']),
+		bg: 'game_die',
+		df: _Utils_Tuple2(8, 16)
+	},
+		{
+		cg: 5,
+		aW: '🎳',
+		bc: _List_fromArray(
+			['bowling', 'sports', 'fun', 'play']),
+		bg: 'bowling',
+		df: _Utils_Tuple2(8, 17)
+	},
+		{
+		cg: 5,
+		aW: '🎴',
+		bc: _List_fromArray(
+			['flower playing cards', 'game', 'sunset', 'red']),
+		bg: 'flower_playing_cards',
+		df: _Utils_Tuple2(8, 18)
+	},
+		{
+		cg: 6,
+		aW: '🎵',
+		bc: _List_fromArray(
+			['musical note', 'score', 'tone', 'sound']),
+		bg: 'musical_note',
+		df: _Utils_Tuple2(8, 19)
+	},
+		{
+		cg: 6,
+		aW: '🎶',
+		bc: _List_fromArray(
+			['musical notes', 'music', 'score']),
+		bg: 'notes',
+		df: _Utils_Tuple2(8, 20)
+	},
+		{
+		cg: 6,
+		aW: '🎷',
+		bc: _List_fromArray(
+			['saxophone', 'music', 'instrument', 'jazz', 'blues']),
+		bg: 'saxophone',
+		df: _Utils_Tuple2(8, 21)
+	},
+		{
+		cg: 6,
+		aW: '🎸',
+		bc: _List_fromArray(
+			['guitar', 'music', 'instrument']),
+		bg: 'guitar',
+		df: _Utils_Tuple2(8, 22)
+	},
+		{
+		cg: 6,
+		aW: '🎹',
+		bc: _List_fromArray(
+			['musical keyboard', 'piano', 'instrument', 'compose']),
+		bg: 'musical_keyboard',
+		df: _Utils_Tuple2(8, 23)
+	},
+		{
+		cg: 6,
+		aW: '🎺',
+		bc: _List_fromArray(
+			['trumpet', 'music', 'brass']),
+		bg: 'trumpet',
+		df: _Utils_Tuple2(8, 24)
+	},
+		{
+		cg: 6,
+		aW: '🎻',
+		bc: _List_fromArray(
+			['violin', 'music', 'instrument', 'orchestra', 'symphony']),
+		bg: 'violin',
+		df: _Utils_Tuple2(8, 25)
+	},
+		{
+		cg: 6,
+		aW: '🎼',
+		bc: _List_fromArray(
+			['musical score', 'treble', 'clef', 'compose']),
+		bg: 'musical_score',
+		df: _Utils_Tuple2(8, 26)
+	},
+		{
+		cg: 5,
+		aW: '🎽',
+		bc: _List_fromArray(
+			['running shirt', 'play', 'pageant']),
+		bg: 'running_shirt_with_sash',
+		df: _Utils_Tuple2(8, 27)
+	},
+		{
+		cg: 5,
+		aW: '🎾',
+		bc: _List_fromArray(
+			['tennis', 'sports', 'balls', 'green']),
+		bg: 'tennis',
+		df: _Utils_Tuple2(8, 28)
+	},
+		{
+		cg: 5,
+		aW: '🎿',
+		bc: _List_fromArray(
+			['skis', 'sports', 'winter', 'cold', 'snow']),
+		bg: 'ski',
+		df: _Utils_Tuple2(8, 29)
+	},
+		{
+		cg: 5,
+		aW: '🏀',
+		bc: _List_fromArray(
+			['basketball', 'sports', 'balls', 'NBA']),
+		bg: 'basketball',
+		df: _Utils_Tuple2(8, 30)
+	},
+		{
+		cg: 8,
+		aW: '🏁',
+		bc: _List_fromArray(
+			['chequered flag', 'contest', 'finishline', 'race', 'gokart']),
+		bg: 'checkered_flag',
+		df: _Utils_Tuple2(8, 31)
+	},
+		{
+		cg: 1,
+		aW: '🏂',
+		bc: _List_fromArray(
+			['snowboarder', 'sports', 'winter']),
+		bg: 'snowboarder',
+		df: _Utils_Tuple2(8, 32)
+	},
+		{
+		cg: 1,
+		aW: '🏃\u200D♀️',
+		bc: _List_fromArray(
+			['woman running', 'woman', 'walking', 'exercise', 'race', 'running', 'female']),
+		bg: 'woman-running',
+		df: _Utils_Tuple2(8, 38)
+	},
+		{
+		cg: 1,
+		aW: '🏃\u200D♂️',
+		bc: _List_fromArray(
+			['man running', 'man', 'walking', 'exercise', 'race', 'running']),
+		bg: 'man-running',
+		df: _Utils_Tuple2(8, 44)
+	},
+		{
+		cg: 1,
+		aW: '🏃',
+		bc: _List_fromArray(
+			['person running']),
+		bg: 'runner',
+		df: _Utils_Tuple2(8, 50)
+	},
+		{
+		cg: 1,
+		aW: '🏄\u200D♀️',
+		bc: _List_fromArray(
+			['woman surfing', 'sports', 'ocean', 'sea', 'summer', 'beach', 'woman', 'female']),
+		bg: 'woman-surfing',
+		df: _Utils_Tuple2(8, 56)
+	},
+		{
+		cg: 1,
+		aW: '🏄\u200D♂️',
+		bc: _List_fromArray(
+			['man surfing', 'sports', 'ocean', 'sea', 'summer', 'beach']),
+		bg: 'man-surfing',
+		df: _Utils_Tuple2(9, 4)
+	},
+		{
+		cg: 1,
+		aW: '🏄',
+		bc: _List_fromArray(
+			['person surfing']),
+		bg: 'surfer',
+		df: _Utils_Tuple2(9, 10)
+	},
+		{
+		cg: 5,
+		aW: '🏅',
+		bc: _List_fromArray(
+			['sports medal', 'award', 'winning']),
+		bg: 'sports_medal',
+		df: _Utils_Tuple2(9, 16)
+	},
+		{
+		cg: 5,
+		aW: '🏆',
+		bc: _List_fromArray(
+			['trophy', 'win', 'award', 'contest', 'place', 'ftw', 'ceremony']),
+		bg: 'trophy',
+		df: _Utils_Tuple2(9, 17)
+	},
+		{
+		cg: 1,
+		aW: '🏇',
+		bc: _List_fromArray(
+			['horse racing', 'animal', 'betting', 'competition', 'gambling', 'luck']),
+		bg: 'horse_racing',
+		df: _Utils_Tuple2(9, 18)
+	},
+		{
+		cg: 5,
+		aW: '🏈',
+		bc: _List_fromArray(
+			['american football', 'sports', 'balls', 'NFL']),
+		bg: 'football',
+		df: _Utils_Tuple2(9, 24)
+	},
+		{
+		cg: 5,
+		aW: '🏉',
+		bc: _List_fromArray(
+			['rugby football', 'sports', 'team']),
+		bg: 'rugby_football',
+		df: _Utils_Tuple2(9, 25)
+	},
+		{
+		cg: 1,
+		aW: '🏊\u200D♀️',
+		bc: _List_fromArray(
+			['woman swimming', 'sports', 'exercise', 'human', 'athlete', 'water', 'summer', 'woman', 'female']),
+		bg: 'woman-swimming',
+		df: _Utils_Tuple2(9, 26)
+	},
+		{
+		cg: 1,
+		aW: '🏊\u200D♂️',
+		bc: _List_fromArray(
+			['man swimming', 'sports', 'exercise', 'human', 'athlete', 'water', 'summer']),
+		bg: 'man-swimming',
+		df: _Utils_Tuple2(9, 32)
+	},
+		{
+		cg: 1,
+		aW: '🏊',
+		bc: _List_fromArray(
+			['person swimming']),
+		bg: 'swimmer',
+		df: _Utils_Tuple2(9, 38)
+	},
+		{
+		cg: 1,
+		aW: '🏋️\u200D♀️',
+		bc: _List_fromArray(
+			['woman lifting weights', 'sports', 'training', 'exercise', 'woman', 'female']),
+		bg: 'woman-lifting-weights',
+		df: _Utils_Tuple2(9, 44)
+	},
+		{
+		cg: 1,
+		aW: '🏋️\u200D♂️',
+		bc: _List_fromArray(
+			['man lifting weights']),
+		bg: 'man-lifting-weights',
+		df: _Utils_Tuple2(9, 50)
+	},
+		{
+		cg: 1,
+		aW: '🏋️',
+		bc: _List_fromArray(
+			['person lifting weights', 'sports', 'training', 'exercise']),
+		bg: 'weight_lifter',
+		df: _Utils_Tuple2(9, 56)
+	},
+		{
+		cg: 1,
+		aW: '🏌️\u200D♀️',
+		bc: _List_fromArray(
+			['woman golfing', 'sports', 'business', 'woman', 'female']),
+		bg: 'woman-golfing',
+		df: _Utils_Tuple2(10, 4)
+	},
+		{
+		cg: 1,
+		aW: '🏌️\u200D♂️',
+		bc: _List_fromArray(
+			['man golfing']),
+		bg: 'man-golfing',
+		df: _Utils_Tuple2(10, 10)
+	},
+		{
+		cg: 1,
+		aW: '🏌️',
+		bc: _List_fromArray(
+			['person golfing', 'sports', 'business']),
+		bg: 'golfer',
+		df: _Utils_Tuple2(10, 16)
+	},
+		{
+		cg: 4,
+		aW: '🏍️',
+		bc: _List_fromArray(
+			['motorcycle', 'race', 'sports', 'fast']),
+		bg: 'racing_motorcycle',
+		df: _Utils_Tuple2(10, 22)
+	},
+		{
+		cg: 4,
+		aW: '🏎️',
+		bc: _List_fromArray(
+			['racing car', 'sports', 'race', 'fast', 'formula', 'f1']),
+		bg: 'racing_car',
+		df: _Utils_Tuple2(10, 23)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFCF',
+		bc: _List_fromArray(
+			['cricket game', 'sports']),
+		bg: 'cricket_bat_and_ball',
+		df: _Utils_Tuple2(10, 24)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFD0',
+		bc: _List_fromArray(
+			['volleyball', 'sports', 'balls']),
+		bg: 'volleyball',
+		df: _Utils_Tuple2(10, 25)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFD1',
+		bc: _List_fromArray(
+			['field hockey', 'sports']),
+		bg: 'field_hockey_stick_and_ball',
+		df: _Utils_Tuple2(10, 26)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFD2',
+		bc: _List_fromArray(
+			['ice hockey', 'sports']),
+		bg: 'ice_hockey_stick_and_puck',
+		df: _Utils_Tuple2(10, 27)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFD3',
+		bc: _List_fromArray(
+			['ping pong', 'sports', 'pingpong']),
+		bg: 'table_tennis_paddle_and_ball',
+		df: _Utils_Tuple2(10, 28)
+	},
+		{
+		cg: 4,
+		aW: '🏔️',
+		bc: _List_fromArray(
+			['snow capped mountain', 'photo', 'nature', 'environment', 'winter', 'cold']),
+		bg: 'snow_capped_mountain',
+		df: _Utils_Tuple2(10, 29)
+	},
+		{
+		cg: 4,
+		aW: '🏕️',
+		bc: _List_fromArray(
+			['camping', 'photo', 'outdoors', 'tent']),
+		bg: 'camping',
+		df: _Utils_Tuple2(10, 30)
+	},
+		{
+		cg: 4,
+		aW: '🏖️',
+		bc: _List_fromArray(
+			['beach with umbrella', 'weather', 'summer', 'sunny', 'sand', 'mojito']),
+		bg: 'beach_with_umbrella',
+		df: _Utils_Tuple2(10, 31)
+	},
+		{
+		cg: 4,
+		aW: '🏗️',
+		bc: _List_fromArray(
+			['building construction', 'wip', 'working', 'progress']),
+		bg: 'building_construction',
+		df: _Utils_Tuple2(10, 32)
+	},
+		{
+		cg: 4,
+		aW: '🏘️',
+		bc: _List_fromArray(
+			['houses', 'buildings', 'photo']),
+		bg: 'house_buildings',
+		df: _Utils_Tuple2(10, 33)
+	},
+		{
+		cg: 4,
+		aW: '🏙️',
+		bc: _List_fromArray(
+			['cityscape', 'photo', 'night life', 'urban']),
+		bg: 'cityscape',
+		df: _Utils_Tuple2(10, 34)
+	},
+		{
+		cg: 4,
+		aW: '🏚️',
+		bc: _List_fromArray(
+			['derelict house', 'abandon', 'evict', 'broken', 'building']),
+		bg: 'derelict_house_building',
+		df: _Utils_Tuple2(10, 35)
+	},
+		{
+		cg: 4,
+		aW: '🏛️',
+		bc: _List_fromArray(
+			['classical building', 'art', 'culture', 'history']),
+		bg: 'classical_building',
+		df: _Utils_Tuple2(10, 36)
+	},
+		{
+		cg: 4,
+		aW: '🏜️',
+		bc: _List_fromArray(
+			['desert', 'photo', 'warm', 'saharah']),
+		bg: 'desert',
+		df: _Utils_Tuple2(10, 37)
+	},
+		{
+		cg: 4,
+		aW: '🏝️',
+		bc: _List_fromArray(
+			['desert island', 'photo', 'tropical', 'mojito']),
+		bg: 'desert_island',
+		df: _Utils_Tuple2(10, 38)
+	},
+		{
+		cg: 4,
+		aW: '🏞️',
+		bc: _List_fromArray(
+			['national park', 'photo', 'environment', 'nature']),
+		bg: 'national_park',
+		df: _Utils_Tuple2(10, 39)
+	},
+		{
+		cg: 4,
+		aW: '🏟️',
+		bc: _List_fromArray(
+			['stadium', 'photo', 'place', 'sports', 'concert', 'venue']),
+		bg: 'stadium',
+		df: _Utils_Tuple2(10, 40)
+	},
+		{
+		cg: 4,
+		aW: '🏠',
+		bc: _List_fromArray(
+			['house', 'building', 'home']),
+		bg: 'house',
+		df: _Utils_Tuple2(10, 41)
+	},
+		{
+		cg: 4,
+		aW: '🏡',
+		bc: _List_fromArray(
+			['house with garden', 'home', 'plant', 'nature']),
+		bg: 'house_with_garden',
+		df: _Utils_Tuple2(10, 42)
+	},
+		{
+		cg: 4,
+		aW: '🏢',
+		bc: _List_fromArray(
+			['office building', 'building', 'bureau', 'work']),
+		bg: 'office',
+		df: _Utils_Tuple2(10, 43)
+	},
+		{
+		cg: 4,
+		aW: '🏣',
+		bc: _List_fromArray(
+			['japanese post office', 'building', 'envelope', 'communication']),
+		bg: 'post_office',
+		df: _Utils_Tuple2(10, 44)
+	},
+		{
+		cg: 4,
+		aW: '🏤',
+		bc: _List_fromArray(
+			['post office', 'building', 'email']),
+		bg: 'european_post_office',
+		df: _Utils_Tuple2(10, 45)
+	},
+		{
+		cg: 4,
+		aW: '🏥',
+		bc: _List_fromArray(
+			['hospital', 'building', 'health', 'surgery', 'doctor']),
+		bg: 'hospital',
+		df: _Utils_Tuple2(10, 46)
+	},
+		{
+		cg: 4,
+		aW: '🏦',
+		bc: _List_fromArray(
+			['bank', 'building', 'money', 'sales', 'cash', 'business', 'enterprise']),
+		bg: 'bank',
+		df: _Utils_Tuple2(10, 47)
+	},
+		{
+		cg: 7,
+		aW: '🏧',
+		bc: _List_fromArray(
+			['atm sign', 'money', 'sales', 'cash', 'blue square', 'payment', 'bank']),
+		bg: 'atm',
+		df: _Utils_Tuple2(10, 48)
+	},
+		{
+		cg: 4,
+		aW: '🏨',
+		bc: _List_fromArray(
+			['hotel', 'building', 'accomodation', 'checkin']),
+		bg: 'hotel',
+		df: _Utils_Tuple2(10, 49)
+	},
+		{
+		cg: 4,
+		aW: '🏩',
+		bc: _List_fromArray(
+			['love hotel', 'like', 'affection', 'dating']),
+		bg: 'love_hotel',
+		df: _Utils_Tuple2(10, 50)
+	},
+		{
+		cg: 4,
+		aW: '🏪',
+		bc: _List_fromArray(
+			['convenience store', 'building', 'shopping', 'groceries']),
+		bg: 'convenience_store',
+		df: _Utils_Tuple2(10, 51)
+	},
+		{
+		cg: 4,
+		aW: '🏫',
+		bc: _List_fromArray(
+			['school', 'building', 'student', 'education', 'learn', 'teach']),
+		bg: 'school',
+		df: _Utils_Tuple2(10, 52)
+	},
+		{
+		cg: 4,
+		aW: '🏬',
+		bc: _List_fromArray(
+			['department store', 'building', 'shopping', 'mall']),
+		bg: 'department_store',
+		df: _Utils_Tuple2(10, 53)
+	},
+		{
+		cg: 4,
+		aW: '🏭',
+		bc: _List_fromArray(
+			['factory', 'building', 'industry', 'pollution', 'smoke']),
+		bg: 'factory',
+		df: _Utils_Tuple2(10, 54)
+	},
+		{
+		cg: 6,
+		aW: '🏮',
+		bc: _List_fromArray(
+			['red paper lantern', 'light', 'paper', 'halloween', 'spooky']),
+		bg: 'izakaya_lantern',
+		df: _Utils_Tuple2(10, 55)
+	},
+		{
+		cg: 4,
+		aW: '🏯',
+		bc: _List_fromArray(
+			['japanese castle', 'photo', 'building']),
+		bg: 'japanese_castle',
+		df: _Utils_Tuple2(10, 56)
+	},
+		{
+		cg: 4,
+		aW: '🏰',
+		bc: _List_fromArray(
+			['castle', 'building', 'royalty', 'history']),
+		bg: 'european_castle',
+		df: _Utils_Tuple2(10, 57)
+	},
+		{
+		cg: 8,
+		aW: '🏳️\u200D🌈',
+		bc: _List_fromArray(
+			['rainbow flag', 'flag', 'rainbow', 'pride', 'gay', 'lgbt', 'glbt', 'queer', 'homosexual', 'lesbian', 'bisexual', 'transgender']),
+		bg: 'rainbow-flag',
+		df: _Utils_Tuple2(11, 0)
+	},
+		{
+		cg: 8,
+		aW: '🏳️\u200D⚧️',
+		bc: _List_fromArray(
+			['transgender flag', 'lgbtq']),
+		bg: 'transgender_flag',
+		df: _Utils_Tuple2(11, 1)
+	},
+		{
+		cg: 8,
+		aW: '🏳️',
+		bc: _List_fromArray(
+			['white flag', 'losing', 'loser', 'lost', 'surrender', 'give up', 'fail']),
+		bg: 'waving_white_flag',
+		df: _Utils_Tuple2(11, 2)
+	},
+		{
+		cg: 8,
+		aW: '🏴\u200D☠️',
+		bc: _List_fromArray(
+			['pirate flag', 'skull', 'crossbones', 'flag', 'banner']),
+		bg: 'pirate_flag',
+		df: _Utils_Tuple2(11, 3)
+	},
+		{
+		cg: 8,
+		aW: '🏴\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+		bc: _List_fromArray(
+			['flag england', 'flag', 'english']),
+		bg: 'flag-england',
+		df: _Utils_Tuple2(11, 4)
+	},
+		{
+		cg: 8,
+		aW: '🏴\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F',
+		bc: _List_fromArray(
+			['flag scotland', 'flag', 'scottish']),
+		bg: 'flag-scotland',
+		df: _Utils_Tuple2(11, 5)
+	},
+		{
+		cg: 8,
+		aW: '🏴\uDB40\uDC67\uDB40\uDC62\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73\uDB40\uDC7F',
+		bc: _List_fromArray(
+			['flag wales', 'flag', 'welsh']),
+		bg: 'flag-wales',
+		df: _Utils_Tuple2(11, 6)
+	},
+		{
+		cg: 8,
+		aW: '🏴',
+		bc: _List_fromArray(
+			['black flag', 'pirate']),
+		bg: 'waving_black_flag',
+		df: _Utils_Tuple2(11, 7)
+	},
+		{
+		cg: 2,
+		aW: '🏵️',
+		bc: _List_fromArray(
+			['rosette', 'flower', 'decoration', 'military']),
+		bg: 'rosette',
+		df: _Utils_Tuple2(11, 8)
+	},
+		{
+		cg: 6,
+		aW: '🏷️',
+		bc: _List_fromArray(
+			['label', 'sale', 'tag']),
+		bg: 'label',
+		df: _Utils_Tuple2(11, 9)
+	},
+		{
+		cg: 5,
+		aW: '\uD83C\uDFF8',
+		bc: _List_fromArray(
+			['badminton', 'sports']),
+		bg: 'badminton_racquet_and_shuttlecock',
+		df: _Utils_Tuple2(11, 10)
+	},
+		{
+		cg: 6,
+		aW: '\uD83C\uDFF9',
+		bc: _List_fromArray(
+			['bow and arrow', 'sports']),
+		bg: 'bow_and_arrow',
+		df: _Utils_Tuple2(11, 11)
+	},
+		{
+		cg: 3,
+		aW: '\uD83C\uDFFA',
+		bc: _List_fromArray(
+			['amphora', 'vase', 'jar']),
+		bg: 'amphora',
+		df: _Utils_Tuple2(11, 12)
+	},
+		{
+		cg: 9,
+		aW: '\uD83C\uDFFB',
+		bc: _List_Nil,
+		bg: 'skin-tone-2',
+		df: _Utils_Tuple2(11, 13)
+	},
+		{
+		cg: 9,
+		aW: '\uD83C\uDFFC',
+		bc: _List_Nil,
+		bg: 'skin-tone-3',
+		df: _Utils_Tuple2(11, 14)
+	},
+		{
+		cg: 9,
+		aW: '\uD83C\uDFFD',
+		bc: _List_Nil,
+		bg: 'skin-tone-4',
+		df: _Utils_Tuple2(11, 15)
+	},
+		{
+		cg: 9,
+		aW: '\uD83C\uDFFE',
+		bc: _List_Nil,
+		bg: 'skin-tone-5',
+		df: _Utils_Tuple2(11, 16)
+	},
+		{
+		cg: 9,
+		aW: '\uD83C\uDFFF',
+		bc: _List_Nil,
+		bg: 'skin-tone-6',
+		df: _Utils_Tuple2(11, 17)
+	},
+		{
+		cg: 2,
+		aW: '🐀',
+		bc: _List_fromArray(
+			['rat', 'animal', 'mouse', 'rodent']),
+		bg: 'rat',
+		df: _Utils_Tuple2(11, 18)
+	},
+		{
+		cg: 2,
+		aW: '🐁',
+		bc: _List_fromArray(
+			['mouse', 'animal', 'nature', 'rodent']),
+		bg: 'mouse2',
+		df: _Utils_Tuple2(11, 19)
+	},
+		{
+		cg: 2,
+		aW: '🐂',
+		bc: _List_fromArray(
+			['ox', 'animal', 'cow', 'beef']),
+		bg: 'ox',
+		df: _Utils_Tuple2(11, 20)
+	},
+		{
+		cg: 2,
+		aW: '🐃',
+		bc: _List_fromArray(
+			['water buffalo', 'animal', 'nature', 'ox', 'cow']),
+		bg: 'water_buffalo',
+		df: _Utils_Tuple2(11, 21)
+	},
+		{
+		cg: 2,
+		aW: '🐄',
+		bc: _List_fromArray(
+			['cow', 'beef', 'ox', 'animal', 'nature', 'moo', 'milk']),
+		bg: 'cow2',
+		df: _Utils_Tuple2(11, 22)
+	},
+		{
+		cg: 2,
+		aW: '🐅',
+		bc: _List_fromArray(
+			['tiger', 'animal', 'nature', 'roar']),
+		bg: 'tiger2',
+		df: _Utils_Tuple2(11, 23)
+	},
+		{
+		cg: 2,
+		aW: '🐆',
+		bc: _List_fromArray(
+			['leopard', 'animal', 'nature']),
+		bg: 'leopard',
+		df: _Utils_Tuple2(11, 24)
+	},
+		{
+		cg: 2,
+		aW: '🐇',
+		bc: _List_fromArray(
+			['rabbit', 'animal', 'nature', 'pet', 'magic', 'spring']),
+		bg: 'rabbit2',
+		df: _Utils_Tuple2(11, 25)
+	},
+		{
+		cg: 2,
+		aW: '🐈\u200D⬛',
+		bc: _List_fromArray(
+			['black cat', 'superstition', 'luck']),
+		bg: 'black_cat',
+		df: _Utils_Tuple2(11, 26)
+	},
+		{
+		cg: 2,
+		aW: '🐈',
+		bc: _List_fromArray(
+			['cat', 'animal', 'meow', 'pet', 'cats']),
+		bg: 'cat2',
+		df: _Utils_Tuple2(11, 27)
+	},
+		{
+		cg: 2,
+		aW: '🐉',
+		bc: _List_fromArray(
+			['dragon', 'animal', 'myth', 'nature', 'chinese', 'green']),
+		bg: 'dragon',
+		df: _Utils_Tuple2(11, 28)
+	},
+		{
+		cg: 2,
+		aW: '🐊',
+		bc: _List_fromArray(
+			['crocodile', 'animal', 'nature', 'reptile', 'lizard', 'alligator']),
+		bg: 'crocodile',
+		df: _Utils_Tuple2(11, 29)
+	},
+		{
+		cg: 2,
+		aW: '🐋',
+		bc: _List_fromArray(
+			['whale', 'animal', 'nature', 'sea', 'ocean']),
+		bg: 'whale2',
+		df: _Utils_Tuple2(11, 30)
+	},
+		{
+		cg: 2,
+		aW: '🐌',
+		bc: _List_fromArray(
+			['snail', 'slow', 'animal', 'shell']),
+		bg: 'snail',
+		df: _Utils_Tuple2(11, 31)
+	},
+		{
+		cg: 2,
+		aW: '🐍',
+		bc: _List_fromArray(
+			['snake', 'animal', 'evil', 'nature', 'hiss', 'python']),
+		bg: 'snake',
+		df: _Utils_Tuple2(11, 32)
+	},
+		{
+		cg: 2,
+		aW: '🐎',
+		bc: _List_fromArray(
+			['horse', 'animal', 'gamble', 'luck']),
+		bg: 'racehorse',
+		df: _Utils_Tuple2(11, 33)
+	},
+		{
+		cg: 2,
+		aW: '🐏',
+		bc: _List_fromArray(
+			['ram', 'animal', 'sheep', 'nature']),
+		bg: 'ram',
+		df: _Utils_Tuple2(11, 34)
+	},
+		{
+		cg: 2,
+		aW: '🐐',
+		bc: _List_fromArray(
+			['goat', 'animal', 'nature']),
+		bg: 'goat',
+		df: _Utils_Tuple2(11, 35)
+	},
+		{
+		cg: 2,
+		aW: '🐑',
+		bc: _List_fromArray(
+			['ewe', 'animal', 'nature', 'wool', 'shipit']),
+		bg: 'sheep',
+		df: _Utils_Tuple2(11, 36)
+	},
+		{
+		cg: 2,
+		aW: '🐒',
+		bc: _List_fromArray(
+			['monkey', 'animal', 'nature', 'banana', 'circus']),
+		bg: 'monkey',
+		df: _Utils_Tuple2(11, 37)
+	},
+		{
+		cg: 2,
+		aW: '🐓',
+		bc: _List_fromArray(
+			['rooster', 'animal', 'nature', 'chicken']),
+		bg: 'rooster',
+		df: _Utils_Tuple2(11, 38)
+	},
+		{
+		cg: 2,
+		aW: '🐔',
+		bc: _List_fromArray(
+			['chicken', 'animal', 'cluck', 'nature', 'bird']),
+		bg: 'chicken',
+		df: _Utils_Tuple2(11, 39)
+	},
+		{
+		cg: 2,
+		aW: '🐕\u200D\uD83E\uDDBA',
+		bc: _List_fromArray(
+			['service dog']),
+		bg: 'service_dog',
+		df: _Utils_Tuple2(11, 40)
+	},
+		{
+		cg: 2,
+		aW: '🐕',
+		bc: _List_fromArray(
+			['dog', 'animal', 'nature', 'friend', 'doge', 'pet', 'faithful']),
+		bg: 'dog2',
+		df: _Utils_Tuple2(11, 41)
+	},
+		{
+		cg: 2,
+		aW: '🐖',
+		bc: _List_fromArray(
+			['pig', 'animal', 'nature']),
+		bg: 'pig2',
+		df: _Utils_Tuple2(11, 42)
+	},
+		{
+		cg: 2,
+		aW: '🐗',
+		bc: _List_fromArray(
+			['boar', 'animal', 'nature']),
+		bg: 'boar',
+		df: _Utils_Tuple2(11, 43)
+	},
+		{
+		cg: 2,
+		aW: '🐘',
+		bc: _List_fromArray(
+			['elephant', 'animal', 'nature', 'nose', 'th', 'circus']),
+		bg: 'elephant',
+		df: _Utils_Tuple2(11, 44)
+	},
+		{
+		cg: 2,
+		aW: '🐙',
+		bc: _List_fromArray(
+			['octopus', 'animal', 'creature', 'ocean', 'sea', 'nature', 'beach']),
+		bg: 'octopus',
+		df: _Utils_Tuple2(11, 45)
+	},
+		{
+		cg: 2,
+		aW: '🐚',
+		bc: _List_fromArray(
+			['spiral shell', 'nature', 'sea', 'beach']),
+		bg: 'shell',
+		df: _Utils_Tuple2(11, 46)
+	},
+		{
+		cg: 2,
+		aW: '🐛',
+		bc: _List_fromArray(
+			['bug', 'animal', 'insect', 'nature', 'worm']),
+		bg: 'bug',
+		df: _Utils_Tuple2(11, 47)
+	},
+		{
+		cg: 2,
+		aW: '🐜',
+		bc: _List_fromArray(
+			['ant', 'animal', 'insect', 'nature', 'bug']),
+		bg: 'ant',
+		df: _Utils_Tuple2(11, 48)
+	},
+		{
+		cg: 2,
+		aW: '🐝',
+		bc: _List_fromArray(
+			['honeybee', 'animal', 'insect', 'nature', 'bug', 'spring', 'honey']),
+		bg: 'bee',
+		df: _Utils_Tuple2(11, 49)
+	},
+		{
+		cg: 2,
+		aW: '🐞',
+		bc: _List_fromArray(
+			['lady beetle', 'animal', 'insect', 'nature', 'ladybug']),
+		bg: 'beetle',
+		df: _Utils_Tuple2(11, 50)
+	},
+		{
+		cg: 2,
+		aW: '🐟',
+		bc: _List_fromArray(
+			['fish', 'animal', 'food', 'nature']),
+		bg: 'fish',
+		df: _Utils_Tuple2(11, 51)
+	},
+		{
+		cg: 2,
+		aW: '🐠',
+		bc: _List_fromArray(
+			['tropical fish', 'animal', 'swim', 'ocean', 'beach', 'nemo']),
+		bg: 'tropical_fish',
+		df: _Utils_Tuple2(11, 52)
+	},
+		{
+		cg: 2,
+		aW: '🐡',
+		bc: _List_fromArray(
+			['blowfish', 'animal', 'nature', 'food', 'sea', 'ocean']),
+		bg: 'blowfish',
+		df: _Utils_Tuple2(11, 53)
+	},
+		{
+		cg: 2,
+		aW: '🐢',
+		bc: _List_fromArray(
+			['turtle', 'animal', 'slow', 'nature', 'tortoise']),
+		bg: 'turtle',
+		df: _Utils_Tuple2(11, 54)
+	},
+		{
+		cg: 2,
+		aW: '🐣',
+		bc: _List_fromArray(
+			['hatching chick', 'animal', 'chicken', 'egg', 'born', 'baby', 'bird']),
+		bg: 'hatching_chick',
+		df: _Utils_Tuple2(11, 55)
+	},
+		{
+		cg: 2,
+		aW: '🐤',
+		bc: _List_fromArray(
+			['baby chick', 'animal', 'chicken', 'bird']),
+		bg: 'baby_chick',
+		df: _Utils_Tuple2(11, 56)
+	},
+		{
+		cg: 2,
+		aW: '🐥',
+		bc: _List_fromArray(
+			['front facing baby chick', 'animal', 'chicken', 'baby', 'bird']),
+		bg: 'hatched_chick',
+		df: _Utils_Tuple2(11, 57)
+	},
+		{
+		cg: 2,
+		aW: '🐦',
+		bc: _List_fromArray(
+			['bird', 'animal', 'nature', 'fly', 'tweet', 'spring']),
+		bg: 'bird',
+		df: _Utils_Tuple2(12, 0)
+	},
+		{
+		cg: 2,
+		aW: '🐧',
+		bc: _List_fromArray(
+			['penguin', 'animal', 'nature']),
+		bg: 'penguin',
+		df: _Utils_Tuple2(12, 1)
+	},
+		{
+		cg: 2,
+		aW: '🐨',
+		bc: _List_fromArray(
+			['koala', 'animal', 'nature']),
+		bg: 'koala',
+		df: _Utils_Tuple2(12, 2)
+	},
+		{
+		cg: 2,
+		aW: '🐩',
+		bc: _List_fromArray(
+			['poodle', 'dog', 'animal', '101', 'nature', 'pet']),
+		bg: 'poodle',
+		df: _Utils_Tuple2(12, 3)
+	},
+		{
+		cg: 2,
+		aW: '🐪',
+		bc: _List_fromArray(
+			['camel', 'animal', 'hot', 'desert', 'hump']),
+		bg: 'dromedary_camel',
+		df: _Utils_Tuple2(12, 4)
+	},
+		{
+		cg: 2,
+		aW: '🐫',
+		bc: _List_fromArray(
+			['two hump camel', 'animal', 'nature', 'hot', 'desert', 'hump']),
+		bg: 'camel',
+		df: _Utils_Tuple2(12, 5)
+	},
+		{
+		cg: 2,
+		aW: '🐬',
+		bc: _List_fromArray(
+			['dolphin', 'animal', 'nature', 'fish', 'sea', 'ocean', 'flipper', 'fins', 'beach']),
+		bg: 'dolphin',
+		df: _Utils_Tuple2(12, 6)
+	},
+		{
+		cg: 2,
+		aW: '🐭',
+		bc: _List_fromArray(
+			['mouse face', 'animal', 'nature', 'cheese wedge', 'rodent']),
+		bg: 'mouse',
+		df: _Utils_Tuple2(12, 7)
+	},
+		{
+		cg: 2,
+		aW: '🐮',
+		bc: _List_fromArray(
+			['cow face', 'beef', 'ox', 'animal', 'nature', 'moo', 'milk']),
+		bg: 'cow',
+		df: _Utils_Tuple2(12, 8)
+	},
+		{
+		cg: 2,
+		aW: '🐯',
+		bc: _List_fromArray(
+			['tiger face', 'animal', 'cat', 'danger', 'wild', 'nature', 'roar']),
+		bg: 'tiger',
+		df: _Utils_Tuple2(12, 9)
+	},
+		{
+		cg: 2,
+		aW: '🐰',
+		bc: _List_fromArray(
+			['rabbit face', 'animal', 'nature', 'pet', 'spring', 'magic', 'bunny']),
+		bg: 'rabbit',
+		df: _Utils_Tuple2(12, 10)
+	},
+		{
+		cg: 2,
+		aW: '🐱',
+		bc: _List_fromArray(
+			['cat face', 'animal', 'meow', 'nature', 'pet', 'kitten']),
+		bg: 'cat',
+		df: _Utils_Tuple2(12, 11)
+	},
+		{
+		cg: 2,
+		aW: '🐲',
+		bc: _List_fromArray(
+			['dragon face', 'animal', 'myth', 'nature', 'chinese', 'green']),
+		bg: 'dragon_face',
+		df: _Utils_Tuple2(12, 12)
+	},
+		{
+		cg: 2,
+		aW: '🐳',
+		bc: _List_fromArray(
+			['spouting whale', 'animal', 'nature', 'sea', 'ocean']),
+		bg: 'whale',
+		df: _Utils_Tuple2(12, 13)
+	},
+		{
+		cg: 2,
+		aW: '🐴',
+		bc: _List_fromArray(
+			['horse face', 'animal', 'brown', 'nature']),
+		bg: 'horse',
+		df: _Utils_Tuple2(12, 14)
+	},
+		{
+		cg: 2,
+		aW: '🐵',
+		bc: _List_fromArray(
+			['monkey face', 'animal', 'nature', 'circus']),
+		bg: 'monkey_face',
+		df: _Utils_Tuple2(12, 15)
+	},
+		{
+		cg: 2,
+		aW: '🐶',
+		bc: _List_fromArray(
+			['dog face', 'animal', 'friend', 'nature', 'woof', 'puppy', 'pet', 'faithful']),
+		bg: 'dog',
+		df: _Utils_Tuple2(12, 16)
+	},
+		{
+		cg: 2,
+		aW: '🐷',
+		bc: _List_fromArray(
+			['pig face', 'animal', 'oink', 'nature']),
+		bg: 'pig',
+		df: _Utils_Tuple2(12, 17)
+	},
+		{
+		cg: 2,
+		aW: '🐸',
+		bc: _List_fromArray(
+			['frog', 'animal', 'nature', 'croak', 'toad']),
+		bg: 'frog',
+		df: _Utils_Tuple2(12, 18)
+	},
+		{
+		cg: 2,
+		aW: '🐹',
+		bc: _List_fromArray(
+			['hamster', 'animal', 'nature']),
+		bg: 'hamster',
+		df: _Utils_Tuple2(12, 19)
+	},
+		{
+		cg: 2,
+		aW: '🐺',
+		bc: _List_fromArray(
+			['wolf', 'animal', 'nature', 'wild']),
+		bg: 'wolf',
+		df: _Utils_Tuple2(12, 20)
+	},
+		{
+		cg: 2,
+		aW: '🐻\u200D❄️',
+		bc: _List_fromArray(
+			['polar bear', 'animal', 'arctic']),
+		bg: 'polar_bear',
+		df: _Utils_Tuple2(12, 21)
+	},
+		{
+		cg: 2,
+		aW: '🐻',
+		bc: _List_fromArray(
+			['bear', 'animal', 'nature', 'wild']),
+		bg: 'bear',
+		df: _Utils_Tuple2(12, 22)
+	},
+		{
+		cg: 2,
+		aW: '🐼',
+		bc: _List_fromArray(
+			['panda', 'animal', 'nature', 'panda']),
+		bg: 'panda_face',
+		df: _Utils_Tuple2(12, 23)
+	},
+		{
+		cg: 2,
+		aW: '🐽',
+		bc: _List_fromArray(
+			['pig nose', 'animal', 'oink']),
+		bg: 'pig_nose',
+		df: _Utils_Tuple2(12, 24)
+	},
+		{
+		cg: 2,
+		aW: '🐾',
+		bc: _List_fromArray(
+			['paw prints', 'animal', 'tracking', 'footprints', 'dog', 'cat', 'pet', 'feet']),
+		bg: 'feet',
+		df: _Utils_Tuple2(12, 25)
+	},
+		{
+		cg: 2,
+		aW: '🐿️',
+		bc: _List_fromArray(
+			['chipmunk', 'animal', 'nature', 'rodent', 'squirrel']),
+		bg: 'chipmunk',
+		df: _Utils_Tuple2(12, 26)
+	},
+		{
+		cg: 1,
+		aW: '👀',
+		bc: _List_fromArray(
+			['eyes', 'look', 'watch', 'stalk', 'peek', 'see']),
+		bg: 'eyes',
+		df: _Utils_Tuple2(12, 27)
+	},
+		{
+		cg: 0,
+		aW: '👁️\u200D🗨️',
+		bc: _List_fromArray(
+			['eye in speech bubble']),
+		bg: 'eye-in-speech-bubble',
+		df: _Utils_Tuple2(12, 28)
+	},
+		{
+		cg: 1,
+		aW: '👁️',
+		bc: _List_fromArray(
+			['eye', 'face', 'look', 'see', 'watch', 'stare']),
+		bg: 'eye',
+		df: _Utils_Tuple2(12, 29)
+	},
+		{
+		cg: 1,
+		aW: '👂',
+		bc: _List_fromArray(
+			['ear', 'face', 'hear', 'sound', 'listen']),
+		bg: 'ear',
+		df: _Utils_Tuple2(12, 30)
+	},
+		{
+		cg: 1,
+		aW: '👃',
+		bc: _List_fromArray(
+			['nose', 'smell', 'sniff']),
+		bg: 'nose',
+		df: _Utils_Tuple2(12, 36)
+	},
+		{
+		cg: 1,
+		aW: '👄',
+		bc: _List_fromArray(
+			['mouth', 'mouth', 'kiss']),
+		bg: 'lips',
+		df: _Utils_Tuple2(12, 42)
+	},
+		{
+		cg: 1,
+		aW: '👅',
+		bc: _List_fromArray(
+			['tongue', 'mouth', 'playful']),
+		bg: 'tongue',
+		df: _Utils_Tuple2(12, 43)
+	},
+		{
+		cg: 1,
+		aW: '👆',
+		bc: _List_fromArray(
+			['backhand index pointing up', 'fingers', 'hand', 'direction', 'up']),
+		bg: 'point_up_2',
+		df: _Utils_Tuple2(12, 44)
+	},
+		{
+		cg: 1,
+		aW: '👇',
+		bc: _List_fromArray(
+			['backhand index pointing down', 'fingers', 'hand', 'direction', 'down']),
+		bg: 'point_down',
+		df: _Utils_Tuple2(12, 50)
+	},
+		{
+		cg: 1,
+		aW: '👈',
+		bc: _List_fromArray(
+			['backhand index pointing left', 'direction', 'fingers', 'hand', 'left']),
+		bg: 'point_left',
+		df: _Utils_Tuple2(12, 56)
+	},
+		{
+		cg: 1,
+		aW: '👉',
+		bc: _List_fromArray(
+			['backhand index pointing right', 'fingers', 'hand', 'direction', 'right']),
+		bg: 'point_right',
+		df: _Utils_Tuple2(13, 4)
+	},
+		{
+		cg: 1,
+		aW: '👊',
+		bc: _List_fromArray(
+			['oncoming fist', 'angry', 'violence', 'fist', 'hit', 'attack', 'hand']),
+		bg: 'facepunch',
+		df: _Utils_Tuple2(13, 10)
+	},
+		{
+		cg: 1,
+		aW: '👋',
+		bc: _List_fromArray(
+			['waving hand', 'hands', 'gesture', 'goodbye', 'solong', 'farewell', 'hello', 'hi', 'palm']),
+		bg: 'wave',
+		df: _Utils_Tuple2(13, 16)
+	},
+		{
+		cg: 1,
+		aW: '👌',
+		bc: _List_fromArray(
+			['ok hand', 'fingers', 'limbs', 'perfect', 'ok', 'okay']),
+		bg: 'ok_hand',
+		df: _Utils_Tuple2(13, 22)
+	},
+		{
+		cg: 1,
+		aW: '👍',
+		bc: _List_fromArray(
+			['thumbs up', 'thumbsup', 'yes', 'awesome', 'good', 'agree', 'accept', 'cool', 'hand', 'like']),
+		bg: '+1',
+		df: _Utils_Tuple2(13, 28)
+	},
+		{
+		cg: 1,
+		aW: '👎',
+		bc: _List_fromArray(
+			['thumbs down', 'thumbsdown', 'no', 'dislike', 'hand']),
+		bg: '-1',
+		df: _Utils_Tuple2(13, 34)
+	},
+		{
+		cg: 1,
+		aW: '👏',
+		bc: _List_fromArray(
+			['clapping hands', 'hands', 'praise', 'applause', 'congrats', 'yay']),
+		bg: 'clap',
+		df: _Utils_Tuple2(13, 40)
+	},
+		{
+		cg: 1,
+		aW: '👐',
+		bc: _List_fromArray(
+			['open hands', 'fingers', 'butterfly', 'hands', 'open']),
+		bg: 'open_hands',
+		df: _Utils_Tuple2(13, 46)
+	},
+		{
+		cg: 6,
+		aW: '👑',
+		bc: _List_fromArray(
+			['crown', 'king', 'kod', 'leader', 'royalty', 'lord']),
+		bg: 'crown',
+		df: _Utils_Tuple2(13, 52)
+	},
+		{
+		cg: 6,
+		aW: '👒',
+		bc: _List_fromArray(
+			['woman s hat', 'fashion', 'accessories', 'female', 'lady', 'spring']),
+		bg: 'womans_hat',
+		df: _Utils_Tuple2(13, 53)
+	},
+		{
+		cg: 6,
+		aW: '👓',
+		bc: _List_fromArray(
+			['glasses', 'fashion', 'accessories', 'eyesight', 'nerdy', 'dork', 'geek']),
+		bg: 'eyeglasses',
+		df: _Utils_Tuple2(13, 54)
+	},
+		{
+		cg: 6,
+		aW: '👔',
+		bc: _List_fromArray(
+			['necktie', 'shirt', 'suitup', 'formal', 'fashion', 'cloth', 'business']),
+		bg: 'necktie',
+		df: _Utils_Tuple2(13, 55)
+	},
+		{
+		cg: 6,
+		aW: '👕',
+		bc: _List_fromArray(
+			['t shirt', 'fashion', 'cloth', 'casual', 'shirt', 'tee']),
+		bg: 'shirt',
+		df: _Utils_Tuple2(13, 56)
+	},
+		{
+		cg: 6,
+		aW: '👖',
+		bc: _List_fromArray(
+			['jeans', 'fashion', 'shopping']),
+		bg: 'jeans',
+		df: _Utils_Tuple2(13, 57)
+	},
+		{
+		cg: 6,
+		aW: '👗',
+		bc: _List_fromArray(
+			['dress', 'clothes', 'fashion', 'shopping']),
+		bg: 'dress',
+		df: _Utils_Tuple2(14, 0)
+	},
+		{
+		cg: 6,
+		aW: '👘',
+		bc: _List_fromArray(
+			['kimono', 'dress', 'fashion', 'women', 'female', 'japanese']),
+		bg: 'kimono',
+		df: _Utils_Tuple2(14, 1)
+	},
+		{
+		cg: 6,
+		aW: '👙',
+		bc: _List_fromArray(
+			['bikini', 'swimming', 'female', 'woman', 'girl', 'fashion', 'beach', 'summer']),
+		bg: 'bikini',
+		df: _Utils_Tuple2(14, 2)
+	},
+		{
+		cg: 6,
+		aW: '👚',
+		bc: _List_fromArray(
+			['woman s clothes', 'fashion', 'shopping bags', 'female']),
+		bg: 'womans_clothes',
+		df: _Utils_Tuple2(14, 3)
+	},
+		{
+		cg: 6,
+		aW: '👛',
+		bc: _List_fromArray(
+			['purse', 'fashion', 'accessories', 'money', 'sales', 'shopping']),
+		bg: 'purse',
+		df: _Utils_Tuple2(14, 4)
+	},
+		{
+		cg: 6,
+		aW: '👜',
+		bc: _List_fromArray(
+			['handbag', 'fashion', 'accessory', 'accessories', 'shopping']),
+		bg: 'handbag',
+		df: _Utils_Tuple2(14, 5)
+	},
+		{
+		cg: 6,
+		aW: '👝',
+		bc: _List_fromArray(
+			['clutch bag', 'bag', 'accessories', 'shopping']),
+		bg: 'pouch',
+		df: _Utils_Tuple2(14, 6)
+	},
+		{
+		cg: 6,
+		aW: '👞',
+		bc: _List_fromArray(
+			['man s shoe', 'fashion', 'male']),
+		bg: 'mans_shoe',
+		df: _Utils_Tuple2(14, 7)
+	},
+		{
+		cg: 6,
+		aW: '👟',
+		bc: _List_fromArray(
+			['running shoe', 'shoes', 'sports', 'sneakers']),
+		bg: 'athletic_shoe',
+		df: _Utils_Tuple2(14, 8)
+	},
+		{
+		cg: 6,
+		aW: '👠',
+		bc: _List_fromArray(
+			['high heeled shoe', 'fashion', 'shoes', 'female', 'pumps', 'stiletto']),
+		bg: 'high_heel',
+		df: _Utils_Tuple2(14, 9)
+	},
+		{
+		cg: 6,
+		aW: '👡',
+		bc: _List_fromArray(
+			['woman s sandal', 'shoes', 'fashion', 'flip flops']),
+		bg: 'sandal',
+		df: _Utils_Tuple2(14, 10)
+	},
+		{
+		cg: 6,
+		aW: '👢',
+		bc: _List_fromArray(
+			['woman s boot', 'shoes', 'fashion']),
+		bg: 'boot',
+		df: _Utils_Tuple2(14, 11)
+	},
+		{
+		cg: 1,
+		aW: '👣',
+		bc: _List_fromArray(
+			['footprints', 'feet', 'tracking', 'walking', 'beach']),
+		bg: 'footprints',
+		df: _Utils_Tuple2(14, 12)
+	},
+		{
+		cg: 1,
+		aW: '👤',
+		bc: _List_fromArray(
+			['bust in silhouette', 'user', 'person', 'human']),
+		bg: 'bust_in_silhouette',
+		df: _Utils_Tuple2(14, 13)
+	},
+		{
+		cg: 1,
+		aW: '👥',
+		bc: _List_fromArray(
+			['busts in silhouette', 'user', 'person', 'human', 'group', 'team']),
+		bg: 'busts_in_silhouette',
+		df: _Utils_Tuple2(14, 14)
+	},
+		{
+		cg: 1,
+		aW: '👦',
+		bc: _List_fromArray(
+			['boy', 'man', 'male', 'guy', 'teenager']),
+		bg: 'boy',
+		df: _Utils_Tuple2(14, 15)
+	},
+		{
+		cg: 1,
+		aW: '👧',
+		bc: _List_fromArray(
+			['girl', 'female', 'woman', 'teenager']),
+		bg: 'girl',
+		df: _Utils_Tuple2(14, 21)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🌾',
+		bc: _List_fromArray(
+			['man farmer', 'rancher', 'gardener', 'man', 'human']),
+		bg: 'male-farmer',
+		df: _Utils_Tuple2(14, 27)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🍳',
+		bc: _List_fromArray(
+			['man cook', 'chef', 'man', 'human']),
+		bg: 'male-cook',
+		df: _Utils_Tuple2(14, 33)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🍼',
+		bc: _List_fromArray(
+			['man feeding baby', 'birth', 'food']),
+		bg: 'man_feeding_baby',
+		df: _Utils_Tuple2(14, 39)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🎓',
+		bc: _List_fromArray(
+			['man student', 'graduate', 'man', 'human']),
+		bg: 'male-student',
+		df: _Utils_Tuple2(14, 45)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🎤',
+		bc: _List_fromArray(
+			['man singer', 'rockstar', 'entertainer', 'man', 'human']),
+		bg: 'male-singer',
+		df: _Utils_Tuple2(14, 51)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🎨',
+		bc: _List_fromArray(
+			['man artist', 'painter', 'man', 'human']),
+		bg: 'male-artist',
+		df: _Utils_Tuple2(14, 57)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🏫',
+		bc: _List_fromArray(
+			['man teacher', 'instructor', 'professor', 'man', 'human']),
+		bg: 'male-teacher',
+		df: _Utils_Tuple2(15, 5)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🏭',
+		bc: _List_fromArray(
+			['man factory worker', 'assembly', 'industrial', 'man', 'human']),
+		bg: 'male-factory-worker',
+		df: _Utils_Tuple2(15, 11)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👦\u200D👦',
+		bc: _List_fromArray(
+			['family man boy boy', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'man-boy-boy',
+		df: _Utils_Tuple2(15, 17)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👦',
+		bc: _List_fromArray(
+			['family man boy', 'home', 'parent', 'people', 'human', 'child']),
+		bg: 'man-boy',
+		df: _Utils_Tuple2(15, 18)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👧\u200D👦',
+		bc: _List_fromArray(
+			['family man girl boy', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'man-girl-boy',
+		df: _Utils_Tuple2(15, 19)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👧\u200D👧',
+		bc: _List_fromArray(
+			['family man girl girl', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'man-girl-girl',
+		df: _Utils_Tuple2(15, 20)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👧',
+		bc: _List_fromArray(
+			['family man girl', 'home', 'parent', 'people', 'human', 'child']),
+		bg: 'man-girl',
+		df: _Utils_Tuple2(15, 21)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👨\u200D👦',
+		bc: _List_fromArray(
+			['family man man boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-man-boy',
+		df: _Utils_Tuple2(15, 22)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👨\u200D👦\u200D👦',
+		bc: _List_fromArray(
+			['family man man boy boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-man-boy-boy',
+		df: _Utils_Tuple2(15, 23)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👨\u200D👧',
+		bc: _List_fromArray(
+			['family man man girl', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-man-girl',
+		df: _Utils_Tuple2(15, 24)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👨\u200D👧\u200D👦',
+		bc: _List_fromArray(
+			['family man man girl boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-man-girl-boy',
+		df: _Utils_Tuple2(15, 25)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👨\u200D👧\u200D👧',
+		bc: _List_fromArray(
+			['family man man girl girl', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-man-girl-girl',
+		df: _Utils_Tuple2(15, 26)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👩\u200D👦',
+		bc: _List_fromArray(
+			['family man woman boy']),
+		bg: 'man-woman-boy',
+		df: _Utils_Tuple2(15, 27)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👩\u200D👦\u200D👦',
+		bc: _List_fromArray(
+			['family man woman boy boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-woman-boy-boy',
+		df: _Utils_Tuple2(15, 28)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👩\u200D👧',
+		bc: _List_fromArray(
+			['family man woman girl', 'home', 'parents', 'people', 'human', 'child']),
+		bg: 'man-woman-girl',
+		df: _Utils_Tuple2(15, 29)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👩\u200D👧\u200D👦',
+		bc: _List_fromArray(
+			['family man woman girl boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-woman-girl-boy',
+		df: _Utils_Tuple2(15, 30)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D👩\u200D👧\u200D👧',
+		bc: _List_fromArray(
+			['family man woman girl girl', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'man-woman-girl-girl',
+		df: _Utils_Tuple2(15, 31)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D💻',
+		bc: _List_fromArray(
+			['man technologist', 'coder', 'developer', 'engineer', 'programmer', 'software', 'man', 'human', 'laptop', 'computer']),
+		bg: 'male-technologist',
+		df: _Utils_Tuple2(15, 32)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D💼',
+		bc: _List_fromArray(
+			['man office worker', 'business', 'manager', 'man', 'human']),
+		bg: 'male-office-worker',
+		df: _Utils_Tuple2(15, 38)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🔧',
+		bc: _List_fromArray(
+			['man mechanic', 'plumber', 'man', 'human', 'wrench']),
+		bg: 'male-mechanic',
+		df: _Utils_Tuple2(15, 44)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🔬',
+		bc: _List_fromArray(
+			['man scientist', 'biologist', 'chemist', 'engineer', 'physicist', 'man', 'human']),
+		bg: 'male-scientist',
+		df: _Utils_Tuple2(15, 50)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🚀',
+		bc: _List_fromArray(
+			['man astronaut', 'space', 'rocket', 'man', 'human']),
+		bg: 'male-astronaut',
+		df: _Utils_Tuple2(15, 56)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D🚒',
+		bc: _List_fromArray(
+			['man firefighter', 'fireman', 'man', 'human']),
+		bg: 'male-firefighter',
+		df: _Utils_Tuple2(16, 4)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDAF',
+		bc: _List_fromArray(
+			['man with probing cane']),
+		bg: 'man_with_probing_cane',
+		df: _Utils_Tuple2(16, 10)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDB0',
+		bc: _List_fromArray(
+			['man red hair']),
+		bg: 'red_haired_man',
+		df: _Utils_Tuple2(16, 16)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDB1',
+		bc: _List_fromArray(
+			['man curly hair']),
+		bg: 'curly_haired_man',
+		df: _Utils_Tuple2(16, 22)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDB2',
+		bc: _List_fromArray(
+			['man bald']),
+		bg: 'bald_man',
+		df: _Utils_Tuple2(16, 28)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDB3',
+		bc: _List_fromArray(
+			['man white hair']),
+		bg: 'white_haired_man',
+		df: _Utils_Tuple2(16, 34)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDBC',
+		bc: _List_fromArray(
+			['man in motorized wheelchair']),
+		bg: 'man_in_motorized_wheelchair',
+		df: _Utils_Tuple2(16, 40)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D\uD83E\uDDBD',
+		bc: _List_fromArray(
+			['man in manual wheelchair']),
+		bg: 'man_in_manual_wheelchair',
+		df: _Utils_Tuple2(16, 46)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D⚕️',
+		bc: _List_fromArray(
+			['man health worker', 'doctor', 'nurse', 'therapist', 'healthcare', 'man', 'human']),
+		bg: 'male-doctor',
+		df: _Utils_Tuple2(16, 52)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D⚖️',
+		bc: _List_fromArray(
+			['man judge', 'justice', 'court', 'man', 'human']),
+		bg: 'male-judge',
+		df: _Utils_Tuple2(17, 0)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D✈️',
+		bc: _List_fromArray(
+			['man pilot', 'aviator', 'plane', 'man', 'human']),
+		bg: 'male-pilot',
+		df: _Utils_Tuple2(17, 6)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D❤️\u200D👨',
+		bc: _List_fromArray(
+			['couple with heart man man', 'pair', 'love', 'like', 'affection', 'human', 'dating', 'valentines', 'marriage']),
+		bg: 'man-heart-man',
+		df: _Utils_Tuple2(17, 12)
+	},
+		{
+		cg: 1,
+		aW: '👨\u200D❤️\u200D💋\u200D👨',
+		bc: _List_fromArray(
+			['kiss man man', 'pair', 'valentines', 'love', 'like', 'dating', 'marriage']),
+		bg: 'man-kiss-man',
+		df: _Utils_Tuple2(17, 13)
+	},
+		{
+		cg: 1,
+		aW: '👨',
+		bc: _List_fromArray(
+			['man', 'mustache', 'father', 'dad', 'guy', 'classy', 'sir', 'moustache']),
+		bg: 'man',
+		df: _Utils_Tuple2(17, 14)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🌾',
+		bc: _List_fromArray(
+			['woman farmer', 'rancher', 'gardener', 'woman', 'human']),
+		bg: 'female-farmer',
+		df: _Utils_Tuple2(17, 20)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🍳',
+		bc: _List_fromArray(
+			['woman cook', 'chef', 'woman', 'human']),
+		bg: 'female-cook',
+		df: _Utils_Tuple2(17, 26)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🍼',
+		bc: _List_fromArray(
+			['woman feeding baby', 'birth', 'food']),
+		bg: 'woman_feeding_baby',
+		df: _Utils_Tuple2(17, 32)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🎓',
+		bc: _List_fromArray(
+			['woman student', 'graduate', 'woman', 'human']),
+		bg: 'female-student',
+		df: _Utils_Tuple2(17, 38)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🎤',
+		bc: _List_fromArray(
+			['woman singer', 'rockstar', 'entertainer', 'woman', 'human']),
+		bg: 'female-singer',
+		df: _Utils_Tuple2(17, 44)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🎨',
+		bc: _List_fromArray(
+			['woman artist', 'painter', 'woman', 'human']),
+		bg: 'female-artist',
+		df: _Utils_Tuple2(17, 50)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🏫',
+		bc: _List_fromArray(
+			['woman teacher', 'instructor', 'professor', 'woman', 'human']),
+		bg: 'female-teacher',
+		df: _Utils_Tuple2(17, 56)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🏭',
+		bc: _List_fromArray(
+			['woman factory worker', 'assembly', 'industrial', 'woman', 'human']),
+		bg: 'female-factory-worker',
+		df: _Utils_Tuple2(18, 4)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👦\u200D👦',
+		bc: _List_fromArray(
+			['family woman boy boy', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'woman-boy-boy',
+		df: _Utils_Tuple2(18, 10)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👦',
+		bc: _List_fromArray(
+			['family woman boy', 'home', 'parent', 'people', 'human', 'child']),
+		bg: 'woman-boy',
+		df: _Utils_Tuple2(18, 11)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👧\u200D👦',
+		bc: _List_fromArray(
+			['family woman girl boy', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'woman-girl-boy',
+		df: _Utils_Tuple2(18, 12)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👧\u200D👧',
+		bc: _List_fromArray(
+			['family woman girl girl', 'home', 'parent', 'people', 'human', 'children']),
+		bg: 'woman-girl-girl',
+		df: _Utils_Tuple2(18, 13)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👧',
+		bc: _List_fromArray(
+			['family woman girl', 'home', 'parent', 'people', 'human', 'child']),
+		bg: 'woman-girl',
+		df: _Utils_Tuple2(18, 14)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👩\u200D👦',
+		bc: _List_fromArray(
+			['family woman woman boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'woman-woman-boy',
+		df: _Utils_Tuple2(18, 15)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👩\u200D👦\u200D👦',
+		bc: _List_fromArray(
+			['family woman woman boy boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'woman-woman-boy-boy',
+		df: _Utils_Tuple2(18, 16)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👩\u200D👧',
+		bc: _List_fromArray(
+			['family woman woman girl', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'woman-woman-girl',
+		df: _Utils_Tuple2(18, 17)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👩\u200D👧\u200D👦',
+		bc: _List_fromArray(
+			['family woman woman girl boy', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'woman-woman-girl-boy',
+		df: _Utils_Tuple2(18, 18)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D👩\u200D👧\u200D👧',
+		bc: _List_fromArray(
+			['family woman woman girl girl', 'home', 'parents', 'people', 'human', 'children']),
+		bg: 'woman-woman-girl-girl',
+		df: _Utils_Tuple2(18, 19)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D💻',
+		bc: _List_fromArray(
+			['woman technologist', 'coder', 'developer', 'engineer', 'programmer', 'software', 'woman', 'human', 'laptop', 'computer']),
+		bg: 'female-technologist',
+		df: _Utils_Tuple2(18, 20)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D💼',
+		bc: _List_fromArray(
+			['woman office worker', 'business', 'manager', 'woman', 'human']),
+		bg: 'female-office-worker',
+		df: _Utils_Tuple2(18, 26)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🔧',
+		bc: _List_fromArray(
+			['woman mechanic', 'plumber', 'woman', 'human', 'wrench']),
+		bg: 'female-mechanic',
+		df: _Utils_Tuple2(18, 32)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🔬',
+		bc: _List_fromArray(
+			['woman scientist', 'biologist', 'chemist', 'engineer', 'physicist', 'woman', 'human']),
+		bg: 'female-scientist',
+		df: _Utils_Tuple2(18, 38)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🚀',
+		bc: _List_fromArray(
+			['woman astronaut', 'space', 'rocket', 'woman', 'human']),
+		bg: 'female-astronaut',
+		df: _Utils_Tuple2(18, 44)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D🚒',
+		bc: _List_fromArray(
+			['woman firefighter', 'fireman', 'woman', 'human']),
+		bg: 'female-firefighter',
+		df: _Utils_Tuple2(18, 50)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDAF',
+		bc: _List_fromArray(
+			['woman with probing cane']),
+		bg: 'woman_with_probing_cane',
+		df: _Utils_Tuple2(18, 56)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDB0',
+		bc: _List_fromArray(
+			['woman red hair']),
+		bg: 'red_haired_woman',
+		df: _Utils_Tuple2(19, 4)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDB1',
+		bc: _List_fromArray(
+			['woman curly hair']),
+		bg: 'curly_haired_woman',
+		df: _Utils_Tuple2(19, 10)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDB2',
+		bc: _List_fromArray(
+			['woman bald']),
+		bg: 'bald_woman',
+		df: _Utils_Tuple2(19, 16)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDB3',
+		bc: _List_fromArray(
+			['woman white hair']),
+		bg: 'white_haired_woman',
+		df: _Utils_Tuple2(19, 22)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDBC',
+		bc: _List_fromArray(
+			['woman in motorized wheelchair']),
+		bg: 'woman_in_motorized_wheelchair',
+		df: _Utils_Tuple2(19, 28)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D\uD83E\uDDBD',
+		bc: _List_fromArray(
+			['woman in manual wheelchair']),
+		bg: 'woman_in_manual_wheelchair',
+		df: _Utils_Tuple2(19, 34)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D⚕️',
+		bc: _List_fromArray(
+			['woman health worker', 'doctor', 'nurse', 'therapist', 'healthcare', 'woman', 'human']),
+		bg: 'female-doctor',
+		df: _Utils_Tuple2(19, 40)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D⚖️',
+		bc: _List_fromArray(
+			['woman judge', 'justice', 'court', 'woman', 'human']),
+		bg: 'female-judge',
+		df: _Utils_Tuple2(19, 46)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D✈️',
+		bc: _List_fromArray(
+			['woman pilot', 'aviator', 'plane', 'woman', 'human']),
+		bg: 'female-pilot',
+		df: _Utils_Tuple2(19, 52)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D❤️\u200D👨',
+		bc: _List_fromArray(
+			['couple with heart woman man']),
+		bg: 'woman-heart-man',
+		df: _Utils_Tuple2(20, 0)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D❤️\u200D👩',
+		bc: _List_fromArray(
+			['couple with heart woman woman', 'pair', 'love', 'like', 'affection', 'human', 'dating', 'valentines', 'marriage']),
+		bg: 'woman-heart-woman',
+		df: _Utils_Tuple2(20, 1)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D❤️\u200D💋\u200D👨',
+		bc: _List_fromArray(
+			['kiss woman man']),
+		bg: 'woman-kiss-man',
+		df: _Utils_Tuple2(20, 2)
+	},
+		{
+		cg: 1,
+		aW: '👩\u200D❤️\u200D💋\u200D👩',
+		bc: _List_fromArray(
+			['kiss woman woman', 'pair', 'valentines', 'love', 'like', 'dating', 'marriage']),
+		bg: 'woman-kiss-woman',
+		df: _Utils_Tuple2(20, 3)
+	},
+		{
+		cg: 1,
+		aW: '👩',
+		bc: _List_fromArray(
+			['woman', 'female', 'girls', 'lady']),
+		bg: 'woman',
+		df: _Utils_Tuple2(20, 4)
+	},
+		{
+		cg: 1,
+		aW: '👪',
+		bc: _List_fromArray(
+			['family', 'home', 'parents', 'child', 'mom', 'dad', 'father', 'mother', 'people', 'human']),
+		bg: 'family',
+		df: _Utils_Tuple2(20, 10)
+	},
+		{
+		cg: 1,
+		aW: '👫',
+		bc: _List_fromArray(
+			['woman and man holding hands', 'pair', 'people', 'human', 'love', 'date', 'dating', 'like', 'affection', 'valentines', 'marriage']),
+		bg: 'couple',
+		df: _Utils_Tuple2(20, 11)
+	},
+		{
+		cg: 1,
+		aW: '👬',
+		bc: _List_fromArray(
+			['men holding hands', 'pair', 'couple', 'love', 'like', 'bromance', 'friendship', 'people', 'human']),
+		bg: 'two_men_holding_hands',
+		df: _Utils_Tuple2(20, 37)
+	},
+		{
+		cg: 1,
+		aW: '👭',
+		bc: _List_fromArray(
+			['women holding hands', 'pair', 'friendship', 'couple', 'love', 'like', 'female', 'people', 'human']),
+		bg: 'two_women_holding_hands',
+		df: _Utils_Tuple2(21, 5)
+	},
+		{
+		cg: 1,
+		aW: '👮\u200D♀️',
+		bc: _List_fromArray(
+			['woman police officer', 'woman', 'police', 'law', 'legal', 'enforcement', 'arrest', '911', 'female']),
+		bg: 'female-police-officer',
+		df: _Utils_Tuple2(21, 31)
+	},
+		{
+		cg: 1,
+		aW: '👮\u200D♂️',
+		bc: _List_fromArray(
+			['man police officer', 'man', 'police', 'law', 'legal', 'enforcement', 'arrest', '911']),
+		bg: 'male-police-officer',
+		df: _Utils_Tuple2(21, 37)
+	},
+		{
+		cg: 1,
+		aW: '👮',
+		bc: _List_fromArray(
+			['police officer']),
+		bg: 'cop',
+		df: _Utils_Tuple2(21, 43)
+	},
+		{
+		cg: 1,
+		aW: '👯\u200D♀️',
+		bc: _List_fromArray(
+			['women with bunny ears', 'female', 'bunny', 'women', 'girls']),
+		bg: 'woman-with-bunny-ears-partying',
+		df: _Utils_Tuple2(21, 49)
+	},
+		{
+		cg: 1,
+		aW: '👯\u200D♂️',
+		bc: _List_fromArray(
+			['men with bunny ears', 'male', 'bunny', 'men', 'boys']),
+		bg: 'man-with-bunny-ears-partying',
+		df: _Utils_Tuple2(21, 50)
+	},
+		{
+		cg: 1,
+		aW: '👯',
+		bc: _List_fromArray(
+			['people with bunny ears']),
+		bg: 'dancers',
+		df: _Utils_Tuple2(21, 51)
+	},
+		{
+		cg: 1,
+		aW: '👰\u200D♀️',
+		bc: _List_fromArray(
+			['woman with veil', 'wedding', 'marriage']),
+		bg: 'woman_with_veil',
+		df: _Utils_Tuple2(21, 52)
+	},
+		{
+		cg: 1,
+		aW: '👰\u200D♂️',
+		bc: _List_fromArray(
+			['man with veil', 'wedding', 'marriage']),
+		bg: 'man_with_veil',
+		df: _Utils_Tuple2(22, 0)
+	},
+		{
+		cg: 1,
+		aW: '👰',
+		bc: _List_fromArray(
+			['bride with veil', 'couple', 'marriage', 'wedding', 'woman', 'bride']),
+		bg: 'bride_with_veil',
+		df: _Utils_Tuple2(22, 6)
+	},
+		{
+		cg: 1,
+		aW: '👱\u200D♀️',
+		bc: _List_fromArray(
+			['woman blond hair', 'woman', 'female', 'girl', 'blonde', 'person']),
+		bg: 'blond-haired-woman',
+		df: _Utils_Tuple2(22, 12)
+	},
+		{
+		cg: 1,
+		aW: '👱\u200D♂️',
+		bc: _List_fromArray(
+			['man blond hair', 'man', 'male', 'boy', 'blonde', 'guy', 'person']),
+		bg: 'blond-haired-man',
+		df: _Utils_Tuple2(22, 18)
+	},
+		{
+		cg: 1,
+		aW: '👱',
+		bc: _List_fromArray(
+			['person blond hair']),
+		bg: 'person_with_blond_hair',
+		df: _Utils_Tuple2(22, 24)
+	},
+		{
+		cg: 1,
+		aW: '👲',
+		bc: _List_fromArray(
+			['man with skullcap', 'male', 'boy', 'chinese']),
+		bg: 'man_with_gua_pi_mao',
+		df: _Utils_Tuple2(22, 30)
+	},
+		{
+		cg: 1,
+		aW: '👳\u200D♀️',
+		bc: _List_fromArray(
+			['woman wearing turban', 'female', 'indian', 'hinduism', 'arabs', 'woman']),
+		bg: 'woman-wearing-turban',
+		df: _Utils_Tuple2(22, 36)
+	},
+		{
+		cg: 1,
+		aW: '👳\u200D♂️',
+		bc: _List_fromArray(
+			['man wearing turban', 'male', 'indian', 'hinduism', 'arabs']),
+		bg: 'man-wearing-turban',
+		df: _Utils_Tuple2(22, 42)
+	},
+		{
+		cg: 1,
+		aW: '👳',
+		bc: _List_fromArray(
+			['person wearing turban']),
+		bg: 'man_with_turban',
+		df: _Utils_Tuple2(22, 48)
+	},
+		{
+		cg: 1,
+		aW: '👴',
+		bc: _List_fromArray(
+			['old man', 'human', 'male', 'men', 'old', 'elder', 'senior']),
+		bg: 'older_man',
+		df: _Utils_Tuple2(22, 54)
+	},
+		{
+		cg: 1,
+		aW: '👵',
+		bc: _List_fromArray(
+			['old woman', 'human', 'female', 'women', 'lady', 'old', 'elder', 'senior']),
+		bg: 'older_woman',
+		df: _Utils_Tuple2(23, 2)
+	},
+		{
+		cg: 1,
+		aW: '👶',
+		bc: _List_fromArray(
+			['baby', 'child', 'boy', 'girl', 'toddler']),
+		bg: 'baby',
+		df: _Utils_Tuple2(23, 8)
+	},
+		{
+		cg: 1,
+		aW: '👷\u200D♀️',
+		bc: _List_fromArray(
+			['woman construction worker', 'female', 'human', 'wip', 'build', 'construction', 'worker', 'labor', 'woman']),
+		bg: 'female-construction-worker',
+		df: _Utils_Tuple2(23, 14)
+	},
+		{
+		cg: 1,
+		aW: '👷\u200D♂️',
+		bc: _List_fromArray(
+			['man construction worker', 'male', 'human', 'wip', 'guy', 'build', 'construction', 'worker', 'labor']),
+		bg: 'male-construction-worker',
+		df: _Utils_Tuple2(23, 20)
+	},
+		{
+		cg: 1,
+		aW: '👷',
+		bc: _List_fromArray(
+			['construction worker']),
+		bg: 'construction_worker',
+		df: _Utils_Tuple2(23, 26)
+	},
+		{
+		cg: 1,
+		aW: '👸',
+		bc: _List_fromArray(
+			['princess', 'girl', 'woman', 'female', 'blond', 'crown', 'royal', 'queen']),
+		bg: 'princess',
+		df: _Utils_Tuple2(23, 32)
+	},
+		{
+		cg: 0,
+		aW: '👹',
+		bc: _List_fromArray(
+			['ogre', 'monster', 'red', 'mask', 'halloween', 'scary', 'creepy', 'devil', 'demon', 'japanese', 'ogre']),
+		bg: 'japanese_ogre',
+		df: _Utils_Tuple2(23, 38)
+	},
+		{
+		cg: 0,
+		aW: '👺',
+		bc: _List_fromArray(
+			['goblin', 'red', 'evil', 'mask', 'monster', 'scary', 'creepy', 'japanese', 'goblin']),
+		bg: 'japanese_goblin',
+		df: _Utils_Tuple2(23, 39)
+	},
+		{
+		cg: 0,
+		aW: '👻',
+		bc: _List_fromArray(
+			['ghost', 'halloween', 'spooky', 'scary']),
+		bg: 'ghost',
+		df: _Utils_Tuple2(23, 40)
+	},
+		{
+		cg: 1,
+		aW: '👼',
+		bc: _List_fromArray(
+			['baby angel', 'heaven', 'wings', 'halo']),
+		bg: 'angel',
+		df: _Utils_Tuple2(23, 41)
+	},
+		{
+		cg: 0,
+		aW: '👽',
+		bc: _List_fromArray(
+			['alien', 'UFO', 'paul', 'weird', 'outer space']),
+		bg: 'alien',
+		df: _Utils_Tuple2(23, 47)
+	},
+		{
+		cg: 0,
+		aW: '👾',
+		bc: _List_fromArray(
+			['alien monster', 'game', 'arcade', 'play']),
+		bg: 'space_invader',
+		df: _Utils_Tuple2(23, 48)
+	},
+		{
+		cg: 0,
+		aW: '👿',
+		bc: _List_fromArray(
+			['angry face with horns', 'devil', 'angry', 'horns']),
+		bg: 'imp',
+		df: _Utils_Tuple2(23, 49)
+	},
+		{
+		cg: 0,
+		aW: '💀',
+		bc: _List_fromArray(
+			['skull', 'dead', 'skeleton', 'creepy', 'death']),
+		bg: 'skull',
+		df: _Utils_Tuple2(23, 50)
+	},
+		{
+		cg: 1,
+		aW: '💁\u200D♀️',
+		bc: _List_fromArray(
+			['woman tipping hand', 'female', 'girl', 'woman', 'human', 'information']),
+		bg: 'woman-tipping-hand',
+		df: _Utils_Tuple2(23, 51)
+	},
+		{
+		cg: 1,
+		aW: '💁\u200D♂️',
+		bc: _List_fromArray(
+			['man tipping hand', 'male', 'boy', 'man', 'human', 'information']),
+		bg: 'man-tipping-hand',
+		df: _Utils_Tuple2(23, 57)
+	},
+		{
+		cg: 1,
+		aW: '💁',
+		bc: _List_fromArray(
+			['person tipping hand']),
+		bg: 'information_desk_person',
+		df: _Utils_Tuple2(24, 5)
+	},
+		{
+		cg: 1,
+		aW: '💂\u200D♀️',
+		bc: _List_fromArray(
+			['woman guard', 'uk', 'gb', 'british', 'female', 'royal', 'woman']),
+		bg: 'female-guard',
+		df: _Utils_Tuple2(24, 11)
+	},
+		{
+		cg: 1,
+		aW: '💂\u200D♂️',
+		bc: _List_fromArray(
+			['man guard', 'uk', 'gb', 'british', 'male', 'guy', 'royal']),
+		bg: 'male-guard',
+		df: _Utils_Tuple2(24, 17)
+	},
+		{
+		cg: 1,
+		aW: '💂',
+		bc: _List_fromArray(
+			['guard']),
+		bg: 'guardsman',
+		df: _Utils_Tuple2(24, 23)
+	},
+		{
+		cg: 1,
+		aW: '💃',
+		bc: _List_fromArray(
+			['woman dancing', 'female', 'girl', 'woman', 'fun']),
+		bg: 'dancer',
+		df: _Utils_Tuple2(24, 29)
+	},
+		{
+		cg: 6,
+		aW: '💄',
+		bc: _List_fromArray(
+			['lipstick', 'female', 'girl', 'fashion', 'woman']),
+		bg: 'lipstick',
+		df: _Utils_Tuple2(24, 35)
+	},
+		{
+		cg: 1,
+		aW: '💅',
+		bc: _List_fromArray(
+			['nail polish', 'beauty', 'manicure', 'finger', 'fashion', 'nail']),
+		bg: 'nail_care',
+		df: _Utils_Tuple2(24, 36)
+	},
+		{
+		cg: 1,
+		aW: '💆\u200D♀️',
+		bc: _List_fromArray(
+			['woman getting massage', 'female', 'girl', 'woman', 'head']),
+		bg: 'woman-getting-massage',
+		df: _Utils_Tuple2(24, 42)
+	},
+		{
+		cg: 1,
+		aW: '💆\u200D♂️',
+		bc: _List_fromArray(
+			['man getting massage', 'male', 'boy', 'man', 'head']),
+		bg: 'man-getting-massage',
+		df: _Utils_Tuple2(24, 48)
+	},
+		{
+		cg: 1,
+		aW: '💆',
+		bc: _List_fromArray(
+			['person getting massage']),
+		bg: 'massage',
+		df: _Utils_Tuple2(24, 54)
+	},
+		{
+		cg: 1,
+		aW: '💇\u200D♀️',
+		bc: _List_fromArray(
+			['woman getting haircut', 'female', 'girl', 'woman']),
+		bg: 'woman-getting-haircut',
+		df: _Utils_Tuple2(25, 2)
+	},
+		{
+		cg: 1,
+		aW: '💇\u200D♂️',
+		bc: _List_fromArray(
+			['man getting haircut', 'male', 'boy', 'man']),
+		bg: 'man-getting-haircut',
+		df: _Utils_Tuple2(25, 8)
+	},
+		{
+		cg: 1,
+		aW: '💇',
+		bc: _List_fromArray(
+			['person getting haircut']),
+		bg: 'haircut',
+		df: _Utils_Tuple2(25, 14)
+	},
+		{
+		cg: 4,
+		aW: '💈',
+		bc: _List_fromArray(
+			['barber pole', 'hair', 'salon', 'style']),
+		bg: 'barber',
+		df: _Utils_Tuple2(25, 20)
+	},
+		{
+		cg: 6,
+		aW: '💉',
+		bc: _List_fromArray(
+			['syringe', 'health', 'hospital', 'drugs', 'blood', 'medicine', 'needle', 'doctor', 'nurse']),
+		bg: 'syringe',
+		df: _Utils_Tuple2(25, 21)
+	},
+		{
+		cg: 6,
+		aW: '💊',
+		bc: _List_fromArray(
+			['pill', 'health', 'medicine', 'doctor', 'pharmacy', 'drug']),
+		bg: 'pill',
+		df: _Utils_Tuple2(25, 22)
+	},
+		{
+		cg: 0,
+		aW: '💋',
+		bc: _List_fromArray(
+			['kiss mark', 'face', 'lips', 'love', 'like', 'affection', 'valentines']),
+		bg: 'kiss',
+		df: _Utils_Tuple2(25, 23)
+	},
+		{
+		cg: 0,
+		aW: '💌',
+		bc: _List_fromArray(
+			['love letter', 'email', 'like', 'affection', 'envelope', 'valentines']),
+		bg: 'love_letter',
+		df: _Utils_Tuple2(25, 24)
+	},
+		{
+		cg: 6,
+		aW: '💍',
+		bc: _List_fromArray(
+			['ring', 'wedding', 'propose', 'marriage', 'valentines', 'diamond', 'fashion', 'jewelry', 'gem', 'engagement']),
+		bg: 'ring',
+		df: _Utils_Tuple2(25, 25)
+	},
+		{
+		cg: 6,
+		aW: '💎',
+		bc: _List_fromArray(
+			['gem stone', 'blue', 'ruby', 'diamond', 'jewelry']),
+		bg: 'gem',
+		df: _Utils_Tuple2(25, 26)
+	},
+		{
+		cg: 1,
+		aW: '💏',
+		bc: _List_fromArray(
+			['kiss', 'pair', 'valentines', 'love', 'like', 'dating', 'marriage']),
+		bg: 'couplekiss',
+		df: _Utils_Tuple2(25, 27)
+	},
+		{
+		cg: 2,
+		aW: '💐',
+		bc: _List_fromArray(
+			['bouquet', 'flowers', 'nature', 'spring']),
+		bg: 'bouquet',
+		df: _Utils_Tuple2(25, 28)
+	},
+		{
+		cg: 1,
+		aW: '💑',
+		bc: _List_fromArray(
+			['couple with heart', 'pair', 'love', 'like', 'affection', 'human', 'dating', 'valentines', 'marriage']),
+		bg: 'couple_with_heart',
+		df: _Utils_Tuple2(25, 29)
+	},
+		{
+		cg: 4,
+		aW: '💒',
+		bc: _List_fromArray(
+			['wedding', 'love', 'like', 'affection', 'couple', 'marriage', 'bride', 'groom']),
+		bg: 'wedding',
+		df: _Utils_Tuple2(25, 30)
+	},
+		{
+		cg: 0,
+		aW: '💓',
+		bc: _List_fromArray(
+			['beating heart', 'love', 'like', 'affection', 'valentines', 'pink', 'heart']),
+		bg: 'heartbeat',
+		df: _Utils_Tuple2(25, 31)
+	},
+		{
+		cg: 0,
+		aW: '💔',
+		bc: _List_fromArray(
+			['broken heart', 'sad', 'sorry', 'break', 'heart', 'heartbreak']),
+		bg: 'broken_heart',
+		df: _Utils_Tuple2(25, 32)
+	},
+		{
+		cg: 0,
+		aW: '💕',
+		bc: _List_fromArray(
+			['two hearts', 'love', 'like', 'affection', 'valentines', 'heart']),
+		bg: 'two_hearts',
+		df: _Utils_Tuple2(25, 33)
+	},
+		{
+		cg: 0,
+		aW: '💖',
+		bc: _List_fromArray(
+			['sparkling heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'sparkling_heart',
+		df: _Utils_Tuple2(25, 34)
+	},
+		{
+		cg: 0,
+		aW: '💗',
+		bc: _List_fromArray(
+			['growing heart', 'like', 'love', 'affection', 'valentines', 'pink']),
+		bg: 'heartpulse',
+		df: _Utils_Tuple2(25, 35)
+	},
+		{
+		cg: 0,
+		aW: '💘',
+		bc: _List_fromArray(
+			['heart with arrow', 'love', 'like', 'heart', 'affection', 'valentines']),
+		bg: 'cupid',
+		df: _Utils_Tuple2(25, 36)
+	},
+		{
+		cg: 0,
+		aW: '💙',
+		bc: _List_fromArray(
+			['blue heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'blue_heart',
+		df: _Utils_Tuple2(25, 37)
+	},
+		{
+		cg: 0,
+		aW: '💚',
+		bc: _List_fromArray(
+			['green heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'green_heart',
+		df: _Utils_Tuple2(25, 38)
+	},
+		{
+		cg: 0,
+		aW: '💛',
+		bc: _List_fromArray(
+			['yellow heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'yellow_heart',
+		df: _Utils_Tuple2(25, 39)
+	},
+		{
+		cg: 0,
+		aW: '💜',
+		bc: _List_fromArray(
+			['purple heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'purple_heart',
+		df: _Utils_Tuple2(25, 40)
+	},
+		{
+		cg: 0,
+		aW: '💝',
+		bc: _List_fromArray(
+			['heart with ribbon', 'love', 'valentines']),
+		bg: 'gift_heart',
+		df: _Utils_Tuple2(25, 41)
+	},
+		{
+		cg: 0,
+		aW: '💞',
+		bc: _List_fromArray(
+			['revolving hearts', 'love', 'like', 'affection', 'valentines']),
+		bg: 'revolving_hearts',
+		df: _Utils_Tuple2(25, 42)
+	},
+		{
+		cg: 0,
+		aW: '💟',
+		bc: _List_fromArray(
+			['heart decoration', 'purple square', 'love', 'like']),
+		bg: 'heart_decoration',
+		df: _Utils_Tuple2(25, 43)
+	},
+		{
+		cg: 7,
+		aW: '💠',
+		bc: _List_fromArray(
+			['diamond with a dot', 'jewel', 'blue', 'gem', 'crystal', 'fancy']),
+		bg: 'diamond_shape_with_a_dot_inside',
+		df: _Utils_Tuple2(25, 44)
+	},
+		{
+		cg: 6,
+		aW: '💡',
+		bc: _List_fromArray(
+			['light bulb', 'light', 'electricity', 'idea']),
+		bg: 'bulb',
+		df: _Utils_Tuple2(25, 45)
+	},
+		{
+		cg: 0,
+		aW: '💢',
+		bc: _List_fromArray(
+			['anger symbol', 'angry', 'mad']),
+		bg: 'anger',
+		df: _Utils_Tuple2(25, 46)
+	},
+		{
+		cg: 0,
+		aW: '💣',
+		bc: _List_fromArray(
+			['bomb', 'boom', 'explode', 'explosion', 'terrorism']),
+		bg: 'bomb',
+		df: _Utils_Tuple2(25, 47)
+	},
+		{
+		cg: 0,
+		aW: '💤',
+		bc: _List_fromArray(
+			['zzz', 'sleepy', 'tired', 'dream']),
+		bg: 'zzz',
+		df: _Utils_Tuple2(25, 48)
+	},
+		{
+		cg: 0,
+		aW: '💥',
+		bc: _List_fromArray(
+			['collision', 'bomb', 'explode', 'explosion', 'collision', 'blown']),
+		bg: 'boom',
+		df: _Utils_Tuple2(25, 49)
+	},
+		{
+		cg: 0,
+		aW: '💦',
+		bc: _List_fromArray(
+			['sweat droplets', 'water', 'drip', 'oops']),
+		bg: 'sweat_drops',
+		df: _Utils_Tuple2(25, 50)
+	},
+		{
+		cg: 4,
+		aW: '💧',
+		bc: _List_fromArray(
+			['droplet', 'water', 'drip', 'faucet', 'spring']),
+		bg: 'droplet',
+		df: _Utils_Tuple2(25, 51)
+	},
+		{
+		cg: 0,
+		aW: '💨',
+		bc: _List_fromArray(
+			['dashing away', 'wind', 'air', 'fast', 'shoo', 'fart', 'smoke', 'puff']),
+		bg: 'dash',
+		df: _Utils_Tuple2(25, 52)
+	},
+		{
+		cg: 0,
+		aW: '💩',
+		bc: _List_fromArray(
+			['pile of poo', 'hankey', 'shitface', 'fail', 'turd', 'shit']),
+		bg: 'hankey',
+		df: _Utils_Tuple2(25, 53)
+	},
+		{
+		cg: 1,
+		aW: '💪',
+		bc: _List_fromArray(
+			['flexed biceps', 'arm', 'flex', 'hand', 'summer', 'strong', 'biceps']),
+		bg: 'muscle',
+		df: _Utils_Tuple2(25, 54)
+	},
+		{
+		cg: 0,
+		aW: '💫',
+		bc: _List_fromArray(
+			['dizzy', 'star', 'sparkle', 'shoot', 'magic']),
+		bg: 'dizzy',
+		df: _Utils_Tuple2(26, 2)
+	},
+		{
+		cg: 0,
+		aW: '💬',
+		bc: _List_fromArray(
+			['speech balloon', 'bubble', 'words', 'message', 'talk', 'chatting']),
+		bg: 'speech_balloon',
+		df: _Utils_Tuple2(26, 3)
+	},
+		{
+		cg: 0,
+		aW: '💭',
+		bc: _List_fromArray(
+			['thought balloon', 'bubble', 'cloud', 'speech', 'thinking', 'dream']),
+		bg: 'thought_balloon',
+		df: _Utils_Tuple2(26, 4)
+	},
+		{
+		cg: 2,
+		aW: '💮',
+		bc: _List_fromArray(
+			['white flower', 'japanese', 'spring']),
+		bg: 'white_flower',
+		df: _Utils_Tuple2(26, 5)
+	},
+		{
+		cg: 0,
+		aW: '💯',
+		bc: _List_fromArray(
+			['hundred points', 'score', 'perfect', 'numbers', 'century', 'exam', 'quiz', 'test', 'pass', 'hundred']),
+		bg: '100',
+		df: _Utils_Tuple2(26, 6)
+	},
+		{
+		cg: 6,
+		aW: '💰',
+		bc: _List_fromArray(
+			['money bag', 'dollar', 'payment', 'coins', 'sale']),
+		bg: 'moneybag',
+		df: _Utils_Tuple2(26, 7)
+	},
+		{
+		cg: 7,
+		aW: '💱',
+		bc: _List_fromArray(
+			['currency exchange', 'money', 'sales', 'dollar', 'travel']),
+		bg: 'currency_exchange',
+		df: _Utils_Tuple2(26, 8)
+	},
+		{
+		cg: 7,
+		aW: '💲',
+		bc: _List_fromArray(
+			['heavy dollar sign', 'money', 'sales', 'payment', 'currency', 'buck']),
+		bg: 'heavy_dollar_sign',
+		df: _Utils_Tuple2(26, 9)
+	},
+		{
+		cg: 6,
+		aW: '💳',
+		bc: _List_fromArray(
+			['credit card', 'money', 'sales', 'dollar', 'bill', 'payment', 'shopping']),
+		bg: 'credit_card',
+		df: _Utils_Tuple2(26, 10)
+	},
+		{
+		cg: 6,
+		aW: '💴',
+		bc: _List_fromArray(
+			['yen banknote', 'money', 'sales', 'japanese', 'dollar', 'currency']),
+		bg: 'yen',
+		df: _Utils_Tuple2(26, 11)
+	},
+		{
+		cg: 6,
+		aW: '💵',
+		bc: _List_fromArray(
+			['dollar banknote', 'money', 'sales', 'bill', 'currency']),
+		bg: 'dollar',
+		df: _Utils_Tuple2(26, 12)
+	},
+		{
+		cg: 6,
+		aW: '💶',
+		bc: _List_fromArray(
+			['euro banknote', 'money', 'sales', 'dollar', 'currency']),
+		bg: 'euro',
+		df: _Utils_Tuple2(26, 13)
+	},
+		{
+		cg: 6,
+		aW: '💷',
+		bc: _List_fromArray(
+			['pound banknote', 'british', 'sterling', 'money', 'sales', 'bills', 'uk', 'england', 'currency']),
+		bg: 'pound',
+		df: _Utils_Tuple2(26, 14)
+	},
+		{
+		cg: 6,
+		aW: '💸',
+		bc: _List_fromArray(
+			['money with wings', 'dollar', 'bills', 'payment', 'sale']),
+		bg: 'money_with_wings',
+		df: _Utils_Tuple2(26, 15)
+	},
+		{
+		cg: 6,
+		aW: '💹',
+		bc: _List_fromArray(
+			['chart increasing with yen', 'green square', 'graph', 'presentation', 'stats']),
+		bg: 'chart',
+		df: _Utils_Tuple2(26, 16)
+	},
+		{
+		cg: 4,
+		aW: '💺',
+		bc: _List_fromArray(
+			['seat', 'sit', 'airplane', 'transport', 'bus', 'flight', 'fly']),
+		bg: 'seat',
+		df: _Utils_Tuple2(26, 17)
+	},
+		{
+		cg: 6,
+		aW: '💻',
+		bc: _List_fromArray(
+			['laptop', 'technology', 'laptop', 'screen', 'display', 'monitor']),
+		bg: 'computer',
+		df: _Utils_Tuple2(26, 18)
+	},
+		{
+		cg: 6,
+		aW: '💼',
+		bc: _List_fromArray(
+			['briefcase', 'business', 'documents', 'work', 'law', 'legal', 'job', 'career']),
+		bg: 'briefcase',
+		df: _Utils_Tuple2(26, 19)
+	},
+		{
+		cg: 6,
+		aW: '💽',
+		bc: _List_fromArray(
+			['computer disk', 'technology', 'record', 'data', 'disk', '90s']),
+		bg: 'minidisc',
+		df: _Utils_Tuple2(26, 20)
+	},
+		{
+		cg: 6,
+		aW: '💾',
+		bc: _List_fromArray(
+			['floppy disk', 'oldschool', 'technology', 'save', '90s', '80s']),
+		bg: 'floppy_disk',
+		df: _Utils_Tuple2(26, 21)
+	},
+		{
+		cg: 6,
+		aW: '💿',
+		bc: _List_fromArray(
+			['optical disk', 'technology', 'dvd', 'disk', 'disc', '90s']),
+		bg: 'cd',
+		df: _Utils_Tuple2(26, 22)
+	},
+		{
+		cg: 6,
+		aW: '📀',
+		bc: _List_fromArray(
+			['dvd', 'cd', 'disk', 'disc']),
+		bg: 'dvd',
+		df: _Utils_Tuple2(26, 23)
+	},
+		{
+		cg: 6,
+		aW: '📁',
+		bc: _List_fromArray(
+			['file folder', 'documents', 'business', 'office']),
+		bg: 'file_folder',
+		df: _Utils_Tuple2(26, 24)
+	},
+		{
+		cg: 6,
+		aW: '📂',
+		bc: _List_fromArray(
+			['open file folder', 'documents', 'load']),
+		bg: 'open_file_folder',
+		df: _Utils_Tuple2(26, 25)
+	},
+		{
+		cg: 6,
+		aW: '📃',
+		bc: _List_fromArray(
+			['page with curl', 'documents', 'office', 'paper']),
+		bg: 'page_with_curl',
+		df: _Utils_Tuple2(26, 26)
+	},
+		{
+		cg: 6,
+		aW: '📄',
+		bc: _List_fromArray(
+			['page facing up', 'documents', 'office', 'paper', 'information']),
+		bg: 'page_facing_up',
+		df: _Utils_Tuple2(26, 27)
+	},
+		{
+		cg: 6,
+		aW: '📅',
+		bc: _List_fromArray(
+			['calendar', 'calendar', 'schedule']),
+		bg: 'date',
+		df: _Utils_Tuple2(26, 28)
+	},
+		{
+		cg: 6,
+		aW: '📆',
+		bc: _List_fromArray(
+			['tear off calendar', 'schedule', 'date', 'planning']),
+		bg: 'calendar',
+		df: _Utils_Tuple2(26, 29)
+	},
+		{
+		cg: 6,
+		aW: '📇',
+		bc: _List_fromArray(
+			['card index', 'business', 'stationery']),
+		bg: 'card_index',
+		df: _Utils_Tuple2(26, 30)
+	},
+		{
+		cg: 6,
+		aW: '📈',
+		bc: _List_fromArray(
+			['chart increasing', 'graph', 'presentation', 'stats', 'recovery', 'business', 'economics', 'money', 'sales', 'good', 'success']),
+		bg: 'chart_with_upwards_trend',
+		df: _Utils_Tuple2(26, 31)
+	},
+		{
+		cg: 6,
+		aW: '📉',
+		bc: _List_fromArray(
+			['chart decreasing', 'graph', 'presentation', 'stats', 'recession', 'business', 'economics', 'money', 'sales', 'bad', 'failure']),
+		bg: 'chart_with_downwards_trend',
+		df: _Utils_Tuple2(26, 32)
+	},
+		{
+		cg: 6,
+		aW: '📊',
+		bc: _List_fromArray(
+			['bar chart', 'graph', 'presentation', 'stats']),
+		bg: 'bar_chart',
+		df: _Utils_Tuple2(26, 33)
+	},
+		{
+		cg: 6,
+		aW: '📋',
+		bc: _List_fromArray(
+			['clipboard', 'stationery', 'documents']),
+		bg: 'clipboard',
+		df: _Utils_Tuple2(26, 34)
+	},
+		{
+		cg: 6,
+		aW: '📌',
+		bc: _List_fromArray(
+			['pushpin', 'stationery', 'mark', 'here']),
+		bg: 'pushpin',
+		df: _Utils_Tuple2(26, 35)
+	},
+		{
+		cg: 6,
+		aW: '📍',
+		bc: _List_fromArray(
+			['round pushpin', 'stationery', 'location', 'map', 'here']),
+		bg: 'round_pushpin',
+		df: _Utils_Tuple2(26, 36)
+	},
+		{
+		cg: 6,
+		aW: '📎',
+		bc: _List_fromArray(
+			['paperclip', 'documents', 'stationery']),
+		bg: 'paperclip',
+		df: _Utils_Tuple2(26, 37)
+	},
+		{
+		cg: 6,
+		aW: '📏',
+		bc: _List_fromArray(
+			['straight ruler', 'stationery', 'calculate', 'length', 'math', 'school', 'drawing', 'architect', 'sketch']),
+		bg: 'straight_ruler',
+		df: _Utils_Tuple2(26, 38)
+	},
+		{
+		cg: 6,
+		aW: '📐',
+		bc: _List_fromArray(
+			['triangular ruler', 'stationery', 'math', 'architect', 'sketch']),
+		bg: 'triangular_ruler',
+		df: _Utils_Tuple2(26, 39)
+	},
+		{
+		cg: 6,
+		aW: '📑',
+		bc: _List_fromArray(
+			['bookmark tabs', 'favorite', 'save', 'order', 'tidy']),
+		bg: 'bookmark_tabs',
+		df: _Utils_Tuple2(26, 40)
+	},
+		{
+		cg: 6,
+		aW: '📒',
+		bc: _List_fromArray(
+			['ledger', 'notes', 'paper']),
+		bg: 'ledger',
+		df: _Utils_Tuple2(26, 41)
+	},
+		{
+		cg: 6,
+		aW: '📓',
+		bc: _List_fromArray(
+			['notebook', 'stationery', 'record', 'notes', 'paper', 'study']),
+		bg: 'notebook',
+		df: _Utils_Tuple2(26, 42)
+	},
+		{
+		cg: 6,
+		aW: '📔',
+		bc: _List_fromArray(
+			['notebook with decorative cover', 'classroom', 'notes', 'record', 'paper', 'study']),
+		bg: 'notebook_with_decorative_cover',
+		df: _Utils_Tuple2(26, 43)
+	},
+		{
+		cg: 6,
+		aW: '📕',
+		bc: _List_fromArray(
+			['closed book', 'read', 'library', 'knowledge', 'textbook', 'learn']),
+		bg: 'closed_book',
+		df: _Utils_Tuple2(26, 44)
+	},
+		{
+		cg: 6,
+		aW: '📖',
+		bc: _List_fromArray(
+			['open book', 'book', 'read', 'library', 'knowledge', 'literature', 'learn', 'study']),
+		bg: 'book',
+		df: _Utils_Tuple2(26, 45)
+	},
+		{
+		cg: 6,
+		aW: '📗',
+		bc: _List_fromArray(
+			['green book', 'read', 'library', 'knowledge', 'study']),
+		bg: 'green_book',
+		df: _Utils_Tuple2(26, 46)
+	},
+		{
+		cg: 6,
+		aW: '📘',
+		bc: _List_fromArray(
+			['blue book', 'read', 'library', 'knowledge', 'learn', 'study']),
+		bg: 'blue_book',
+		df: _Utils_Tuple2(26, 47)
+	},
+		{
+		cg: 6,
+		aW: '📙',
+		bc: _List_fromArray(
+			['orange book', 'read', 'library', 'knowledge', 'textbook', 'study']),
+		bg: 'orange_book',
+		df: _Utils_Tuple2(26, 48)
+	},
+		{
+		cg: 6,
+		aW: '📚',
+		bc: _List_fromArray(
+			['books', 'literature', 'library', 'study']),
+		bg: 'books',
+		df: _Utils_Tuple2(26, 49)
+	},
+		{
+		cg: 7,
+		aW: '📛',
+		bc: _List_fromArray(
+			['name badge', 'fire', 'forbid']),
+		bg: 'name_badge',
+		df: _Utils_Tuple2(26, 50)
+	},
+		{
+		cg: 6,
+		aW: '📜',
+		bc: _List_fromArray(
+			['scroll', 'documents', 'ancient', 'history', 'paper']),
+		bg: 'scroll',
+		df: _Utils_Tuple2(26, 51)
+	},
+		{
+		cg: 6,
+		aW: '📝',
+		bc: _List_fromArray(
+			['memo', 'write', 'documents', 'stationery', 'pencil', 'paper', 'writing', 'legal', 'exam', 'quiz', 'test', 'study', 'compose']),
+		bg: 'memo',
+		df: _Utils_Tuple2(26, 52)
+	},
+		{
+		cg: 6,
+		aW: '📞',
+		bc: _List_fromArray(
+			['telephone receiver', 'technology', 'communication', 'dial']),
+		bg: 'telephone_receiver',
+		df: _Utils_Tuple2(26, 53)
+	},
+		{
+		cg: 6,
+		aW: '📟',
+		bc: _List_fromArray(
+			['pager', 'bbcall', 'oldschool', '90s']),
+		bg: 'pager',
+		df: _Utils_Tuple2(26, 54)
+	},
+		{
+		cg: 6,
+		aW: '📠',
+		bc: _List_fromArray(
+			['fax machine', 'communication', 'technology']),
+		bg: 'fax',
+		df: _Utils_Tuple2(26, 55)
+	},
+		{
+		cg: 6,
+		aW: '📡',
+		bc: _List_fromArray(
+			['satellite antenna', 'communication', 'future', 'radio', 'space']),
+		bg: 'satellite_antenna',
+		df: _Utils_Tuple2(26, 56)
+	},
+		{
+		cg: 6,
+		aW: '📢',
+		bc: _List_fromArray(
+			['loudspeaker', 'volume', 'sound']),
+		bg: 'loudspeaker',
+		df: _Utils_Tuple2(26, 57)
+	},
+		{
+		cg: 6,
+		aW: '📣',
+		bc: _List_fromArray(
+			['megaphone', 'sound', 'speaker', 'volume']),
+		bg: 'mega',
+		df: _Utils_Tuple2(27, 0)
+	},
+		{
+		cg: 6,
+		aW: '📤',
+		bc: _List_fromArray(
+			['outbox tray', 'inbox', 'email']),
+		bg: 'outbox_tray',
+		df: _Utils_Tuple2(27, 1)
+	},
+		{
+		cg: 6,
+		aW: '📥',
+		bc: _List_fromArray(
+			['inbox tray', 'email', 'documents']),
+		bg: 'inbox_tray',
+		df: _Utils_Tuple2(27, 2)
+	},
+		{
+		cg: 6,
+		aW: '📦',
+		bc: _List_fromArray(
+			['package', 'mail', 'gift', 'cardboard', 'box', 'moving']),
+		bg: 'package',
+		df: _Utils_Tuple2(27, 3)
+	},
+		{
+		cg: 6,
+		aW: '📧',
+		bc: _List_fromArray(
+			['e mail', 'communication', 'inbox']),
+		bg: 'e-mail',
+		df: _Utils_Tuple2(27, 4)
+	},
+		{
+		cg: 6,
+		aW: '📨',
+		bc: _List_fromArray(
+			['incoming envelope', 'email', 'inbox']),
+		bg: 'incoming_envelope',
+		df: _Utils_Tuple2(27, 5)
+	},
+		{
+		cg: 6,
+		aW: '📩',
+		bc: _List_fromArray(
+			['envelope with arrow', 'email', 'communication']),
+		bg: 'envelope_with_arrow',
+		df: _Utils_Tuple2(27, 6)
+	},
+		{
+		cg: 6,
+		aW: '📪',
+		bc: _List_fromArray(
+			['closed mailbox with lowered flag', 'email', 'communication', 'inbox']),
+		bg: 'mailbox_closed',
+		df: _Utils_Tuple2(27, 7)
+	},
+		{
+		cg: 6,
+		aW: '📫',
+		bc: _List_fromArray(
+			['closed mailbox with raised flag', 'email', 'inbox', 'communication']),
+		bg: 'mailbox',
+		df: _Utils_Tuple2(27, 8)
+	},
+		{
+		cg: 6,
+		aW: '📬',
+		bc: _List_fromArray(
+			['open mailbox with raised flag', 'email', 'inbox', 'communication']),
+		bg: 'mailbox_with_mail',
+		df: _Utils_Tuple2(27, 9)
+	},
+		{
+		cg: 6,
+		aW: '📭',
+		bc: _List_fromArray(
+			['open mailbox with lowered flag', 'email', 'inbox']),
+		bg: 'mailbox_with_no_mail',
+		df: _Utils_Tuple2(27, 10)
+	},
+		{
+		cg: 6,
+		aW: '📮',
+		bc: _List_fromArray(
+			['postbox', 'email', 'letter', 'envelope']),
+		bg: 'postbox',
+		df: _Utils_Tuple2(27, 11)
+	},
+		{
+		cg: 6,
+		aW: '📯',
+		bc: _List_fromArray(
+			['postal horn', 'instrument', 'music']),
+		bg: 'postal_horn',
+		df: _Utils_Tuple2(27, 12)
+	},
+		{
+		cg: 6,
+		aW: '📰',
+		bc: _List_fromArray(
+			['newspaper', 'press', 'headline']),
+		bg: 'newspaper',
+		df: _Utils_Tuple2(27, 13)
+	},
+		{
+		cg: 6,
+		aW: '📱',
+		bc: _List_fromArray(
+			['mobile phone', 'technology', 'apple', 'gadgets', 'dial']),
+		bg: 'iphone',
+		df: _Utils_Tuple2(27, 14)
+	},
+		{
+		cg: 6,
+		aW: '📲',
+		bc: _List_fromArray(
+			['mobile phone with arrow', 'iphone', 'incoming']),
+		bg: 'calling',
+		df: _Utils_Tuple2(27, 15)
+	},
+		{
+		cg: 7,
+		aW: '📳',
+		bc: _List_fromArray(
+			['vibration mode', 'orange square', 'phone']),
+		bg: 'vibration_mode',
+		df: _Utils_Tuple2(27, 16)
+	},
+		{
+		cg: 7,
+		aW: '📴',
+		bc: _List_fromArray(
+			['mobile phone off', 'mute', 'orange square', 'silence', 'quiet']),
+		bg: 'mobile_phone_off',
+		df: _Utils_Tuple2(27, 17)
+	},
+		{
+		cg: 7,
+		aW: '📵',
+		bc: _List_fromArray(
+			['no mobile phones', 'iphone', 'mute', 'circle']),
+		bg: 'no_mobile_phones',
+		df: _Utils_Tuple2(27, 18)
+	},
+		{
+		cg: 7,
+		aW: '📶',
+		bc: _List_fromArray(
+			['antenna bars', 'blue square', 'reception', 'phone', 'internet', 'connection', 'wifi', 'bluetooth', 'bars']),
+		bg: 'signal_strength',
+		df: _Utils_Tuple2(27, 19)
+	},
+		{
+		cg: 6,
+		aW: '📷',
+		bc: _List_fromArray(
+			['camera', 'gadgets', 'photography']),
+		bg: 'camera',
+		df: _Utils_Tuple2(27, 20)
+	},
+		{
+		cg: 6,
+		aW: '📸',
+		bc: _List_fromArray(
+			['camera with flash', 'photography', 'gadgets']),
+		bg: 'camera_with_flash',
+		df: _Utils_Tuple2(27, 21)
+	},
+		{
+		cg: 6,
+		aW: '📹',
+		bc: _List_fromArray(
+			['video camera', 'film', 'record']),
+		bg: 'video_camera',
+		df: _Utils_Tuple2(27, 22)
+	},
+		{
+		cg: 6,
+		aW: '📺',
+		bc: _List_fromArray(
+			['television', 'technology', 'program', 'oldschool', 'show', 'television']),
+		bg: 'tv',
+		df: _Utils_Tuple2(27, 23)
+	},
+		{
+		cg: 6,
+		aW: '📻',
+		bc: _List_fromArray(
+			['radio', 'communication', 'music', 'podcast', 'program']),
+		bg: 'radio',
+		df: _Utils_Tuple2(27, 24)
+	},
+		{
+		cg: 6,
+		aW: '📼',
+		bc: _List_fromArray(
+			['videocassette', 'record', 'video', 'oldschool', '90s', '80s']),
+		bg: 'vhs',
+		df: _Utils_Tuple2(27, 25)
+	},
+		{
+		cg: 6,
+		aW: '📽️',
+		bc: _List_fromArray(
+			['film projector', 'video', 'tape', 'record', 'movie']),
+		bg: 'film_projector',
+		df: _Utils_Tuple2(27, 26)
+	},
+		{
+		cg: 6,
+		aW: '\uD83D\uDCFF',
+		bc: _List_fromArray(
+			['prayer beads', 'dhikr', 'religious']),
+		bg: 'prayer_beads',
+		df: _Utils_Tuple2(27, 27)
+	},
+		{
+		cg: 7,
+		aW: '🔀',
+		bc: _List_fromArray(
+			['shuffle tracks button', 'blue square', 'shuffle', 'music', 'random']),
+		bg: 'twisted_rightwards_arrows',
+		df: _Utils_Tuple2(27, 28)
+	},
+		{
+		cg: 7,
+		aW: '🔁',
+		bc: _List_fromArray(
+			['repeat button', 'loop', 'record']),
+		bg: 'repeat',
+		df: _Utils_Tuple2(27, 29)
+	},
+		{
+		cg: 7,
+		aW: '🔂',
+		bc: _List_fromArray(
+			['repeat single button', 'blue square', 'loop']),
+		bg: 'repeat_one',
+		df: _Utils_Tuple2(27, 30)
+	},
+		{
+		cg: 7,
+		aW: '🔃',
+		bc: _List_fromArray(
+			['clockwise vertical arrows', 'sync', 'cycle', 'round', 'repeat']),
+		bg: 'arrows_clockwise',
+		df: _Utils_Tuple2(27, 31)
+	},
+		{
+		cg: 7,
+		aW: '🔄',
+		bc: _List_fromArray(
+			['counterclockwise arrows button', 'blue square', 'sync', 'cycle']),
+		bg: 'arrows_counterclockwise',
+		df: _Utils_Tuple2(27, 32)
+	},
+		{
+		cg: 7,
+		aW: '🔅',
+		bc: _List_fromArray(
+			['dim button', 'sun', 'afternoon', 'warm', 'summer']),
+		bg: 'low_brightness',
+		df: _Utils_Tuple2(27, 33)
+	},
+		{
+		cg: 7,
+		aW: '🔆',
+		bc: _List_fromArray(
+			['bright button', 'sun', 'light']),
+		bg: 'high_brightness',
+		df: _Utils_Tuple2(27, 34)
+	},
+		{
+		cg: 6,
+		aW: '🔇',
+		bc: _List_fromArray(
+			['muted speaker', 'sound', 'volume', 'silence', 'quiet']),
+		bg: 'mute',
+		df: _Utils_Tuple2(27, 35)
+	},
+		{
+		cg: 6,
+		aW: '🔈',
+		bc: _List_fromArray(
+			['speaker low volume', 'sound', 'volume', 'silence', 'broadcast']),
+		bg: 'speaker',
+		df: _Utils_Tuple2(27, 36)
+	},
+		{
+		cg: 6,
+		aW: '🔉',
+		bc: _List_fromArray(
+			['speaker medium volume', 'volume', 'speaker', 'broadcast']),
+		bg: 'sound',
+		df: _Utils_Tuple2(27, 37)
+	},
+		{
+		cg: 6,
+		aW: '🔊',
+		bc: _List_fromArray(
+			['speaker high volume', 'volume', 'noise', 'noisy', 'speaker', 'broadcast']),
+		bg: 'loud_sound',
+		df: _Utils_Tuple2(27, 38)
+	},
+		{
+		cg: 6,
+		aW: '🔋',
+		bc: _List_fromArray(
+			['battery', 'power', 'energy', 'sustain']),
+		bg: 'battery',
+		df: _Utils_Tuple2(27, 39)
+	},
+		{
+		cg: 6,
+		aW: '🔌',
+		bc: _List_fromArray(
+			['electric plug', 'charger', 'power']),
+		bg: 'electric_plug',
+		df: _Utils_Tuple2(27, 40)
+	},
+		{
+		cg: 6,
+		aW: '🔍',
+		bc: _List_fromArray(
+			['magnifying glass tilted left', 'search', 'zoom', 'find', 'detective']),
+		bg: 'mag',
+		df: _Utils_Tuple2(27, 41)
+	},
+		{
+		cg: 6,
+		aW: '🔎',
+		bc: _List_fromArray(
+			['magnifying glass tilted right', 'search', 'zoom', 'find', 'detective']),
+		bg: 'mag_right',
+		df: _Utils_Tuple2(27, 42)
+	},
+		{
+		cg: 6,
+		aW: '🔏',
+		bc: _List_fromArray(
+			['locked with pen', 'security', 'secret']),
+		bg: 'lock_with_ink_pen',
+		df: _Utils_Tuple2(27, 43)
+	},
+		{
+		cg: 6,
+		aW: '🔐',
+		bc: _List_fromArray(
+			['locked with key', 'security', 'privacy']),
+		bg: 'closed_lock_with_key',
+		df: _Utils_Tuple2(27, 44)
+	},
+		{
+		cg: 6,
+		aW: '🔑',
+		bc: _List_fromArray(
+			['key', 'lock', 'door', 'password']),
+		bg: 'key',
+		df: _Utils_Tuple2(27, 45)
+	},
+		{
+		cg: 6,
+		aW: '🔒',
+		bc: _List_fromArray(
+			['locked', 'security', 'password', 'padlock']),
+		bg: 'lock',
+		df: _Utils_Tuple2(27, 46)
+	},
+		{
+		cg: 6,
+		aW: '🔓',
+		bc: _List_fromArray(
+			['unlocked', 'privacy', 'security']),
+		bg: 'unlock',
+		df: _Utils_Tuple2(27, 47)
+	},
+		{
+		cg: 6,
+		aW: '🔔',
+		bc: _List_fromArray(
+			['bell', 'sound', 'notification', 'christmas', 'xmas', 'chime']),
+		bg: 'bell',
+		df: _Utils_Tuple2(27, 48)
+	},
+		{
+		cg: 6,
+		aW: '🔕',
+		bc: _List_fromArray(
+			['bell with slash', 'sound', 'volume', 'mute', 'quiet', 'silent']),
+		bg: 'no_bell',
+		df: _Utils_Tuple2(27, 49)
+	},
+		{
+		cg: 6,
+		aW: '🔖',
+		bc: _List_fromArray(
+			['bookmark', 'favorite', 'label', 'save']),
+		bg: 'bookmark',
+		df: _Utils_Tuple2(27, 50)
+	},
+		{
+		cg: 6,
+		aW: '🔗',
+		bc: _List_fromArray(
+			['link', 'rings', 'url']),
+		bg: 'link',
+		df: _Utils_Tuple2(27, 51)
+	},
+		{
+		cg: 7,
+		aW: '🔘',
+		bc: _List_fromArray(
+			['radio button', 'input', 'old', 'music', 'circle']),
+		bg: 'radio_button',
+		df: _Utils_Tuple2(27, 52)
+	},
+		{
+		cg: 7,
+		aW: '🔙',
+		bc: _List_fromArray(
+			['back arrow', 'arrow', 'words', 'return']),
+		bg: 'back',
+		df: _Utils_Tuple2(27, 53)
+	},
+		{
+		cg: 7,
+		aW: '🔚',
+		bc: _List_fromArray(
+			['end arrow', 'words', 'arrow']),
+		bg: 'end',
+		df: _Utils_Tuple2(27, 54)
+	},
+		{
+		cg: 7,
+		aW: '🔛',
+		bc: _List_fromArray(
+			['on arrow', 'arrow', 'words']),
+		bg: 'on',
+		df: _Utils_Tuple2(27, 55)
+	},
+		{
+		cg: 7,
+		aW: '🔜',
+		bc: _List_fromArray(
+			['soon arrow', 'arrow', 'words']),
+		bg: 'soon',
+		df: _Utils_Tuple2(27, 56)
+	},
+		{
+		cg: 7,
+		aW: '🔝',
+		bc: _List_fromArray(
+			['top arrow', 'words', 'blue square']),
+		bg: 'top',
+		df: _Utils_Tuple2(27, 57)
+	},
+		{
+		cg: 7,
+		aW: '🔞',
+		bc: _List_fromArray(
+			['no one under eighteen', '18', 'drink', 'pub', 'night', 'minor', 'circle']),
+		bg: 'underage',
+		df: _Utils_Tuple2(28, 0)
+	},
+		{
+		cg: 7,
+		aW: '🔟',
+		bc: _List_fromArray(
+			['keycap 10', 'numbers', '10', 'blue square']),
+		bg: 'keycap_ten',
+		df: _Utils_Tuple2(28, 1)
+	},
+		{
+		cg: 7,
+		aW: '🔠',
+		bc: _List_fromArray(
+			['input latin uppercase', 'alphabet', 'words', 'blue square']),
+		bg: 'capital_abcd',
+		df: _Utils_Tuple2(28, 2)
+	},
+		{
+		cg: 7,
+		aW: '🔡',
+		bc: _List_fromArray(
+			['input latin lowercase', 'blue square', 'alphabet']),
+		bg: 'abcd',
+		df: _Utils_Tuple2(28, 3)
+	},
+		{
+		cg: 7,
+		aW: '🔢',
+		bc: _List_fromArray(
+			['input numbers', 'numbers', 'blue square']),
+		bg: '1234',
+		df: _Utils_Tuple2(28, 4)
+	},
+		{
+		cg: 7,
+		aW: '🔣',
+		bc: _List_fromArray(
+			['input symbols', 'blue square', 'music', 'note', 'ampersand', 'percent', 'glyphs', 'characters']),
+		bg: 'symbols',
+		df: _Utils_Tuple2(28, 5)
+	},
+		{
+		cg: 7,
+		aW: '🔤',
+		bc: _List_fromArray(
+			['input latin letters', 'blue square', 'alphabet']),
+		bg: 'abc',
+		df: _Utils_Tuple2(28, 6)
+	},
+		{
+		cg: 4,
+		aW: '🔥',
+		bc: _List_fromArray(
+			['fire', 'hot', 'cook', 'flame']),
+		bg: 'fire',
+		df: _Utils_Tuple2(28, 7)
+	},
+		{
+		cg: 6,
+		aW: '🔦',
+		bc: _List_fromArray(
+			['flashlight', 'dark', 'camping', 'sight', 'night']),
+		bg: 'flashlight',
+		df: _Utils_Tuple2(28, 8)
+	},
+		{
+		cg: 6,
+		aW: '🔧',
+		bc: _List_fromArray(
+			['wrench', 'tools', 'diy', 'ikea', 'fix', 'maintainer']),
+		bg: 'wrench',
+		df: _Utils_Tuple2(28, 9)
+	},
+		{
+		cg: 6,
+		aW: '🔨',
+		bc: _List_fromArray(
+			['hammer', 'tools', 'build', 'create']),
+		bg: 'hammer',
+		df: _Utils_Tuple2(28, 10)
+	},
+		{
+		cg: 6,
+		aW: '🔩',
+		bc: _List_fromArray(
+			['nut and bolt', 'handy', 'tools', 'fix']),
+		bg: 'nut_and_bolt',
+		df: _Utils_Tuple2(28, 11)
+	},
+		{
+		cg: 3,
+		aW: '🔪',
+		bc: _List_fromArray(
+			['kitchen knife', 'knife', 'blade', 'cutlery', 'kitchen', 'weapon']),
+		bg: 'hocho',
+		df: _Utils_Tuple2(28, 12)
+	},
+		{
+		cg: 6,
+		aW: '🔫',
+		bc: _List_fromArray(
+			['pistol', 'violence', 'weapon', 'pistol', 'revolver']),
+		bg: 'gun',
+		df: _Utils_Tuple2(28, 13)
+	},
+		{
+		cg: 6,
+		aW: '🔬',
+		bc: _List_fromArray(
+			['microscope', 'laboratory', 'experiment', 'zoomin', 'science', 'study']),
+		bg: 'microscope',
+		df: _Utils_Tuple2(28, 14)
+	},
+		{
+		cg: 6,
+		aW: '🔭',
+		bc: _List_fromArray(
+			['telescope', 'stars', 'space', 'zoom', 'science', 'astronomy']),
+		bg: 'telescope',
+		df: _Utils_Tuple2(28, 15)
+	},
+		{
+		cg: 5,
+		aW: '🔮',
+		bc: _List_fromArray(
+			['crystal ball', 'disco', 'party', 'magic', 'circus', 'fortune teller']),
+		bg: 'crystal_ball',
+		df: _Utils_Tuple2(28, 16)
+	},
+		{
+		cg: 7,
+		aW: '🔯',
+		bc: _List_fromArray(
+			['dotted six pointed star', 'purple square', 'religion', 'jewish', 'hexagram']),
+		bg: 'six_pointed_star',
+		df: _Utils_Tuple2(28, 17)
+	},
+		{
+		cg: 7,
+		aW: '🔰',
+		bc: _List_fromArray(
+			['japanese symbol for beginner', 'badge', 'shield']),
+		bg: 'beginner',
+		df: _Utils_Tuple2(28, 18)
+	},
+		{
+		cg: 7,
+		aW: '🔱',
+		bc: _List_fromArray(
+			['trident emblem', 'weapon', 'spear']),
+		bg: 'trident',
+		df: _Utils_Tuple2(28, 19)
+	},
+		{
+		cg: 7,
+		aW: '🔲',
+		bc: _List_fromArray(
+			['black square button', 'shape', 'input', 'frame']),
+		bg: 'black_square_button',
+		df: _Utils_Tuple2(28, 20)
+	},
+		{
+		cg: 7,
+		aW: '🔳',
+		bc: _List_fromArray(
+			['white square button', 'shape', 'input']),
+		bg: 'white_square_button',
+		df: _Utils_Tuple2(28, 21)
+	},
+		{
+		cg: 7,
+		aW: '🔴',
+		bc: _List_fromArray(
+			['red circle', 'shape', 'error', 'danger']),
+		bg: 'red_circle',
+		df: _Utils_Tuple2(28, 22)
+	},
+		{
+		cg: 7,
+		aW: '🔵',
+		bc: _List_fromArray(
+			['blue circle', 'shape', 'icon', 'button']),
+		bg: 'large_blue_circle',
+		df: _Utils_Tuple2(28, 23)
+	},
+		{
+		cg: 7,
+		aW: '🔶',
+		bc: _List_fromArray(
+			['large orange diamond', 'shape', 'jewel', 'gem']),
+		bg: 'large_orange_diamond',
+		df: _Utils_Tuple2(28, 24)
+	},
+		{
+		cg: 7,
+		aW: '🔷',
+		bc: _List_fromArray(
+			['large blue diamond', 'shape', 'jewel', 'gem']),
+		bg: 'large_blue_diamond',
+		df: _Utils_Tuple2(28, 25)
+	},
+		{
+		cg: 7,
+		aW: '🔸',
+		bc: _List_fromArray(
+			['small orange diamond', 'shape', 'jewel', 'gem']),
+		bg: 'small_orange_diamond',
+		df: _Utils_Tuple2(28, 26)
+	},
+		{
+		cg: 7,
+		aW: '🔹',
+		bc: _List_fromArray(
+			['small blue diamond', 'shape', 'jewel', 'gem']),
+		bg: 'small_blue_diamond',
+		df: _Utils_Tuple2(28, 27)
+	},
+		{
+		cg: 7,
+		aW: '🔺',
+		bc: _List_fromArray(
+			['red triangle pointed up', 'shape', 'direction', 'up', 'top']),
+		bg: 'small_red_triangle',
+		df: _Utils_Tuple2(28, 28)
+	},
+		{
+		cg: 7,
+		aW: '🔻',
+		bc: _List_fromArray(
+			['red triangle pointed down', 'shape', 'direction', 'bottom']),
+		bg: 'small_red_triangle_down',
+		df: _Utils_Tuple2(28, 29)
+	},
+		{
+		cg: 7,
+		aW: '🔼',
+		bc: _List_fromArray(
+			['upwards button', 'blue square', 'triangle', 'direction', 'point', 'forward', 'top']),
+		bg: 'arrow_up_small',
+		df: _Utils_Tuple2(28, 30)
+	},
+		{
+		cg: 7,
+		aW: '🔽',
+		bc: _List_fromArray(
+			['downwards button', 'blue square', 'direction', 'bottom']),
+		bg: 'arrow_down_small',
+		df: _Utils_Tuple2(28, 31)
+	},
+		{
+		cg: 7,
+		aW: '🕉️',
+		bc: _List_fromArray(
+			['om', 'hinduism', 'buddhism', 'sikhism', 'jainism']),
+		bg: 'om_symbol',
+		df: _Utils_Tuple2(28, 32)
+	},
+		{
+		cg: 2,
+		aW: '🕊️',
+		bc: _List_fromArray(
+			['dove', 'animal', 'bird']),
+		bg: 'dove_of_peace',
+		df: _Utils_Tuple2(28, 33)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDD4B',
+		bc: _List_fromArray(
+			['kaaba', 'mecca', 'mosque', 'islam']),
+		bg: 'kaaba',
+		df: _Utils_Tuple2(28, 34)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDD4C',
+		bc: _List_fromArray(
+			['mosque', 'islam', 'worship', 'minaret']),
+		bg: 'mosque',
+		df: _Utils_Tuple2(28, 35)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDD4D',
+		bc: _List_fromArray(
+			['synagogue', 'judaism', 'worship', 'temple', 'jewish']),
+		bg: 'synagogue',
+		df: _Utils_Tuple2(28, 36)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDD4E',
+		bc: _List_fromArray(
+			['menorah', 'hanukkah', 'candles', 'jewish']),
+		bg: 'menorah_with_nine_branches',
+		df: _Utils_Tuple2(28, 37)
+	},
+		{
+		cg: 4,
+		aW: '🕐',
+		bc: _List_fromArray(
+			['one o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock1',
+		df: _Utils_Tuple2(28, 38)
+	},
+		{
+		cg: 4,
+		aW: '🕑',
+		bc: _List_fromArray(
+			['two o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock2',
+		df: _Utils_Tuple2(28, 39)
+	},
+		{
+		cg: 4,
+		aW: '🕒',
+		bc: _List_fromArray(
+			['three o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock3',
+		df: _Utils_Tuple2(28, 40)
+	},
+		{
+		cg: 4,
+		aW: '🕓',
+		bc: _List_fromArray(
+			['four o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock4',
+		df: _Utils_Tuple2(28, 41)
+	},
+		{
+		cg: 4,
+		aW: '🕔',
+		bc: _List_fromArray(
+			['five o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock5',
+		df: _Utils_Tuple2(28, 42)
+	},
+		{
+		cg: 4,
+		aW: '🕕',
+		bc: _List_fromArray(
+			['six o clock', 'time', 'late', 'early', 'schedule', 'dawn', 'dusk']),
+		bg: 'clock6',
+		df: _Utils_Tuple2(28, 43)
+	},
+		{
+		cg: 4,
+		aW: '🕖',
+		bc: _List_fromArray(
+			['seven o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock7',
+		df: _Utils_Tuple2(28, 44)
+	},
+		{
+		cg: 4,
+		aW: '🕗',
+		bc: _List_fromArray(
+			['eight o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock8',
+		df: _Utils_Tuple2(28, 45)
+	},
+		{
+		cg: 4,
+		aW: '🕘',
+		bc: _List_fromArray(
+			['nine o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock9',
+		df: _Utils_Tuple2(28, 46)
+	},
+		{
+		cg: 4,
+		aW: '🕙',
+		bc: _List_fromArray(
+			['ten o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock10',
+		df: _Utils_Tuple2(28, 47)
+	},
+		{
+		cg: 4,
+		aW: '🕚',
+		bc: _List_fromArray(
+			['eleven o clock', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock11',
+		df: _Utils_Tuple2(28, 48)
+	},
+		{
+		cg: 4,
+		aW: '🕛',
+		bc: _List_fromArray(
+			['twelve o clock', 'time', 'noon', 'midnight', 'midday', 'late', 'early', 'schedule']),
+		bg: 'clock12',
+		df: _Utils_Tuple2(28, 49)
+	},
+		{
+		cg: 4,
+		aW: '🕜',
+		bc: _List_fromArray(
+			['one thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock130',
+		df: _Utils_Tuple2(28, 50)
+	},
+		{
+		cg: 4,
+		aW: '🕝',
+		bc: _List_fromArray(
+			['two thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock230',
+		df: _Utils_Tuple2(28, 51)
+	},
+		{
+		cg: 4,
+		aW: '🕞',
+		bc: _List_fromArray(
+			['three thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock330',
+		df: _Utils_Tuple2(28, 52)
+	},
+		{
+		cg: 4,
+		aW: '🕟',
+		bc: _List_fromArray(
+			['four thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock430',
+		df: _Utils_Tuple2(28, 53)
+	},
+		{
+		cg: 4,
+		aW: '🕠',
+		bc: _List_fromArray(
+			['five thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock530',
+		df: _Utils_Tuple2(28, 54)
+	},
+		{
+		cg: 4,
+		aW: '🕡',
+		bc: _List_fromArray(
+			['six thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock630',
+		df: _Utils_Tuple2(28, 55)
+	},
+		{
+		cg: 4,
+		aW: '🕢',
+		bc: _List_fromArray(
+			['seven thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock730',
+		df: _Utils_Tuple2(28, 56)
+	},
+		{
+		cg: 4,
+		aW: '🕣',
+		bc: _List_fromArray(
+			['eight thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock830',
+		df: _Utils_Tuple2(28, 57)
+	},
+		{
+		cg: 4,
+		aW: '🕤',
+		bc: _List_fromArray(
+			['nine thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock930',
+		df: _Utils_Tuple2(29, 0)
+	},
+		{
+		cg: 4,
+		aW: '🕥',
+		bc: _List_fromArray(
+			['ten thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock1030',
+		df: _Utils_Tuple2(29, 1)
+	},
+		{
+		cg: 4,
+		aW: '🕦',
+		bc: _List_fromArray(
+			['eleven thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock1130',
+		df: _Utils_Tuple2(29, 2)
+	},
+		{
+		cg: 4,
+		aW: '🕧',
+		bc: _List_fromArray(
+			['twelve thirty', 'time', 'late', 'early', 'schedule']),
+		bg: 'clock1230',
+		df: _Utils_Tuple2(29, 3)
+	},
+		{
+		cg: 6,
+		aW: '🕯️',
+		bc: _List_fromArray(
+			['candle', 'fire', 'wax']),
+		bg: 'candle',
+		df: _Utils_Tuple2(29, 4)
+	},
+		{
+		cg: 4,
+		aW: '🕰️',
+		bc: _List_fromArray(
+			['mantelpiece clock', 'time']),
+		bg: 'mantelpiece_clock',
+		df: _Utils_Tuple2(29, 5)
+	},
+		{
+		cg: 0,
+		aW: '🕳️',
+		bc: _List_fromArray(
+			['hole', 'embarrassing']),
+		bg: 'hole',
+		df: _Utils_Tuple2(29, 6)
+	},
+		{
+		cg: 1,
+		aW: '🕴️',
+		bc: _List_fromArray(
+			['man in suit levitating', 'suit', 'business', 'levitate', 'hover', 'jump']),
+		bg: 'man_in_business_suit_levitating',
+		df: _Utils_Tuple2(29, 7)
+	},
+		{
+		cg: 1,
+		aW: '🕵️\u200D♀️',
+		bc: _List_fromArray(
+			['woman detective', 'human', 'spy', 'detective', 'female', 'woman']),
+		bg: 'female-detective',
+		df: _Utils_Tuple2(29, 13)
+	},
+		{
+		cg: 1,
+		aW: '🕵️\u200D♂️',
+		bc: _List_fromArray(
+			['man detective']),
+		bg: 'male-detective',
+		df: _Utils_Tuple2(29, 19)
+	},
+		{
+		cg: 1,
+		aW: '🕵️',
+		bc: _List_fromArray(
+			['detective', 'human', 'spy', 'detective']),
+		bg: 'sleuth_or_spy',
+		df: _Utils_Tuple2(29, 25)
+	},
+		{
+		cg: 6,
+		aW: '🕶️',
+		bc: _List_fromArray(
+			['sunglasses', 'face', 'cool', 'accessories']),
+		bg: 'dark_sunglasses',
+		df: _Utils_Tuple2(29, 31)
+	},
+		{
+		cg: 2,
+		aW: '🕷️',
+		bc: _List_fromArray(
+			['spider', 'animal', 'arachnid']),
+		bg: 'spider',
+		df: _Utils_Tuple2(29, 32)
+	},
+		{
+		cg: 2,
+		aW: '🕸️',
+		bc: _List_fromArray(
+			['spider web', 'animal', 'insect', 'arachnid', 'silk']),
+		bg: 'spider_web',
+		df: _Utils_Tuple2(29, 33)
+	},
+		{
+		cg: 5,
+		aW: '🕹️',
+		bc: _List_fromArray(
+			['joystick', 'game', 'play']),
+		bg: 'joystick',
+		df: _Utils_Tuple2(29, 34)
+	},
+		{
+		cg: 1,
+		aW: '\uD83D\uDD7A',
+		bc: _List_fromArray(
+			['man dancing', 'male', 'boy', 'fun', 'dancer']),
+		bg: 'man_dancing',
+		df: _Utils_Tuple2(29, 35)
+	},
+		{
+		cg: 6,
+		aW: '🖇️',
+		bc: _List_fromArray(
+			['linked paperclips', 'documents', 'stationery']),
+		bg: 'linked_paperclips',
+		df: _Utils_Tuple2(29, 41)
+	},
+		{
+		cg: 6,
+		aW: '🖊️',
+		bc: _List_fromArray(
+			['pen', 'stationery', 'writing', 'write']),
+		bg: 'lower_left_ballpoint_pen',
+		df: _Utils_Tuple2(29, 42)
+	},
+		{
+		cg: 6,
+		aW: '🖋️',
+		bc: _List_fromArray(
+			['fountain pen', 'stationery', 'writing', 'write']),
+		bg: 'lower_left_fountain_pen',
+		df: _Utils_Tuple2(29, 43)
+	},
+		{
+		cg: 6,
+		aW: '🖌️',
+		bc: _List_fromArray(
+			['paintbrush', 'drawing', 'creativity', 'art']),
+		bg: 'lower_left_paintbrush',
+		df: _Utils_Tuple2(29, 44)
+	},
+		{
+		cg: 6,
+		aW: '🖍️',
+		bc: _List_fromArray(
+			['crayon', 'drawing', 'creativity']),
+		bg: 'lower_left_crayon',
+		df: _Utils_Tuple2(29, 45)
+	},
+		{
+		cg: 1,
+		aW: '🖐️',
+		bc: _List_fromArray(
+			['hand with fingers splayed', 'hand', 'fingers', 'palm']),
+		bg: 'raised_hand_with_fingers_splayed',
+		df: _Utils_Tuple2(29, 46)
+	},
+		{
+		cg: 1,
+		aW: '🖕',
+		bc: _List_fromArray(
+			['middle finger', 'hand', 'fingers', 'rude', 'middle', 'flipping']),
+		bg: 'middle_finger',
+		df: _Utils_Tuple2(29, 52)
+	},
+		{
+		cg: 1,
+		aW: '🖖',
+		bc: _List_fromArray(
+			['vulcan salute', 'hand', 'fingers', 'spock', 'star trek']),
+		bg: 'spock-hand',
+		df: _Utils_Tuple2(30, 0)
+	},
+		{
+		cg: 0,
+		aW: '\uD83D\uDDA4',
+		bc: _List_fromArray(
+			['black heart', 'evil']),
+		bg: 'black_heart',
+		df: _Utils_Tuple2(30, 6)
+	},
+		{
+		cg: 6,
+		aW: '🖥️',
+		bc: _List_fromArray(
+			['desktop computer', 'technology', 'computing', 'screen']),
+		bg: 'desktop_computer',
+		df: _Utils_Tuple2(30, 7)
+	},
+		{
+		cg: 6,
+		aW: '🖨️',
+		bc: _List_fromArray(
+			['printer', 'paper', 'ink']),
+		bg: 'printer',
+		df: _Utils_Tuple2(30, 8)
+	},
+		{
+		cg: 6,
+		aW: '🖱️',
+		bc: _List_fromArray(
+			['computer mouse', 'click']),
+		bg: 'three_button_mouse',
+		df: _Utils_Tuple2(30, 9)
+	},
+		{
+		cg: 6,
+		aW: '🖲️',
+		bc: _List_fromArray(
+			['trackball', 'technology', 'trackpad']),
+		bg: 'trackball',
+		df: _Utils_Tuple2(30, 10)
+	},
+		{
+		cg: 5,
+		aW: '🖼️',
+		bc: _List_fromArray(
+			['framed picture', 'photography']),
+		bg: 'frame_with_picture',
+		df: _Utils_Tuple2(30, 11)
+	},
+		{
+		cg: 6,
+		aW: '🗂️',
+		bc: _List_fromArray(
+			['card index dividers', 'organizing', 'business', 'stationery']),
+		bg: 'card_index_dividers',
+		df: _Utils_Tuple2(30, 12)
+	},
+		{
+		cg: 6,
+		aW: '🗃️',
+		bc: _List_fromArray(
+			['card file box', 'business', 'stationery']),
+		bg: 'card_file_box',
+		df: _Utils_Tuple2(30, 13)
+	},
+		{
+		cg: 6,
+		aW: '🗄️',
+		bc: _List_fromArray(
+			['file cabinet', 'filing', 'organizing']),
+		bg: 'file_cabinet',
+		df: _Utils_Tuple2(30, 14)
+	},
+		{
+		cg: 6,
+		aW: '🗑️',
+		bc: _List_fromArray(
+			['wastebasket', 'bin', 'trash', 'rubbish', 'garbage', 'toss']),
+		bg: 'wastebasket',
+		df: _Utils_Tuple2(30, 15)
+	},
+		{
+		cg: 6,
+		aW: '🗒️',
+		bc: _List_fromArray(
+			['spiral notepad', 'memo', 'stationery']),
+		bg: 'spiral_note_pad',
+		df: _Utils_Tuple2(30, 16)
+	},
+		{
+		cg: 6,
+		aW: '🗓️',
+		bc: _List_fromArray(
+			['spiral calendar', 'date', 'schedule', 'planning']),
+		bg: 'spiral_calendar_pad',
+		df: _Utils_Tuple2(30, 17)
+	},
+		{
+		cg: 6,
+		aW: '🗜️',
+		bc: _List_fromArray(
+			['clamp', 'tool']),
+		bg: 'compression',
+		df: _Utils_Tuple2(30, 18)
+	},
+		{
+		cg: 6,
+		aW: '🗝️',
+		bc: _List_fromArray(
+			['old key', 'lock', 'door', 'password']),
+		bg: 'old_key',
+		df: _Utils_Tuple2(30, 19)
+	},
+		{
+		cg: 6,
+		aW: '🗞️',
+		bc: _List_fromArray(
+			['rolled up newspaper', 'press', 'headline']),
+		bg: 'rolled_up_newspaper',
+		df: _Utils_Tuple2(30, 20)
+	},
+		{
+		cg: 6,
+		aW: '🗡️',
+		bc: _List_fromArray(
+			['dagger', 'weapon']),
+		bg: 'dagger_knife',
+		df: _Utils_Tuple2(30, 21)
+	},
+		{
+		cg: 1,
+		aW: '🗣️',
+		bc: _List_fromArray(
+			['speaking head', 'user', 'person', 'human', 'sing', 'say', 'talk']),
+		bg: 'speaking_head_in_silhouette',
+		df: _Utils_Tuple2(30, 22)
+	},
+		{
+		cg: 0,
+		aW: '🗨️',
+		bc: _List_fromArray(
+			['left speech bubble', 'words', 'message', 'talk', 'chatting']),
+		bg: 'left_speech_bubble',
+		df: _Utils_Tuple2(30, 23)
+	},
+		{
+		cg: 0,
+		aW: '🗯️',
+		bc: _List_fromArray(
+			['right anger bubble', 'caption', 'speech', 'thinking', 'mad']),
+		bg: 'right_anger_bubble',
+		df: _Utils_Tuple2(30, 24)
+	},
+		{
+		cg: 6,
+		aW: '🗳️',
+		bc: _List_fromArray(
+			['ballot box with ballot', 'election', 'vote']),
+		bg: 'ballot_box_with_ballot',
+		df: _Utils_Tuple2(30, 25)
+	},
+		{
+		cg: 4,
+		aW: '🗺️',
+		bc: _List_fromArray(
+			['world map', 'location', 'direction']),
+		bg: 'world_map',
+		df: _Utils_Tuple2(30, 26)
+	},
+		{
+		cg: 4,
+		aW: '🗻',
+		bc: _List_fromArray(
+			['mount fuji', 'photo', 'mountain', 'nature', 'japanese']),
+		bg: 'mount_fuji',
+		df: _Utils_Tuple2(30, 27)
+	},
+		{
+		cg: 4,
+		aW: '🗼',
+		bc: _List_fromArray(
+			['tokyo tower', 'photo', 'japanese']),
+		bg: 'tokyo_tower',
+		df: _Utils_Tuple2(30, 28)
+	},
+		{
+		cg: 4,
+		aW: '🗽',
+		bc: _List_fromArray(
+			['statue of liberty', 'american', 'newyork']),
+		bg: 'statue_of_liberty',
+		df: _Utils_Tuple2(30, 29)
+	},
+		{
+		cg: 4,
+		aW: '🗾',
+		bc: _List_fromArray(
+			['map of japan', 'nation', 'country', 'japanese', 'asia']),
+		bg: 'japan',
+		df: _Utils_Tuple2(30, 30)
+	},
+		{
+		cg: 6,
+		aW: '🗿',
+		bc: _List_fromArray(
+			['moai', 'rock', 'easter island', 'moai']),
+		bg: 'moyai',
+		df: _Utils_Tuple2(30, 31)
+	},
+		{
+		cg: 0,
+		aW: '😀',
+		bc: _List_fromArray(
+			['grinning face', 'face', 'smile', 'happy', 'joy', ':D', 'grin']),
+		bg: 'grinning',
+		df: _Utils_Tuple2(30, 32)
+	},
+		{
+		cg: 0,
+		aW: '😁',
+		bc: _List_fromArray(
+			['beaming face with smiling eyes', 'face', 'happy', 'smile', 'joy', 'kawaii']),
+		bg: 'grin',
+		df: _Utils_Tuple2(30, 33)
+	},
+		{
+		cg: 0,
+		aW: '😂',
+		bc: _List_fromArray(
+			['face with tears of joy', 'face', 'cry', 'tears', 'weep', 'happy', 'happytears', 'haha']),
+		bg: 'joy',
+		df: _Utils_Tuple2(30, 34)
+	},
+		{
+		cg: 0,
+		aW: '😃',
+		bc: _List_fromArray(
+			['grinning face with big eyes', 'face', 'happy', 'joy', 'haha', ':D', ':)', 'smile', 'funny']),
+		bg: 'smiley',
+		df: _Utils_Tuple2(30, 35)
+	},
+		{
+		cg: 0,
+		aW: '😄',
+		bc: _List_fromArray(
+			['grinning face with smiling eyes', 'face', 'happy', 'joy', 'funny', 'haha', 'laugh', 'like', ':D', ':)']),
+		bg: 'smile',
+		df: _Utils_Tuple2(30, 36)
+	},
+		{
+		cg: 0,
+		aW: '😅',
+		bc: _List_fromArray(
+			['grinning face with sweat', 'face', 'hot', 'happy', 'laugh', 'sweat', 'smile', 'relief']),
+		bg: 'sweat_smile',
+		df: _Utils_Tuple2(30, 37)
+	},
+		{
+		cg: 0,
+		aW: '😆',
+		bc: _List_fromArray(
+			['grinning squinting face', 'happy', 'joy', 'lol', 'satisfied', 'haha', 'face', 'glad', 'XD', 'laugh']),
+		bg: 'laughing',
+		df: _Utils_Tuple2(30, 38)
+	},
+		{
+		cg: 0,
+		aW: '😇',
+		bc: _List_fromArray(
+			['smiling face with halo', 'face', 'angel', 'heaven', 'halo']),
+		bg: 'innocent',
+		df: _Utils_Tuple2(30, 39)
+	},
+		{
+		cg: 0,
+		aW: '😈',
+		bc: _List_fromArray(
+			['smiling face with horns', 'devil', 'horns']),
+		bg: 'smiling_imp',
+		df: _Utils_Tuple2(30, 40)
+	},
+		{
+		cg: 0,
+		aW: '😉',
+		bc: _List_fromArray(
+			['winking face', 'face', 'happy', 'mischievous', 'secret', ';)', 'smile', 'eye']),
+		bg: 'wink',
+		df: _Utils_Tuple2(30, 41)
+	},
+		{
+		cg: 0,
+		aW: '😊',
+		bc: _List_fromArray(
+			['smiling face with smiling eyes', 'face', 'smile', 'happy', 'flushed', 'crush', 'embarrassed', 'shy', 'joy']),
+		bg: 'blush',
+		df: _Utils_Tuple2(30, 42)
+	},
+		{
+		cg: 0,
+		aW: '😋',
+		bc: _List_fromArray(
+			['face savoring food', 'happy', 'joy', 'tongue', 'smile', 'face', 'silly', 'yummy', 'nom', 'delicious', 'savouring']),
+		bg: 'yum',
+		df: _Utils_Tuple2(30, 43)
+	},
+		{
+		cg: 0,
+		aW: '😌',
+		bc: _List_fromArray(
+			['relieved face', 'face', 'relaxed', 'phew', 'massage', 'happiness']),
+		bg: 'relieved',
+		df: _Utils_Tuple2(30, 44)
+	},
+		{
+		cg: 0,
+		aW: '😍',
+		bc: _List_fromArray(
+			['smiling face with heart eyes', 'face', 'love', 'like', 'affection', 'valentines', 'infatuation', 'crush', 'heart']),
+		bg: 'heart_eyes',
+		df: _Utils_Tuple2(30, 45)
+	},
+		{
+		cg: 0,
+		aW: '😎',
+		bc: _List_fromArray(
+			['smiling face with sunglasses', 'face', 'cool', 'smile', 'summer', 'beach', 'sunglass']),
+		bg: 'sunglasses',
+		df: _Utils_Tuple2(30, 46)
+	},
+		{
+		cg: 0,
+		aW: '😏',
+		bc: _List_fromArray(
+			['smirking face', 'face', 'smile', 'mean', 'prank', 'smug', 'sarcasm']),
+		bg: 'smirk',
+		df: _Utils_Tuple2(30, 47)
+	},
+		{
+		cg: 0,
+		aW: '😐',
+		bc: _List_fromArray(
+			['neutral face', 'indifference', 'meh', ':|', 'neutral']),
+		bg: 'neutral_face',
+		df: _Utils_Tuple2(30, 48)
+	},
+		{
+		cg: 0,
+		aW: '😑',
+		bc: _List_fromArray(
+			['expressionless face', 'face', 'indifferent', '   ', 'meh', 'deadpan']),
+		bg: 'expressionless',
+		df: _Utils_Tuple2(30, 49)
+	},
+		{
+		cg: 0,
+		aW: '😒',
+		bc: _List_fromArray(
+			['unamused face', 'indifference', 'bored', 'straight face', 'serious', 'sarcasm', 'unimpressed', 'skeptical', 'dubious', 'side eye']),
+		bg: 'unamused',
+		df: _Utils_Tuple2(30, 50)
+	},
+		{
+		cg: 0,
+		aW: '😓',
+		bc: _List_fromArray(
+			['downcast face with sweat', 'face', 'hot', 'sad', 'tired', 'exercise']),
+		bg: 'sweat',
+		df: _Utils_Tuple2(30, 51)
+	},
+		{
+		cg: 0,
+		aW: '😔',
+		bc: _List_fromArray(
+			['pensive face', 'face', 'sad', 'depressed', 'upset']),
+		bg: 'pensive',
+		df: _Utils_Tuple2(30, 52)
+	},
+		{
+		cg: 0,
+		aW: '😕',
+		bc: _List_fromArray(
+			['confused face', 'face', 'indifference', 'huh', 'weird', 'hmmm', ':/']),
+		bg: 'confused',
+		df: _Utils_Tuple2(30, 53)
+	},
+		{
+		cg: 0,
+		aW: '😖',
+		bc: _List_fromArray(
+			['confounded face', 'face', 'confused', 'sick', 'unwell', 'oops', ':S']),
+		bg: 'confounded',
+		df: _Utils_Tuple2(30, 54)
+	},
+		{
+		cg: 0,
+		aW: '😗',
+		bc: _List_fromArray(
+			['kissing face', 'love', 'like', 'face', '3', 'valentines', 'infatuation', 'kiss']),
+		bg: 'kissing',
+		df: _Utils_Tuple2(30, 55)
+	},
+		{
+		cg: 0,
+		aW: '😘',
+		bc: _List_fromArray(
+			['face blowing a kiss', 'face', 'love', 'like', 'affection', 'valentines', 'infatuation', 'kiss']),
+		bg: 'kissing_heart',
+		df: _Utils_Tuple2(30, 56)
+	},
+		{
+		cg: 0,
+		aW: '😙',
+		bc: _List_fromArray(
+			['kissing face with smiling eyes', 'face', 'affection', 'valentines', 'infatuation', 'kiss']),
+		bg: 'kissing_smiling_eyes',
+		df: _Utils_Tuple2(30, 57)
+	},
+		{
+		cg: 0,
+		aW: '😚',
+		bc: _List_fromArray(
+			['kissing face with closed eyes', 'face', 'love', 'like', 'affection', 'valentines', 'infatuation', 'kiss']),
+		bg: 'kissing_closed_eyes',
+		df: _Utils_Tuple2(31, 0)
+	},
+		{
+		cg: 0,
+		aW: '😛',
+		bc: _List_fromArray(
+			['face with tongue', 'face', 'prank', 'childish', 'playful', 'mischievous', 'smile', 'tongue']),
+		bg: 'stuck_out_tongue',
+		df: _Utils_Tuple2(31, 1)
+	},
+		{
+		cg: 0,
+		aW: '😜',
+		bc: _List_fromArray(
+			['winking face with tongue', 'face', 'prank', 'childish', 'playful', 'mischievous', 'smile', 'wink', 'tongue']),
+		bg: 'stuck_out_tongue_winking_eye',
+		df: _Utils_Tuple2(31, 2)
+	},
+		{
+		cg: 0,
+		aW: '😝',
+		bc: _List_fromArray(
+			['squinting face with tongue', 'face', 'prank', 'playful', 'mischievous', 'smile', 'tongue']),
+		bg: 'stuck_out_tongue_closed_eyes',
+		df: _Utils_Tuple2(31, 3)
+	},
+		{
+		cg: 0,
+		aW: '😞',
+		bc: _List_fromArray(
+			['disappointed face', 'face', 'sad', 'upset', 'depressed', ':(']),
+		bg: 'disappointed',
+		df: _Utils_Tuple2(31, 4)
+	},
+		{
+		cg: 0,
+		aW: '😟',
+		bc: _List_fromArray(
+			['worried face', 'face', 'concern', 'nervous', ':(']),
+		bg: 'worried',
+		df: _Utils_Tuple2(31, 5)
+	},
+		{
+		cg: 0,
+		aW: '😠',
+		bc: _List_fromArray(
+			['angry face', 'mad', 'face', 'annoyed', 'frustrated']),
+		bg: 'angry',
+		df: _Utils_Tuple2(31, 6)
+	},
+		{
+		cg: 0,
+		aW: '😡',
+		bc: _List_fromArray(
+			['pouting face', 'angry', 'mad', 'hate', 'despise']),
+		bg: 'rage',
+		df: _Utils_Tuple2(31, 7)
+	},
+		{
+		cg: 0,
+		aW: '😢',
+		bc: _List_fromArray(
+			['crying face', 'face', 'tears', 'sad', 'depressed', 'upset', ':\'(']),
+		bg: 'cry',
+		df: _Utils_Tuple2(31, 8)
+	},
+		{
+		cg: 0,
+		aW: '😣',
+		bc: _List_fromArray(
+			['persevering face', 'face', 'sick', 'no', 'upset', 'oops']),
+		bg: 'persevere',
+		df: _Utils_Tuple2(31, 9)
+	},
+		{
+		cg: 0,
+		aW: '😤',
+		bc: _List_fromArray(
+			['face with steam from nose', 'face', 'gas', 'phew', 'proud', 'pride']),
+		bg: 'triumph',
+		df: _Utils_Tuple2(31, 10)
+	},
+		{
+		cg: 0,
+		aW: '😥',
+		bc: _List_fromArray(
+			['sad but relieved face', 'face', 'phew', 'sweat', 'nervous']),
+		bg: 'disappointed_relieved',
+		df: _Utils_Tuple2(31, 11)
+	},
+		{
+		cg: 0,
+		aW: '😦',
+		bc: _List_fromArray(
+			['frowning face with open mouth', 'face', 'aw', 'what']),
+		bg: 'frowning',
+		df: _Utils_Tuple2(31, 12)
+	},
+		{
+		cg: 0,
+		aW: '😧',
+		bc: _List_fromArray(
+			['anguished face', 'face', 'stunned', 'nervous']),
+		bg: 'anguished',
+		df: _Utils_Tuple2(31, 13)
+	},
+		{
+		cg: 0,
+		aW: '😨',
+		bc: _List_fromArray(
+			['fearful face', 'face', 'scared', 'terrified', 'nervous', 'oops', 'huh']),
+		bg: 'fearful',
+		df: _Utils_Tuple2(31, 14)
+	},
+		{
+		cg: 0,
+		aW: '😩',
+		bc: _List_fromArray(
+			['weary face', 'face', 'tired', 'sleepy', 'sad', 'frustrated', 'upset']),
+		bg: 'weary',
+		df: _Utils_Tuple2(31, 15)
+	},
+		{
+		cg: 0,
+		aW: '😪',
+		bc: _List_fromArray(
+			['sleepy face', 'face', 'tired', 'rest', 'nap']),
+		bg: 'sleepy',
+		df: _Utils_Tuple2(31, 16)
+	},
+		{
+		cg: 0,
+		aW: '😫',
+		bc: _List_fromArray(
+			['tired face', 'sick', 'whine', 'upset', 'frustrated']),
+		bg: 'tired_face',
+		df: _Utils_Tuple2(31, 17)
+	},
+		{
+		cg: 0,
+		aW: '😬',
+		bc: _List_fromArray(
+			['grimacing face', 'face', 'grimace', 'teeth']),
+		bg: 'grimacing',
+		df: _Utils_Tuple2(31, 18)
+	},
+		{
+		cg: 0,
+		aW: '😭',
+		bc: _List_fromArray(
+			['loudly crying face', 'face', 'cry', 'tears', 'sad', 'upset', 'depressed']),
+		bg: 'sob',
+		df: _Utils_Tuple2(31, 19)
+	},
+		{
+		cg: 0,
+		aW: '😮',
+		bc: _List_fromArray(
+			['face with open mouth', 'face', 'surprise', 'impressed', 'wow', 'whoa', ':O']),
+		bg: 'open_mouth',
+		df: _Utils_Tuple2(31, 20)
+	},
+		{
+		cg: 0,
+		aW: '😯',
+		bc: _List_fromArray(
+			['hushed face', 'face', 'woo', 'shh']),
+		bg: 'hushed',
+		df: _Utils_Tuple2(31, 21)
+	},
+		{
+		cg: 0,
+		aW: '😰',
+		bc: _List_fromArray(
+			['anxious face with sweat', 'face', 'nervous', 'sweat']),
+		bg: 'cold_sweat',
+		df: _Utils_Tuple2(31, 22)
+	},
+		{
+		cg: 0,
+		aW: '😱',
+		bc: _List_fromArray(
+			['face screaming in fear', 'face', 'munch', 'scared', 'omg']),
+		bg: 'scream',
+		df: _Utils_Tuple2(31, 23)
+	},
+		{
+		cg: 0,
+		aW: '😲',
+		bc: _List_fromArray(
+			['astonished face', 'face', 'xox', 'surprised', 'poisoned']),
+		bg: 'astonished',
+		df: _Utils_Tuple2(31, 24)
+	},
+		{
+		cg: 0,
+		aW: '😳',
+		bc: _List_fromArray(
+			['flushed face', 'face', 'blush', 'shy', 'flattered']),
+		bg: 'flushed',
+		df: _Utils_Tuple2(31, 25)
+	},
+		{
+		cg: 0,
+		aW: '😴',
+		bc: _List_fromArray(
+			['sleeping face', 'face', 'tired', 'sleepy', 'night', 'zzz']),
+		bg: 'sleeping',
+		df: _Utils_Tuple2(31, 26)
+	},
+		{
+		cg: 0,
+		aW: '😵',
+		bc: _List_fromArray(
+			['dizzy face', 'spent', 'unconscious', 'xox', 'dizzy']),
+		bg: 'dizzy_face',
+		df: _Utils_Tuple2(31, 27)
+	},
+		{
+		cg: 0,
+		aW: '😶',
+		bc: _List_fromArray(
+			['face without mouth', 'face', 'hellokitty']),
+		bg: 'no_mouth',
+		df: _Utils_Tuple2(31, 28)
+	},
+		{
+		cg: 0,
+		aW: '😷',
+		bc: _List_fromArray(
+			['face with medical mask', 'face', 'sick', 'ill', 'disease']),
+		bg: 'mask',
+		df: _Utils_Tuple2(31, 29)
+	},
+		{
+		cg: 0,
+		aW: '😸',
+		bc: _List_fromArray(
+			['grinning cat with smiling eyes', 'animal', 'cats', 'smile']),
+		bg: 'smile_cat',
+		df: _Utils_Tuple2(31, 30)
+	},
+		{
+		cg: 0,
+		aW: '😹',
+		bc: _List_fromArray(
+			['cat with tears of joy', 'animal', 'cats', 'haha', 'happy', 'tears']),
+		bg: 'joy_cat',
+		df: _Utils_Tuple2(31, 31)
+	},
+		{
+		cg: 0,
+		aW: '😺',
+		bc: _List_fromArray(
+			['grinning cat', 'animal', 'cats', 'happy', 'smile']),
+		bg: 'smiley_cat',
+		df: _Utils_Tuple2(31, 32)
+	},
+		{
+		cg: 0,
+		aW: '😻',
+		bc: _List_fromArray(
+			['smiling cat with heart eyes', 'animal', 'love', 'like', 'affection', 'cats', 'valentines', 'heart']),
+		bg: 'heart_eyes_cat',
+		df: _Utils_Tuple2(31, 33)
+	},
+		{
+		cg: 0,
+		aW: '😼',
+		bc: _List_fromArray(
+			['cat with wry smile', 'animal', 'cats', 'smirk']),
+		bg: 'smirk_cat',
+		df: _Utils_Tuple2(31, 34)
+	},
+		{
+		cg: 0,
+		aW: '😽',
+		bc: _List_fromArray(
+			['kissing cat', 'animal', 'cats', 'kiss']),
+		bg: 'kissing_cat',
+		df: _Utils_Tuple2(31, 35)
+	},
+		{
+		cg: 0,
+		aW: '😾',
+		bc: _List_fromArray(
+			['pouting cat', 'animal', 'cats']),
+		bg: 'pouting_cat',
+		df: _Utils_Tuple2(31, 36)
+	},
+		{
+		cg: 0,
+		aW: '😿',
+		bc: _List_fromArray(
+			['crying cat', 'animal', 'tears', 'weep', 'sad', 'cats', 'upset', 'cry']),
+		bg: 'crying_cat_face',
+		df: _Utils_Tuple2(31, 37)
+	},
+		{
+		cg: 0,
+		aW: '🙀',
+		bc: _List_fromArray(
+			['weary cat', 'animal', 'cats', 'munch', 'scared', 'scream']),
+		bg: 'scream_cat',
+		df: _Utils_Tuple2(31, 38)
+	},
+		{
+		cg: 0,
+		aW: '🙁',
+		bc: _List_fromArray(
+			['slightly frowning face', 'face', 'frowning', 'disappointed', 'sad', 'upset']),
+		bg: 'slightly_frowning_face',
+		df: _Utils_Tuple2(31, 39)
+	},
+		{
+		cg: 0,
+		aW: '🙂',
+		bc: _List_fromArray(
+			['slightly smiling face', 'face', 'smile']),
+		bg: 'slightly_smiling_face',
+		df: _Utils_Tuple2(31, 40)
+	},
+		{
+		cg: 0,
+		aW: '\uD83D\uDE43',
+		bc: _List_fromArray(
+			['upside down face', 'face', 'flipped', 'silly', 'smile']),
+		bg: 'upside_down_face',
+		df: _Utils_Tuple2(31, 41)
+	},
+		{
+		cg: 0,
+		aW: '\uD83D\uDE44',
+		bc: _List_fromArray(
+			['face with rolling eyes', 'face', 'eyeroll', 'frustrated']),
+		bg: 'face_with_rolling_eyes',
+		df: _Utils_Tuple2(31, 42)
+	},
+		{
+		cg: 1,
+		aW: '🙅\u200D♀️',
+		bc: _List_fromArray(
+			['woman gesturing no', 'female', 'girl', 'woman', 'nope']),
+		bg: 'woman-gesturing-no',
+		df: _Utils_Tuple2(31, 43)
+	},
+		{
+		cg: 1,
+		aW: '🙅\u200D♂️',
+		bc: _List_fromArray(
+			['man gesturing no', 'male', 'boy', 'man', 'nope']),
+		bg: 'man-gesturing-no',
+		df: _Utils_Tuple2(31, 49)
+	},
+		{
+		cg: 1,
+		aW: '🙅',
+		bc: _List_fromArray(
+			['person gesturing no']),
+		bg: 'no_good',
+		df: _Utils_Tuple2(31, 55)
+	},
+		{
+		cg: 1,
+		aW: '🙆\u200D♀️',
+		bc: _List_fromArray(
+			['woman gesturing ok', 'women', 'girl', 'female', 'pink', 'human', 'woman']),
+		bg: 'woman-gesturing-ok',
+		df: _Utils_Tuple2(32, 3)
+	},
+		{
+		cg: 1,
+		aW: '🙆\u200D♂️',
+		bc: _List_fromArray(
+			['man gesturing ok', 'men', 'boy', 'male', 'blue', 'human', 'man']),
+		bg: 'man-gesturing-ok',
+		df: _Utils_Tuple2(32, 9)
+	},
+		{
+		cg: 1,
+		aW: '🙆',
+		bc: _List_fromArray(
+			['person gesturing ok']),
+		bg: 'ok_woman',
+		df: _Utils_Tuple2(32, 15)
+	},
+		{
+		cg: 1,
+		aW: '🙇\u200D♀️',
+		bc: _List_fromArray(
+			['woman bowing', 'woman', 'female', 'girl']),
+		bg: 'woman-bowing',
+		df: _Utils_Tuple2(32, 21)
+	},
+		{
+		cg: 1,
+		aW: '🙇\u200D♂️',
+		bc: _List_fromArray(
+			['man bowing', 'man', 'male', 'boy']),
+		bg: 'man-bowing',
+		df: _Utils_Tuple2(32, 27)
+	},
+		{
+		cg: 1,
+		aW: '🙇',
+		bc: _List_fromArray(
+			['person bowing']),
+		bg: 'bow',
+		df: _Utils_Tuple2(32, 33)
+	},
+		{
+		cg: 0,
+		aW: '🙈',
+		bc: _List_fromArray(
+			['see no evil monkey', 'monkey', 'animal', 'nature', 'haha']),
+		bg: 'see_no_evil',
+		df: _Utils_Tuple2(32, 39)
+	},
+		{
+		cg: 0,
+		aW: '🙉',
+		bc: _List_fromArray(
+			['hear no evil monkey', 'animal', 'monkey', 'nature']),
+		bg: 'hear_no_evil',
+		df: _Utils_Tuple2(32, 40)
+	},
+		{
+		cg: 0,
+		aW: '🙊',
+		bc: _List_fromArray(
+			['speak no evil monkey', 'monkey', 'animal', 'nature', 'omg']),
+		bg: 'speak_no_evil',
+		df: _Utils_Tuple2(32, 41)
+	},
+		{
+		cg: 1,
+		aW: '🙋\u200D♀️',
+		bc: _List_fromArray(
+			['woman raising hand', 'female', 'girl', 'woman']),
+		bg: 'woman-raising-hand',
+		df: _Utils_Tuple2(32, 42)
+	},
+		{
+		cg: 1,
+		aW: '🙋\u200D♂️',
+		bc: _List_fromArray(
+			['man raising hand', 'male', 'boy', 'man']),
+		bg: 'man-raising-hand',
+		df: _Utils_Tuple2(32, 48)
+	},
+		{
+		cg: 1,
+		aW: '🙋',
+		bc: _List_fromArray(
+			['person raising hand']),
+		bg: 'raising_hand',
+		df: _Utils_Tuple2(32, 54)
+	},
+		{
+		cg: 1,
+		aW: '🙌',
+		bc: _List_fromArray(
+			['raising hands', 'gesture', 'hooray', 'yea', 'celebration', 'hands']),
+		bg: 'raised_hands',
+		df: _Utils_Tuple2(33, 2)
+	},
+		{
+		cg: 1,
+		aW: '🙍\u200D♀️',
+		bc: _List_fromArray(
+			['woman frowning', 'female', 'girl', 'woman', 'sad', 'depressed', 'discouraged', 'unhappy']),
+		bg: 'woman-frowning',
+		df: _Utils_Tuple2(33, 8)
+	},
+		{
+		cg: 1,
+		aW: '🙍\u200D♂️',
+		bc: _List_fromArray(
+			['man frowning', 'male', 'boy', 'man', 'sad', 'depressed', 'discouraged', 'unhappy']),
+		bg: 'man-frowning',
+		df: _Utils_Tuple2(33, 14)
+	},
+		{
+		cg: 1,
+		aW: '🙍',
+		bc: _List_fromArray(
+			['person frowning']),
+		bg: 'person_frowning',
+		df: _Utils_Tuple2(33, 20)
+	},
+		{
+		cg: 1,
+		aW: '🙎\u200D♀️',
+		bc: _List_fromArray(
+			['woman pouting', 'female', 'girl', 'woman']),
+		bg: 'woman-pouting',
+		df: _Utils_Tuple2(33, 26)
+	},
+		{
+		cg: 1,
+		aW: '🙎\u200D♂️',
+		bc: _List_fromArray(
+			['man pouting', 'male', 'boy', 'man']),
+		bg: 'man-pouting',
+		df: _Utils_Tuple2(33, 32)
+	},
+		{
+		cg: 1,
+		aW: '🙎',
+		bc: _List_fromArray(
+			['person pouting']),
+		bg: 'person_with_pouting_face',
+		df: _Utils_Tuple2(33, 38)
+	},
+		{
+		cg: 1,
+		aW: '🙏',
+		bc: _List_fromArray(
+			['folded hands', 'please', 'hope', 'wish', 'namaste', 'highfive']),
+		bg: 'pray',
+		df: _Utils_Tuple2(33, 44)
+	},
+		{
+		cg: 4,
+		aW: '🚀',
+		bc: _List_fromArray(
+			['rocket', 'launch', 'ship', 'staffmode', 'NASA', 'outer space', 'outer space', 'fly']),
+		bg: 'rocket',
+		df: _Utils_Tuple2(33, 50)
+	},
+		{
+		cg: 4,
+		aW: '🚁',
+		bc: _List_fromArray(
+			['helicopter', 'transportation', 'vehicle', 'fly']),
+		bg: 'helicopter',
+		df: _Utils_Tuple2(33, 51)
+	},
+		{
+		cg: 4,
+		aW: '🚂',
+		bc: _List_fromArray(
+			['locomotive', 'transportation', 'vehicle', 'train']),
+		bg: 'steam_locomotive',
+		df: _Utils_Tuple2(33, 52)
+	},
+		{
+		cg: 4,
+		aW: '🚃',
+		bc: _List_fromArray(
+			['railway car', 'transportation', 'vehicle']),
+		bg: 'railway_car',
+		df: _Utils_Tuple2(33, 53)
+	},
+		{
+		cg: 4,
+		aW: '🚄',
+		bc: _List_fromArray(
+			['high speed train', 'transportation', 'vehicle']),
+		bg: 'bullettrain_side',
+		df: _Utils_Tuple2(33, 54)
+	},
+		{
+		cg: 4,
+		aW: '🚅',
+		bc: _List_fromArray(
+			['bullet train', 'transportation', 'vehicle', 'speed', 'fast', 'public', 'travel']),
+		bg: 'bullettrain_front',
+		df: _Utils_Tuple2(33, 55)
+	},
+		{
+		cg: 4,
+		aW: '🚆',
+		bc: _List_fromArray(
+			['train', 'transportation', 'vehicle']),
+		bg: 'train2',
+		df: _Utils_Tuple2(33, 56)
+	},
+		{
+		cg: 4,
+		aW: '🚇',
+		bc: _List_fromArray(
+			['metro', 'transportation', 'blue square', 'mrt', 'underground', 'tube']),
+		bg: 'metro',
+		df: _Utils_Tuple2(33, 57)
+	},
+		{
+		cg: 4,
+		aW: '🚈',
+		bc: _List_fromArray(
+			['light rail', 'transportation', 'vehicle']),
+		bg: 'light_rail',
+		df: _Utils_Tuple2(34, 0)
+	},
+		{
+		cg: 4,
+		aW: '🚉',
+		bc: _List_fromArray(
+			['station', 'transportation', 'vehicle', 'public']),
+		bg: 'station',
+		df: _Utils_Tuple2(34, 1)
+	},
+		{
+		cg: 4,
+		aW: '🚊',
+		bc: _List_fromArray(
+			['tram', 'transportation', 'vehicle']),
+		bg: 'tram',
+		df: _Utils_Tuple2(34, 2)
+	},
+		{
+		cg: 4,
+		aW: '🚋',
+		bc: _List_fromArray(
+			['tram car', 'transportation', 'vehicle', 'carriage', 'public', 'travel']),
+		bg: 'train',
+		df: _Utils_Tuple2(34, 3)
+	},
+		{
+		cg: 4,
+		aW: '🚌',
+		bc: _List_fromArray(
+			['bus', 'car', 'vehicle', 'transportation']),
+		bg: 'bus',
+		df: _Utils_Tuple2(34, 4)
+	},
+		{
+		cg: 4,
+		aW: '🚍',
+		bc: _List_fromArray(
+			['oncoming bus', 'vehicle', 'transportation']),
+		bg: 'oncoming_bus',
+		df: _Utils_Tuple2(34, 5)
+	},
+		{
+		cg: 4,
+		aW: '🚎',
+		bc: _List_fromArray(
+			['trolleybus', 'bart', 'transportation', 'vehicle']),
+		bg: 'trolleybus',
+		df: _Utils_Tuple2(34, 6)
+	},
+		{
+		cg: 4,
+		aW: '🚏',
+		bc: _List_fromArray(
+			['bus stop', 'transportation', 'wait']),
+		bg: 'busstop',
+		df: _Utils_Tuple2(34, 7)
+	},
+		{
+		cg: 4,
+		aW: '🚐',
+		bc: _List_fromArray(
+			['minibus', 'vehicle', 'car', 'transportation']),
+		bg: 'minibus',
+		df: _Utils_Tuple2(34, 8)
+	},
+		{
+		cg: 4,
+		aW: '🚑',
+		bc: _List_fromArray(
+			['ambulance', 'health', '911', 'hospital']),
+		bg: 'ambulance',
+		df: _Utils_Tuple2(34, 9)
+	},
+		{
+		cg: 4,
+		aW: '🚒',
+		bc: _List_fromArray(
+			['fire engine', 'transportation', 'cars', 'vehicle']),
+		bg: 'fire_engine',
+		df: _Utils_Tuple2(34, 10)
+	},
+		{
+		cg: 4,
+		aW: '🚓',
+		bc: _List_fromArray(
+			['police car', 'vehicle', 'cars', 'transportation', 'law', 'legal', 'enforcement']),
+		bg: 'police_car',
+		df: _Utils_Tuple2(34, 11)
+	},
+		{
+		cg: 4,
+		aW: '🚔',
+		bc: _List_fromArray(
+			['oncoming police car', 'vehicle', 'law', 'legal', 'enforcement', '911']),
+		bg: 'oncoming_police_car',
+		df: _Utils_Tuple2(34, 12)
+	},
+		{
+		cg: 4,
+		aW: '🚕',
+		bc: _List_fromArray(
+			['taxi', 'uber', 'vehicle', 'cars', 'transportation']),
+		bg: 'taxi',
+		df: _Utils_Tuple2(34, 13)
+	},
+		{
+		cg: 4,
+		aW: '🚖',
+		bc: _List_fromArray(
+			['oncoming taxi', 'vehicle', 'cars', 'uber']),
+		bg: 'oncoming_taxi',
+		df: _Utils_Tuple2(34, 14)
+	},
+		{
+		cg: 4,
+		aW: '🚗',
+		bc: _List_fromArray(
+			['automobile', 'red', 'transportation', 'vehicle']),
+		bg: 'car',
+		df: _Utils_Tuple2(34, 15)
+	},
+		{
+		cg: 4,
+		aW: '🚘',
+		bc: _List_fromArray(
+			['oncoming automobile', 'car', 'vehicle', 'transportation']),
+		bg: 'oncoming_automobile',
+		df: _Utils_Tuple2(34, 16)
+	},
+		{
+		cg: 4,
+		aW: '🚙',
+		bc: _List_fromArray(
+			['sport utility vehicle', 'transportation', 'vehicle']),
+		bg: 'blue_car',
+		df: _Utils_Tuple2(34, 17)
+	},
+		{
+		cg: 4,
+		aW: '🚚',
+		bc: _List_fromArray(
+			['delivery truck', 'cars', 'transportation']),
+		bg: 'truck',
+		df: _Utils_Tuple2(34, 18)
+	},
+		{
+		cg: 4,
+		aW: '🚛',
+		bc: _List_fromArray(
+			['articulated lorry', 'vehicle', 'cars', 'transportation', 'express']),
+		bg: 'articulated_lorry',
+		df: _Utils_Tuple2(34, 19)
+	},
+		{
+		cg: 4,
+		aW: '🚜',
+		bc: _List_fromArray(
+			['tractor', 'vehicle', 'car', 'farming', 'agriculture']),
+		bg: 'tractor',
+		df: _Utils_Tuple2(34, 20)
+	},
+		{
+		cg: 4,
+		aW: '🚝',
+		bc: _List_fromArray(
+			['monorail', 'transportation', 'vehicle']),
+		bg: 'monorail',
+		df: _Utils_Tuple2(34, 21)
+	},
+		{
+		cg: 4,
+		aW: '🚞',
+		bc: _List_fromArray(
+			['mountain railway', 'transportation', 'vehicle']),
+		bg: 'mountain_railway',
+		df: _Utils_Tuple2(34, 22)
+	},
+		{
+		cg: 4,
+		aW: '🚟',
+		bc: _List_fromArray(
+			['suspension railway', 'vehicle', 'transportation']),
+		bg: 'suspension_railway',
+		df: _Utils_Tuple2(34, 23)
+	},
+		{
+		cg: 4,
+		aW: '🚠',
+		bc: _List_fromArray(
+			['mountain cableway', 'transportation', 'vehicle', 'ski']),
+		bg: 'mountain_cableway',
+		df: _Utils_Tuple2(34, 24)
+	},
+		{
+		cg: 4,
+		aW: '🚡',
+		bc: _List_fromArray(
+			['aerial tramway', 'transportation', 'vehicle', 'ski']),
+		bg: 'aerial_tramway',
+		df: _Utils_Tuple2(34, 25)
+	},
+		{
+		cg: 4,
+		aW: '🚢',
+		bc: _List_fromArray(
+			['ship', 'transportation', 'titanic', 'deploy']),
+		bg: 'ship',
+		df: _Utils_Tuple2(34, 26)
+	},
+		{
+		cg: 1,
+		aW: '🚣\u200D♀️',
+		bc: _List_fromArray(
+			['woman rowing boat', 'sports', 'hobby', 'water', 'ship', 'woman', 'female']),
+		bg: 'woman-rowing-boat',
+		df: _Utils_Tuple2(34, 27)
+	},
+		{
+		cg: 1,
+		aW: '🚣\u200D♂️',
+		bc: _List_fromArray(
+			['man rowing boat', 'sports', 'hobby', 'water', 'ship']),
+		bg: 'man-rowing-boat',
+		df: _Utils_Tuple2(34, 33)
+	},
+		{
+		cg: 1,
+		aW: '🚣',
+		bc: _List_fromArray(
+			['person rowing boat']),
+		bg: 'rowboat',
+		df: _Utils_Tuple2(34, 39)
+	},
+		{
+		cg: 4,
+		aW: '🚤',
+		bc: _List_fromArray(
+			['speedboat', 'ship', 'transportation', 'vehicle', 'summer']),
+		bg: 'speedboat',
+		df: _Utils_Tuple2(34, 45)
+	},
+		{
+		cg: 4,
+		aW: '🚥',
+		bc: _List_fromArray(
+			['horizontal traffic light', 'transportation', 'signal']),
+		bg: 'traffic_light',
+		df: _Utils_Tuple2(34, 46)
+	},
+		{
+		cg: 4,
+		aW: '🚦',
+		bc: _List_fromArray(
+			['vertical traffic light', 'transportation', 'driving']),
+		bg: 'vertical_traffic_light',
+		df: _Utils_Tuple2(34, 47)
+	},
+		{
+		cg: 4,
+		aW: '🚧',
+		bc: _List_fromArray(
+			['construction', 'wip', 'progress', 'caution', 'warning']),
+		bg: 'construction',
+		df: _Utils_Tuple2(34, 48)
+	},
+		{
+		cg: 4,
+		aW: '🚨',
+		bc: _List_fromArray(
+			['police car light', 'police', 'ambulance', '911', 'emergency', 'alert', 'error', 'pinged', 'law', 'legal']),
+		bg: 'rotating_light',
+		df: _Utils_Tuple2(34, 49)
+	},
+		{
+		cg: 8,
+		aW: '🚩',
+		bc: _List_fromArray(
+			['triangular flag', 'mark', 'milestone', 'place']),
+		bg: 'triangular_flag_on_post',
+		df: _Utils_Tuple2(34, 50)
+	},
+		{
+		cg: 6,
+		aW: '🚪',
+		bc: _List_fromArray(
+			['door', 'house', 'entry', 'exit']),
+		bg: 'door',
+		df: _Utils_Tuple2(34, 51)
+	},
+		{
+		cg: 7,
+		aW: '🚫',
+		bc: _List_fromArray(
+			['prohibited', 'forbid', 'stop', 'limit', 'denied', 'disallow', 'circle']),
+		bg: 'no_entry_sign',
+		df: _Utils_Tuple2(34, 52)
+	},
+		{
+		cg: 6,
+		aW: '🚬',
+		bc: _List_fromArray(
+			['cigarette', 'kills', 'tobacco', 'cigarette', 'joint', 'smoke']),
+		bg: 'smoking',
+		df: _Utils_Tuple2(34, 53)
+	},
+		{
+		cg: 7,
+		aW: '🚭',
+		bc: _List_fromArray(
+			['no smoking', 'cigarette', 'blue square', 'smell', 'smoke']),
+		bg: 'no_smoking',
+		df: _Utils_Tuple2(34, 54)
+	},
+		{
+		cg: 7,
+		aW: '🚮',
+		bc: _List_fromArray(
+			['litter in bin sign', 'blue square', 'sign', 'human', 'info']),
+		bg: 'put_litter_in_its_place',
+		df: _Utils_Tuple2(34, 55)
+	},
+		{
+		cg: 7,
+		aW: '🚯',
+		bc: _List_fromArray(
+			['no littering', 'trash', 'bin', 'garbage', 'circle']),
+		bg: 'do_not_litter',
+		df: _Utils_Tuple2(34, 56)
+	},
+		{
+		cg: 7,
+		aW: '🚰',
+		bc: _List_fromArray(
+			['potable water', 'blue square', 'liquid', 'restroom', 'cleaning', 'faucet']),
+		bg: 'potable_water',
+		df: _Utils_Tuple2(34, 57)
+	},
+		{
+		cg: 7,
+		aW: '🚱',
+		bc: _List_fromArray(
+			['non potable water', 'drink', 'faucet', 'tap', 'circle']),
+		bg: 'non-potable_water',
+		df: _Utils_Tuple2(35, 0)
+	},
+		{
+		cg: 4,
+		aW: '🚲',
+		bc: _List_fromArray(
+			['bicycle', 'sports', 'bicycle', 'exercise', 'hipster']),
+		bg: 'bike',
+		df: _Utils_Tuple2(35, 1)
+	},
+		{
+		cg: 7,
+		aW: '🚳',
+		bc: _List_fromArray(
+			['no bicycles', 'cyclist', 'prohibited', 'circle']),
+		bg: 'no_bicycles',
+		df: _Utils_Tuple2(35, 2)
+	},
+		{
+		cg: 1,
+		aW: '🚴\u200D♀️',
+		bc: _List_fromArray(
+			['woman biking', 'sports', 'bike', 'exercise', 'hipster', 'woman', 'female']),
+		bg: 'woman-biking',
+		df: _Utils_Tuple2(35, 3)
+	},
+		{
+		cg: 1,
+		aW: '🚴\u200D♂️',
+		bc: _List_fromArray(
+			['man biking', 'sports', 'bike', 'exercise', 'hipster']),
+		bg: 'man-biking',
+		df: _Utils_Tuple2(35, 9)
+	},
+		{
+		cg: 1,
+		aW: '🚴',
+		bc: _List_fromArray(
+			['person biking']),
+		bg: 'bicyclist',
+		df: _Utils_Tuple2(35, 15)
+	},
+		{
+		cg: 1,
+		aW: '🚵\u200D♀️',
+		bc: _List_fromArray(
+			['woman mountain biking', 'transportation', 'sports', 'human', 'race', 'bike', 'woman', 'female']),
+		bg: 'woman-mountain-biking',
+		df: _Utils_Tuple2(35, 21)
+	},
+		{
+		cg: 1,
+		aW: '🚵\u200D♂️',
+		bc: _List_fromArray(
+			['man mountain biking', 'transportation', 'sports', 'human', 'race', 'bike']),
+		bg: 'man-mountain-biking',
+		df: _Utils_Tuple2(35, 27)
+	},
+		{
+		cg: 1,
+		aW: '🚵',
+		bc: _List_fromArray(
+			['person mountain biking']),
+		bg: 'mountain_bicyclist',
+		df: _Utils_Tuple2(35, 33)
+	},
+		{
+		cg: 1,
+		aW: '🚶\u200D♀️',
+		bc: _List_fromArray(
+			['woman walking', 'human', 'feet', 'steps', 'woman', 'female']),
+		bg: 'woman-walking',
+		df: _Utils_Tuple2(35, 39)
+	},
+		{
+		cg: 1,
+		aW: '🚶\u200D♂️',
+		bc: _List_fromArray(
+			['man walking', 'human', 'feet', 'steps']),
+		bg: 'man-walking',
+		df: _Utils_Tuple2(35, 45)
+	},
+		{
+		cg: 1,
+		aW: '🚶',
+		bc: _List_fromArray(
+			['person walking']),
+		bg: 'walking',
+		df: _Utils_Tuple2(35, 51)
+	},
+		{
+		cg: 7,
+		aW: '🚷',
+		bc: _List_fromArray(
+			['no pedestrians', 'rules', 'crossing', 'walking', 'circle']),
+		bg: 'no_pedestrians',
+		df: _Utils_Tuple2(35, 57)
+	},
+		{
+		cg: 7,
+		aW: '🚸',
+		bc: _List_fromArray(
+			['children crossing', 'school', 'warning', 'danger', 'sign', 'driving', 'yellow diamond']),
+		bg: 'children_crossing',
+		df: _Utils_Tuple2(36, 0)
+	},
+		{
+		cg: 7,
+		aW: '🚹',
+		bc: _List_fromArray(
+			['men s room', 'toilet', 'restroom', 'wc', 'blue square', 'gender', 'male']),
+		bg: 'mens',
+		df: _Utils_Tuple2(36, 1)
+	},
+		{
+		cg: 7,
+		aW: '🚺',
+		bc: _List_fromArray(
+			['women s room', 'purple square', 'woman', 'female', 'toilet', 'loo', 'restroom', 'gender']),
+		bg: 'womens',
+		df: _Utils_Tuple2(36, 2)
+	},
+		{
+		cg: 7,
+		aW: '🚻',
+		bc: _List_fromArray(
+			['restroom', 'blue square', 'toilet', 'refresh', 'wc', 'gender']),
+		bg: 'restroom',
+		df: _Utils_Tuple2(36, 3)
+	},
+		{
+		cg: 7,
+		aW: '🚼',
+		bc: _List_fromArray(
+			['baby symbol', 'orange square', 'child']),
+		bg: 'baby_symbol',
+		df: _Utils_Tuple2(36, 4)
+	},
+		{
+		cg: 6,
+		aW: '🚽',
+		bc: _List_fromArray(
+			['toilet', 'restroom', 'wc', 'washroom', 'bathroom', 'potty']),
+		bg: 'toilet',
+		df: _Utils_Tuple2(36, 5)
+	},
+		{
+		cg: 7,
+		aW: '🚾',
+		bc: _List_fromArray(
+			['water closet', 'toilet', 'restroom', 'blue square']),
+		bg: 'wc',
+		df: _Utils_Tuple2(36, 6)
+	},
+		{
+		cg: 6,
+		aW: '🚿',
+		bc: _List_fromArray(
+			['shower', 'clean', 'water', 'bathroom']),
+		bg: 'shower',
+		df: _Utils_Tuple2(36, 7)
+	},
+		{
+		cg: 1,
+		aW: '🛀',
+		bc: _List_fromArray(
+			['person taking bath', 'clean', 'shower', 'bathroom']),
+		bg: 'bath',
+		df: _Utils_Tuple2(36, 8)
+	},
+		{
+		cg: 6,
+		aW: '🛁',
+		bc: _List_fromArray(
+			['bathtub', 'clean', 'shower', 'bathroom']),
+		bg: 'bathtub',
+		df: _Utils_Tuple2(36, 14)
+	},
+		{
+		cg: 7,
+		aW: '🛂',
+		bc: _List_fromArray(
+			['passport control', 'custom', 'blue square']),
+		bg: 'passport_control',
+		df: _Utils_Tuple2(36, 15)
+	},
+		{
+		cg: 7,
+		aW: '🛃',
+		bc: _List_fromArray(
+			['customs', 'passport', 'border', 'blue square']),
+		bg: 'customs',
+		df: _Utils_Tuple2(36, 16)
+	},
+		{
+		cg: 7,
+		aW: '🛄',
+		bc: _List_fromArray(
+			['baggage claim', 'blue square', 'airport', 'transport']),
+		bg: 'baggage_claim',
+		df: _Utils_Tuple2(36, 17)
+	},
+		{
+		cg: 7,
+		aW: '🛅',
+		bc: _List_fromArray(
+			['left luggage', 'blue square', 'travel']),
+		bg: 'left_luggage',
+		df: _Utils_Tuple2(36, 18)
+	},
+		{
+		cg: 6,
+		aW: '🛋️',
+		bc: _List_fromArray(
+			['couch and lamp', 'read', 'chill']),
+		bg: 'couch_and_lamp',
+		df: _Utils_Tuple2(36, 19)
+	},
+		{
+		cg: 1,
+		aW: '🛌',
+		bc: _List_fromArray(
+			['person in bed', 'bed', 'rest']),
+		bg: 'sleeping_accommodation',
+		df: _Utils_Tuple2(36, 20)
+	},
+		{
+		cg: 6,
+		aW: '🛍️',
+		bc: _List_fromArray(
+			['shopping bags', 'mall', 'buy', 'purchase']),
+		bg: 'shopping_bags',
+		df: _Utils_Tuple2(36, 26)
+	},
+		{
+		cg: 4,
+		aW: '🛎️',
+		bc: _List_fromArray(
+			['bellhop bell', 'service']),
+		bg: 'bellhop_bell',
+		df: _Utils_Tuple2(36, 27)
+	},
+		{
+		cg: 6,
+		aW: '🛏️',
+		bc: _List_fromArray(
+			['bed', 'sleep', 'rest']),
+		bg: 'bed',
+		df: _Utils_Tuple2(36, 28)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDED0',
+		bc: _List_fromArray(
+			['place of worship', 'religion', 'church', 'temple', 'prayer']),
+		bg: 'place_of_worship',
+		df: _Utils_Tuple2(36, 29)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDED1',
+		bc: _List_fromArray(
+			['stop sign', 'stop']),
+		bg: 'octagonal_sign',
+		df: _Utils_Tuple2(36, 30)
+	},
+		{
+		cg: 6,
+		aW: '\uD83D\uDED2',
+		bc: _List_fromArray(
+			['shopping cart', 'trolley']),
+		bg: 'shopping_trolley',
+		df: _Utils_Tuple2(36, 31)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDED5',
+		bc: _List_fromArray(
+			['hindu temple']),
+		bg: 'hindu_temple',
+		df: _Utils_Tuple2(36, 32)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDED6',
+		bc: _List_fromArray(
+			['hut', 'house', 'structure']),
+		bg: 'hut',
+		df: _Utils_Tuple2(36, 33)
+	},
+		{
+		cg: 6,
+		aW: '\uD83D\uDED7',
+		bc: _List_fromArray(
+			['elevator', 'lift']),
+		bg: 'elevator',
+		df: _Utils_Tuple2(36, 34)
+	},
+		{
+		cg: 6,
+		aW: '🛠️',
+		bc: _List_fromArray(
+			['hammer and wrench', 'tools', 'build', 'create']),
+		bg: 'hammer_and_wrench',
+		df: _Utils_Tuple2(36, 35)
+	},
+		{
+		cg: 6,
+		aW: '🛡️',
+		bc: _List_fromArray(
+			['shield', 'protection', 'security']),
+		bg: 'shield',
+		df: _Utils_Tuple2(36, 36)
+	},
+		{
+		cg: 4,
+		aW: '🛢️',
+		bc: _List_fromArray(
+			['oil drum', 'barrell']),
+		bg: 'oil_drum',
+		df: _Utils_Tuple2(36, 37)
+	},
+		{
+		cg: 4,
+		aW: '🛣️',
+		bc: _List_fromArray(
+			['motorway', 'road', 'cupertino', 'interstate', 'highway']),
+		bg: 'motorway',
+		df: _Utils_Tuple2(36, 38)
+	},
+		{
+		cg: 4,
+		aW: '🛤️',
+		bc: _List_fromArray(
+			['railway track', 'train', 'transportation']),
+		bg: 'railway_track',
+		df: _Utils_Tuple2(36, 39)
+	},
+		{
+		cg: 4,
+		aW: '🛥️',
+		bc: _List_fromArray(
+			['motor boat', 'ship']),
+		bg: 'motor_boat',
+		df: _Utils_Tuple2(36, 40)
+	},
+		{
+		cg: 4,
+		aW: '🛩️',
+		bc: _List_fromArray(
+			['small airplane', 'flight', 'transportation', 'fly', 'vehicle']),
+		bg: 'small_airplane',
+		df: _Utils_Tuple2(36, 41)
+	},
+		{
+		cg: 4,
+		aW: '🛫',
+		bc: _List_fromArray(
+			['airplane departure', 'airport', 'flight', 'landing']),
+		bg: 'airplane_departure',
+		df: _Utils_Tuple2(36, 42)
+	},
+		{
+		cg: 4,
+		aW: '🛬',
+		bc: _List_fromArray(
+			['airplane arrival', 'airport', 'flight', 'boarding']),
+		bg: 'airplane_arriving',
+		df: _Utils_Tuple2(36, 43)
+	},
+		{
+		cg: 4,
+		aW: '🛰️',
+		bc: _List_fromArray(
+			['satellite', 'communication', 'gps', 'orbit', 'spaceflight', 'NASA', 'ISS']),
+		bg: 'satellite',
+		df: _Utils_Tuple2(36, 44)
+	},
+		{
+		cg: 4,
+		aW: '🛳️',
+		bc: _List_fromArray(
+			['passenger ship', 'yacht', 'cruise', 'ferry']),
+		bg: 'passenger_ship',
+		df: _Utils_Tuple2(36, 45)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEF4',
+		bc: _List_fromArray(
+			['kick scooter', 'vehicle', 'kick', 'razor']),
+		bg: 'scooter',
+		df: _Utils_Tuple2(36, 46)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEF5',
+		bc: _List_fromArray(
+			['motor scooter', 'vehicle', 'vespa', 'sasha']),
+		bg: 'motor_scooter',
+		df: _Utils_Tuple2(36, 47)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEF6',
+		bc: _List_fromArray(
+			['canoe', 'boat', 'paddle', 'water', 'ship']),
+		bg: 'canoe',
+		df: _Utils_Tuple2(36, 48)
+	},
+		{
+		cg: 5,
+		aW: '\uD83D\uDEF7',
+		bc: _List_fromArray(
+			['sled', 'sleigh', 'luge', 'toboggan']),
+		bg: 'sled',
+		df: _Utils_Tuple2(36, 49)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEF8',
+		bc: _List_fromArray(
+			['flying saucer', 'transportation', 'vehicle', 'ufo']),
+		bg: 'flying_saucer',
+		df: _Utils_Tuple2(36, 50)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEF9',
+		bc: _List_fromArray(
+			['skateboard', 'board']),
+		bg: 'skateboard',
+		df: _Utils_Tuple2(36, 51)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEFA',
+		bc: _List_fromArray(
+			['auto rickshaw']),
+		bg: 'auto_rickshaw',
+		df: _Utils_Tuple2(36, 52)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEFB',
+		bc: _List_fromArray(
+			['pickup truck', 'car', 'transportation']),
+		bg: 'pickup_truck',
+		df: _Utils_Tuple2(36, 53)
+	},
+		{
+		cg: 4,
+		aW: '\uD83D\uDEFC',
+		bc: _List_fromArray(
+			['roller skate', 'footwear', 'sports']),
+		bg: 'roller_skate',
+		df: _Utils_Tuple2(36, 54)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE0',
+		bc: _List_fromArray(
+			['orange circle']),
+		bg: 'large_orange_circle',
+		df: _Utils_Tuple2(36, 55)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE1',
+		bc: _List_fromArray(
+			['yellow circle']),
+		bg: 'large_yellow_circle',
+		df: _Utils_Tuple2(36, 56)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE2',
+		bc: _List_fromArray(
+			['green circle']),
+		bg: 'large_green_circle',
+		df: _Utils_Tuple2(36, 57)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE3',
+		bc: _List_fromArray(
+			['purple circle']),
+		bg: 'large_purple_circle',
+		df: _Utils_Tuple2(37, 0)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE4',
+		bc: _List_fromArray(
+			['brown circle']),
+		bg: 'large_brown_circle',
+		df: _Utils_Tuple2(37, 1)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE5',
+		bc: _List_fromArray(
+			['red square']),
+		bg: 'large_red_square',
+		df: _Utils_Tuple2(37, 2)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE6',
+		bc: _List_fromArray(
+			['blue square']),
+		bg: 'large_blue_square',
+		df: _Utils_Tuple2(37, 3)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE7',
+		bc: _List_fromArray(
+			['orange square']),
+		bg: 'large_orange_square',
+		df: _Utils_Tuple2(37, 4)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE8',
+		bc: _List_fromArray(
+			['yellow square']),
+		bg: 'large_yellow_square',
+		df: _Utils_Tuple2(37, 5)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFE9',
+		bc: _List_fromArray(
+			['green square']),
+		bg: 'large_green_square',
+		df: _Utils_Tuple2(37, 6)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFEA',
+		bc: _List_fromArray(
+			['purple square']),
+		bg: 'large_purple_square',
+		df: _Utils_Tuple2(37, 7)
+	},
+		{
+		cg: 7,
+		aW: '\uD83D\uDFEB',
+		bc: _List_fromArray(
+			['brown square']),
+		bg: 'large_brown_square',
+		df: _Utils_Tuple2(37, 8)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD0C',
+		bc: _List_fromArray(
+			['pinched fingers', 'size', 'tiny', 'small']),
+		bg: 'pinched_fingers',
+		df: _Utils_Tuple2(37, 9)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD0D',
+		bc: _List_fromArray(
+			['white heart']),
+		bg: 'white_heart',
+		df: _Utils_Tuple2(37, 15)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD0E',
+		bc: _List_fromArray(
+			['brown heart']),
+		bg: 'brown_heart',
+		df: _Utils_Tuple2(37, 16)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD0F',
+		bc: _List_fromArray(
+			['pinching hand']),
+		bg: 'pinching_hand',
+		df: _Utils_Tuple2(37, 17)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD10',
+		bc: _List_fromArray(
+			['zipper mouth face', 'face', 'sealed', 'zipper', 'secret']),
+		bg: 'zipper_mouth_face',
+		df: _Utils_Tuple2(37, 23)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD11',
+		bc: _List_fromArray(
+			['money mouth face', 'face', 'rich', 'dollar', 'money']),
+		bg: 'money_mouth_face',
+		df: _Utils_Tuple2(37, 24)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD12',
+		bc: _List_fromArray(
+			['face with thermometer', 'sick', 'temperature', 'thermometer', 'cold', 'fever']),
+		bg: 'face_with_thermometer',
+		df: _Utils_Tuple2(37, 25)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD13',
+		bc: _List_fromArray(
+			['nerd face', 'face', 'nerdy', 'geek', 'dork']),
+		bg: 'nerd_face',
+		df: _Utils_Tuple2(37, 26)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD14',
+		bc: _List_fromArray(
+			['thinking face', 'face', 'hmmm', 'think', 'consider']),
+		bg: 'thinking_face',
+		df: _Utils_Tuple2(37, 27)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD15',
+		bc: _List_fromArray(
+			['face with head bandage', 'injured', 'clumsy', 'bandage', 'hurt']),
+		bg: 'face_with_head_bandage',
+		df: _Utils_Tuple2(37, 28)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD16',
+		bc: _List_fromArray(
+			['robot', 'computer', 'machine', 'bot']),
+		bg: 'robot_face',
+		df: _Utils_Tuple2(37, 29)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD17',
+		bc: _List_fromArray(
+			['hugging face', 'face', 'smile', 'hug']),
+		bg: 'hugging_face',
+		df: _Utils_Tuple2(37, 30)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD18',
+		bc: _List_fromArray(
+			['sign of the horns', 'hand', 'fingers', 'evil eye', 'sign of horns', 'rock on']),
+		bg: 'the_horns',
+		df: _Utils_Tuple2(37, 31)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD19',
+		bc: _List_fromArray(
+			['call me hand', 'hands', 'gesture']),
+		bg: 'call_me_hand',
+		df: _Utils_Tuple2(37, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1A',
+		bc: _List_fromArray(
+			['raised back of hand', 'fingers', 'raised', 'backhand']),
+		bg: 'raised_back_of_hand',
+		df: _Utils_Tuple2(37, 43)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1B',
+		bc: _List_fromArray(
+			['left facing fist', 'hand', 'fistbump']),
+		bg: 'left-facing_fist',
+		df: _Utils_Tuple2(37, 49)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1C',
+		bc: _List_fromArray(
+			['right facing fist', 'hand', 'fistbump']),
+		bg: 'right-facing_fist',
+		df: _Utils_Tuple2(37, 55)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1D',
+		bc: _List_fromArray(
+			['handshake', 'agreement', 'shake']),
+		bg: 'handshake',
+		df: _Utils_Tuple2(38, 3)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1E',
+		bc: _List_fromArray(
+			['crossed fingers', 'good', 'lucky']),
+		bg: 'crossed_fingers',
+		df: _Utils_Tuple2(38, 4)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD1F',
+		bc: _List_fromArray(
+			['love you gesture', 'hand', 'fingers', 'gesture']),
+		bg: 'i_love_you_hand_sign',
+		df: _Utils_Tuple2(38, 10)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD20',
+		bc: _List_fromArray(
+			['cowboy hat face', 'face', 'cowgirl', 'hat']),
+		bg: 'face_with_cowboy_hat',
+		df: _Utils_Tuple2(38, 16)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD21',
+		bc: _List_fromArray(
+			['clown face', 'face']),
+		bg: 'clown_face',
+		df: _Utils_Tuple2(38, 17)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD22',
+		bc: _List_fromArray(
+			['nauseated face', 'face', 'vomit', 'gross', 'green', 'sick', 'throw up', 'ill']),
+		bg: 'nauseated_face',
+		df: _Utils_Tuple2(38, 18)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD23',
+		bc: _List_fromArray(
+			['rolling on the floor laughing', 'face', 'rolling', 'floor', 'laughing', 'lol', 'haha']),
+		bg: 'rolling_on_the_floor_laughing',
+		df: _Utils_Tuple2(38, 19)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD24',
+		bc: _List_fromArray(
+			['drooling face', 'face']),
+		bg: 'drooling_face',
+		df: _Utils_Tuple2(38, 20)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD25',
+		bc: _List_fromArray(
+			['lying face', 'face', 'lie', 'pinocchio']),
+		bg: 'lying_face',
+		df: _Utils_Tuple2(38, 21)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD26\u200D♀️',
+		bc: _List_fromArray(
+			['woman facepalming', 'woman', 'female', 'girl', 'disbelief']),
+		bg: 'woman-facepalming',
+		df: _Utils_Tuple2(38, 22)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD26\u200D♂️',
+		bc: _List_fromArray(
+			['man facepalming', 'man', 'male', 'boy', 'disbelief']),
+		bg: 'man-facepalming',
+		df: _Utils_Tuple2(38, 28)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD26',
+		bc: _List_fromArray(
+			['person facepalming']),
+		bg: 'face_palm',
+		df: _Utils_Tuple2(38, 34)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD27',
+		bc: _List_fromArray(
+			['sneezing face', 'face', 'gesundheit', 'sneeze', 'sick', 'allergy']),
+		bg: 'sneezing_face',
+		df: _Utils_Tuple2(38, 40)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD28',
+		bc: _List_fromArray(
+			['face with raised eyebrow', 'face', 'distrust', 'scepticism', 'disapproval', 'disbelief', 'surprise']),
+		bg: 'face_with_raised_eyebrow',
+		df: _Utils_Tuple2(38, 41)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD29',
+		bc: _List_fromArray(
+			['star struck', 'face', 'smile', 'starry', 'eyes', 'grinning']),
+		bg: 'star-struck',
+		df: _Utils_Tuple2(38, 42)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2A',
+		bc: _List_fromArray(
+			['zany face', 'face', 'goofy', 'crazy']),
+		bg: 'zany_face',
+		df: _Utils_Tuple2(38, 43)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2B',
+		bc: _List_fromArray(
+			['shushing face', 'face', 'quiet', 'shhh']),
+		bg: 'shushing_face',
+		df: _Utils_Tuple2(38, 44)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2C',
+		bc: _List_fromArray(
+			['face with symbols on mouth', 'face', 'swearing', 'cursing', 'cussing', 'profanity', 'expletive']),
+		bg: 'face_with_symbols_on_mouth',
+		df: _Utils_Tuple2(38, 45)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2D',
+		bc: _List_fromArray(
+			['face with hand over mouth', 'face', 'whoops', 'shock', 'surprise']),
+		bg: 'face_with_hand_over_mouth',
+		df: _Utils_Tuple2(38, 46)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2E',
+		bc: _List_fromArray(
+			['face vomiting', 'face', 'sick']),
+		bg: 'face_vomiting',
+		df: _Utils_Tuple2(38, 47)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD2F',
+		bc: _List_fromArray(
+			['exploding head', 'face', 'shocked', 'mind', 'blown']),
+		bg: 'exploding_head',
+		df: _Utils_Tuple2(38, 48)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD30',
+		bc: _List_fromArray(
+			['pregnant woman', 'baby']),
+		bg: 'pregnant_woman',
+		df: _Utils_Tuple2(38, 49)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD31',
+		bc: _List_fromArray(
+			['breast feeding', 'nursing', 'baby']),
+		bg: 'breast-feeding',
+		df: _Utils_Tuple2(38, 55)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD32',
+		bc: _List_fromArray(
+			['palms up together', 'hands', 'gesture', 'cupped', 'prayer']),
+		bg: 'palms_up_together',
+		df: _Utils_Tuple2(39, 3)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD33',
+		bc: _List_fromArray(
+			['selfie', 'camera', 'phone']),
+		bg: 'selfie',
+		df: _Utils_Tuple2(39, 9)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD34',
+		bc: _List_fromArray(
+			['prince', 'boy', 'man', 'male', 'crown', 'royal', 'king']),
+		bg: 'prince',
+		df: _Utils_Tuple2(39, 15)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD35\u200D♀️',
+		bc: _List_fromArray(
+			['woman in tuxedo', 'formal', 'fashion']),
+		bg: 'woman_in_tuxedo',
+		df: _Utils_Tuple2(39, 21)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD35\u200D♂️',
+		bc: _List_fromArray(
+			['man in tuxedo', 'formal', 'fashion']),
+		bg: 'man_in_tuxedo',
+		df: _Utils_Tuple2(39, 27)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD35',
+		bc: _List_fromArray(
+			['man in tuxedo', 'couple', 'marriage', 'wedding', 'groom']),
+		bg: 'man_in_tuxedo',
+		df: _Utils_Tuple2(39, 33)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD36',
+		bc: _List_fromArray(
+			['mrs claus', 'woman', 'female', 'xmas', 'mother christmas']),
+		bg: 'mrs_claus',
+		df: _Utils_Tuple2(39, 39)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD37\u200D♀️',
+		bc: _List_fromArray(
+			['woman shrugging', 'woman', 'female', 'girl', 'confused', 'indifferent', 'doubt']),
+		bg: 'woman-shrugging',
+		df: _Utils_Tuple2(39, 45)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD37\u200D♂️',
+		bc: _List_fromArray(
+			['man shrugging', 'man', 'male', 'boy', 'confused', 'indifferent', 'doubt']),
+		bg: 'man-shrugging',
+		df: _Utils_Tuple2(39, 51)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD37',
+		bc: _List_fromArray(
+			['person shrugging']),
+		bg: 'shrug',
+		df: _Utils_Tuple2(39, 57)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD38\u200D♀️',
+		bc: _List_fromArray(
+			['woman cartwheeling', 'gymnastics']),
+		bg: 'woman-cartwheeling',
+		df: _Utils_Tuple2(40, 5)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD38\u200D♂️',
+		bc: _List_fromArray(
+			['man cartwheeling', 'gymnastics']),
+		bg: 'man-cartwheeling',
+		df: _Utils_Tuple2(40, 11)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD38',
+		bc: _List_fromArray(
+			['person cartwheeling']),
+		bg: 'person_doing_cartwheel',
+		df: _Utils_Tuple2(40, 17)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD39\u200D♀️',
+		bc: _List_fromArray(
+			['woman juggling', 'juggle', 'balance', 'skill', 'multitask']),
+		bg: 'woman-juggling',
+		df: _Utils_Tuple2(40, 23)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD39\u200D♂️',
+		bc: _List_fromArray(
+			['man juggling', 'juggle', 'balance', 'skill', 'multitask']),
+		bg: 'man-juggling',
+		df: _Utils_Tuple2(40, 29)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD39',
+		bc: _List_fromArray(
+			['person juggling']),
+		bg: 'juggling',
+		df: _Utils_Tuple2(40, 35)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3A',
+		bc: _List_fromArray(
+			['person fencing', 'sports', 'fencing', 'sword']),
+		bg: 'fencer',
+		df: _Utils_Tuple2(40, 41)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3C\u200D♀️',
+		bc: _List_fromArray(
+			['women wrestling', 'sports', 'wrestlers']),
+		bg: 'woman-wrestling',
+		df: _Utils_Tuple2(40, 42)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3C\u200D♂️',
+		bc: _List_fromArray(
+			['men wrestling', 'sports', 'wrestlers']),
+		bg: 'man-wrestling',
+		df: _Utils_Tuple2(40, 43)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3C',
+		bc: _List_fromArray(
+			['people wrestling']),
+		bg: 'wrestlers',
+		df: _Utils_Tuple2(40, 44)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3D\u200D♀️',
+		bc: _List_fromArray(
+			['woman playing water polo', 'sports', 'pool']),
+		bg: 'woman-playing-water-polo',
+		df: _Utils_Tuple2(40, 45)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3D\u200D♂️',
+		bc: _List_fromArray(
+			['man playing water polo', 'sports', 'pool']),
+		bg: 'man-playing-water-polo',
+		df: _Utils_Tuple2(40, 51)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3D',
+		bc: _List_fromArray(
+			['person playing water polo']),
+		bg: 'water_polo',
+		df: _Utils_Tuple2(40, 57)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3E\u200D♀️',
+		bc: _List_fromArray(
+			['woman playing handball', 'sports']),
+		bg: 'woman-playing-handball',
+		df: _Utils_Tuple2(41, 5)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3E\u200D♂️',
+		bc: _List_fromArray(
+			['man playing handball', 'sports']),
+		bg: 'man-playing-handball',
+		df: _Utils_Tuple2(41, 11)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD3E',
+		bc: _List_fromArray(
+			['person playing handball']),
+		bg: 'handball',
+		df: _Utils_Tuple2(41, 17)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD3F',
+		bc: _List_fromArray(
+			['diving mask']),
+		bg: 'diving_mask',
+		df: _Utils_Tuple2(41, 23)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD40',
+		bc: _List_fromArray(
+			['wilted flower', 'plant', 'nature', 'flower']),
+		bg: 'wilted_flower',
+		df: _Utils_Tuple2(41, 24)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD41',
+		bc: _List_fromArray(
+			['drum', 'music', 'instrument', 'drumsticks', 'snare']),
+		bg: 'drum_with_drumsticks',
+		df: _Utils_Tuple2(41, 25)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD42',
+		bc: _List_fromArray(
+			['clinking glasses', 'beverage', 'drink', 'party', 'alcohol', 'celebrate', 'cheers', 'wine', 'champagne', 'toast']),
+		bg: 'clinking_glasses',
+		df: _Utils_Tuple2(41, 26)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD43',
+		bc: _List_fromArray(
+			['tumbler glass', 'drink', 'beverage', 'drunk', 'alcohol', 'liquor', 'booze', 'bourbon', 'scotch', 'whisky', 'glass', 'shot']),
+		bg: 'tumbler_glass',
+		df: _Utils_Tuple2(41, 27)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD44',
+		bc: _List_fromArray(
+			['spoon', 'cutlery', 'kitchen', 'tableware']),
+		bg: 'spoon',
+		df: _Utils_Tuple2(41, 28)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD45',
+		bc: _List_fromArray(
+			['goal net', 'sports']),
+		bg: 'goal_net',
+		df: _Utils_Tuple2(41, 29)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD47',
+		bc: _List_fromArray(
+			['1st place medal', 'award', 'winning', 'first']),
+		bg: 'first_place_medal',
+		df: _Utils_Tuple2(41, 30)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD48',
+		bc: _List_fromArray(
+			['2nd place medal', 'award', 'second']),
+		bg: 'second_place_medal',
+		df: _Utils_Tuple2(41, 31)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD49',
+		bc: _List_fromArray(
+			['3rd place medal', 'award', 'third']),
+		bg: 'third_place_medal',
+		df: _Utils_Tuple2(41, 32)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4A',
+		bc: _List_fromArray(
+			['boxing glove', 'sports', 'fighting']),
+		bg: 'boxing_glove',
+		df: _Utils_Tuple2(41, 33)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4B',
+		bc: _List_fromArray(
+			['martial arts uniform', 'judo', 'karate', 'taekwondo']),
+		bg: 'martial_arts_uniform',
+		df: _Utils_Tuple2(41, 34)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4C',
+		bc: _List_fromArray(
+			['curling stone', 'sports']),
+		bg: 'curling_stone',
+		df: _Utils_Tuple2(41, 35)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4D',
+		bc: _List_fromArray(
+			['lacrosse', 'sports', 'ball', 'stick']),
+		bg: 'lacrosse',
+		df: _Utils_Tuple2(41, 36)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4E',
+		bc: _List_fromArray(
+			['softball', 'sports', 'balls']),
+		bg: 'softball',
+		df: _Utils_Tuple2(41, 37)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDD4F',
+		bc: _List_fromArray(
+			['flying disc', 'sports', 'frisbee', 'ultimate']),
+		bg: 'flying_disc',
+		df: _Utils_Tuple2(41, 38)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD50',
+		bc: _List_fromArray(
+			['croissant', 'food', 'bread', 'french']),
+		bg: 'croissant',
+		df: _Utils_Tuple2(41, 39)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD51',
+		bc: _List_fromArray(
+			['avocado', 'fruit', 'food']),
+		bg: 'avocado',
+		df: _Utils_Tuple2(41, 40)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD52',
+		bc: _List_fromArray(
+			['cucumber', 'fruit', 'food', 'pickle']),
+		bg: 'cucumber',
+		df: _Utils_Tuple2(41, 41)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD53',
+		bc: _List_fromArray(
+			['bacon', 'food', 'breakfast', 'pork', 'pig', 'meat']),
+		bg: 'bacon',
+		df: _Utils_Tuple2(41, 42)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD54',
+		bc: _List_fromArray(
+			['potato', 'food', 'tuber', 'vegatable', 'starch']),
+		bg: 'potato',
+		df: _Utils_Tuple2(41, 43)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD55',
+		bc: _List_fromArray(
+			['carrot', 'vegetable', 'food', 'orange']),
+		bg: 'carrot',
+		df: _Utils_Tuple2(41, 44)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD56',
+		bc: _List_fromArray(
+			['baguette bread', 'food', 'bread', 'french']),
+		bg: 'baguette_bread',
+		df: _Utils_Tuple2(41, 45)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD57',
+		bc: _List_fromArray(
+			['green salad', 'food', 'healthy', 'lettuce']),
+		bg: 'green_salad',
+		df: _Utils_Tuple2(41, 46)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD58',
+		bc: _List_fromArray(
+			['shallow pan of food', 'food', 'cooking', 'casserole', 'paella']),
+		bg: 'shallow_pan_of_food',
+		df: _Utils_Tuple2(41, 47)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD59',
+		bc: _List_fromArray(
+			['stuffed flatbread', 'food', 'flatbread', 'stuffed', 'gyro']),
+		bg: 'stuffed_flatbread',
+		df: _Utils_Tuple2(41, 48)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5A',
+		bc: _List_fromArray(
+			['egg', 'food', 'chicken', 'breakfast']),
+		bg: 'egg',
+		df: _Utils_Tuple2(41, 49)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5B',
+		bc: _List_fromArray(
+			['glass of milk', 'beverage', 'drink', 'cow']),
+		bg: 'glass_of_milk',
+		df: _Utils_Tuple2(41, 50)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5C',
+		bc: _List_fromArray(
+			['peanuts', 'food', 'nut']),
+		bg: 'peanuts',
+		df: _Utils_Tuple2(41, 51)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5D',
+		bc: _List_fromArray(
+			['kiwi fruit', 'fruit', 'food']),
+		bg: 'kiwifruit',
+		df: _Utils_Tuple2(41, 52)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5E',
+		bc: _List_fromArray(
+			['pancakes', 'food', 'breakfast', 'flapjacks', 'hotcakes']),
+		bg: 'pancakes',
+		df: _Utils_Tuple2(41, 53)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD5F',
+		bc: _List_fromArray(
+			['dumpling', 'food', 'empanada', 'pierogi', 'potsticker']),
+		bg: 'dumpling',
+		df: _Utils_Tuple2(41, 54)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD60',
+		bc: _List_fromArray(
+			['fortune cookie', 'food', 'prophecy']),
+		bg: 'fortune_cookie',
+		df: _Utils_Tuple2(41, 55)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD61',
+		bc: _List_fromArray(
+			['takeout box', 'food', 'leftovers']),
+		bg: 'takeout_box',
+		df: _Utils_Tuple2(41, 56)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD62',
+		bc: _List_fromArray(
+			['chopsticks', 'food']),
+		bg: 'chopsticks',
+		df: _Utils_Tuple2(41, 57)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD63',
+		bc: _List_fromArray(
+			['bowl with spoon', 'food', 'breakfast', 'cereal', 'oatmeal', 'porridge']),
+		bg: 'bowl_with_spoon',
+		df: _Utils_Tuple2(42, 0)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD64',
+		bc: _List_fromArray(
+			['cup with straw', 'drink', 'soda']),
+		bg: 'cup_with_straw',
+		df: _Utils_Tuple2(42, 1)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD65',
+		bc: _List_fromArray(
+			['coconut', 'fruit', 'nature', 'food', 'palm']),
+		bg: 'coconut',
+		df: _Utils_Tuple2(42, 2)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD66',
+		bc: _List_fromArray(
+			['broccoli', 'fruit', 'food', 'vegetable']),
+		bg: 'broccoli',
+		df: _Utils_Tuple2(42, 3)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD67',
+		bc: _List_fromArray(
+			['pie', 'food', 'dessert', 'pastry']),
+		bg: 'pie',
+		df: _Utils_Tuple2(42, 4)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD68',
+		bc: _List_fromArray(
+			['pretzel', 'food', 'bread', 'twisted']),
+		bg: 'pretzel',
+		df: _Utils_Tuple2(42, 5)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD69',
+		bc: _List_fromArray(
+			['cut of meat', 'food', 'cow', 'meat', 'cut', 'chop', 'lambchop', 'porkchop']),
+		bg: 'cut_of_meat',
+		df: _Utils_Tuple2(42, 6)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6A',
+		bc: _List_fromArray(
+			['sandwich', 'food', 'lunch', 'bread']),
+		bg: 'sandwich',
+		df: _Utils_Tuple2(42, 7)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6B',
+		bc: _List_fromArray(
+			['canned food', 'food', 'soup']),
+		bg: 'canned_food',
+		df: _Utils_Tuple2(42, 8)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6C',
+		bc: _List_fromArray(
+			['leafy green', 'food', 'vegetable', 'plant', 'bok choy', 'cabbage', 'kale', 'lettuce']),
+		bg: 'leafy_green',
+		df: _Utils_Tuple2(42, 9)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6D',
+		bc: _List_fromArray(
+			['mango', 'fruit', 'food', 'tropical']),
+		bg: 'mango',
+		df: _Utils_Tuple2(42, 10)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6E',
+		bc: _List_fromArray(
+			['moon cake', 'food', 'autumn']),
+		bg: 'moon_cake',
+		df: _Utils_Tuple2(42, 11)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD6F',
+		bc: _List_fromArray(
+			['bagel', 'food', 'bread', 'bakery', 'schmear']),
+		bg: 'bagel',
+		df: _Utils_Tuple2(42, 12)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD70',
+		bc: _List_fromArray(
+			['smiling face with hearts', 'face', 'love', 'like', 'affection', 'valentines', 'infatuation', 'crush', 'hearts', 'adore']),
+		bg: 'smiling_face_with_3_hearts',
+		df: _Utils_Tuple2(42, 13)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD71',
+		bc: _List_fromArray(
+			['yawning face']),
+		bg: 'yawning_face',
+		df: _Utils_Tuple2(42, 14)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD72',
+		bc: _List_fromArray(
+			['smiling face with tear', 'sad', 'cry', 'pretend']),
+		bg: 'smiling_face_with_tear',
+		df: _Utils_Tuple2(42, 15)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD73',
+		bc: _List_fromArray(
+			['partying face', 'face', 'celebration', 'woohoo']),
+		bg: 'partying_face',
+		df: _Utils_Tuple2(42, 16)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD74',
+		bc: _List_fromArray(
+			['woozy face', 'face', 'dizzy', 'intoxicated', 'tipsy', 'wavy']),
+		bg: 'woozy_face',
+		df: _Utils_Tuple2(42, 17)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD75',
+		bc: _List_fromArray(
+			['hot face', 'face', 'feverish', 'heat', 'red', 'sweating']),
+		bg: 'hot_face',
+		df: _Utils_Tuple2(42, 18)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD76',
+		bc: _List_fromArray(
+			['cold face', 'face', 'blue', 'freezing', 'frozen', 'frostbite', 'icicles']),
+		bg: 'cold_face',
+		df: _Utils_Tuple2(42, 19)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDD77',
+		bc: _List_fromArray(
+			['ninja', 'ninjutsu', 'skills', 'japanese']),
+		bg: 'ninja',
+		df: _Utils_Tuple2(42, 20)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD78',
+		bc: _List_fromArray(
+			['disguised face', 'pretent', 'brows', 'glasses', 'moustache']),
+		bg: 'disguised_face',
+		df: _Utils_Tuple2(42, 26)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDD7A',
+		bc: _List_fromArray(
+			['pleading face', 'face', 'begging', 'mercy']),
+		bg: 'pleading_face',
+		df: _Utils_Tuple2(42, 27)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD7B',
+		bc: _List_fromArray(
+			['sari']),
+		bg: 'sari',
+		df: _Utils_Tuple2(42, 28)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD7C',
+		bc: _List_fromArray(
+			['lab coat', 'doctor', 'experiment', 'scientist', 'chemist']),
+		bg: 'lab_coat',
+		df: _Utils_Tuple2(42, 29)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD7D',
+		bc: _List_fromArray(
+			['goggles', 'eyes', 'protection', 'safety']),
+		bg: 'goggles',
+		df: _Utils_Tuple2(42, 30)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD7E',
+		bc: _List_fromArray(
+			['hiking boot', 'backpacking', 'camping', 'hiking']),
+		bg: 'hiking_boot',
+		df: _Utils_Tuple2(42, 31)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDD7F',
+		bc: _List_fromArray(
+			['flat shoe', 'ballet', 'slip on', 'slipper']),
+		bg: 'womans_flat_shoe',
+		df: _Utils_Tuple2(42, 32)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD80',
+		bc: _List_fromArray(
+			['crab', 'animal', 'crustacean']),
+		bg: 'crab',
+		df: _Utils_Tuple2(42, 33)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD81',
+		bc: _List_fromArray(
+			['lion', 'animal', 'nature']),
+		bg: 'lion_face',
+		df: _Utils_Tuple2(42, 34)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD82',
+		bc: _List_fromArray(
+			['scorpion', 'animal', 'arachnid']),
+		bg: 'scorpion',
+		df: _Utils_Tuple2(42, 35)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD83',
+		bc: _List_fromArray(
+			['turkey', 'animal', 'bird']),
+		bg: 'turkey',
+		df: _Utils_Tuple2(42, 36)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD84',
+		bc: _List_fromArray(
+			['unicorn', 'animal', 'nature', 'mystical']),
+		bg: 'unicorn_face',
+		df: _Utils_Tuple2(42, 37)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD85',
+		bc: _List_fromArray(
+			['eagle', 'animal', 'nature', 'bird']),
+		bg: 'eagle',
+		df: _Utils_Tuple2(42, 38)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD86',
+		bc: _List_fromArray(
+			['duck', 'animal', 'nature', 'bird', 'mallard']),
+		bg: 'duck',
+		df: _Utils_Tuple2(42, 39)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD87',
+		bc: _List_fromArray(
+			['bat', 'animal', 'nature', 'blind', 'vampire']),
+		bg: 'bat',
+		df: _Utils_Tuple2(42, 40)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD88',
+		bc: _List_fromArray(
+			['shark', 'animal', 'nature', 'fish', 'sea', 'ocean', 'jaws', 'fins', 'beach']),
+		bg: 'shark',
+		df: _Utils_Tuple2(42, 41)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD89',
+		bc: _List_fromArray(
+			['owl', 'animal', 'nature', 'bird', 'hoot']),
+		bg: 'owl',
+		df: _Utils_Tuple2(42, 42)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8A',
+		bc: _List_fromArray(
+			['fox', 'animal', 'nature', 'face']),
+		bg: 'fox_face',
+		df: _Utils_Tuple2(42, 43)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8B',
+		bc: _List_fromArray(
+			['butterfly', 'animal', 'insect', 'nature', 'caterpillar']),
+		bg: 'butterfly',
+		df: _Utils_Tuple2(42, 44)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8C',
+		bc: _List_fromArray(
+			['deer', 'animal', 'nature', 'horns', 'venison']),
+		bg: 'deer',
+		df: _Utils_Tuple2(42, 45)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8D',
+		bc: _List_fromArray(
+			['gorilla', 'animal', 'nature', 'circus']),
+		bg: 'gorilla',
+		df: _Utils_Tuple2(42, 46)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8E',
+		bc: _List_fromArray(
+			['lizard', 'animal', 'nature', 'reptile']),
+		bg: 'lizard',
+		df: _Utils_Tuple2(42, 47)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD8F',
+		bc: _List_fromArray(
+			['rhinoceros', 'animal', 'nature', 'horn']),
+		bg: 'rhinoceros',
+		df: _Utils_Tuple2(42, 48)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD90',
+		bc: _List_fromArray(
+			['shrimp', 'animal', 'ocean', 'nature', 'seafood']),
+		bg: 'shrimp',
+		df: _Utils_Tuple2(42, 49)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD91',
+		bc: _List_fromArray(
+			['squid', 'animal', 'nature', 'ocean', 'sea']),
+		bg: 'squid',
+		df: _Utils_Tuple2(42, 50)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD92',
+		bc: _List_fromArray(
+			['giraffe', 'animal', 'nature', 'spots', 'safari']),
+		bg: 'giraffe_face',
+		df: _Utils_Tuple2(42, 51)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD93',
+		bc: _List_fromArray(
+			['zebra', 'animal', 'nature', 'stripes', 'safari']),
+		bg: 'zebra_face',
+		df: _Utils_Tuple2(42, 52)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD94',
+		bc: _List_fromArray(
+			['hedgehog', 'animal', 'nature', 'spiny']),
+		bg: 'hedgehog',
+		df: _Utils_Tuple2(42, 53)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD95',
+		bc: _List_fromArray(
+			['sauropod', 'animal', 'nature', 'dinosaur', 'brachiosaurus', 'brontosaurus', 'diplodocus', 'extinct']),
+		bg: 'sauropod',
+		df: _Utils_Tuple2(42, 54)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD96',
+		bc: _List_fromArray(
+			['t rex', 'animal', 'nature', 'dinosaur', 'tyrannosaurus', 'extinct']),
+		bg: 't-rex',
+		df: _Utils_Tuple2(42, 55)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD97',
+		bc: _List_fromArray(
+			['cricket', 'animal', 'cricket', 'chirp']),
+		bg: 'cricket',
+		df: _Utils_Tuple2(42, 56)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD98',
+		bc: _List_fromArray(
+			['kangaroo', 'animal', 'nature', 'australia', 'joey', 'hop', 'marsupial']),
+		bg: 'kangaroo',
+		df: _Utils_Tuple2(42, 57)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD99',
+		bc: _List_fromArray(
+			['llama', 'animal', 'nature', 'alpaca']),
+		bg: 'llama',
+		df: _Utils_Tuple2(43, 0)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD9A',
+		bc: _List_fromArray(
+			['peacock', 'animal', 'nature', 'peahen', 'bird']),
+		bg: 'peacock',
+		df: _Utils_Tuple2(43, 1)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD9B',
+		bc: _List_fromArray(
+			['hippopotamus', 'animal', 'nature']),
+		bg: 'hippopotamus',
+		df: _Utils_Tuple2(43, 2)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD9C',
+		bc: _List_fromArray(
+			['parrot', 'animal', 'nature', 'bird', 'pirate', 'talk']),
+		bg: 'parrot',
+		df: _Utils_Tuple2(43, 3)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD9D',
+		bc: _List_fromArray(
+			['raccoon', 'animal', 'nature']),
+		bg: 'raccoon',
+		df: _Utils_Tuple2(43, 4)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDD9E',
+		bc: _List_fromArray(
+			['lobster', 'animal', 'nature', 'bisque', 'claws', 'seafood']),
+		bg: 'lobster',
+		df: _Utils_Tuple2(43, 5)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDD9F',
+		bc: _List_fromArray(
+			['mosquito', 'animal', 'nature', 'insect', 'malaria']),
+		bg: 'mosquito',
+		df: _Utils_Tuple2(43, 6)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA0',
+		bc: _List_fromArray(
+			['microbe', 'amoeba', 'bacteria', 'germs']),
+		bg: 'microbe',
+		df: _Utils_Tuple2(43, 7)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA1',
+		bc: _List_fromArray(
+			['badger', 'animal', 'nature', 'honey']),
+		bg: 'badger',
+		df: _Utils_Tuple2(43, 8)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA2',
+		bc: _List_fromArray(
+			['swan', 'animal', 'nature', 'bird']),
+		bg: 'swan',
+		df: _Utils_Tuple2(43, 9)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA3',
+		bc: _List_fromArray(
+			['mammoth', 'elephant', 'tusks']),
+		bg: 'mammoth',
+		df: _Utils_Tuple2(43, 10)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA4',
+		bc: _List_fromArray(
+			['dodo', 'animal', 'bird']),
+		bg: 'dodo',
+		df: _Utils_Tuple2(43, 11)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA5',
+		bc: _List_fromArray(
+			['sloth']),
+		bg: 'sloth',
+		df: _Utils_Tuple2(43, 12)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA6',
+		bc: _List_fromArray(
+			['otter']),
+		bg: 'otter',
+		df: _Utils_Tuple2(43, 13)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA7',
+		bc: _List_fromArray(
+			['orangutan']),
+		bg: 'orangutan',
+		df: _Utils_Tuple2(43, 14)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA8',
+		bc: _List_fromArray(
+			['skunk']),
+		bg: 'skunk',
+		df: _Utils_Tuple2(43, 15)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDA9',
+		bc: _List_fromArray(
+			['flamingo']),
+		bg: 'flamingo',
+		df: _Utils_Tuple2(43, 16)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDAA',
+		bc: _List_fromArray(
+			['oyster']),
+		bg: 'oyster',
+		df: _Utils_Tuple2(43, 17)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDAB',
+		bc: _List_fromArray(
+			['beaver', 'animal', 'rodent']),
+		bg: 'beaver',
+		df: _Utils_Tuple2(43, 18)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDAC',
+		bc: _List_fromArray(
+			['bison', 'ox']),
+		bg: 'bison',
+		df: _Utils_Tuple2(43, 19)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDAD',
+		bc: _List_fromArray(
+			['seal', 'animal', 'creature', 'sea']),
+		bg: 'seal',
+		df: _Utils_Tuple2(43, 20)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDDAE',
+		bc: _List_fromArray(
+			['guide dog']),
+		bg: 'guide_dog',
+		df: _Utils_Tuple2(43, 21)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDAF',
+		bc: _List_fromArray(
+			['probing cane']),
+		bg: 'probing_cane',
+		df: _Utils_Tuple2(43, 22)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB4',
+		bc: _List_fromArray(
+			['bone', 'skeleton']),
+		bg: 'bone',
+		df: _Utils_Tuple2(43, 23)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB5',
+		bc: _List_fromArray(
+			['leg', 'kick', 'limb']),
+		bg: 'leg',
+		df: _Utils_Tuple2(43, 24)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB6',
+		bc: _List_fromArray(
+			['foot', 'kick', 'stomp']),
+		bg: 'foot',
+		df: _Utils_Tuple2(43, 30)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB7',
+		bc: _List_fromArray(
+			['tooth', 'teeth', 'dentist']),
+		bg: 'tooth',
+		df: _Utils_Tuple2(43, 36)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB8\u200D♀️',
+		bc: _List_fromArray(
+			['woman superhero', 'woman', 'female', 'good', 'heroine', 'superpowers']),
+		bg: 'female_superhero',
+		df: _Utils_Tuple2(43, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB8\u200D♂️',
+		bc: _List_fromArray(
+			['man superhero', 'man', 'male', 'good', 'hero', 'superpowers']),
+		bg: 'male_superhero',
+		df: _Utils_Tuple2(43, 43)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB8',
+		bc: _List_fromArray(
+			['superhero']),
+		bg: 'superhero',
+		df: _Utils_Tuple2(43, 49)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB9\u200D♀️',
+		bc: _List_fromArray(
+			['woman supervillain', 'woman', 'female', 'evil', 'bad', 'criminal', 'heroine', 'superpowers']),
+		bg: 'female_supervillain',
+		df: _Utils_Tuple2(43, 55)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB9\u200D♂️',
+		bc: _List_fromArray(
+			['man supervillain', 'man', 'male', 'evil', 'bad', 'criminal', 'hero', 'superpowers']),
+		bg: 'male_supervillain',
+		df: _Utils_Tuple2(44, 3)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDB9',
+		bc: _List_fromArray(
+			['supervillain']),
+		bg: 'supervillain',
+		df: _Utils_Tuple2(44, 9)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDBA',
+		bc: _List_fromArray(
+			['safety vest']),
+		bg: 'safety_vest',
+		df: _Utils_Tuple2(44, 15)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDBB',
+		bc: _List_fromArray(
+			['ear with hearing aid']),
+		bg: 'ear_with_hearing_aid',
+		df: _Utils_Tuple2(44, 16)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDDBC',
+		bc: _List_fromArray(
+			['motorized wheelchair']),
+		bg: 'motorized_wheelchair',
+		df: _Utils_Tuple2(44, 22)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDDBD',
+		bc: _List_fromArray(
+			['manual wheelchair']),
+		bg: 'manual_wheelchair',
+		df: _Utils_Tuple2(44, 23)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDBE',
+		bc: _List_fromArray(
+			['mechanical arm']),
+		bg: 'mechanical_arm',
+		df: _Utils_Tuple2(44, 24)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDBF',
+		bc: _List_fromArray(
+			['mechanical leg']),
+		bg: 'mechanical_leg',
+		df: _Utils_Tuple2(44, 25)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC0',
+		bc: _List_fromArray(
+			['cheese wedge', 'food', 'chadder']),
+		bg: 'cheese_wedge',
+		df: _Utils_Tuple2(44, 26)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC1',
+		bc: _List_fromArray(
+			['cupcake', 'food', 'dessert', 'bakery', 'sweet']),
+		bg: 'cupcake',
+		df: _Utils_Tuple2(44, 27)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC2',
+		bc: _List_fromArray(
+			['salt', 'condiment', 'shaker']),
+		bg: 'salt',
+		df: _Utils_Tuple2(44, 28)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC3',
+		bc: _List_fromArray(
+			['beverage box']),
+		bg: 'beverage_box',
+		df: _Utils_Tuple2(44, 29)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC4',
+		bc: _List_fromArray(
+			['garlic']),
+		bg: 'garlic',
+		df: _Utils_Tuple2(44, 30)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC5',
+		bc: _List_fromArray(
+			['onion']),
+		bg: 'onion',
+		df: _Utils_Tuple2(44, 31)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC6',
+		bc: _List_fromArray(
+			['falafel']),
+		bg: 'falafel',
+		df: _Utils_Tuple2(44, 32)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC7',
+		bc: _List_fromArray(
+			['waffle']),
+		bg: 'waffle',
+		df: _Utils_Tuple2(44, 33)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC8',
+		bc: _List_fromArray(
+			['butter']),
+		bg: 'butter',
+		df: _Utils_Tuple2(44, 34)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDC9',
+		bc: _List_fromArray(
+			['mate']),
+		bg: 'mate_drink',
+		df: _Utils_Tuple2(44, 35)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDCA',
+		bc: _List_fromArray(
+			['ice']),
+		bg: 'ice_cube',
+		df: _Utils_Tuple2(44, 36)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDDCB',
+		bc: _List_fromArray(
+			['bubble tea', 'taiwan', 'boba', 'milk tea', 'straw']),
+		bg: 'bubble_tea',
+		df: _Utils_Tuple2(44, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCD\u200D♀️',
+		bc: _List_fromArray(
+			['woman standing']),
+		bg: 'woman_standing',
+		df: _Utils_Tuple2(44, 38)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCD\u200D♂️',
+		bc: _List_fromArray(
+			['man standing']),
+		bg: 'man_standing',
+		df: _Utils_Tuple2(44, 44)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCD',
+		bc: _List_fromArray(
+			['person standing']),
+		bg: 'standing_person',
+		df: _Utils_Tuple2(44, 50)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCE\u200D♀️',
+		bc: _List_fromArray(
+			['woman kneeling']),
+		bg: 'woman_kneeling',
+		df: _Utils_Tuple2(44, 56)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCE\u200D♂️',
+		bc: _List_fromArray(
+			['man kneeling']),
+		bg: 'man_kneeling',
+		df: _Utils_Tuple2(45, 4)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCE',
+		bc: _List_fromArray(
+			['person kneeling']),
+		bg: 'kneeling_person',
+		df: _Utils_Tuple2(45, 10)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCF\u200D♀️',
+		bc: _List_fromArray(
+			['deaf woman']),
+		bg: 'deaf_woman',
+		df: _Utils_Tuple2(45, 16)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCF\u200D♂️',
+		bc: _List_fromArray(
+			['deaf man']),
+		bg: 'deaf_man',
+		df: _Utils_Tuple2(45, 22)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDCF',
+		bc: _List_fromArray(
+			['deaf person']),
+		bg: 'deaf_person',
+		df: _Utils_Tuple2(45, 28)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDDD0',
+		bc: _List_fromArray(
+			['face with monocle', 'face', 'stuffy', 'wealthy']),
+		bg: 'face_with_monocle',
+		df: _Utils_Tuple2(45, 34)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🌾',
+		bc: _List_fromArray(
+			['farmer']),
+		bg: 'farmer',
+		df: _Utils_Tuple2(45, 35)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🍳',
+		bc: _List_fromArray(
+			['cook']),
+		bg: 'cook',
+		df: _Utils_Tuple2(45, 41)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🍼',
+		bc: _List_fromArray(
+			['person feeding baby', 'birth', 'food']),
+		bg: 'person_feeding_baby',
+		df: _Utils_Tuple2(45, 47)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🎄',
+		bc: _List_fromArray(
+			['mx claus', 'christmas']),
+		bg: 'mx_claus',
+		df: _Utils_Tuple2(45, 53)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🎓',
+		bc: _List_fromArray(
+			['student']),
+		bg: 'student',
+		df: _Utils_Tuple2(46, 1)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🎤',
+		bc: _List_fromArray(
+			['singer']),
+		bg: 'singer',
+		df: _Utils_Tuple2(46, 7)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🎨',
+		bc: _List_fromArray(
+			['artist']),
+		bg: 'artist',
+		df: _Utils_Tuple2(46, 13)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🏫',
+		bc: _List_fromArray(
+			['teacher']),
+		bg: 'teacher',
+		df: _Utils_Tuple2(46, 19)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🏭',
+		bc: _List_fromArray(
+			['factory worker']),
+		bg: 'factory_worker',
+		df: _Utils_Tuple2(46, 25)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D💻',
+		bc: _List_fromArray(
+			['technologist']),
+		bg: 'technologist',
+		df: _Utils_Tuple2(46, 31)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D💼',
+		bc: _List_fromArray(
+			['office worker']),
+		bg: 'office_worker',
+		df: _Utils_Tuple2(46, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🔧',
+		bc: _List_fromArray(
+			['mechanic']),
+		bg: 'mechanic',
+		df: _Utils_Tuple2(46, 43)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🔬',
+		bc: _List_fromArray(
+			['scientist']),
+		bg: 'scientist',
+		df: _Utils_Tuple2(46, 49)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🚀',
+		bc: _List_fromArray(
+			['astronaut']),
+		bg: 'astronaut',
+		df: _Utils_Tuple2(46, 55)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D🚒',
+		bc: _List_fromArray(
+			['firefighter']),
+		bg: 'firefighter',
+		df: _Utils_Tuple2(47, 3)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1',
+		bc: _List_fromArray(
+			['people holding hands']),
+		bg: 'people_holding_hands',
+		df: _Utils_Tuple2(47, 9)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDAF',
+		bc: _List_fromArray(
+			['person with probing cane']),
+		bg: 'person_with_probing_cane',
+		df: _Utils_Tuple2(47, 35)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDB0',
+		bc: _List_fromArray(
+			['person red hair']),
+		bg: 'red_haired_person',
+		df: _Utils_Tuple2(47, 41)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDB1',
+		bc: _List_fromArray(
+			['person curly hair']),
+		bg: 'curly_haired_person',
+		df: _Utils_Tuple2(47, 47)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDB2',
+		bc: _List_fromArray(
+			['person bald']),
+		bg: 'bald_person',
+		df: _Utils_Tuple2(47, 53)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDB3',
+		bc: _List_fromArray(
+			['person white hair']),
+		bg: 'white_haired_person',
+		df: _Utils_Tuple2(48, 1)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDBC',
+		bc: _List_fromArray(
+			['person in motorized wheelchair']),
+		bg: 'person_in_motorized_wheelchair',
+		df: _Utils_Tuple2(48, 7)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D\uD83E\uDDBD',
+		bc: _List_fromArray(
+			['person in manual wheelchair']),
+		bg: 'person_in_manual_wheelchair',
+		df: _Utils_Tuple2(48, 13)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D⚕️',
+		bc: _List_fromArray(
+			['health worker']),
+		bg: 'health_worker',
+		df: _Utils_Tuple2(48, 19)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D⚖️',
+		bc: _List_fromArray(
+			['judge']),
+		bg: 'judge',
+		df: _Utils_Tuple2(48, 25)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1\u200D✈️',
+		bc: _List_fromArray(
+			['pilot']),
+		bg: 'pilot',
+		df: _Utils_Tuple2(48, 31)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD1',
+		bc: _List_fromArray(
+			['person', 'gender neutral', 'person']),
+		bg: 'adult',
+		df: _Utils_Tuple2(48, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD2',
+		bc: _List_fromArray(
+			['child', 'gender neutral', 'young']),
+		bg: 'child',
+		df: _Utils_Tuple2(48, 43)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD3',
+		bc: _List_fromArray(
+			['older person', 'human', 'elder', 'senior', 'gender neutral']),
+		bg: 'older_adult',
+		df: _Utils_Tuple2(48, 49)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD4',
+		bc: _List_fromArray(
+			['man beard', 'person', 'bewhiskered']),
+		bg: 'bearded_person',
+		df: _Utils_Tuple2(48, 55)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD5',
+		bc: _List_fromArray(
+			['woman with headscarf', 'female', 'hijab', 'mantilla', 'tichel']),
+		bg: 'person_with_headscarf',
+		df: _Utils_Tuple2(49, 3)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD6\u200D♀️',
+		bc: _List_fromArray(
+			['woman in steamy room', 'female', 'woman', 'spa', 'steamroom', 'sauna']),
+		bg: 'woman_in_steamy_room',
+		df: _Utils_Tuple2(49, 9)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD6\u200D♂️',
+		bc: _List_fromArray(
+			['man in steamy room', 'male', 'man', 'spa', 'steamroom', 'sauna']),
+		bg: 'man_in_steamy_room',
+		df: _Utils_Tuple2(49, 15)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD6',
+		bc: _List_fromArray(
+			['person in steamy room']),
+		bg: 'person_in_steamy_room',
+		df: _Utils_Tuple2(49, 21)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD7\u200D♀️',
+		bc: _List_fromArray(
+			['woman climbing', 'sports', 'hobby', 'woman', 'female', 'rock']),
+		bg: 'woman_climbing',
+		df: _Utils_Tuple2(49, 27)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD7\u200D♂️',
+		bc: _List_fromArray(
+			['man climbing', 'sports', 'hobby', 'man', 'male', 'rock']),
+		bg: 'man_climbing',
+		df: _Utils_Tuple2(49, 33)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD7',
+		bc: _List_fromArray(
+			['person climbing']),
+		bg: 'person_climbing',
+		df: _Utils_Tuple2(49, 39)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD8\u200D♀️',
+		bc: _List_fromArray(
+			['woman in lotus position', 'woman', 'female', 'meditation', 'yoga', 'serenity', 'zen', 'mindfulness']),
+		bg: 'woman_in_lotus_position',
+		df: _Utils_Tuple2(49, 45)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD8\u200D♂️',
+		bc: _List_fromArray(
+			['man in lotus position', 'man', 'male', 'meditation', 'yoga', 'serenity', 'zen', 'mindfulness']),
+		bg: 'man_in_lotus_position',
+		df: _Utils_Tuple2(49, 51)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD8',
+		bc: _List_fromArray(
+			['person in lotus position']),
+		bg: 'person_in_lotus_position',
+		df: _Utils_Tuple2(49, 57)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD9\u200D♀️',
+		bc: _List_fromArray(
+			['woman mage', 'woman', 'female', 'mage', 'witch']),
+		bg: 'female_mage',
+		df: _Utils_Tuple2(50, 5)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD9\u200D♂️',
+		bc: _List_fromArray(
+			['man mage', 'man', 'male', 'mage', 'sorcerer']),
+		bg: 'male_mage',
+		df: _Utils_Tuple2(50, 11)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDD9',
+		bc: _List_fromArray(
+			['mage']),
+		bg: 'mage',
+		df: _Utils_Tuple2(50, 17)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDA\u200D♀️',
+		bc: _List_fromArray(
+			['woman fairy', 'woman', 'female']),
+		bg: 'female_fairy',
+		df: _Utils_Tuple2(50, 23)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDA\u200D♂️',
+		bc: _List_fromArray(
+			['man fairy', 'man', 'male']),
+		bg: 'male_fairy',
+		df: _Utils_Tuple2(50, 29)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDA',
+		bc: _List_fromArray(
+			['fairy']),
+		bg: 'fairy',
+		df: _Utils_Tuple2(50, 35)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDB\u200D♀️',
+		bc: _List_fromArray(
+			['woman vampire', 'woman', 'female']),
+		bg: 'female_vampire',
+		df: _Utils_Tuple2(50, 41)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDB\u200D♂️',
+		bc: _List_fromArray(
+			['man vampire', 'man', 'male', 'dracula']),
+		bg: 'male_vampire',
+		df: _Utils_Tuple2(50, 47)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDB',
+		bc: _List_fromArray(
+			['vampire']),
+		bg: 'vampire',
+		df: _Utils_Tuple2(50, 53)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDC\u200D♀️',
+		bc: _List_fromArray(
+			['mermaid', 'woman', 'female', 'merwoman', 'ariel']),
+		bg: 'mermaid',
+		df: _Utils_Tuple2(51, 1)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDC\u200D♂️',
+		bc: _List_fromArray(
+			['merman', 'man', 'male', 'triton']),
+		bg: 'merman',
+		df: _Utils_Tuple2(51, 7)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDC',
+		bc: _List_fromArray(
+			['merperson']),
+		bg: 'merperson',
+		df: _Utils_Tuple2(51, 13)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDD\u200D♀️',
+		bc: _List_fromArray(
+			['woman elf', 'woman', 'female']),
+		bg: 'female_elf',
+		df: _Utils_Tuple2(51, 19)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDD\u200D♂️',
+		bc: _List_fromArray(
+			['man elf', 'man', 'male']),
+		bg: 'male_elf',
+		df: _Utils_Tuple2(51, 25)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDD',
+		bc: _List_fromArray(
+			['elf']),
+		bg: 'elf',
+		df: _Utils_Tuple2(51, 31)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDE\u200D♀️',
+		bc: _List_fromArray(
+			['woman genie', 'woman', 'female']),
+		bg: 'female_genie',
+		df: _Utils_Tuple2(51, 37)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDE\u200D♂️',
+		bc: _List_fromArray(
+			['man genie', 'man', 'male']),
+		bg: 'male_genie',
+		df: _Utils_Tuple2(51, 38)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDE',
+		bc: _List_fromArray(
+			['genie']),
+		bg: 'genie',
+		df: _Utils_Tuple2(51, 39)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDF\u200D♀️',
+		bc: _List_fromArray(
+			['woman zombie', 'woman', 'female', 'undead', 'walking dead']),
+		bg: 'female_zombie',
+		df: _Utils_Tuple2(51, 40)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDF\u200D♂️',
+		bc: _List_fromArray(
+			['man zombie', 'man', 'male', 'dracula', 'undead', 'walking dead']),
+		bg: 'male_zombie',
+		df: _Utils_Tuple2(51, 41)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDDF',
+		bc: _List_fromArray(
+			['zombie']),
+		bg: 'zombie',
+		df: _Utils_Tuple2(51, 42)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDDE0',
+		bc: _List_fromArray(
+			['brain', 'smart', 'intelligent']),
+		bg: 'brain',
+		df: _Utils_Tuple2(51, 43)
+	},
+		{
+		cg: 0,
+		aW: '\uD83E\uDDE1',
+		bc: _List_fromArray(
+			['orange heart', 'love', 'like', 'affection', 'valentines']),
+		bg: 'orange_heart',
+		df: _Utils_Tuple2(51, 44)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDE2',
+		bc: _List_fromArray(
+			['billed cap', 'cap', 'baseball']),
+		bg: 'billed_cap',
+		df: _Utils_Tuple2(51, 45)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDE3',
+		bc: _List_fromArray(
+			['scarf', 'neck', 'winter', 'clothes']),
+		bg: 'scarf',
+		df: _Utils_Tuple2(51, 46)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDE4',
+		bc: _List_fromArray(
+			['gloves', 'hands', 'winter', 'clothes']),
+		bg: 'gloves',
+		df: _Utils_Tuple2(51, 47)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDE5',
+		bc: _List_fromArray(
+			['coat', 'jacket']),
+		bg: 'coat',
+		df: _Utils_Tuple2(51, 48)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDE6',
+		bc: _List_fromArray(
+			['socks', 'stockings', 'clothes']),
+		bg: 'socks',
+		df: _Utils_Tuple2(51, 49)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDE7',
+		bc: _List_fromArray(
+			['red envelope', 'gift']),
+		bg: 'red_envelope',
+		df: _Utils_Tuple2(51, 50)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDE8',
+		bc: _List_fromArray(
+			['firecracker', 'dynamite', 'boom', 'explode', 'explosion', 'explosive']),
+		bg: 'firecracker',
+		df: _Utils_Tuple2(51, 51)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDE9',
+		bc: _List_fromArray(
+			['puzzle piece', 'interlocking', 'puzzle', 'piece']),
+		bg: 'jigsaw',
+		df: _Utils_Tuple2(51, 52)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDEA',
+		bc: _List_fromArray(
+			['test tube', 'chemistry', 'experiment', 'lab', 'science']),
+		bg: 'test_tube',
+		df: _Utils_Tuple2(51, 53)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDEB',
+		bc: _List_fromArray(
+			['petri dish', 'bacteria', 'biology', 'culture', 'lab']),
+		bg: 'petri_dish',
+		df: _Utils_Tuple2(51, 54)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDEC',
+		bc: _List_fromArray(
+			['dna', 'biologist', 'genetics', 'life']),
+		bg: 'dna',
+		df: _Utils_Tuple2(51, 55)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDDED',
+		bc: _List_fromArray(
+			['compass', 'magnetic', 'navigation', 'orienteering']),
+		bg: 'compass',
+		df: _Utils_Tuple2(51, 56)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDEE',
+		bc: _List_fromArray(
+			['abacus', 'calculation']),
+		bg: 'abacus',
+		df: _Utils_Tuple2(51, 57)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDEF',
+		bc: _List_fromArray(
+			['fire extinguisher', 'quench']),
+		bg: 'fire_extinguisher',
+		df: _Utils_Tuple2(52, 0)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDF0',
+		bc: _List_fromArray(
+			['toolbox', 'tools', 'diy', 'fix', 'maintainer', 'mechanic']),
+		bg: 'toolbox',
+		df: _Utils_Tuple2(52, 1)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDDF1',
+		bc: _List_fromArray(
+			['brick', 'bricks']),
+		bg: 'bricks',
+		df: _Utils_Tuple2(52, 2)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDF2',
+		bc: _List_fromArray(
+			['magnet', 'attraction', 'magnetic']),
+		bg: 'magnet',
+		df: _Utils_Tuple2(52, 3)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDDF3',
+		bc: _List_fromArray(
+			['luggage', 'packing', 'travel']),
+		bg: 'luggage',
+		df: _Utils_Tuple2(52, 4)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDF4',
+		bc: _List_fromArray(
+			['lotion bottle', 'moisturizer', 'sunscreen']),
+		bg: 'lotion_bottle',
+		df: _Utils_Tuple2(52, 5)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDF5',
+		bc: _List_fromArray(
+			['thread', 'needle', 'sewing', 'spool', 'string']),
+		bg: 'thread',
+		df: _Utils_Tuple2(52, 6)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDF6',
+		bc: _List_fromArray(
+			['yarn', 'ball', 'crochet', 'knit']),
+		bg: 'yarn',
+		df: _Utils_Tuple2(52, 7)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDF7',
+		bc: _List_fromArray(
+			['safety pin', 'diaper']),
+		bg: 'safety_pin',
+		df: _Utils_Tuple2(52, 8)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDF8',
+		bc: _List_fromArray(
+			['teddy bear', 'plush', 'stuffed']),
+		bg: 'teddy_bear',
+		df: _Utils_Tuple2(52, 9)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDF9',
+		bc: _List_fromArray(
+			['broom', 'cleaning', 'sweeping', 'witch']),
+		bg: 'broom',
+		df: _Utils_Tuple2(52, 10)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDFA',
+		bc: _List_fromArray(
+			['basket', 'laundry']),
+		bg: 'basket',
+		df: _Utils_Tuple2(52, 11)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDFB',
+		bc: _List_fromArray(
+			['roll of paper', 'roll']),
+		bg: 'roll_of_paper',
+		df: _Utils_Tuple2(52, 12)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDFC',
+		bc: _List_fromArray(
+			['soap', 'bar', 'bathing', 'cleaning', 'lather']),
+		bg: 'soap',
+		df: _Utils_Tuple2(52, 13)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDFD',
+		bc: _List_fromArray(
+			['sponge', 'absorbing', 'cleaning', 'porous']),
+		bg: 'sponge',
+		df: _Utils_Tuple2(52, 14)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDDFE',
+		bc: _List_fromArray(
+			['receipt', 'accounting', 'expenses']),
+		bg: 'receipt',
+		df: _Utils_Tuple2(52, 15)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDDFF',
+		bc: _List_fromArray(
+			['nazar amulet', 'bead', 'charm']),
+		bg: 'nazar_amulet',
+		df: _Utils_Tuple2(52, 16)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE70',
+		bc: _List_fromArray(
+			['ballet shoes']),
+		bg: 'ballet_shoes',
+		df: _Utils_Tuple2(52, 17)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE71',
+		bc: _List_fromArray(
+			['one piece swimsuit']),
+		bg: 'one-piece_swimsuit',
+		df: _Utils_Tuple2(52, 18)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE72',
+		bc: _List_fromArray(
+			['briefs']),
+		bg: 'briefs',
+		df: _Utils_Tuple2(52, 19)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE73',
+		bc: _List_fromArray(
+			['shorts']),
+		bg: 'shorts',
+		df: _Utils_Tuple2(52, 20)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE74',
+		bc: _List_fromArray(
+			['thong sandal', 'footwear', 'summer']),
+		bg: 'thong_sandal',
+		df: _Utils_Tuple2(52, 21)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE78',
+		bc: _List_fromArray(
+			['drop of blood']),
+		bg: 'drop_of_blood',
+		df: _Utils_Tuple2(52, 22)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE79',
+		bc: _List_fromArray(
+			['adhesive bandage']),
+		bg: 'adhesive_bandage',
+		df: _Utils_Tuple2(52, 23)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE7A',
+		bc: _List_fromArray(
+			['stethoscope']),
+		bg: 'stethoscope',
+		df: _Utils_Tuple2(52, 24)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDE80',
+		bc: _List_fromArray(
+			['yo yo']),
+		bg: 'yo-yo',
+		df: _Utils_Tuple2(52, 25)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDE81',
+		bc: _List_fromArray(
+			['kite']),
+		bg: 'kite',
+		df: _Utils_Tuple2(52, 26)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDE82',
+		bc: _List_fromArray(
+			['parachute']),
+		bg: 'parachute',
+		df: _Utils_Tuple2(52, 27)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE83',
+		bc: _List_fromArray(
+			['boomerang', 'weapon']),
+		bg: 'boomerang',
+		df: _Utils_Tuple2(52, 28)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDE84',
+		bc: _List_fromArray(
+			['magic wand', 'supernature', 'power']),
+		bg: 'magic_wand',
+		df: _Utils_Tuple2(52, 29)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDE85',
+		bc: _List_fromArray(
+			['pinata', 'mexico', 'candy', 'celebration']),
+		bg: 'pinata',
+		df: _Utils_Tuple2(52, 30)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDE86',
+		bc: _List_fromArray(
+			['nesting dolls', 'matryoshka', 'toy']),
+		bg: 'nesting_dolls',
+		df: _Utils_Tuple2(52, 31)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDE90',
+		bc: _List_fromArray(
+			['ringed planet']),
+		bg: 'ringed_planet',
+		df: _Utils_Tuple2(52, 32)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE91',
+		bc: _List_fromArray(
+			['chair']),
+		bg: 'chair',
+		df: _Utils_Tuple2(52, 33)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE92',
+		bc: _List_fromArray(
+			['razor']),
+		bg: 'razor',
+		df: _Utils_Tuple2(52, 34)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE93',
+		bc: _List_fromArray(
+			['axe']),
+		bg: 'axe',
+		df: _Utils_Tuple2(52, 35)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE94',
+		bc: _List_fromArray(
+			['diya lamp']),
+		bg: 'diya_lamp',
+		df: _Utils_Tuple2(52, 36)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE95',
+		bc: _List_fromArray(
+			['banjo']),
+		bg: 'banjo',
+		df: _Utils_Tuple2(52, 37)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE96',
+		bc: _List_fromArray(
+			['military helmet', 'army', 'protection']),
+		bg: 'military_helmet',
+		df: _Utils_Tuple2(52, 38)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE97',
+		bc: _List_fromArray(
+			['accordion', 'music']),
+		bg: 'accordion',
+		df: _Utils_Tuple2(52, 39)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE98',
+		bc: _List_fromArray(
+			['long drum', 'music']),
+		bg: 'long_drum',
+		df: _Utils_Tuple2(52, 40)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE99',
+		bc: _List_fromArray(
+			['coin', 'money', 'currency']),
+		bg: 'coin',
+		df: _Utils_Tuple2(52, 41)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9A',
+		bc: _List_fromArray(
+			['carpentry saw', 'cut', 'chop']),
+		bg: 'carpentry_saw',
+		df: _Utils_Tuple2(52, 42)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9B',
+		bc: _List_fromArray(
+			['screwdriver', 'tools']),
+		bg: 'screwdriver',
+		df: _Utils_Tuple2(52, 43)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9C',
+		bc: _List_fromArray(
+			['ladder', 'tools']),
+		bg: 'ladder',
+		df: _Utils_Tuple2(52, 44)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9D',
+		bc: _List_fromArray(
+			['hook', 'tools']),
+		bg: 'hook',
+		df: _Utils_Tuple2(52, 45)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9E',
+		bc: _List_fromArray(
+			['mirror', 'reflection']),
+		bg: 'mirror',
+		df: _Utils_Tuple2(52, 46)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDE9F',
+		bc: _List_fromArray(
+			['window', 'scenery']),
+		bg: 'window',
+		df: _Utils_Tuple2(52, 47)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA0',
+		bc: _List_fromArray(
+			['plunger', 'toilet']),
+		bg: 'plunger',
+		df: _Utils_Tuple2(52, 48)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDEA1',
+		bc: _List_fromArray(
+			['sewing needle', 'stitches']),
+		bg: 'sewing_needle',
+		df: _Utils_Tuple2(52, 49)
+	},
+		{
+		cg: 5,
+		aW: '\uD83E\uDEA2',
+		bc: _List_fromArray(
+			['knot', 'rope', 'scout']),
+		bg: 'knot',
+		df: _Utils_Tuple2(52, 50)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA3',
+		bc: _List_fromArray(
+			['bucket', 'water', 'container']),
+		bg: 'bucket',
+		df: _Utils_Tuple2(52, 51)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA4',
+		bc: _List_fromArray(
+			['mouse trap', 'cheese']),
+		bg: 'mouse_trap',
+		df: _Utils_Tuple2(52, 52)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA5',
+		bc: _List_fromArray(
+			['toothbrush', 'hygiene', 'dental']),
+		bg: 'toothbrush',
+		df: _Utils_Tuple2(52, 53)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA6',
+		bc: _List_fromArray(
+			['headstone', 'death', 'rip', 'grave']),
+		bg: 'headstone',
+		df: _Utils_Tuple2(52, 54)
+	},
+		{
+		cg: 6,
+		aW: '\uD83E\uDEA7',
+		bc: _List_fromArray(
+			['placard', 'announcement']),
+		bg: 'placard',
+		df: _Utils_Tuple2(52, 55)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDEA8',
+		bc: _List_fromArray(
+			['rock', 'stone']),
+		bg: 'rock',
+		df: _Utils_Tuple2(52, 56)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB0',
+		bc: _List_fromArray(
+			['fly', 'insect']),
+		bg: 'fly',
+		df: _Utils_Tuple2(52, 57)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB1',
+		bc: _List_fromArray(
+			['worm', 'animal']),
+		bg: 'worm',
+		df: _Utils_Tuple2(53, 0)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB2',
+		bc: _List_fromArray(
+			['beetle', 'insect']),
+		bg: 'beetle',
+		df: _Utils_Tuple2(53, 1)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB3',
+		bc: _List_fromArray(
+			['cockroach', 'insect', 'pests']),
+		bg: 'cockroach',
+		df: _Utils_Tuple2(53, 2)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB4',
+		bc: _List_fromArray(
+			['potted plant', 'greenery', 'house']),
+		bg: 'potted_plant',
+		df: _Utils_Tuple2(53, 3)
+	},
+		{
+		cg: 4,
+		aW: '\uD83E\uDEB5',
+		bc: _List_fromArray(
+			['wood', 'nature', 'timber', 'trunk']),
+		bg: 'wood',
+		df: _Utils_Tuple2(53, 4)
+	},
+		{
+		cg: 2,
+		aW: '\uD83E\uDEB6',
+		bc: _List_fromArray(
+			['feather', 'bird', 'fly']),
+		bg: 'feather',
+		df: _Utils_Tuple2(53, 5)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDEC0',
+		bc: _List_fromArray(
+			['anatomical heart', 'health', 'heartbeat']),
+		bg: 'anatomical_heart',
+		df: _Utils_Tuple2(53, 6)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDEC1',
+		bc: _List_fromArray(
+			['lungs', 'breathe']),
+		bg: 'lungs',
+		df: _Utils_Tuple2(53, 7)
+	},
+		{
+		cg: 1,
+		aW: '\uD83E\uDEC2',
+		bc: _List_fromArray(
+			['people hugging', 'care']),
+		bg: 'people_hugging',
+		df: _Utils_Tuple2(53, 8)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED0',
+		bc: _List_fromArray(
+			['blueberries', 'fruit']),
+		bg: 'blueberries',
+		df: _Utils_Tuple2(53, 9)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED1',
+		bc: _List_fromArray(
+			['bell pepper', 'fruit', 'plant']),
+		bg: 'bell_pepper',
+		df: _Utils_Tuple2(53, 10)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED2',
+		bc: _List_fromArray(
+			['olive', 'fruit']),
+		bg: 'olive',
+		df: _Utils_Tuple2(53, 11)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED3',
+		bc: _List_fromArray(
+			['flatbread', 'flour', 'food']),
+		bg: 'flatbread',
+		df: _Utils_Tuple2(53, 12)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED4',
+		bc: _List_fromArray(
+			['tamale', 'food', 'masa']),
+		bg: 'tamale',
+		df: _Utils_Tuple2(53, 13)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED5',
+		bc: _List_fromArray(
+			['fondue', 'cheese', 'pot', 'food']),
+		bg: 'fondue',
+		df: _Utils_Tuple2(53, 14)
+	},
+		{
+		cg: 3,
+		aW: '\uD83E\uDED6',
+		bc: _List_fromArray(
+			['teapot', 'drink', 'hot']),
+		bg: 'teapot',
+		df: _Utils_Tuple2(53, 15)
+	},
+		{
+		cg: 7,
+		aW: '‼️',
+		bc: _List_fromArray(
+			['double exclamation mark', 'exclamation', 'surprise']),
+		bg: 'bangbang',
+		df: _Utils_Tuple2(53, 16)
+	},
+		{
+		cg: 7,
+		aW: '⁉️',
+		bc: _List_fromArray(
+			['exclamation question mark', 'wat', 'punctuation', 'surprise']),
+		bg: 'interrobang',
+		df: _Utils_Tuple2(53, 17)
+	},
+		{
+		cg: 7,
+		aW: '™️',
+		bc: _List_fromArray(
+			['trade mark', 'trademark', 'brand', 'law', 'legal']),
+		bg: 'tm',
+		df: _Utils_Tuple2(53, 18)
+	},
+		{
+		cg: 7,
+		aW: 'ℹ️',
+		bc: _List_fromArray(
+			['information', 'blue square', 'alphabet', 'letter']),
+		bg: 'information_source',
+		df: _Utils_Tuple2(53, 19)
+	},
+		{
+		cg: 7,
+		aW: '↔️',
+		bc: _List_fromArray(
+			['left right arrow', 'shape', 'direction', 'horizontal', 'sideways']),
+		bg: 'left_right_arrow',
+		df: _Utils_Tuple2(53, 20)
+	},
+		{
+		cg: 7,
+		aW: '↕️',
+		bc: _List_fromArray(
+			['up down arrow', 'blue square', 'direction', 'way', 'vertical']),
+		bg: 'arrow_up_down',
+		df: _Utils_Tuple2(53, 21)
+	},
+		{
+		cg: 7,
+		aW: '↖️',
+		bc: _List_fromArray(
+			['up left arrow', 'blue square', 'point', 'direction', 'diagonal', 'northwest']),
+		bg: 'arrow_upper_left',
+		df: _Utils_Tuple2(53, 22)
+	},
+		{
+		cg: 7,
+		aW: '↗️',
+		bc: _List_fromArray(
+			['up right arrow', 'blue square', 'point', 'direction', 'diagonal', 'northeast']),
+		bg: 'arrow_upper_right',
+		df: _Utils_Tuple2(53, 23)
+	},
+		{
+		cg: 7,
+		aW: '↘️',
+		bc: _List_fromArray(
+			['down right arrow', 'blue square', 'direction', 'diagonal', 'southeast']),
+		bg: 'arrow_lower_right',
+		df: _Utils_Tuple2(53, 24)
+	},
+		{
+		cg: 7,
+		aW: '↙️',
+		bc: _List_fromArray(
+			['down left arrow', 'blue square', 'direction', 'diagonal', 'southwest']),
+		bg: 'arrow_lower_left',
+		df: _Utils_Tuple2(53, 25)
+	},
+		{
+		cg: 7,
+		aW: '↩️',
+		bc: _List_fromArray(
+			['right arrow curving left', 'back', 'return', 'blue square', 'undo', 'enter']),
+		bg: 'leftwards_arrow_with_hook',
+		df: _Utils_Tuple2(53, 26)
+	},
+		{
+		cg: 7,
+		aW: '↪️',
+		bc: _List_fromArray(
+			['left arrow curving right', 'blue square', 'return', 'rotate', 'direction']),
+		bg: 'arrow_right_hook',
+		df: _Utils_Tuple2(53, 27)
+	},
+		{
+		cg: 4,
+		aW: '⌚',
+		bc: _List_fromArray(
+			['watch', 'time', 'accessories']),
+		bg: 'watch',
+		df: _Utils_Tuple2(53, 28)
+	},
+		{
+		cg: 4,
+		aW: '⌛',
+		bc: _List_fromArray(
+			['hourglass done', 'time', 'clock', 'oldschool', 'limit', 'exam', 'quiz', 'test']),
+		bg: 'hourglass',
+		df: _Utils_Tuple2(53, 29)
+	},
+		{
+		cg: 6,
+		aW: '⌨️',
+		bc: _List_fromArray(
+			['keyboard', 'technology', 'computer', 'type', 'input', 'text']),
+		bg: 'keyboard',
+		df: _Utils_Tuple2(53, 30)
+	},
+		{
+		cg: 7,
+		aW: '⏏️',
+		bc: _List_fromArray(
+			['eject button', 'blue square']),
+		bg: 'eject',
+		df: _Utils_Tuple2(53, 31)
+	},
+		{
+		cg: 7,
+		aW: '⏩',
+		bc: _List_fromArray(
+			['fast forward button', 'blue square', 'play', 'speed', 'continue']),
+		bg: 'fast_forward',
+		df: _Utils_Tuple2(53, 32)
+	},
+		{
+		cg: 7,
+		aW: '⏪',
+		bc: _List_fromArray(
+			['fast reverse button', 'play', 'blue square']),
+		bg: 'rewind',
+		df: _Utils_Tuple2(53, 33)
+	},
+		{
+		cg: 7,
+		aW: '⏫',
+		bc: _List_fromArray(
+			['fast up button', 'blue square', 'direction', 'top']),
+		bg: 'arrow_double_up',
+		df: _Utils_Tuple2(53, 34)
+	},
+		{
+		cg: 7,
+		aW: '⏬',
+		bc: _List_fromArray(
+			['fast down button', 'blue square', 'direction', 'bottom']),
+		bg: 'arrow_double_down',
+		df: _Utils_Tuple2(53, 35)
+	},
+		{
+		cg: 7,
+		aW: '⏭️',
+		bc: _List_fromArray(
+			['next track button', 'forward', 'next', 'blue square']),
+		bg: 'black_right_pointing_double_triangle_with_vertical_bar',
+		df: _Utils_Tuple2(53, 36)
+	},
+		{
+		cg: 7,
+		aW: '⏮️',
+		bc: _List_fromArray(
+			['last track button', 'backward']),
+		bg: 'black_left_pointing_double_triangle_with_vertical_bar',
+		df: _Utils_Tuple2(53, 37)
+	},
+		{
+		cg: 7,
+		aW: '⏯️',
+		bc: _List_fromArray(
+			['play or pause button', 'blue square', 'play', 'pause']),
+		bg: 'black_right_pointing_triangle_with_double_vertical_bar',
+		df: _Utils_Tuple2(53, 38)
+	},
+		{
+		cg: 4,
+		aW: '⏰',
+		bc: _List_fromArray(
+			['alarm clock', 'time', 'wake']),
+		bg: 'alarm_clock',
+		df: _Utils_Tuple2(53, 39)
+	},
+		{
+		cg: 4,
+		aW: '⏱️',
+		bc: _List_fromArray(
+			['stopwatch', 'time', 'deadline']),
+		bg: 'stopwatch',
+		df: _Utils_Tuple2(53, 40)
+	},
+		{
+		cg: 4,
+		aW: '⏲️',
+		bc: _List_fromArray(
+			['timer clock', 'alarm']),
+		bg: 'timer_clock',
+		df: _Utils_Tuple2(53, 41)
+	},
+		{
+		cg: 4,
+		aW: '⏳',
+		bc: _List_fromArray(
+			['hourglass not done', 'oldschool', 'time', 'countdown']),
+		bg: 'hourglass_flowing_sand',
+		df: _Utils_Tuple2(53, 42)
+	},
+		{
+		cg: 7,
+		aW: '⏸️',
+		bc: _List_fromArray(
+			['pause button', 'pause', 'blue square']),
+		bg: 'double_vertical_bar',
+		df: _Utils_Tuple2(53, 43)
+	},
+		{
+		cg: 7,
+		aW: '⏹️',
+		bc: _List_fromArray(
+			['stop button', 'blue square']),
+		bg: 'black_square_for_stop',
+		df: _Utils_Tuple2(53, 44)
+	},
+		{
+		cg: 7,
+		aW: '⏺️',
+		bc: _List_fromArray(
+			['record button', 'blue square']),
+		bg: 'black_circle_for_record',
+		df: _Utils_Tuple2(53, 45)
+	},
+		{
+		cg: 7,
+		aW: 'Ⓜ️',
+		bc: _List_fromArray(
+			['circled m', 'alphabet', 'blue circle', 'letter']),
+		bg: 'm',
+		df: _Utils_Tuple2(53, 46)
+	},
+		{
+		cg: 7,
+		aW: '▪️',
+		bc: _List_fromArray(
+			['black small square', 'shape', 'icon']),
+		bg: 'black_small_square',
+		df: _Utils_Tuple2(53, 47)
+	},
+		{
+		cg: 7,
+		aW: '▫️',
+		bc: _List_fromArray(
+			['white small square', 'shape', 'icon']),
+		bg: 'white_small_square',
+		df: _Utils_Tuple2(53, 48)
+	},
+		{
+		cg: 7,
+		aW: '▶️',
+		bc: _List_fromArray(
+			['play button', 'blue square', 'right', 'direction', 'play']),
+		bg: 'arrow_forward',
+		df: _Utils_Tuple2(53, 49)
+	},
+		{
+		cg: 7,
+		aW: '◀️',
+		bc: _List_fromArray(
+			['reverse button', 'blue square', 'left', 'direction']),
+		bg: 'arrow_backward',
+		df: _Utils_Tuple2(53, 50)
+	},
+		{
+		cg: 7,
+		aW: '◻️',
+		bc: _List_fromArray(
+			['white medium square', 'shape', 'stone', 'icon']),
+		bg: 'white_medium_square',
+		df: _Utils_Tuple2(53, 51)
+	},
+		{
+		cg: 7,
+		aW: '◼️',
+		bc: _List_fromArray(
+			['black medium square', 'shape', 'button', 'icon']),
+		bg: 'black_medium_square',
+		df: _Utils_Tuple2(53, 52)
+	},
+		{
+		cg: 7,
+		aW: '◽',
+		bc: _List_fromArray(
+			['white medium small square', 'shape', 'stone', 'icon', 'button']),
+		bg: 'white_medium_small_square',
+		df: _Utils_Tuple2(53, 53)
+	},
+		{
+		cg: 7,
+		aW: '◾',
+		bc: _List_fromArray(
+			['black medium small square', 'icon', 'shape', 'button']),
+		bg: 'black_medium_small_square',
+		df: _Utils_Tuple2(53, 54)
+	},
+		{
+		cg: 4,
+		aW: '☀️',
+		bc: _List_fromArray(
+			['sun', 'weather', 'nature', 'brightness', 'summer', 'beach', 'spring']),
+		bg: 'sunny',
+		df: _Utils_Tuple2(53, 55)
+	},
+		{
+		cg: 4,
+		aW: '☁️',
+		bc: _List_fromArray(
+			['cloud', 'weather', 'sky']),
+		bg: 'cloud',
+		df: _Utils_Tuple2(53, 56)
+	},
+		{
+		cg: 4,
+		aW: '☂️',
+		bc: _List_fromArray(
+			['umbrella', 'weather', 'spring']),
+		bg: 'umbrella',
+		df: _Utils_Tuple2(53, 57)
+	},
+		{
+		cg: 4,
+		aW: '☃️',
+		bc: _List_fromArray(
+			['snowman', 'winter', 'season', 'cold', 'weather', 'christmas', 'xmas', 'frozen']),
+		bg: 'snowman',
+		df: _Utils_Tuple2(54, 0)
+	},
+		{
+		cg: 4,
+		aW: '☄️',
+		bc: _List_fromArray(
+			['comet', 'space']),
+		bg: 'comet',
+		df: _Utils_Tuple2(54, 1)
+	},
+		{
+		cg: 6,
+		aW: '☎️',
+		bc: _List_fromArray(
+			['telephone', 'technology', 'communication', 'dial', 'telephone']),
+		bg: 'phone',
+		df: _Utils_Tuple2(54, 2)
+	},
+		{
+		cg: 7,
+		aW: '☑️',
+		bc: _List_fromArray(
+			['check box with check', 'ok', 'agree', 'confirm', 'black square', 'vote', 'election', 'yes', 'tick']),
+		bg: 'ballot_box_with_check',
+		df: _Utils_Tuple2(54, 3)
+	},
+		{
+		cg: 4,
+		aW: '☔',
+		bc: _List_fromArray(
+			['umbrella with rain drops', 'rainy', 'weather', 'spring']),
+		bg: 'umbrella_with_rain_drops',
+		df: _Utils_Tuple2(54, 4)
+	},
+		{
+		cg: 3,
+		aW: '☕',
+		bc: _List_fromArray(
+			['hot beverage', 'beverage', 'caffeine', 'latte', 'espresso']),
+		bg: 'coffee',
+		df: _Utils_Tuple2(54, 5)
+	},
+		{
+		cg: 2,
+		aW: '☘️',
+		bc: _List_fromArray(
+			['shamrock', 'vegetable', 'plant', 'nature', 'irish', 'clover']),
+		bg: 'shamrock',
+		df: _Utils_Tuple2(54, 6)
+	},
+		{
+		cg: 1,
+		aW: '☝️',
+		bc: _List_fromArray(
+			['index pointing up', 'hand', 'fingers', 'direction', 'up']),
+		bg: 'point_up',
+		df: _Utils_Tuple2(54, 7)
+	},
+		{
+		cg: 0,
+		aW: '☠️',
+		bc: _List_fromArray(
+			['skull and crossbones', 'poison', 'danger', 'deadly', 'scary', 'death', 'pirate', 'evil']),
+		bg: 'skull_and_crossbones',
+		df: _Utils_Tuple2(54, 13)
+	},
+		{
+		cg: 7,
+		aW: '☢️',
+		bc: _List_fromArray(
+			['radioactive', 'nuclear', 'danger']),
+		bg: 'radioactive_sign',
+		df: _Utils_Tuple2(54, 14)
+	},
+		{
+		cg: 7,
+		aW: '☣️',
+		bc: _List_fromArray(
+			['biohazard', 'danger']),
+		bg: 'biohazard_sign',
+		df: _Utils_Tuple2(54, 15)
+	},
+		{
+		cg: 7,
+		aW: '☦️',
+		bc: _List_fromArray(
+			['orthodox cross', 'suppedaneum', 'religion']),
+		bg: 'orthodox_cross',
+		df: _Utils_Tuple2(54, 16)
+	},
+		{
+		cg: 7,
+		aW: '☪️',
+		bc: _List_fromArray(
+			['star and crescent', 'islam']),
+		bg: 'star_and_crescent',
+		df: _Utils_Tuple2(54, 17)
+	},
+		{
+		cg: 7,
+		aW: '☮️',
+		bc: _List_fromArray(
+			['peace symbol', 'hippie']),
+		bg: 'peace_symbol',
+		df: _Utils_Tuple2(54, 18)
+	},
+		{
+		cg: 7,
+		aW: '☯️',
+		bc: _List_fromArray(
+			['yin yang', 'balance']),
+		bg: 'yin_yang',
+		df: _Utils_Tuple2(54, 19)
+	},
+		{
+		cg: 7,
+		aW: '☸️',
+		bc: _List_fromArray(
+			['wheel of dharma', 'hinduism', 'buddhism', 'sikhism', 'jainism']),
+		bg: 'wheel_of_dharma',
+		df: _Utils_Tuple2(54, 20)
+	},
+		{
+		cg: 0,
+		aW: '☹️',
+		bc: _List_fromArray(
+			['frowning face', 'face', 'sad', 'upset', 'frown']),
+		bg: 'white_frowning_face',
+		df: _Utils_Tuple2(54, 21)
+	},
+		{
+		cg: 0,
+		aW: '☺️',
+		bc: _List_fromArray(
+			['smiling face', 'face', 'blush', 'massage', 'happiness']),
+		bg: 'relaxed',
+		df: _Utils_Tuple2(54, 22)
+	},
+		{
+		cg: 7,
+		aW: '♀️',
+		bc: _List_fromArray(
+			['female sign']),
+		bg: 'female_sign',
+		df: _Utils_Tuple2(54, 23)
+	},
+		{
+		cg: 7,
+		aW: '♂️',
+		bc: _List_fromArray(
+			['male sign']),
+		bg: 'male_sign',
+		df: _Utils_Tuple2(54, 24)
+	},
+		{
+		cg: 7,
+		aW: '♈',
+		bc: _List_fromArray(
+			['aries', 'sign', 'purple square', 'zodiac', 'astrology']),
+		bg: 'aries',
+		df: _Utils_Tuple2(54, 25)
+	},
+		{
+		cg: 7,
+		aW: '♉',
+		bc: _List_fromArray(
+			['taurus', 'purple square', 'sign', 'zodiac', 'astrology']),
+		bg: 'taurus',
+		df: _Utils_Tuple2(54, 26)
+	},
+		{
+		cg: 7,
+		aW: '♊',
+		bc: _List_fromArray(
+			['gemini', 'sign', 'zodiac', 'purple square', 'astrology']),
+		bg: 'gemini',
+		df: _Utils_Tuple2(54, 27)
+	},
+		{
+		cg: 7,
+		aW: '♋',
+		bc: _List_fromArray(
+			['cancer', 'sign', 'zodiac', 'purple square', 'astrology']),
+		bg: 'cancer',
+		df: _Utils_Tuple2(54, 28)
+	},
+		{
+		cg: 7,
+		aW: '♌',
+		bc: _List_fromArray(
+			['leo', 'sign', 'purple square', 'zodiac', 'astrology']),
+		bg: 'leo',
+		df: _Utils_Tuple2(54, 29)
+	},
+		{
+		cg: 7,
+		aW: '♍',
+		bc: _List_fromArray(
+			['virgo', 'sign', 'zodiac', 'purple square', 'astrology']),
+		bg: 'virgo',
+		df: _Utils_Tuple2(54, 30)
+	},
+		{
+		cg: 7,
+		aW: '♎',
+		bc: _List_fromArray(
+			['libra', 'sign', 'purple square', 'zodiac', 'astrology']),
+		bg: 'libra',
+		df: _Utils_Tuple2(54, 31)
+	},
+		{
+		cg: 7,
+		aW: '♏',
+		bc: _List_fromArray(
+			['scorpio', 'sign', 'zodiac', 'purple square', 'astrology', 'scorpio']),
+		bg: 'scorpius',
+		df: _Utils_Tuple2(54, 32)
+	},
+		{
+		cg: 7,
+		aW: '♐',
+		bc: _List_fromArray(
+			['sagittarius', 'sign', 'zodiac', 'purple square', 'astrology']),
+		bg: 'sagittarius',
+		df: _Utils_Tuple2(54, 33)
+	},
+		{
+		cg: 7,
+		aW: '♑',
+		bc: _List_fromArray(
+			['capricorn', 'sign', 'zodiac', 'purple square', 'astrology']),
+		bg: 'capricorn',
+		df: _Utils_Tuple2(54, 34)
+	},
+		{
+		cg: 7,
+		aW: '♒',
+		bc: _List_fromArray(
+			['aquarius', 'sign', 'purple square', 'zodiac', 'astrology']),
+		bg: 'aquarius',
+		df: _Utils_Tuple2(54, 35)
+	},
+		{
+		cg: 7,
+		aW: '♓',
+		bc: _List_fromArray(
+			['pisces', 'purple square', 'sign', 'zodiac', 'astrology']),
+		bg: 'pisces',
+		df: _Utils_Tuple2(54, 36)
+	},
+		{
+		cg: 5,
+		aW: '♟️',
+		bc: _List_fromArray(
+			['chess pawn', 'expendable']),
+		bg: 'chess_pawn',
+		df: _Utils_Tuple2(54, 37)
+	},
+		{
+		cg: 5,
+		aW: '♠️',
+		bc: _List_fromArray(
+			['spade suit', 'poker', 'cards', 'suits', 'magic']),
+		bg: 'spades',
+		df: _Utils_Tuple2(54, 38)
+	},
+		{
+		cg: 5,
+		aW: '♣️',
+		bc: _List_fromArray(
+			['club suit', 'poker', 'cards', 'magic', 'suits']),
+		bg: 'clubs',
+		df: _Utils_Tuple2(54, 39)
+	},
+		{
+		cg: 5,
+		aW: '♥️',
+		bc: _List_fromArray(
+			['heart suit', 'poker', 'cards', 'magic', 'suits']),
+		bg: 'hearts',
+		df: _Utils_Tuple2(54, 40)
+	},
+		{
+		cg: 5,
+		aW: '♦️',
+		bc: _List_fromArray(
+			['diamond suit', 'poker', 'cards', 'magic', 'suits']),
+		bg: 'diamonds',
+		df: _Utils_Tuple2(54, 41)
+	},
+		{
+		cg: 4,
+		aW: '♨️',
+		bc: _List_fromArray(
+			['hot springs', 'bath', 'warm', 'relax']),
+		bg: 'hotsprings',
+		df: _Utils_Tuple2(54, 42)
+	},
+		{
+		cg: 7,
+		aW: '♻️',
+		bc: _List_fromArray(
+			['recycling symbol', 'arrow', 'environment', 'garbage', 'trash']),
+		bg: 'recycle',
+		df: _Utils_Tuple2(54, 43)
+	},
+		{
+		cg: 7,
+		aW: '♾️',
+		bc: _List_fromArray(
+			['infinity', 'forever']),
+		bg: 'infinity',
+		df: _Utils_Tuple2(54, 44)
+	},
+		{
+		cg: 7,
+		aW: '♿',
+		bc: _List_fromArray(
+			['wheelchair symbol', 'blue square', 'disabled', 'a11y', 'accessibility']),
+		bg: 'wheelchair',
+		df: _Utils_Tuple2(54, 45)
+	},
+		{
+		cg: 6,
+		aW: '⚒️',
+		bc: _List_fromArray(
+			['hammer and pick', 'tools', 'build', 'create']),
+		bg: 'hammer_and_pick',
+		df: _Utils_Tuple2(54, 46)
+	},
+		{
+		cg: 4,
+		aW: '⚓',
+		bc: _List_fromArray(
+			['anchor', 'ship', 'ferry', 'sea', 'boat']),
+		bg: 'anchor',
+		df: _Utils_Tuple2(54, 47)
+	},
+		{
+		cg: 6,
+		aW: '⚔️',
+		bc: _List_fromArray(
+			['crossed swords', 'weapon']),
+		bg: 'crossed_swords',
+		df: _Utils_Tuple2(54, 48)
+	},
+		{
+		cg: 7,
+		aW: '⚕️',
+		bc: _List_fromArray(
+			['medical symbol']),
+		bg: 'medical_symbol',
+		df: _Utils_Tuple2(54, 49)
+	},
+		{
+		cg: 6,
+		aW: '⚖️',
+		bc: _List_fromArray(
+			['balance scale', 'law', 'fairness', 'weight']),
+		bg: 'scales',
+		df: _Utils_Tuple2(54, 50)
+	},
+		{
+		cg: 6,
+		aW: '⚗️',
+		bc: _List_fromArray(
+			['alembic', 'distilling', 'science', 'experiment', 'chemistry']),
+		bg: 'alembic',
+		df: _Utils_Tuple2(54, 51)
+	},
+		{
+		cg: 6,
+		aW: '⚙️',
+		bc: _List_fromArray(
+			['gear', 'cog']),
+		bg: 'gear',
+		df: _Utils_Tuple2(54, 52)
+	},
+		{
+		cg: 7,
+		aW: '⚛️',
+		bc: _List_fromArray(
+			['atom symbol', 'science', 'physics', 'chemistry']),
+		bg: 'atom_symbol',
+		df: _Utils_Tuple2(54, 53)
+	},
+		{
+		cg: 7,
+		aW: '⚜️',
+		bc: _List_fromArray(
+			['fleur de lis', 'decorative', 'scout']),
+		bg: 'fleur_de_lis',
+		df: _Utils_Tuple2(54, 54)
+	},
+		{
+		cg: 7,
+		aW: '⚠️',
+		bc: _List_fromArray(
+			['warning', 'exclamation', 'wip', 'alert', 'error', 'problem', 'issue']),
+		bg: 'warning',
+		df: _Utils_Tuple2(54, 55)
+	},
+		{
+		cg: 4,
+		aW: '⚡',
+		bc: _List_fromArray(
+			['high voltage', 'thunder', 'weather', 'lightning bolt', 'fast']),
+		bg: 'zap',
+		df: _Utils_Tuple2(54, 56)
+	},
+		{
+		cg: 7,
+		aW: '⚧️',
+		bc: _List_fromArray(
+			['transgender symbol', 'lgbtq']),
+		bg: 'transgender_symbol',
+		df: _Utils_Tuple2(54, 57)
+	},
+		{
+		cg: 7,
+		aW: '⚪',
+		bc: _List_fromArray(
+			['white circle', 'shape', 'round']),
+		bg: 'white_circle',
+		df: _Utils_Tuple2(55, 0)
+	},
+		{
+		cg: 7,
+		aW: '⚫',
+		bc: _List_fromArray(
+			['black circle', 'shape', 'button', 'round']),
+		bg: 'black_circle',
+		df: _Utils_Tuple2(55, 1)
+	},
+		{
+		cg: 6,
+		aW: '⚰️',
+		bc: _List_fromArray(
+			['coffin', 'vampire', 'dead', 'die', 'death', 'rip', 'graveyard', 'cemetery', 'casket', 'funeral', 'box']),
+		bg: 'coffin',
+		df: _Utils_Tuple2(55, 2)
+	},
+		{
+		cg: 6,
+		aW: '⚱️',
+		bc: _List_fromArray(
+			['funeral urn', 'dead', 'die', 'death', 'rip', 'ashes']),
+		bg: 'funeral_urn',
+		df: _Utils_Tuple2(55, 3)
+	},
+		{
+		cg: 5,
+		aW: '⚽',
+		bc: _List_fromArray(
+			['soccer ball', 'sports', 'football']),
+		bg: 'soccer',
+		df: _Utils_Tuple2(55, 4)
+	},
+		{
+		cg: 5,
+		aW: '⚾',
+		bc: _List_fromArray(
+			['baseball', 'sports', 'balls']),
+		bg: 'baseball',
+		df: _Utils_Tuple2(55, 5)
+	},
+		{
+		cg: 4,
+		aW: '⛄',
+		bc: _List_fromArray(
+			['snowman without snow', 'winter', 'season', 'cold', 'weather', 'christmas', 'xmas', 'frozen', 'without snow']),
+		bg: 'snowman_without_snow',
+		df: _Utils_Tuple2(55, 6)
+	},
+		{
+		cg: 4,
+		aW: '⛅',
+		bc: _List_fromArray(
+			['sun behind cloud', 'weather', 'nature', 'cloudy', 'morning', 'fall', 'spring']),
+		bg: 'partly_sunny',
+		df: _Utils_Tuple2(55, 7)
+	},
+		{
+		cg: 4,
+		aW: '⛈️',
+		bc: _List_fromArray(
+			['cloud with lightning and rain', 'weather', 'lightning']),
+		bg: 'thunder_cloud_and_rain',
+		df: _Utils_Tuple2(55, 8)
+	},
+		{
+		cg: 7,
+		aW: '⛎',
+		bc: _List_fromArray(
+			['ophiuchus', 'sign', 'purple square', 'constellation', 'astrology']),
+		bg: 'ophiuchus',
+		df: _Utils_Tuple2(55, 9)
+	},
+		{
+		cg: 6,
+		aW: '⛏️',
+		bc: _List_fromArray(
+			['pick', 'tools', 'dig']),
+		bg: 'pick',
+		df: _Utils_Tuple2(55, 10)
+	},
+		{
+		cg: 6,
+		aW: '⛑️',
+		bc: _List_fromArray(
+			['rescue worker s helmet', 'construction', 'build']),
+		bg: 'helmet_with_white_cross',
+		df: _Utils_Tuple2(55, 11)
+	},
+		{
+		cg: 6,
+		aW: '⛓️',
+		bc: _List_fromArray(
+			['chains', 'lock', 'arrest']),
+		bg: 'chains',
+		df: _Utils_Tuple2(55, 12)
+	},
+		{
+		cg: 7,
+		aW: '⛔',
+		bc: _List_fromArray(
+			['no entry', 'limit', 'security', 'privacy', 'bad', 'denied', 'stop', 'circle']),
+		bg: 'no_entry',
+		df: _Utils_Tuple2(55, 13)
+	},
+		{
+		cg: 4,
+		aW: '⛩️',
+		bc: _List_fromArray(
+			['shinto shrine', 'temple', 'japan', 'kyoto']),
+		bg: 'shinto_shrine',
+		df: _Utils_Tuple2(55, 14)
+	},
+		{
+		cg: 4,
+		aW: '⛪',
+		bc: _List_fromArray(
+			['church', 'building', 'religion', 'christ']),
+		bg: 'church',
+		df: _Utils_Tuple2(55, 15)
+	},
+		{
+		cg: 4,
+		aW: '⛰️',
+		bc: _List_fromArray(
+			['mountain', 'photo', 'nature', 'environment']),
+		bg: 'mountain',
+		df: _Utils_Tuple2(55, 16)
+	},
+		{
+		cg: 4,
+		aW: '⛱️',
+		bc: _List_fromArray(
+			['umbrella on ground', 'weather', 'summer']),
+		bg: 'umbrella_on_ground',
+		df: _Utils_Tuple2(55, 17)
+	},
+		{
+		cg: 4,
+		aW: '⛲',
+		bc: _List_fromArray(
+			['fountain', 'photo', 'summer', 'water', 'fresh']),
+		bg: 'fountain',
+		df: _Utils_Tuple2(55, 18)
+	},
+		{
+		cg: 5,
+		aW: '⛳',
+		bc: _List_fromArray(
+			['flag in hole', 'sports', 'business', 'flag', 'hole', 'summer']),
+		bg: 'golf',
+		df: _Utils_Tuple2(55, 19)
+	},
+		{
+		cg: 4,
+		aW: '⛴️',
+		bc: _List_fromArray(
+			['ferry', 'boat', 'ship', 'yacht']),
+		bg: 'ferry',
+		df: _Utils_Tuple2(55, 20)
+	},
+		{
+		cg: 4,
+		aW: '⛵',
+		bc: _List_fromArray(
+			['sailboat', 'ship', 'summer', 'transportation', 'water', 'sailing']),
+		bg: 'boat',
+		df: _Utils_Tuple2(55, 21)
+	},
+		{
+		cg: 1,
+		aW: '⛷️',
+		bc: _List_fromArray(
+			['skier', 'sports', 'winter', 'snow']),
+		bg: 'skier',
+		df: _Utils_Tuple2(55, 22)
+	},
+		{
+		cg: 5,
+		aW: '⛸️',
+		bc: _List_fromArray(
+			['ice skate', 'sports']),
+		bg: 'ice_skate',
+		df: _Utils_Tuple2(55, 23)
+	},
+		{
+		cg: 1,
+		aW: '⛹️\u200D♀️',
+		bc: _List_fromArray(
+			['woman bouncing ball', 'sports', 'human', 'woman', 'female']),
+		bg: 'woman-bouncing-ball',
+		df: _Utils_Tuple2(55, 24)
+	},
+		{
+		cg: 1,
+		aW: '⛹️\u200D♂️',
+		bc: _List_fromArray(
+			['man bouncing ball']),
+		bg: 'man-bouncing-ball',
+		df: _Utils_Tuple2(55, 30)
+	},
+		{
+		cg: 1,
+		aW: '⛹️',
+		bc: _List_fromArray(
+			['person bouncing ball', 'sports', 'human']),
+		bg: 'person_with_ball',
+		df: _Utils_Tuple2(55, 36)
+	},
+		{
+		cg: 4,
+		aW: '⛺',
+		bc: _List_fromArray(
+			['tent', 'photo', 'camping', 'outdoors']),
+		bg: 'tent',
+		df: _Utils_Tuple2(55, 42)
+	},
+		{
+		cg: 4,
+		aW: '⛽',
+		bc: _List_fromArray(
+			['fuel pump', 'gas station', 'petroleum']),
+		bg: 'fuelpump',
+		df: _Utils_Tuple2(55, 43)
+	},
+		{
+		cg: 6,
+		aW: '✂️',
+		bc: _List_fromArray(
+			['scissors', 'stationery', 'cut']),
+		bg: 'scissors',
+		df: _Utils_Tuple2(55, 44)
+	},
+		{
+		cg: 7,
+		aW: '✅',
+		bc: _List_fromArray(
+			['check mark button', 'green square', 'ok', 'agree', 'vote', 'election', 'answer', 'tick']),
+		bg: 'white_check_mark',
+		df: _Utils_Tuple2(55, 45)
+	},
+		{
+		cg: 4,
+		aW: '✈️',
+		bc: _List_fromArray(
+			['airplane', 'vehicle', 'transportation', 'flight', 'fly']),
+		bg: 'airplane',
+		df: _Utils_Tuple2(55, 46)
+	},
+		{
+		cg: 6,
+		aW: '✉️',
+		bc: _List_fromArray(
+			['envelope', 'letter', 'postal', 'inbox', 'communication']),
+		bg: 'email',
+		df: _Utils_Tuple2(55, 47)
+	},
+		{
+		cg: 1,
+		aW: '✊',
+		bc: _List_fromArray(
+			['raised fist', 'fingers', 'hand', 'grasp']),
+		bg: 'fist',
+		df: _Utils_Tuple2(55, 48)
+	},
+		{
+		cg: 1,
+		aW: '✋',
+		bc: _List_fromArray(
+			['raised hand', 'fingers', 'stop', 'highfive', 'palm', 'ban']),
+		bg: 'hand',
+		df: _Utils_Tuple2(55, 54)
+	},
+		{
+		cg: 1,
+		aW: '✌️',
+		bc: _List_fromArray(
+			['victory hand', 'fingers', 'ohyeah', 'hand', 'peace', 'victory', 'two']),
+		bg: 'v',
+		df: _Utils_Tuple2(56, 2)
+	},
+		{
+		cg: 1,
+		aW: '✍️',
+		bc: _List_fromArray(
+			['writing hand', 'lower left ballpoint pen', 'stationery', 'write', 'compose']),
+		bg: 'writing_hand',
+		df: _Utils_Tuple2(56, 8)
+	},
+		{
+		cg: 6,
+		aW: '✏️',
+		bc: _List_fromArray(
+			['pencil', 'stationery', 'write', 'paper', 'writing', 'school', 'study']),
+		bg: 'pencil2',
+		df: _Utils_Tuple2(56, 14)
+	},
+		{
+		cg: 6,
+		aW: '✒️',
+		bc: _List_fromArray(
+			['black nib', 'pen', 'stationery', 'writing', 'write']),
+		bg: 'black_nib',
+		df: _Utils_Tuple2(56, 15)
+	},
+		{
+		cg: 7,
+		aW: '✔️',
+		bc: _List_fromArray(
+			['check mark', 'ok', 'nike', 'answer', 'yes', 'tick']),
+		bg: 'heavy_check_mark',
+		df: _Utils_Tuple2(56, 16)
+	},
+		{
+		cg: 7,
+		aW: '✖️',
+		bc: _List_fromArray(
+			['multiplication sign', 'math', 'calculation']),
+		bg: 'heavy_multiplication_x',
+		df: _Utils_Tuple2(56, 17)
+	},
+		{
+		cg: 7,
+		aW: '✝️',
+		bc: _List_fromArray(
+			['latin cross', 'christianity']),
+		bg: 'latin_cross',
+		df: _Utils_Tuple2(56, 18)
+	},
+		{
+		cg: 7,
+		aW: '✡️',
+		bc: _List_fromArray(
+			['star of david', 'judaism']),
+		bg: 'star_of_david',
+		df: _Utils_Tuple2(56, 19)
+	},
+		{
+		cg: 5,
+		aW: '✨',
+		bc: _List_fromArray(
+			['sparkles', 'stars', 'shine', 'shiny', 'cool', 'awesome', 'good', 'magic']),
+		bg: 'sparkles',
+		df: _Utils_Tuple2(56, 20)
+	},
+		{
+		cg: 7,
+		aW: '✳️',
+		bc: _List_fromArray(
+			['eight spoked asterisk', 'star', 'sparkle', 'green square']),
+		bg: 'eight_spoked_asterisk',
+		df: _Utils_Tuple2(56, 21)
+	},
+		{
+		cg: 7,
+		aW: '✴️',
+		bc: _List_fromArray(
+			['eight pointed star', 'orange square', 'shape', 'polygon']),
+		bg: 'eight_pointed_black_star',
+		df: _Utils_Tuple2(56, 22)
+	},
+		{
+		cg: 4,
+		aW: '❄️',
+		bc: _List_fromArray(
+			['snowflake', 'winter', 'season', 'cold', 'weather', 'christmas', 'xmas']),
+		bg: 'snowflake',
+		df: _Utils_Tuple2(56, 23)
+	},
+		{
+		cg: 7,
+		aW: '❇️',
+		bc: _List_fromArray(
+			['sparkle', 'stars', 'green square', 'awesome', 'good', 'fireworks']),
+		bg: 'sparkle',
+		df: _Utils_Tuple2(56, 24)
+	},
+		{
+		cg: 7,
+		aW: '❌',
+		bc: _List_fromArray(
+			['cross mark', 'no', 'delete', 'remove', 'cancel', 'red']),
+		bg: 'x',
+		df: _Utils_Tuple2(56, 25)
+	},
+		{
+		cg: 7,
+		aW: '❎',
+		bc: _List_fromArray(
+			['cross mark button', 'x', 'green square', 'no', 'deny']),
+		bg: 'negative_squared_cross_mark',
+		df: _Utils_Tuple2(56, 26)
+	},
+		{
+		cg: 7,
+		aW: '❓',
+		bc: _List_fromArray(
+			['question mark', 'doubt', 'confused']),
+		bg: 'question',
+		df: _Utils_Tuple2(56, 27)
+	},
+		{
+		cg: 7,
+		aW: '❔',
+		bc: _List_fromArray(
+			['white question mark', 'doubts', 'gray', 'huh', 'confused']),
+		bg: 'grey_question',
+		df: _Utils_Tuple2(56, 28)
+	},
+		{
+		cg: 7,
+		aW: '❕',
+		bc: _List_fromArray(
+			['white exclamation mark', 'surprise', 'punctuation', 'gray', 'wow', 'warning']),
+		bg: 'grey_exclamation',
+		df: _Utils_Tuple2(56, 29)
+	},
+		{
+		cg: 7,
+		aW: '❗',
+		bc: _List_fromArray(
+			['exclamation mark', 'heavy exclamation mark', 'danger', 'surprise', 'punctuation', 'wow', 'warning']),
+		bg: 'exclamation',
+		df: _Utils_Tuple2(56, 30)
+	},
+		{
+		cg: 0,
+		aW: '❣️',
+		bc: _List_fromArray(
+			['heart exclamation', 'decoration', 'love']),
+		bg: 'heavy_heart_exclamation_mark_ornament',
+		df: _Utils_Tuple2(56, 31)
+	},
+		{
+		cg: 0,
+		aW: '❤️',
+		bc: _List_fromArray(
+			['red heart', 'love', 'like', 'valentines']),
+		bg: 'heart',
+		df: _Utils_Tuple2(56, 32)
+	},
+		{
+		cg: 7,
+		aW: '➕',
+		bc: _List_fromArray(
+			['plus sign', 'math', 'calculation', 'addition', 'more', 'increase']),
+		bg: 'heavy_plus_sign',
+		df: _Utils_Tuple2(56, 33)
+	},
+		{
+		cg: 7,
+		aW: '➖',
+		bc: _List_fromArray(
+			['minus sign', 'math', 'calculation', 'subtract', 'less']),
+		bg: 'heavy_minus_sign',
+		df: _Utils_Tuple2(56, 34)
+	},
+		{
+		cg: 7,
+		aW: '➗',
+		bc: _List_fromArray(
+			['division sign', 'divide', 'math', 'calculation']),
+		bg: 'heavy_division_sign',
+		df: _Utils_Tuple2(56, 35)
+	},
+		{
+		cg: 7,
+		aW: '➡️',
+		bc: _List_fromArray(
+			['right arrow', 'blue square', 'next']),
+		bg: 'arrow_right',
+		df: _Utils_Tuple2(56, 36)
+	},
+		{
+		cg: 7,
+		aW: '➰',
+		bc: _List_fromArray(
+			['curly loop', 'scribble', 'draw', 'shape', 'squiggle']),
+		bg: 'curly_loop',
+		df: _Utils_Tuple2(56, 37)
+	},
+		{
+		cg: 7,
+		aW: '➿',
+		bc: _List_fromArray(
+			['double curly loop', 'tape', 'cassette']),
+		bg: 'loop',
+		df: _Utils_Tuple2(56, 38)
+	},
+		{
+		cg: 7,
+		aW: '⤴️',
+		bc: _List_fromArray(
+			['right arrow curving up', 'blue square', 'direction', 'top']),
+		bg: 'arrow_heading_up',
+		df: _Utils_Tuple2(56, 39)
+	},
+		{
+		cg: 7,
+		aW: '⤵️',
+		bc: _List_fromArray(
+			['right arrow curving down', 'blue square', 'direction', 'bottom']),
+		bg: 'arrow_heading_down',
+		df: _Utils_Tuple2(56, 40)
+	},
+		{
+		cg: 7,
+		aW: '⬅️',
+		bc: _List_fromArray(
+			['left arrow', 'blue square', 'previous', 'back']),
+		bg: 'arrow_left',
+		df: _Utils_Tuple2(56, 41)
+	},
+		{
+		cg: 7,
+		aW: '⬆️',
+		bc: _List_fromArray(
+			['up arrow', 'blue square', 'continue', 'top', 'direction']),
+		bg: 'arrow_up',
+		df: _Utils_Tuple2(56, 42)
+	},
+		{
+		cg: 7,
+		aW: '⬇️',
+		bc: _List_fromArray(
+			['down arrow', 'blue square', 'direction', 'bottom']),
+		bg: 'arrow_down',
+		df: _Utils_Tuple2(56, 43)
+	},
+		{
+		cg: 7,
+		aW: '⬛',
+		bc: _List_fromArray(
+			['black large square', 'shape', 'icon', 'button']),
+		bg: 'black_large_square',
+		df: _Utils_Tuple2(56, 44)
+	},
+		{
+		cg: 7,
+		aW: '⬜',
+		bc: _List_fromArray(
+			['white large square', 'shape', 'icon', 'stone', 'button']),
+		bg: 'white_large_square',
+		df: _Utils_Tuple2(56, 45)
+	},
+		{
+		cg: 4,
+		aW: '⭐',
+		bc: _List_fromArray(
+			['star', 'night', 'yellow']),
+		bg: 'star',
+		df: _Utils_Tuple2(56, 46)
+	},
+		{
+		cg: 7,
+		aW: '⭕',
+		bc: _List_fromArray(
+			['hollow red circle', 'circle', 'round']),
+		bg: 'o',
+		df: _Utils_Tuple2(56, 47)
+	},
+		{
+		cg: 7,
+		aW: '〰️',
+		bc: _List_fromArray(
+			['wavy dash', 'draw', 'line', 'moustache', 'mustache', 'squiggle', 'scribble']),
+		bg: 'wavy_dash',
+		df: _Utils_Tuple2(56, 48)
+	},
+		{
+		cg: 7,
+		aW: '〽️',
+		bc: _List_fromArray(
+			['part alternation mark', 'graph', 'presentation', 'stats', 'business', 'economics', 'bad']),
+		bg: 'part_alternation_mark',
+		df: _Utils_Tuple2(56, 49)
+	},
+		{
+		cg: 7,
+		aW: '㊗️',
+		bc: _List_fromArray(
+			['japanese congratulations button', 'chinese', 'kanji', 'japanese', 'red circle']),
+		bg: 'congratulations',
+		df: _Utils_Tuple2(56, 50)
+	},
+		{
+		cg: 7,
+		aW: '㊙️',
+		bc: _List_fromArray(
+			['japanese secret button', 'privacy', 'chinese', 'sshh', 'kanji', 'red circle']),
+		bg: 'secret',
+		df: _Utils_Tuple2(56, 51)
+	}
+	]);
 var $mdgriffith$elm_ui$Internal$Model$FontFamily = F2(
 	function (a, b) {
 		return {$: 1, a: a, b: b};
@@ -12262,8 +26740,8 @@ var $mdgriffith$elm_ui$Internal$Model$focusDefaultStyle = {
 	b8: $elm$core$Maybe$Nothing,
 	c9: $elm$core$Maybe$Just(
 		{
-			R: 0,
-			S: A4($mdgriffith$elm_ui$Internal$Model$Rgba, 155 / 255, 203 / 255, 1, 1),
+			S: 0,
+			T: A4($mdgriffith$elm_ui$Internal$Model$Rgba, 155 / 255, 203 / 255, 1, 1),
 			bi: _Utils_Tuple2(0, 0),
 			bA: 3
 		})
@@ -12513,6 +26991,8 @@ var $mdgriffith$elm_ui$Element$minimum = F2(
 	function (i, l) {
 		return A2($mdgriffith$elm_ui$Internal$Model$Min, i, l);
 	});
+var $mdgriffith$elm_ui$Internal$Model$Empty = {$: 3};
+var $mdgriffith$elm_ui$Element$none = $mdgriffith$elm_ui$Internal$Model$Empty;
 var $mdgriffith$elm_ui$Internal$Model$PaddingStyle = F5(
 	function (a, b, c, d, e) {
 		return {$: 7, a: a, b: b, c: c, d: d, e: e};
@@ -12550,7 +27030,7 @@ var $mdgriffith$elm_ui$Element$row = F2(
 			$mdgriffith$elm_ui$Internal$Model$div,
 			A2(
 				$elm$core$List$cons,
-				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.Z + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.B)),
+				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes._ + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.B)),
 				A2(
 					$elm$core$List$cons,
 					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$shrink),
@@ -13105,7 +27585,7 @@ var $mdgriffith$elm_ui$Element$Input$redistributeOver = F4(
 								b: A2($elm$core$List$cons, attr, els.b),
 								g: A2($elm$core$List$cons, attr, els.g),
 								a: A2($elm$core$List$cons, attr, els.a),
-								X: A2($elm$core$List$cons, attr, els.X)
+								Y: A2($elm$core$List$cons, attr, els.Y)
 							});
 					case 7:
 						var cls = attr.a;
@@ -13232,13 +27712,13 @@ var $mdgriffith$elm_ui$Element$Input$redistribute = F3(
 				b: $elm$core$List$reverse(redist.b),
 				g: $elm$core$List$reverse(redist.g),
 				a: $elm$core$List$reverse(redist.a),
-				X: $elm$core$List$reverse(redist.X)
+				Y: $elm$core$List$reverse(redist.Y)
 			};
 		}(
 			A3(
 				$elm$core$List$foldl,
 				A2($mdgriffith$elm_ui$Element$Input$redistributeOver, isMultiline, stacked),
-				{l: _List_Nil, b: _List_Nil, g: _List_Nil, a: _List_Nil, X: _List_Nil},
+				{l: _List_Nil, b: _List_Nil, g: _List_Nil, a: _List_Nil, Y: _List_Nil},
 				attrs));
 	});
 var $mdgriffith$elm_ui$Element$Input$renderBox = function (_v0) {
@@ -13480,7 +27960,7 @@ var $mdgriffith$elm_ui$Element$Input$textHelper = F3(
 											A2(
 												$elm$core$List$cons,
 												$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.cI),
-												redistributed.X)))),
+												redistributed.Y)))),
 								$mdgriffith$elm_ui$Internal$Model$Unkeyed(
 									function () {
 										if (textOptions.$7 === '') {
@@ -13702,7 +28182,6 @@ var $mdgriffith$elm_ui$Internal$Flag$focus = $mdgriffith$elm_ui$Internal$Flag$fl
 var $mdgriffith$elm_ui$Internal$Model$AlignY = function (a) {
 	return {$: 5, a: a};
 };
-var $mdgriffith$elm_ui$Internal$Model$Empty = {$: 3};
 var $elm$virtual_dom$VirtualDom$map = _VirtualDom_map;
 var $mdgriffith$elm_ui$Internal$Model$map = F2(
 	function (fn, el) {
@@ -13897,7 +28376,7 @@ var $mdgriffith$elm_ui$Element$wrappedRow = F2(
 				$mdgriffith$elm_ui$Internal$Model$div,
 				A2(
 					$elm$core$List$cons,
-					$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.Z + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
+					$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes._ + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
 					A2(
 						$elm$core$List$cons,
 						$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$shrink),
@@ -13950,7 +28429,7 @@ var $mdgriffith$elm_ui$Element$wrappedRow = F2(
 					$mdgriffith$elm_ui$Internal$Model$div,
 					A2(
 						$elm$core$List$cons,
-						$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.Z + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
+						$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes._ + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
 						A2(
 							$elm$core$List$cons,
 							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$shrink),
@@ -13979,7 +28458,7 @@ var $mdgriffith$elm_ui$Element$wrappedRow = F2(
 								$mdgriffith$elm_ui$Internal$Model$div,
 								A2(
 									$elm$core$List$cons,
-									$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.Z + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
+									$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes._ + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.B + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.aR)))),
 									A2(
 										$elm$core$List$cons,
 										$mdgriffith$elm_ui$Internal$Model$Attr(
@@ -14237,6 +28716,7 @@ var $author$project$Main$view = function (model) {
 								]),
 							_List_fromArray(
 								[
+									((!_Utils_eq(model.J, _List_Nil)) && (!_Utils_eq(model.J, $author$project$EmojiData$List$emojis))) ? $mdgriffith$elm_ui$Element$text('⚠️') : $mdgriffith$elm_ui$Element$none,
 									A2(
 									$mdgriffith$elm_ui$Element$link,
 									_List_fromArray(
