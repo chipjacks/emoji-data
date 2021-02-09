@@ -21,7 +21,7 @@ type alias EmojiData =
 
 {-| Search for emojis by keyword.
 
-    import EmojiData.Import exposing (emojis)
+    import EmojiData.List exposing (emojis)
 
     EmojiData.search emojis "farmer"
         == [ { category = PeopleAndBody, char = "👨‍🌾", keywords = ["man farmer","rancher","gardener","man","human"], name = "male-farmer", sprite = (14,27) }
