@@ -22,6 +22,10 @@ type Source
 
 
 {-| Creates a `div` containing the emoji from a spritesheet.
+Accepts arguments for emoji size in pixels and sprite position.
+
+    EmojiData.View.emoji Apple 32 emojiData.sprite
+
 -}
 emoji : Source -> Int -> ( Int, Int ) -> Html msg
 emoji source size ( x, y ) =

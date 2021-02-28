@@ -4,6 +4,7 @@
     "start": "cd example && elm-live src/Main.elm -u -- --output=elm.js",
     "test": "elm-test --watch",
     "docs": "elm make --docs docs.json",
+    "doc-preview": "elm-doc-preview",
     "make": "cd example && elm make --optimize --output=elm.js src/Main.elm && mv elm.js .."
   },
   "version": "1.0.0",
@@ -14,6 +15,7 @@
   "license": "BSD-3-Clause",
   "private": false,
   "devDependencies": {
+    "elm-doc-preview": "^5.0.5",
     "elm-live": "^4.0.2",
     "node-fetch": "^2.6.1"
   },
