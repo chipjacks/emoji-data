@@ -47,8 +47,9 @@ search emojis str =
                 || String.contains str emoji.name
                 || String.contains str emoji.char
     in
-    if str == "" then
-        []
+    case str of
+        "" ->
+            []
 
-    else
-        List.filter isMatch emojis
+        _ ->
+            List.filter isMatch emojis
